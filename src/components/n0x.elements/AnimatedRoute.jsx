@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-
+ 
 const AnimatedRoute = (props) => (
   <div style={{
     position: 'absolute',

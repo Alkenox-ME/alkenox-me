@@ -40,30 +40,30 @@ const Layout = class extends PureComponent {
     `;
 
     return (
-      <BGImage flexWrap="wrap" justifyContent="center">
-        <BGTint>
-          <SeoPage pgTitle={pgTitle} pgDesc={pgDesc} />
-          <NavBar width={[1]}>
-            <Link to="/">
-              <HomeBtn />
-            </Link>
-            <Link to="/about-us">
-              <AboutBtn />
-            </Link>
-            <Link to="/contact-us">
-              <ContactBtn />
-            </Link>
-          </NavBar>
-          {children}
-          <Footer
-            copyright="Copyright"
-            symbol="&copy;"
-            year={copyYear}
-            company={copyCompany}
-            rights="All rights reserved."
-          />
-        </BGTint>
-      </BGImage>
+        <BGImage flexWrap="wrap" justifyContent="center">
+          <BGTint>
+            <SeoPage pgTitle={pgTitle} pgDesc={pgDesc} />
+            <NavBar width={[1]}>
+              <Link to="/">
+                <HomeBtn />
+              </Link>
+              <Link to="/about-us">
+                <AboutBtn />
+              </Link>
+              <Link to="/contact-us">
+                <ContactBtn />
+              </Link>
+            </NavBar>
+            {children}
+            <Footer
+              copyright="Copyright"
+              symbol="&copy;"
+              year={copyYear}
+              company={copyCompany}
+              rights="All rights reserved."
+            />
+          </BGTint>
+        </BGImage>
     );
   }
 };

@@ -1,35 +1,19 @@
 @import "./vars.scss";
 @import "./antd.scss";
-@import "./antMods.scss";
-// @import "./sanitize.scss";
+@import "./antMods.scss"; // @import "./sanitize.scss";
 
 body {
-  overflow-x: hidden;
-  max-width: 100vw;
+  max-width : 100vw;
   min-height: 100vh;
-  margin: 0 auto;
-}
+  overflow-x: hidden;
+  margin: 0;
 
-::selection,
-:active,
-:focus,
-:hover,
-:visited {
-  box-shadow: none;
-  outline: none;
-}
-
-.page-slide-enter {
-  transform: translateX(100%);
-}
-.page-slide-enter.page-slide-enter-active {
-  transform: translateX(0);
-  transition: transform 300ms ease-out;
-}
-.page-slide-exit {
-  transform: translateX(0);
-}
-.page-slide-exit.page-slide-exit-active {
-  transform: translateX(-100%);
-  transition: transform 300ms ease-out;
+  &::selection,
+  &:active,
+  &:focus,
+  &:hover,
+  &:visited {
+    box-shadow: none;
+    outline   : none;
+  }
 }

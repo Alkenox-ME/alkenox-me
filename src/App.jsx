@@ -13,6 +13,9 @@ import { SeoGlobal, AnimatedSwitch, AnimatedRoute } from "./components/n0x.eleme
 // Pages
 import HomePage from "./pages/HomePage";
 
+import styled, { keyframes } from "styled-components";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
+
 // To Do: Red Colored words are links that need to be programmed for before and after click colors. Also, change links to correct addresses when site is finally live.
 
 const AboutPage = loadable(() => import("./pages/AboutPage"));
@@ -26,6 +29,15 @@ const PhotoPage = loadable(() => import("./pages/PhotoPage"));
 const RxPage = loadable(() => import("./pages/RxPage"));
 const WebPkgs = loadable(() => import("./pages/WebPkgs"));
 
+const PageContainer = styled.div`
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #e3f2fd;
+  font-family: "Open Sans", sans-serif;
+`;
+
+
 // The Core App
 const App = () => {
   return (
@@ -35,22 +47,36 @@ const App = () => {
           defTitle="Alkenox Media & Entertainment, LLC."
           siteDesc="Welcome Home"
         />
-        <AnimatedSwitch
-          animationClassName="page-slide"
-          animationTimeout={300}>
-          <AnimatedRoute exact path="/" component={HomePage} />
-          <AnimatedRoute exact path="/about-us" component={AboutPage} />
-          <AnimatedRoute exact path="/contact-us" component={ContactPage} />
-          <AnimatedRoute exact path="/sound-design" component={SoundPage} />
-          <AnimatedRoute exact path="/music-production" component={MxPage} />
-          <AnimatedRoute exact path="/web-design" component={WebPage} />
-          <AnimatedRoute exact path="/video-production" component={VxPage} />
-          <AnimatedRoute exact path="/graphic-design" component={GraphicPage} />
-          <AnimatedRoute exact path="/photography" component={PhotoPage} />
-          <AnimatedRoute exact path="/digital-media-repair" component={RxPage} />
-          <AnimatedRoute exact path="/web-packages" component={WebPkgs} />
-          <Redirect to="/" />
-        </AnimatedSwitch>
+        <Route
+          render={({ location }) => {
+            return (
+              <PageContainer>
+                <TransitionGroup component={null}>
+                  <CSSTransition
+                    timeout={300}
+                    classNames="page"
+                    key={location.key}
+                  >
+                    <Switch location={location}>
+                      <Route exact path="/" component={HomePage} />
+                      <Route exact path="/about-us" component={AboutPage} />
+                      <Route exact path="/contact-us" component={ContactPage} />
+                      <Route exact path="/sound-design" component={SoundPage} />
+                      <Route exact path="/music-production" component={MxPage} />
+                      <Route exact path="/web-design" component={WebPage} />
+                      <Route exact path="/video-production" component={VxPage} />
+                      <Route exact path="/graphic-design" component={GraphicPage} />
+                      <Route exact path="/photography" component={PhotoPage} />
+                      <Route exact path="/digital-media-repair" component={RxPage} />
+                      <Route exact path="/web-packages" component={WebPkgs} />
+                      <Redirect to="/" />
+                    </Switch>
+                  </CSSTransition>
+                </TransitionGroup>
+              </PageContainer>
+            );
+          }}
+        />
       </Flex>
     </N0xTheme>
   );

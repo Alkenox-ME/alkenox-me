@@ -6,10 +6,20 @@ import { n0x, image, data } from '../components/n0x.vars'
 import { Flex, Card } from '../components/n0x.Bass';
 import { Fade } from 'react-reveal';
 import styled, {keyframes} from 'styled-components'
+import { Page, slideInRight, slideOutRight, slideInLeft, slideOutLeft } from '../styles/animate'
 
 // Components
 import { LabelBlock } from '../components/n0x.elements';
 import Layout from '../components/Layout';
+
+const AniPage = styled(Page)`
+  &.page-enter {
+    animation: ${slideInLeft} 0.2s forwards;
+  }
+  &.page-exit {
+    animation: ${slideOutLeft} 0.2s forwards;
+  }
+`;
 
 // Variables
 const tint = n0x.tint.black[ 0 ];
@@ -31,6 +41,7 @@ const duration1 = 3000;
 // Actual Page
 const HomePage = () => {
  return(
+   <AniPage>
      <Layout
        pgTitle='alkenox-me: home'
        image={`${image.bg.logo}`}
@@ -152,6 +163,7 @@ const HomePage = () => {
          </Card>
        </Flex>
      </Layout>
+   </AniPage>
 );
 }
 export default HomePage;
