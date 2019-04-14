@@ -6,7 +6,6 @@ import { n0x, base, image, data } from '../components/n0x.vars'
 import { Image } from 'rebass';
 import { Box, Heading, Text } from '../components/n0x.Bass';
 import styled, {keyframes} from 'styled-components'
-import anime from 'lib/anime.es.js'
 import { Page, slideInRight, slideOutRight, slideInLeft, slideOutLeft } from '../styles/animate'
 
 // Components
