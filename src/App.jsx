@@ -5,16 +5,16 @@ import loadable from "@loadable/component";
 
 // Styling
 import { Flex } from "./components/n0x.Bass";
+import styled, { keyframes } from "styled-components";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 import N0xTheme from "./styles/n0x.theme";
 
 // Components
 import { SeoGlobal, AnimatedSwitch, AnimatedRoute } from "./components/n0x.elements";
+import { PageContainer } from './components/n0x.Animate'
 
 // Pages
 import HomePage from "./pages/HomePage";
-
-import styled, { keyframes } from "styled-components";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 // To Do: Red Colored words are links that need to be programmed for before and after click colors. Also, change links to correct addresses when site is finally live.
 
@@ -28,15 +28,6 @@ const GraphicPage = loadable(() => import("./pages/GraphicPage"));
 const PhotoPage = loadable(() => import("./pages/PhotoPage"));
 const RxPage = loadable(() => import("./pages/RxPage"));
 const WebPkgs = loadable(() => import("./pages/WebPkgs"));
-
-const PageContainer = styled.div`
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  background-color: #e3f2fd;
-  font-family: "Open Sans", sans-serif;
-`;
-
 
 // The Core App
 const App = () => {

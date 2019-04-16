@@ -4,3 +4,4 @@ export * from "./n0x.Box";
 export * from "./n0x.Flex";
 export * from "./n0x.Card";
 export * from "./n0x.Banner";
+export * from "./n0x.Image";

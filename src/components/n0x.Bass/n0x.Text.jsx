@@ -3,38 +3,7 @@ import PropTypes from "prop-types";
 import { base, brand } from "../n0x.vars";
 import { Text as Text2 } from "rebass";
 
-const Text = class extends PureComponent {
-  render() {
-    const {
-      fontSize,
-      color,
-      fontFamily,
-      fontWeight,
-      textAlign,
-      lineHeight,
-      letterSpacing,
-      children,
-      width,
-      bg,
-      alignSelf,
-      flex,
-      order,
-      m,
-      mx,
-      my,
-      ml,
-      mt,
-      mr,
-      mb,
-      p,
-      px,
-      py,
-      pl,
-      pt,
-      pr,
-      pb
-    } = this.props;
-
+const Text = ({ fontSize, color, fontFamily, fontWeight, textAlign, children, width, alignSelf, ...props }) => {
     return (
       <Text2
         fontSize={fontSize}
@@ -42,33 +11,14 @@ const Text = class extends PureComponent {
         fontFamily={fontFamily}
         fontWeight={fontWeight}
         textAlign={textAlign}
-        lineHeight={lineHeight}
-        letterSpacing={letterSpacing}
         width={width}
-        bg={bg}
         alignSelf={alignSelf}
-        flex={flex}
-        order={order}
-        m={m}
-        mx={mx}
-        my={my}
-        ml={ml}
-        mt={mt}
-        mr={mr}
-        mb={mb}
-        p={p}
-        px={px}
-        py={py}
-        pl={pl}
-        pt={pt}
-        pr={pr}
-        pb={pb}
+        {...props}
       >
         {children}
       </Text2>
     );
   }
-};
 
 Text.propTypes = {
   children: PropTypes.element,
@@ -77,27 +27,8 @@ Text.propTypes = {
   fontFamily: PropTypes.string,
   fontWeight: PropTypes.string,
   textAlign: PropTypes.arrayOf( PropTypes.number ),
-  lineHeight: PropTypes.arrayOf( PropTypes.number ),
-  letterSpacing: PropTypes.arrayOf( PropTypes.number ),
   width: PropTypes.arrayOf( PropTypes.number ),
-  bg: PropTypes.string,
   alignSelf: PropTypes.string,
-  flex: PropTypes.arrayOf( PropTypes.number ),
-  order: PropTypes.arrayOf( PropTypes.number ),
-  m: PropTypes.arrayOf( PropTypes.number ),
-  mx: PropTypes.arrayOf( PropTypes.number ),
-  my: PropTypes.arrayOf( PropTypes.number ),
-  ml: PropTypes.arrayOf( PropTypes.number ),
-  mt: PropTypes.arrayOf( PropTypes.number ),
-  mr: PropTypes.arrayOf( PropTypes.number ),
-  mb: PropTypes.arrayOf( PropTypes.number ),
-  p: PropTypes.arrayOf( PropTypes.number ),
-  px: PropTypes.arrayOf( PropTypes.number ),
-  py: PropTypes.arrayOf( PropTypes.number ),
-  pl: PropTypes.arrayOf( PropTypes.number ),
-  pt: PropTypes.arrayOf( PropTypes.number ),
-  pr: PropTypes.arrayOf( PropTypes.number ),
-  pb: PropTypes.arrayOf( PropTypes.number )
 };
 
 Text.defaultProps = {
@@ -105,29 +36,10 @@ Text.defaultProps = {
   fontSize: `${base.font.size.t4}`,
   color: `${brand.color.light}`,
   fontFamily: `${base.font.family.sans}`,
-  fontWeight: "",
+  fontWeight: "normal",
   textAlign: "",
-  lineHeight: "",
-  letterSpacing: "",
-  width: "",
-  bg: "",
+  width: 1,
   alignSelf: "center",
-  flex: "",
-  order: "",
-  m: "",
-  mx: "",
-  my: "",
-  ml: "",
-  mt: "",
-  mr: "",
-  mb: "",
-  p: "",
-  px: "",
-  py: "",
-  pl: "",
-  pt: "",
-  pr: "",
-  pb: ""
 };
 
 export { Text };

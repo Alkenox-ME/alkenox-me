@@ -6,20 +6,20 @@ import { n0x, base, image, data } from '../components/n0x.vars'
 import { Image } from 'rebass';
 import { Box, Heading, Text } from '../components/n0x.Bass';
 import styled, {keyframes} from 'styled-components'
-import { Page, slideInRight, slideOutRight, slideInLeft, slideOutLeft } from '../styles/animate'
 
 // Components
 import Layout from '../components/Layout';
+import { Page, slideInRight, slideOutRight, slideInLeft, slideOutLeft } from '../components/n0x.Animate'
 
-const AniPage = styled(Page)`
-  background-color: #90caf9;
-  &.page-enter {
-    animation: ${slideInRight} 0.2s forwards;
-  }
-  &.page-exit {
-    animation: ${slideOutRight} 0.2s forwards;
-  }
-`;
+  const AniPage = styled(Page)`
+    &.page-enter {
+      animation: ${slideInRight} 0.2s forwards;
+    }
+    &.page-exit {
+      animation: ${slideOutRight} 0.2s forwards;
+    }
+  `;
+
 const AboutPage = () => {
 
   return (

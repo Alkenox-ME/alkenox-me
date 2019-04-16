@@ -2,20 +2,11 @@ import React, { PureComponent } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { Box, Flex } from "rebass";
+import { Box, Flex } from "./n0x.Bass";
 import { HomeBtn, AboutBtn, ContactBtn, Footer, SeoPage } from './n0x.elements';
+import { Page, slideInRight, slideOutRight, slideInLeft, slideOutLeft, fadeInLeft, fadeInRight, fadeOutLeft, fadeOutRight, fadeIn, fadeOut } from '../components/n0x.Animate'
 
-const Layout = class extends PureComponent {
-  render() {
-    const {
-      image,
-      tint,
-      children,
-      pgTitle,
-      pgDesc,
-      copyYear,
-      copyCompany
-    } = this.props;
+const Layout = ({ image, tint, children, pgTitle, pgDesc, copyYear, copyCompany, inAnimation, outAnimation }) => {
 
     const BGImage = styled(Flex)`
       background-image: url(${image});
@@ -40,7 +31,7 @@ const Layout = class extends PureComponent {
     `;
 
     return (
-        <BGImage flexWrap="wrap" justifyContent="center">
+        <BGImage>
           <BGTint>
             <SeoPage pgTitle={pgTitle} pgDesc={pgDesc} />
             <NavBar width={[1]}>
@@ -54,7 +45,7 @@ const Layout = class extends PureComponent {
                 <ContactBtn />
               </Link>
             </NavBar>
-            {children}
+            <Flex p={[3]}>{children}</Flex>
             <Footer
               copyright="Copyright"
               symbol="&copy;"
@@ -66,26 +57,5 @@ const Layout = class extends PureComponent {
         </BGImage>
     );
   }
-};
-
-Layout.propTypes = {
-  children: PropTypes.element,
-  image: PropTypes.string,
-  tint: PropTypes.string,
-  pgTitle: PropTypes.string,
-  pgDesc: PropTypes.string,
-  copyYear: PropTypes.number,
-  copyCompany: PropTypes.string
-};
-
-Layout.defaultProps = {
-  children: "",
-  image: "",
-  tint: "",
-  pgTitle: "",
-  pgDesc: "",
-  copyYear: "",
-  copyCompany: ""
-};
 
 export default Layout;

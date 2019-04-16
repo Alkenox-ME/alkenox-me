@@ -1,14 +1,14 @@
 // Core
-import React, { PureComponent } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Link as Href } from 'react-router-dom';
 
 // Styling
-import styled from 'styled-components/macro';
-import { Image, Card, Heading } from 'rebass';
+import styled from 'styled-components';
+import { Image, Card, Heading } from '../n0x.Bass';
 
-const LabelBlock = class extends PureComponent {
-  render() {
+const LabelBlock = ({ link, label, bshadow, bradius, bgimg, fontSz, width, height }) => {
+
     const Link = styled(Href)`
       font-family: ${props => props.theme.font.family.sans};
       color: ${props => props.theme.link.color.base};
@@ -49,41 +49,16 @@ const LabelBlock = class extends PureComponent {
       }
     `;
 
-    const { link, label, bshadow, bradius, bgimg, fontSz, width, height } = this.props;
-
     return (
         <Link exact="true" to={link} title={label} aria-label={label}>
           <LabelBase boxShadow={bshadow} borderRadius={bradius} src={bgimg}>
-            <LabelText fontSize={fontSz} width={width} color="inherit" textAlign="center">
+            <LabelText fontSize={fontSz} width={1} color="inherit" textAlign="center">
               {label}
             </LabelText>
-            <LabelImage borderRadius={bradius} src={bgimg} width={width} height={height} />
+            <LabelImage borderRadius={bradius} src={bgimg} width={1} height={height} />
           </LabelBase>
         </Link>
     );
   }
-};
-
-LabelBlock.propTypes = {
-  link: PropTypes.string,
-  label: PropTypes.string,
-  bshadow: PropTypes.string,
-  bradius: PropTypes.number,
-  bgimg: PropTypes.string,
-  fontSz: PropTypes.number,
-  width: PropTypes.number,
-  height: PropTypes.number
-};
-
-LabelBlock.defaultProps = {
-  link: '',
-  label: '',
-  bshadow: '',
-  bradius: [],
-  bgimg: '',
-  fontSz: [],
-  width: [],
-  height: []
-};
 
 export {LabelBlock};
