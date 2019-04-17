@@ -6,7 +6,7 @@ import { n0x, image, data } from './n0x.vars'
 import { Flex, Card } from './n0x.Bass';
 import withReveal, { Fade } from 'react-reveal';
 import styled, { keyframes } from 'styled-components'
-import { TransitionGroup, Transition as Transit, CSSTransition } from "react-transition-group";
+import { TransitionGroup, Transition as Tansit, CSSTransition } from "react-transition-group";
 import anime from 'animejs'
 import { Spring, config, Transition } from 'react-spring/renderprops'
 
@@ -21,6 +21,8 @@ const AniLabel = ({show, from, enter, leave, delay, ...props}) => {
   return(
     <Card {...props}>
       <Transition
+        reset
+        unique
         update
         items={show}
         from={ from }

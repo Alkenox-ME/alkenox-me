@@ -22,7 +22,14 @@ import { AniLabel } from '../components/AniLabel'
       animation: ${slideOutLeft} 0.2s forwards;
     }
   `;
-
+  const AniBlock = styled(AniLabel)`
+    &.block-enter {
+      animation: ${slideInLeft} 0.2s forwards;
+    }
+    &.block-exit {
+      animation: ${slideOutLeft} 0.2s forwards;
+    }
+  `;
   // Variables
   const tint = n0x.tint.black[ 0 ];
   const height = '29vh';
@@ -41,7 +48,6 @@ import { AniLabel } from '../components/AniLabel'
 
 // Actual Page
 const HomePage = () => {
-
  return(
    <AniPage>
      <Layout
@@ -51,9 +57,10 @@ const HomePage = () => {
        copyCompany={`${data.footer.company}`}
        tint={n0x.tint.black[0]}
      >
-       <AniLabel
-         left
-         duration={duration1}
+       <AniBlock
+         from={{position: 'relative', transform: 'translate3d(-100%,0,0)', width: '100%', opacity: 0}}
+         enter={{transform: 'translate3d(0,0,0)', opacity: 1}}
+         leave={{transform: 'translate3d(-100%,0,0)', opacity: 0}}
          delay={delay1}
          opacity={0.7}
          px={2}
@@ -69,9 +76,10 @@ const HomePage = () => {
          fontSz={fontSz}
        />
 
-       <AniLabel
-         right
-         duration={duration1}
+       <AniBlock
+         from={{position: 'relative', transform: 'translate3d(100%,0,0)', width: '100%', opacity: 0}}
+         enter={{transform: 'translate3d(0,0,0)', opacity: 1}}
+         leave={{transform: 'translate3d(100%,0,0)', opacity: 0}}
          delay={delay2}
          opacity={0.7}
          px={2}
@@ -87,9 +95,10 @@ const HomePage = () => {
          fontSz={fontSz}
        />
 
-       <AniLabel
-         left
-         duration={duration1}
+       <AniBlock
+         from={{position: 'relative', transform: 'translate3d(-100%,0,0)', width: '100%', opacity: 0}}
+         enter={{transform: 'translate3d(0,0,0)', opacity: 1}}
+         leave={{transform: 'translate3d(-100%,0,0)', opacity: 0}}
          delay={delay3}
          opacity={0.7}
          px={2}
@@ -105,8 +114,10 @@ const HomePage = () => {
          fontSz={fontSz}
        />
 
-       <AniLabel
-         duration={duration1}
+       <AniBlock
+         from={{position: 'relative', transform: 'translate3d(0,0,0)', width: '100%', opacity: 0}}
+         enter={{transform: 'translate3d(0,0,0)', opacity: 1}}
+         leave={{transform: 'translate3d(0,0,0)', opacity: 0}}
          delay={delay4}
          opacity={0.7}
          px={2}
@@ -122,9 +133,10 @@ const HomePage = () => {
          fontSz={fontSz}
        />
 
-       <AniLabel
-         right
-         duration={duration1}
+       <AniBlock
+         from={{position: 'relative', transform: 'translate3d(100%,0,0)', width: '100%', opacity: 0}}
+         enter={{transform: 'translate3d(0,0,0)', opacity: 1}}
+         leave={{transform: 'translate3d(100%,0,0)', opacity: 0}}
          delay={delay5}
          opacity={0.7}
          px={2}
@@ -140,9 +152,10 @@ const HomePage = () => {
          fontSz={fontSz}
        />
 
-       <AniLabel
-         left
-         duration={duration1}
+       <AniBlock
+         from={{position: 'relative', transform: 'translate3d(-100%,0,0)', width: '100%', opacity: 0}}
+         enter={{transform: 'translate3d(0,0,0)', opacity: 1}}
+         leave={{transform: 'translate3d(-100%,0,0)', opacity: 0}}
          delay={delay6}
          opacity={0.7}
          px={2}
@@ -158,9 +171,10 @@ const HomePage = () => {
          fontSz={fontSz}
        />
 
-       <AniLabel
-         right
-         duration={duration1}
+       <AniBlock
+         from={{position: 'relative', transform: 'translate3d(100%,0,0)', width: '100%', opacity: 0}}
+         enter={{transform: 'translate3d(0,0,0)', opacity: 1}}
+         leave={{transform: 'translate3d(100%,0,0)', opacity: 0}}
          delay={delay7}
          opacity={0.7}
          px={2}

@@ -7,3 +7,4 @@ export * from "./Tier";
 export * from "./TierPricing";
 export * from "./AnimatedSwitch";
 export * from "./AnimatedRoute";
+export * from "./DLabel";
