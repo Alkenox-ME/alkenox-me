@@ -1,5 +1,5 @@
 // Core
-import React, { PureComponent } from "react";
+import React from "react";
 import loadable from "@loadable/component";
 
 // Styling

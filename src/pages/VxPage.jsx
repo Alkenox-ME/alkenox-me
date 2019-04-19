@@ -2,11 +2,9 @@ import React from "react";
 import { Flex, Box, Heading, Text, Banner } from "../components/n0x.Bass";
 import ReactPlayer from "react-player";
 import { Bounce } from "react-reveal";
-import { Image, Flex as Row } from "rebass";
 import { n0x, base, image, data, brand } from "../components/n0x.vars";
-import Layout from "../components/Layout";
+import { Layout } from "../components/n0x.elements";
 import VxPricing from "../components/VxPricing";
-import styled from "styled-components";
 
 const VideoPrices =
   "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/BasicVideoProdPkgs.png?raw=true";

@@ -5,27 +5,18 @@ import React from 'react';
 import { n0x, base, image, data } from '../components/n0x.vars'
 import { Image } from 'rebass';
 import { Box, Heading, Text } from '../components/n0x.Bass';
-import styled, {keyframes} from 'styled-components'
-import posed from 'react-pose'
 
 // Components
 import { Layout } from '../components/n0x.elements';
-import { Page, slideInRight, slideOutRight, slideInLeft, slideOutLeft } from '../components/n0x.Animate'
+import { Container } from '../components/n0x.Animate'
 
 const AboutPage = () => {
-
-      const Container = posed.div({
-        enter: { staggerChildren: 80 },
-        exit: { staggerChildren: 80, staggerDirection: -1 }
-      });
 
   return (
     <Container>
       <Layout
         pgTitle='alkenox-me: about us'
         tint={n0x.tint.white}
-        enter={{ staggerChildren: 80 }}
-        leave={{ staggerChildren: 80, staggerDirection: -1 }}
       >
         <Heading textAlign="center" color="inherit" fontSize={[base.font.size.t3]}>
           About Us

@@ -1,10 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import styled from "styled-components";
+import { Link } from "@reach/router";
 import { Flex, Text, Heading, Banner } from "../components/n0x.Bass";
 import { Image } from "rebass";
 import { n0x, base, image, data } from "../components/n0x.vars";
-import Layout from "../components/Layout";
+import { Layout } from "../components/n0x.elements";
 
 const ArchImage =
   "https://github.com/alkenox/alkenox-me-images/blob/master/architect-architecture-black-and-white-1537008.jpg?raw=true";

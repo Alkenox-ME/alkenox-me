@@ -14,9 +14,6 @@ const ContactPage = () => {
   return (
     <Layout
       pgTitle='alkenox-me: contact us'
-      image={`${image.bg.logo}`}
-      copyYear={`${data.footer.year}`}
-      copyCompany={`${data.footer.company}`}
       tint={n0x.tint.white}
     >
       <Heading mt={4} p={5} width={1} fontSize={[5, 5, 5, 6]} textAlign="center">

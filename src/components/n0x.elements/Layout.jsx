@@ -1,6 +1,5 @@
-import React, { PureComponent } from "react";
+import React from "react";
 import styled from "styled-components";
-import posed from 'react-pose'
 import { Flex } from "../n0x.Bass";
 import { SeoPage } from './SeoPage'
 
