@@ -37,17 +37,17 @@ const App = () => {
         copyCompany={data.name.company.full}
       >
         <PosedRouter>
-          <HomePage exact path={"/"} key={'home'}/>
-          <AboutPage path={"about-us"} key={'about'}/>
-          <ContactPage path={"contact-us"} key={'contact'}/>
-          <SoundPage path={"sound-design"} key={'sound'}/>
-          <MxPage path={"music-production"} key={'music'}/>
-          <WebPage path={"web-design"} key={'web'}/>
-          <WebPkgs path={"web-design/packages"} key={'webPkgs'}/>
-          <VxPage path={"video-production"} key={'video'}/>
-          <GraphicPage path={"graphic-design"} key={'graphic'}/>
-          <PhotoPage path={"photography"} key={'photo'}/>
-          <RxPage path={"digital-media-repair"} key={'repair'}/>
+          <HomePage exact path={"/"} key={'home'} />
+          <AboutPage path={"about-us"} key={'about'} />
+          <ContactPage path={"contact-us"} key={'contact'} />
+          <SoundPage path={"sound-design"} key={'sound'} />
+          <MxPage path={"music-production"} key={'music'} />
+          <WebPage path={"web-design"} key={'web'} />
+          <WebPkgs path={"web-design/packages"} key={'webPkgs'} />
+          <VxPage path={"video-production"} key={'video'} />
+          <GraphicPage path={"graphic-design"} key={'graphic'} />
+          <PhotoPage path={"photography"} key={'photo'} />
+          <RxPage path={"digital-media-repair"} key={'repair'} />
         </PosedRouter>
       </MainLayout>
     );
