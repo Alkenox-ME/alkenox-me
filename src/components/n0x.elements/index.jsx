@@ -8,3 +8,5 @@ export * from "./TierPricing";
 export * from "./AnimatedSwitch";
 export * from "./AnimatedRoute";
 export * from "./DLabel";
+export * from "./Layout";
+export * from "./MainLayout";

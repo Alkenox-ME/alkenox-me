@@ -1,17 +1,13 @@
 // Core
-import React from "react";
-import { Switch, Route, Redirect } from "react-router-dom";
+import React, { PureComponent } from "react";
 import loadable from "@loadable/component";
 
 // Styling
-import { Flex } from "./components/n0x.Bass";
-import styled, { keyframes } from "styled-components";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
-import N0xTheme from "./styles/n0x.theme";
 
 // Components
-import { SeoGlobal, AnimatedSwitch, AnimatedRoute } from "./components/n0x.elements";
-import { PageContainer } from './components/n0x.Animate'
+import { MainLayout } from "./components/n0x.elements";
+import { n0x, data, image } from './components/n0x.vars'
+import { PosedRouter } from './components/n0x.Animate'
 
 // Pages
 import HomePage from "./pages/HomePage";
@@ -31,46 +27,30 @@ const WebPkgs = loadable(() => import("./pages/WebPkgs"));
 
 // The Core App
 const App = () => {
-  return (
-    <N0xTheme>
-      <Flex flexWrap='wrap'>
-        <SeoGlobal
-          defTitle="Alkenox Media & Entertainment, LLC."
-          siteDesc="Welcome Home"
-        />
-        <Route
-          render={({ location }) => {
-            return (
-              <PageContainer>
-                <TransitionGroup component={null}>
-                  <CSSTransition
-                    timeout={300}
-                    classNames="page"
-                    key={location.key}
-                  >
-                    <Switch location={location}>
-                      <Route exact path="/" component={HomePage} />
-                      <Route exact path="/about-us" component={AboutPage} />
-                      <Route exact path="/contact-us" component={ContactPage} />
-                      <Route exact path="/sound-design" component={SoundPage} />
-                      <Route exact path="/music-production" component={MxPage} />
-                      <Route exact path="/web-design" component={WebPage} />
-                      <Route exact path="/video-production" component={VxPage} />
-                      <Route exact path="/graphic-design" component={GraphicPage} />
-                      <Route exact path="/photography" component={PhotoPage} />
-                      <Route exact path="/digital-media-repair" component={RxPage} />
-                      <Route exact path="/web-packages" component={WebPkgs} />
-                      <Redirect to="/" />
-                    </Switch>
-                  </CSSTransition>
-                </TransitionGroup>
-              </PageContainer>
-            );
-          }}
-        />
-      </Flex>
-    </N0xTheme>
-  );
-};
+    return (
+      <MainLayout
+        defTitle={data.name.company.full}
+        siteDesc={data.meta.desc.site}
+        image={image.bg.logo}
+        tint={n0x.tint.black[0]}
+        copyYear={data.footer.year}
+        copyCompany={data.name.company.full}
+      >
+        <PosedRouter>
+          <HomePage exact path={"/"} key={'home'}/>
+          <AboutPage path={"about-us"} key={'about'}/>
+          <ContactPage path={"contact-us"} key={'contact'}/>
+          <SoundPage path={"sound-design"} key={'sound'}/>
+          <MxPage path={"music-production"} key={'music'}/>
+          <WebPage path={"web-design"} key={'web'}/>
+          <WebPkgs path={"web-design/packages"} key={'webPkgs'}/>
+          <VxPage path={"video-production"} key={'video'}/>
+          <GraphicPage path={"graphic-design"} key={'graphic'}/>
+          <PhotoPage path={"photography"} key={'photo'}/>
+          <RxPage path={"digital-media-repair"} key={'repair'}/>
+        </PosedRouter>
+      </MainLayout>
+    );
+  };
 
 export default App;

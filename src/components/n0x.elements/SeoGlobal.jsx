@@ -2,8 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
 
-const SeoGlobal = props => {
-  const { siteDesc, defTitle } = props;
+const SeoGlobal = ({siteDesc, defTitle, props}) => {
   return (
     <Helmet defaultTitle={defTitle}>
       {/* Set site wide header info here and specific overrides in pages */}

@@ -6,30 +6,26 @@ import { n0x, base, image, data } from '../components/n0x.vars'
 import { Image } from 'rebass';
 import { Box, Heading, Text } from '../components/n0x.Bass';
 import styled, {keyframes} from 'styled-components'
+import posed from 'react-pose'
 
 // Components
-import Layout from '../components/Layout';
+import { Layout } from '../components/n0x.elements';
 import { Page, slideInRight, slideOutRight, slideInLeft, slideOutLeft } from '../components/n0x.Animate'
-
-  const AniPage = styled(Page)`
-    &.page-enter {
-      animation: ${slideInRight} 0.2s forwards;
-    }
-    &.page-exit {
-      animation: ${slideOutRight} 0.2s forwards;
-    }
-  `;
 
 const AboutPage = () => {
 
+      const Container = posed.div({
+        enter: { staggerChildren: 80 },
+        exit: { staggerChildren: 80, staggerDirection: -1 }
+      });
+
   return (
-    <AniPage>
+    <Container>
       <Layout
         pgTitle='alkenox-me: about us'
-        image={`${image.bg.logo}`}
-        copyYear={`${data.footer.year}`}
-        copyCompany={`${data.footer.company}`}
         tint={n0x.tint.white}
+        enter={{ staggerChildren: 80 }}
+        leave={{ staggerChildren: 80, staggerDirection: -1 }}
       >
         <Heading textAlign="center" color="inherit" fontSize={[base.font.size.t3]}>
           About Us
@@ -65,7 +61,7 @@ const AboutPage = () => {
           give us a call for a free consultation.
         </Text>
       </Layout>
-    </AniPage>
+    </Container>
   );
 };
 

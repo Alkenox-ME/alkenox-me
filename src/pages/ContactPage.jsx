@@ -6,7 +6,7 @@ import { n0x, image, data } from '../components/n0x.vars'
 import { Heading } from '../components/n0x.Bass';
 
 // Components
-import Layout from '../components/Layout';
+import { Layout } from '../components/n0x.elements';
 import ContactForm from '../components/ContactForm';
 
 // Page

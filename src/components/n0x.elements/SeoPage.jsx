@@ -2,8 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
 
-const SeoPage = props => {
-  const { pgTitle, pgDesc } = props;
+const SeoPage = ({pgTitle, pgDesc,props}) => {
   return (
     <Helmet>
       <title>{pgTitle}</title>

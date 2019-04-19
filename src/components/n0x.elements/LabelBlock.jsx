@@ -1,7 +1,6 @@
 // Core
 import React from 'react';
-import PropTypes from 'prop-types';
-import { Link as Href } from 'react-router-dom';
+import { Link as Href } from '@reach/router';
 
 // Styling
 import styled from 'styled-components';

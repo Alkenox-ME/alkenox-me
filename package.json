@@ -25,6 +25,7 @@
     "@cra-express/core": "4",
     "@loadable/component": "^5.7.0",
     "@loadable/server": "^5.7.0",
+    "@reach/router": "^1.2.1",
     "@rebass/components": "^4.0.0-1",
     "@rebass/grid": "^6.0.0",
     "animejs": "^3.0.1",
