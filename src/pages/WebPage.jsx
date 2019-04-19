@@ -1,9 +1,28 @@
 import React from "react";
 import { Link } from "@reach/router";
-import { Flex, Text, Heading, Banner } from "../components/n0x.Bass";
-import { Image } from "rebass";
-import { n0x, base, image, data } from "../components/n0x.vars";
+import styled from "styled-components";
+import { Flex, Text, Banner, Box } from "../components/n0x.Bass";
+import { Image, Heading } from "rebass";
+import {
+  n0x,
+  base,
+  image,
+  data,
+  brand,
+  deskH1,
+  deskH2,
+  deskH3,
+  deskH4,
+  mobileH1,
+  mobileH2,
+  deskT1,
+  deskT2,
+  mobileT1,
+  mobileT2
+} from "../components/n0x.vars";
 import { Layout } from "../components/n0x.elements";
+import WebPricing from "../components/WebPricing";
+import EveryWebPkg from "../components/EveryWebPkg";
 
 const ArchImage =
   "https://github.com/alkenox/alkenox-me-images/blob/master/architect-architecture-black-and-white-1537008.jpg?raw=true";
@@ -12,7 +31,7 @@ const ProtoImage =
   "https://github.com/alkenox/alkenox-me-images/blob/master/black-black-and-white-close-up-1496139.jpg?raw=true";
 
 const CodeImage =
-  "https://github.com/alkenox/alkenox-me-images/blob/master/computer-technology-number-web-internet-line-1295472-pxhere.com.jpg?raw=true";
+  "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/ai-artificial-intelligence-code-34676.jpg?raw=true";
 
 const MngImage =
   "https://github.com/alkenox/alkenox-me-images/blob/master/adult-business-data-1181316.jpg?raw=true";
@@ -32,235 +51,297 @@ const WebPage = () => {
       copyCompany={`${data.footer.company}`}
       tint={n0x.tint.white}
     >
-      <Flex p={5}>
-        <Heading
-          className="headingSz"
-          width={[1]}
-          mx="auto"
-          mt={5}
-          px={3}
-          py={5}
-          textAlign="center"
-          fontSize={base.font.size.t1}
-        >
-          Full Stack Web Development
-        </Heading>
+      <Heading
+        width={[1]}
+        mt={5}
+        py={5}
+        textAlign="center"
+        fontSize={[mobileH1, null, deskH1, null]}
+        color={[brand.color.dkblue]}
+      >
+        Full Stack Web Development
+      </Heading>
 
-        <Banner src={ArchImage} width={[1 / 2]} pl={5} height="100%" />
+      <Banner src={ArchImage} width={[1]} position="top" crop="70vh" />
 
-        <Text width={[1, 1, 3 / 4, 1 / 2]} p={5} fontSize={[2, 3, 4, 5]}>
-          We build your website from the ground up, from frontend to backend,
-          including databases. Everything is built based on your company's
-          needs. Therefore, getting to know your business is a must. This way we
-          can get a good understanding of your brand and how it should be
-          perceived by your visitors.
-        </Text>
+      <Text
+        width={[1]}
+        px={4}
+        my={5}
+        fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
+        color={[brand.color.dkblue]}
+      >
+        Why should you have your website built by a professional instead of
+        building it yourself at a DIY site, like Wix? There is nothing saying
+        that you can't. You have to decide for yourself if your business is
+        worth the investment and if it needs more than a DYI site can provide.
+        Can it give you everything you want and need for your business? For
+        example, if your business is expected to grow, you need a site that is
+        easily scalable. Of course, you also want your site to stand out, and
+        DIY sites tend to be limited in what you can choose from in styling your
+        website. Your brand is specific and you want people to recognize it
+        right away. But your brand is not just your logo. It has a personality,
+        a mission, and it wants to reach out and interact with your potential
+        clients.
+      </Text>
 
-        <Heading
-          className="headingSz"
-          width={[1]}
-          mx="auto"
-          mt={5}
-          px={3}
-          py={5}
-          fontSize={[1, 1, 2, 4]}
-          textAlign="center"
-        >
-          Building The Prototype
-        </Heading>
+      <Text
+        width={[1]}
+        my={3}
+        px={4}
+        fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
+        color={[brand.color.dkblue]}
+      >
+        We build your website from the ground up based on your company's needs.
+        Therefore, getting to know your business is a must in order to get a
+        good understanding of your brand and how it should be portrayed. As full
+        stack developers we are familiar with every part of the process, we work
+        in smaller, well-rounded teams, and the need for lesser manpower means
+        we can put your money to better use in other important areas.
+      </Text>
 
-        <Banner
-          src={ProtoImage}
-          alt="image2"
-          width={[1]}
-          height="100%"
-          px={2}
-          py="auto"
-          mx="auto"
-        />
+      <Heading
+        width={[1]}
+        mt={5}
+        px={4}
+        py={5}
+        fontSize={[mobileH2, null, deskH2, null]}
+        textAlign="center"
+        color={[brand.color.dkblue]}
+      >
+        Building The Prototype
+      </Heading>
 
-        <Text
-          width={[1]}
-          px={5}
-          py={5}
-          my={3}
-          mx="auto"
-          fontSize={[2, 3, 4, 5]}
-        >
-          The first step when beginning any project is discussing your wants and
-          needs with you. Based on what we gather about your company or brand,
-          your answers to our questions, and intel we gather about your
-          competition, we will put together a design concept to help you stand
-          out from the crowd, beginning with a wireframe to help show you what
-          the flow of your new website will look like and where your major
-          pieces (important images, videos, and product information) will
-          appear. You will work with one or more of our artists/designers to
-          develop the overall look, style, and functionality of your site.
-        </Text>
+      <Text
+        width={[1]}
+        px={5}
+        py={3}
+        mx="auto"
+        fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
+        color={[brand.color.dkblue]}
+      >
+        The first step, when beginning any project, is discussing your wants and
+        needs with you. Based on what we learn about your company and brand,
+        your answers to our questions, and the intel we gather about your
+        competition, we will put together a design concept to help you stand out
+        from the crowd. We begin with a defined logo, or a logo re-design, if
+        that is what your brand needs. Then a wireframe to help show you what
+        the flow of your new website will look like and where your major pieces
+        (important images, videos, and product information) will appear. You
+        will work with one or more of our artists/designers to develop the
+        overall look, style, and functionality of your site.
+      </Text>
 
-        <Heading
-          className="headingSz"
-          width={[1, 1, 1, 2 / 3]}
-          mx="auto"
-          mt={5}
-          px={3}
-          py={5}
-          fontSize={[1, 1, 2, 4]}
-          textAlign="center"
-        >
-          Programming
-        </Heading>
+      <Heading
+        width={[1]}
+        mx={5}
+        mt={5}
+        px={3}
+        py={5}
+        fontSize={[mobileH2, null, deskH2, null]}
+        textAlign="center"
+        color={[brand.color.dkblue]}
+      >
+        Crafting Your User Interface
+      </Heading>
 
+      <Box width={1}>
         <Text
           width={[1, 1, 3 / 4, 1 / 2]}
-          px={2}
           my="auto"
-          mx="auto"
-          fontSize={[2, 3, 4, 5]}
-        >
-          Once we have a prototype to build from, we can hand it over to our
-          programming department where your custom design will become functional
-          code.
-        </Text>
-
-        <Image
-          alt="image3"
-          src={CodeImage}
-          width={[1, 1, 3 / 4, 1 / 2]}
-          height="100%"
-          px={2}
-          py="auto"
-          mx="auto"
-          pb={5}
-        />
-
-        <Heading
-          className="headingSz"
-          width={[1, 1, 1, 2 / 3]}
-          mx="auto"
-          my={5}
-          p={5}
-          fontSize={[1, 1, 2, 4]}
-          textAlign="center"
-        >
-          Website Management & SEO
-        </Heading>
-
-        <Banner
-          src={MngImage}
-          alt="image4"
-          width={[1, 1, 3 / 4, 1 / 2]}
-          px={2}
-          py="auto"
-          mx="auto"
-        />
-
-        <Text
-          width={[1, 1, 3 / 4, 1 / 2]}
-          px={2}
-          my="auto"
-          mx="auto"
-          fontSize={[2, 3, 4, 5]}
-        >
-          After your design is up and running, we will manage your site for a
-          minimum of six (6) months. This includes, at minimum, all of your
-          site's basic needs. After the initial six month term, you may take
-          your site and data to your own hosting service or in-house management
-          team.
-        </Text>
-
-        <Text width={[1]} p={5} fontSize={[2, 3, 4, 5]}>
-          After the initial six (6) month term you may take your site and data
-          to your own hosting service or in-house management team.
-        </Text>
-
-        <Heading
-          className="headingSz"
-          width={[1, 1, 1, 2 / 3]}
-          mx="auto"
-          mt={5}
-          px={3}
-          py={5}
-          fontSize={[1, 1, 2, 4]}
-          textAlign="center"
-        >
-          Defining Your Users' Experience
-        </Heading>
-
-        <Image
-          alt="image5"
-          src={UxImage}
-          width={[1, 1, 3 / 4, 1 / 2]}
-          height="50%"
-          px={2}
-          py={5}
-          mx="auto"
-        />
-
-        <Text
-          width={[1, 1, 3 / 4, 1 / 2]}
-          px={2}
-          my="auto"
-          mx="auto"
-          fontSize={[2, 3, 4, 5]}
-        >
-          We collect data about your target user base and their preferences
-          based on your projects goal. This data will help us shape a meaningful
-          user interface that will allow for a more intriguing overall
-          experience.
-        </Text>
-
-        <Heading
-          className="headingSz"
-          width={[1, 1, 1, 2 / 3]}
-          mx="auto"
-          mt={5}
-          px={3}
-          py={5}
-          fontSize={[1, 1, 2, 4]}
-          textAlign="center"
-        >
-          Crafting Your User Interface
-        </Heading>
-
-        <Text
-          width={[1, 1, 3 / 4, 1 / 2]}
-          px={2}
-          my="auto"
-          mx="auto"
-          fontSize={[2, 3, 4, 5]}
+          mx={3}
+          fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
+          color={[brand.color.dkblue]}
         >
           Your user interface is the key to your user's heart. It is your brands
           first impression and a unique design can help your brand stand out
           from the crowd. What we strive to do for you here, is put the art back
           into website design so we can break the cycle of "clinical feeling
-          websites", while still helping you to convey your brand's character,
-          mission, and .
+          websites", while still helping you to convey your brand's personality
+          and mission. You want your site to be eye-catching, interactive, and
+          entertaining so that your visitors will want to come back again and
+          again. We want to build that for you.
         </Text>
 
         <Image
           src={UiImage}
-          alt="image6"
+          alt="Ui Image"
           width={[1, 1, 3 / 4, 1 / 2]}
-          height="50%"
-          px={2}
           py="auto"
           mx="auto"
           mb={5}
+          color={[brand.color.dkblue]}
         />
+      </Box>
 
-        <Text
-          width={1}
-          mx="auto"
-          textAlign="center"
-          fontSize={5}
-          my={5}
-          color="red"
-        >
-          <Link to="/contact-us">Contact Us</Link>
-          Today for a FREE Quote!
-        </Text>
-      </Flex>
+      <Heading
+        width={[1]}
+        mx={"auto"}
+        mt={5}
+        px={3}
+        py={5}
+        fontSize={[mobileH2, null, deskH2, null]}
+        textAlign="center"
+        color={[brand.color.dkblue]}
+      >
+        Programming
+      </Heading>
+
+      <Text
+        width={[1]}
+        px={5}
+        my={4}
+        mx="auto"
+        fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
+        color={[brand.color.dkblue]}
+      >
+        The reasons we moved away from traditional website building frameworks
+        and decided to go with full-on programming using JavaScript frameworks
+        include:
+      </Text>
+
+      <Box
+        width={2 / 3}
+        fontSize={[brand.font.size.text.list]}
+        mx="auto"
+        mt={3}
+        color={[brand.color.dkblue]}
+      >
+        <li>Full Control over the design.</li>
+        <br />
+        <li>Easily scalable with your business, right out of the box.</li>
+        <br />
+        <li>
+          JavaScript is, by nature, interactive and we wanted to give sites a
+          modern and fun look and feel to their user-interface.
+        </li>
+        <br />
+        <li>
+          These frameworks make the online forms/data input areas on your
+          website more secure.
+        </li>
+      </Box>
+
+      <Banner
+        alt="image3"
+        src={CodeImage}
+        width={[1, 1, 3 / 4, 1 / 2]}
+        crop="60vh"
+        px={2}
+        py={5}
+        alignSelf="center"
+        pb={5}
+        color={[brand.color.dkblue]}
+      />
+
+      <Text
+        width={[1]}
+        px={5}
+        pb={5}
+        mx="auto"
+        fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
+        color={[brand.color.dkblue]}
+      >
+        Here at Alkenox, we prefer to program your site from the ground up. This
+        way we have total control and lot of freedom to get as creative as we
+        want. Actual programming may take longer, but the over-all quality will
+        be much better than what you will get from the traditional web building
+        frameworks. Even if you move the management of your site to someone
+        else, so long as they are familiar with the frameworks we used to build
+        your site, they will have no problem with making changes.
+      </Text>
+
+      <Heading
+        width={[1, 1, 1, 2 / 3]}
+        mx="auto"
+        mt={5}
+        px={3}
+        py={5}
+        fontSize={[mobileH2, null, deskH2, null]}
+        textAlign="center"
+        color={[brand.color.dkblue]}
+      >
+        Defining Your Users' Experience
+      </Heading>
+
+      <Banner
+        alt="image5"
+        src={UxImage}
+        width={[1, null, 1 / 2, null]}
+        crop="50vh"
+        px={5}
+        py={5}
+        mx="auto"
+        color={[brand.color.dkblue]}
+      />
+
+      <Text
+        width={[1, null, 1 / 2, null]}
+        px={5}
+        my="auto"
+        mx="auto"
+        fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
+        color={[brand.color.dkblue]}
+      >
+        We collect data about your target user base, and their preferences,
+        based on your projects goal. This data will help us shape a meaningful
+        user interface that will allow for a more intriguing overall experience.
+      </Text>
+
+      <Heading
+        width={[1]}
+        mx="auto"
+        mt={5}
+        px={3}
+        py={5}
+        fontSize={[mobileH2, null, deskH2, null]}
+        textAlign="center"
+        color={[brand.color.dkblue]}
+      >
+        SEO & Website Management
+      </Heading>
+
+      <Text
+        width={[1]}
+        px={5}
+        my="auto"
+        fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
+        color={[brand.color.dkblue]}
+      >
+        The main reason you build a website for your brand or business is, in
+        part, to make it more official. Having a digital footprint on the web
+        that is secure and professional is almost mandatory these days to gain
+        the trust of your customers. If you don't have a website, people tend to
+        question your business' validity. SEO, or Search Engine Optimization, is
+        a necessary part of every website's build. Anyone in the web building
+        community has to know how to make your website show up in at least the
+        most popular search engines. If SEO is not a part of what they are able
+        to offer you, it might be time to look elsewhere. The optimization
+        begins in the verbage, and the programming of your site, so that
+        keywords are picked up by the search engines. Giving you more visibility
+        is the whole reason why a website is born.
+      </Text>
+
+      <Text
+        width={[1]}
+        px={5}
+        my={5}
+        fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
+        color={[brand.color.dkblue]}
+      >
+        After your design is up and running, we will manage your site for a
+        minimum of six (6) months. This includes, at minimum, all of your site's
+        basic needs by running common maintenance protocols, such as regular
+        site backups, ensuring any plugins are up-to-date, running a database
+        sweep, and doing routine website tests to check your site's performance,
+        loading speed, and traffic numbers. After the initial six month term,
+        you may take your site and data to your own hosting service or in-house
+        management team, if you prefer.
+      </Text>
+
+      <EveryWebPkg />
+      <br />
+      <WebPricing />
     </Layout>
   );
 };

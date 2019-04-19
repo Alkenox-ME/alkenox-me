@@ -1,9 +1,7 @@
 import React from "react";
+import { Flex, Box, Heading, Text, Banner } from "../components/n0x.Bass";
 import ReactPlayer from "react-player";
 import { Bounce } from "react-reveal";
-import styled from "styled-components";
-import { Flex, Box, Text, Banner } from "../components/n0x.Bass";
-import { Image, Flex as Row, Heading } from "rebass";
 import { n0x, base, image, data, brand } from "../components/n0x.vars";
 import { Layout } from "../components/n0x.elements";
 import VxPricing from "../components/VxPricing";
@@ -28,31 +26,19 @@ const VxPage = () => {
       copyCompany={`${data.footer.company}`}
       tint={n0x.tint.white}
     >
-      <Flex>
-        <Heading
-          width={1}
-          mt={5}
-          fontSize={[brand.font.size.heading.main]}
-          textAlign="center"
-          color={[brand.color.dkblue]}
-        >
+      <Flex p={[5]}>
+        <Heading width={1} mt={5} fontSize={[brand.font.size.heading.main]}>
           Video Production
         </Heading>
 
-        <Text
-          fontSize={brand.font.size.heading.sub1}
-          fontWeight="bold"
-          my={4}
-          color={[brand.color.dkblue]}
-        >
+        <Heading fontSize={brand.font.size.heading.sub1} m={4}>
           Web Video
-        </Text>
+        </Heading>
 
         <Text
+          width={[1]}
           fontSize={[brand.font.size.text.body]}
           textAlign="left"
-          mx={5}
-          color={[brand.color.dkblue]}
         >
           Whenever you surf the internet, you find yourself faced with at least
           one web video on almost every site you visit, that were created to
@@ -66,10 +52,8 @@ const VxPage = () => {
         <Text
           width={[1]}
           fontSize={[brand.font.size.text.body]}
-          mx={5}
           py={4}
           textAlign="left"
-          color={[brand.color.dkblue]}
         >
           Whether you need a short internet commercial for your business, have a
           story to tell, or have video and images that you need turned into
@@ -94,7 +78,6 @@ const VxPage = () => {
           py={3}
           textAlign="center"
           fontSize={[brand.font.size.text.body]}
-          color={[brand.color.dkblue]}
         >
           Movie Trailer for the Indie Feature Film "Mosaic" with all original
           scoring and 3D Motion Graphics.
@@ -102,21 +85,18 @@ const VxPage = () => {
 
         <Heading
           width={1}
-          fontSize={[brand.font.size.heading.sub1]}
           textAlign="center"
           mt={5}
-          pt={5}
-          color={[brand.color.dkblue]}
+          fontSize={[brand.font.size.text.body]}
         >
           Our Process
         </Heading>
 
         <Heading
           width={1}
-          fontSize={[brand.font.size.heading.sub2]}
-          py={5}
+          mx="auto"
+          fontSize={[brand.font.size.text.body]}
           textAlign="center"
-          color={[brand.color.dkblue]}
         >
           Pre-Production
         </Heading>
@@ -127,7 +107,6 @@ const VxPage = () => {
               crop={"40vh"}
               width={1}
               px={4}
-              my={5}
               src={Teamwork}
               alt="Teamwork"
             />
@@ -139,7 +118,6 @@ const VxPage = () => {
           my="auto"
           pt={4}
           fontSize={[brand.font.size.text.body]}
-          color={[brand.color.dkblue]}
         >
           <Bounce right>
             We come together and figure out what it is you need, get you a quote
@@ -155,19 +133,17 @@ const VxPage = () => {
           width={1}
           mx="auto"
           py={5}
-          fontSize={[brand.font.size.heading.sub2]}
+          fontSize={[brand.font.size.heading.sub1]}
           textAlign="center"
-          color={[brand.color.dkblue]}
         >
           Production
         </Heading>
 
         <Text
           width={[1, null, 1 / 2, null]}
-          my="auto"
-          p={5}
+          px={2}
+          pt={4}
           fontSize={[brand.font.size.text.body]}
-          color={[brand.color.dkblue]}
         >
           <Bounce>
             We embark upon what we have planned out for our shooting schedule.
@@ -185,7 +161,6 @@ const VxPage = () => {
               crop={"40vh"}
               width={1}
               px={4}
-              my={5}
               src={Production}
               alt="Production"
             />
@@ -195,21 +170,18 @@ const VxPage = () => {
         <Heading
           width={1}
           mx="auto"
-          my={5}
-          fontSize={[brand.font.size.heading.sub2]}
+          fontSize={[brand.font.size.text.body]}
           textAlign="center"
-          color={[brand.color.dkblue]}
         >
           Post-Production
         </Heading>
 
-        <Box width={1 / 2} pb={5}>
+        <Box width={1 / 2}>
           <Bounce left duration={1300} delay={100}>
             <Banner
               crop={"40vh"}
               width={1}
               px={4}
-              my={5}
               src={Editing}
               alt="Editing"
             />
@@ -223,7 +195,6 @@ const VxPage = () => {
           px={2}
           pt={4}
           fontSize={[brand.font.size.text.body]}
-          color={[brand.color.dkblue]}
         >
           <Bounce right>
             Here is where we log all the footage and photographs if there are
@@ -242,19 +213,17 @@ const VxPage = () => {
           width={1}
           textAlign="center"
           mx="auto"
-          mt={5}
-          py={5}
-          fontSize={[brand.font.size.heading.sub2]}
-          color={[brand.color.dkblue]}
+          pt={5}
+          fontSize={[brand.font.size.text.body]}
+          color="black"
         >
           Types of Videos
         </Heading>
         <Box
           width={[1 / 2]}
-          fontSize={[brand.font.size.text.list]}
+          fontSize={[brand.font.size.text.body]}
           mx={5}
-          py={3}
-          color={[brand.color.dkblue]}
+          color="black"
         >
           <ul>
             <li> Branded Video - Under 60 seconds and Builds Awareness</li>
@@ -271,7 +240,7 @@ const VxPage = () => {
             <br />
             <li>
               Explainer Video - 2 minutes or less and designed to explain your
-              company, product, service, or subject. (whiteboard animation, )
+              company, product, service, or subject
             </li>
             <br />
             <li>
@@ -282,11 +251,6 @@ const VxPage = () => {
             <li>
               Movie Trailer - 2 minutes 30 seconds or less (average full length
               trailer) and drums up buzz and excitement for your movie
-            </li>
-            <br />
-            <li>
-              Whiteboard Animation - 3 mins or less used as explainer videos and
-              social media advertisements.
             </li>
           </ul>
         </Box>

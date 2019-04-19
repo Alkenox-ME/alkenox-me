@@ -1,19 +1,37 @@
 import React from "react";
-import { n0x, base, image, data, brand } from "./n0x.vars";
+import {
+  n0x,
+  base,
+  image,
+  data,
+  brand,
+  deskH1,
+  deskH2,
+  deskH3,
+  deskH4,
+  mobileH1,
+  mobileH2,
+  deskT1,
+  deskT2,
+  mobileT1,
+  mobileT2,
+  deskFoot,
+  mobileFoot
+} from "./n0x.vars";
 import { TierPricing } from "./n0x.elements";
 
-const EveryWebPkg = () => {
+const WebPricing = () => {
   return (
     <TierPricing
-      title="Video Production Tier Prices"
-      titleSz={brand.font.size.heading.sub1}
+      title="Included In Every Web Package"
+      titleSz={[mobileH2, null, deskH2, null]}
       titleColor={[brand.color.offwhite]}
-      bgimage={image.bg.vxProd.pricing}
-      tint={n0x.tint.black[1]}
-      title1="The Teaser"
-      price1="$1,200"
-      length1="(Up To 15 Sec.)"
-      desc1="Short and Informative Teasers or Previews for Facebook or Instagram."
+      bgimage={image.bg.everyWeb.pricing}
+      tint={n0x.tint.black[0]}
+      title1="Domain Name (renews yearly)"
+      price1="Web Hosting 1st Year"
+      length1="Site Back-Up and Security (Included with Hosting)"
+      desc1=""
       width1={[1, null, 1 / 4, null]}
       bg1={null}
       align1="center"
@@ -28,7 +46,7 @@ const EveryWebPkg = () => {
       bpt1={null}
       bpb1={null}
       textAlign1="center"
-      titleSz1={brand.font.size.text.footer}
+      titleSz1={brand.font.size.text.price}
       titleWeight1="bold"
       titleColor1={brand.color.offwhite}
       tm1={null}
@@ -50,7 +68,7 @@ const EveryWebPkg = () => {
       ppy1={null}
       ppt1={null}
       ppb1={null}
-      lengthSize1={brand.font.size.heading.tags}
+      lengthSize1={brand.font.size.text.price}
       lengthWeight1="bold"
       lengthColor1={brand.color.offwhite}
       lm1={null}
@@ -61,8 +79,8 @@ const EveryWebPkg = () => {
       lpy1={null}
       lpt1={null}
       lpb1={null}
-      descSize1={brand.font.size.heading.tags}
-      descWeight1="bold"
+      descSize1={brand.font.size.text.price}
+      descWeight1={null}
       descColor1={brand.color.offwhite}
       dm1={null}
       dmx1={null}
@@ -72,10 +90,10 @@ const EveryWebPkg = () => {
       dpy1={null}
       dpt1={null}
       dpb1={null}
-      title2="Social Media"
-      price2="$3,500+"
-      length2="(Up To 90 Sec.)"
-      desc2="Entertaining or Informative Videos for all Social Media Platforms. (Note: Instagram limits to 60 seconds)"
+      title2="Appropriate SSL Certificate"
+      price2="Unique In-House Design (Gatsby/React/JS)"
+      length2="Newsletter Sign-Up (Database)"
+      desc2=""
       width2={[1, null, 1 / 4, null]}
       bg2={null}
       align2="center"
@@ -90,7 +108,7 @@ const EveryWebPkg = () => {
       bpt2={null}
       bpb2={null}
       textAlign2="center"
-      titleSz2={brand.font.size.text.footer}
+      titleSz2={brand.font.size.text.price}
       titleWeight2="bold"
       titleColor2={brand.color.offwhite}
       tm2={null}
@@ -112,7 +130,7 @@ const EveryWebPkg = () => {
       ppy2={null}
       ppt2={null}
       ppb2={null}
-      lengthSize2={brand.font.size.heading.tags}
+      lengthSize2={brand.font.size.text.price}
       lengthWeight2="bold"
       lengthColor2={brand.color.offwhite}
       lm2={null}
@@ -124,7 +142,7 @@ const EveryWebPkg = () => {
       lpt2={null}
       lpb2={null}
       descSize2={brand.font.size.heading.tags}
-      descWeight2="bold"
+      descWeight2={null}
       descColor2={brand.color.offwhite}
       dm2={null}
       dmx2={null}
@@ -134,10 +152,10 @@ const EveryWebPkg = () => {
       dpy2={null}
       dpt2={null}
       dpb2={null}
-      title3="Full-Length"
-      price3="$5,500+"
-      length3="(Up To 2.5 Mins.)"
-      desc3="For use on a website where your visitors are actively looking for information."
+      title3="Blog"
+      price3="Contact Form"
+      length3="CMS Integration"
+      desc3=""
       width3={[1, null, 1 / 4, null]}
       bg3={null}
       align3="center"
@@ -152,7 +170,7 @@ const EveryWebPkg = () => {
       bpt3={null}
       bpb3={null}
       textAlign3="center"
-      titleSz3={brand.font.size.text.footer}
+      titleSz3={brand.font.size.text.price}
       titleWeight3="bold"
       titleColor3={brand.color.offwhite}
       tm3={null}
@@ -174,7 +192,7 @@ const EveryWebPkg = () => {
       ppy3={null}
       ppt3={null}
       ppb3={null}
-      lengthSize3={brand.font.size.heading.tags}
+      lengthSize3={brand.font.size.text.price}
       lengthWeight3="bold"
       lengthColor3={brand.color.offwhite}
       lm3={null}
@@ -186,7 +204,7 @@ const EveryWebPkg = () => {
       lpt3={null}
       lpb3={null}
       descSize3={brand.font.size.heading.tags}
-      descWeight3="bold"
+      descWeight3={null}
       descColor3={brand.color.offwhite}
       dm3={null}
       dmx3={null}
@@ -196,10 +214,10 @@ const EveryWebPkg = () => {
       dpy3={null}
       dpt3={null}
       dpb3={null}
-      title4="Proven Interest"
-      price4="$8,000+"
-      length4="(Longer than 2.5 Mins.)"
-      desc4="Ex: Mini-Documentaries, Interviews, Presentations for a Targeted or Established Audience."
+      title4="Google Webmaster Tools"
+      price4="Google Analytics"
+      length4="SEO (Search Engine Optimization)"
+      desc4=""
       width4={[1, null, 1 / 4, null]}
       bg4={null}
       align4="center"
@@ -214,7 +232,7 @@ const EveryWebPkg = () => {
       bpt4={null}
       bpb4={null}
       textAlign4="center"
-      titleSz4={brand.font.size.text.footer}
+      titleSz4={brand.font.size.text.price}
       titleWeight4="bold"
       titleColor4={brand.color.offwhite}
       tm4={null}
@@ -236,7 +254,7 @@ const EveryWebPkg = () => {
       ppy4={null}
       ppt4={null}
       ppb4={null}
-      lengthSize4={brand.font.size.heading.tags}
+      lengthSize4={brand.font.size.text.price}
       lengthWeight4="bold"
       lengthColor4={brand.color.offwhite}
       lm4={null}
@@ -248,7 +266,7 @@ const EveryWebPkg = () => {
       lpt4={null}
       lpb4={null}
       descSize4={brand.font.size.heading.tags}
-      descWeight4="bold"
+      descWeight4={null}
       descColor4={brand.color.offwhite}
       dm4={null}
       dmx4={null}
@@ -258,11 +276,11 @@ const EveryWebPkg = () => {
       dpy4={null}
       dpt4={null}
       dpb4={null}
-      footer="Contact Us For An Accurate Quote"
-      footerSz={brand.font.size.text.price}
+      footer="Alkenox Interactive provides ARTIST driven web development with UI/UX in mind."
+      footerSz={[mobileFoot, null, deskFoot, null]}
       footerColor={brand.color.offwhite}
     />
   );
 };
 
-export default EveryWebPkg;
+export default WebPricing;
