@@ -145,34 +145,34 @@ const WebPage = () => {
         Crafting Your User Interface
       </Heading>
 
-      <Box width={1}>
-        <Text
-          width={[1, 1, 3 / 4, 1 / 2]}
-          my="auto"
-          mx={3}
-          fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
-          color={[brand.color.dkblue]}
-        >
-          Your user interface is the key to your user's heart. It is your brands
-          first impression and a unique design can help your brand stand out
-          from the crowd. What we strive to do for you here, is put the art back
-          into website design so we can break the cycle of "clinical feeling
-          websites", while still helping you to convey your brand's personality
-          and mission. You want your site to be eye-catching, interactive, and
-          entertaining so that your visitors will want to come back again and
-          again. We want to build that for you.
-        </Text>
+      <Text
+        width={[1, null, 1 / 2, null]}
+        px={5}
+        my="auto"
+        mx="auto"
+        fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
+        color={[brand.color.dkblue]}
+      >
+        Your user interface is the key to your user's heart. It is your brands
+        first impression and a unique design can help your brand stand out from
+        the crowd. What we strive to do for you here, is put the art back into
+        website design so we can break the cycle of "clinical feeling websites",
+        while still helping you to convey your brand's personality and mission.
+        You want your site to be eye-catching, interactive, and entertaining so
+        that your visitors will want to come back again and again. We want to
+        build that for you.
+      </Text>
 
-        <Image
-          src={UiImage}
-          alt="Ui Image"
-          width={[1, 1, 3 / 4, 1 / 2]}
-          py="auto"
-          mx="auto"
-          mb={5}
-          color={[brand.color.dkblue]}
-        />
-      </Box>
+      <Image
+        src={UiImage}
+        alt="Ui Image"
+        width={[1, null, 1 / 2, null]}
+        crop="50vh"
+        px={5}
+        py={5}
+        mx="auto"
+        color={[brand.color.dkblue]}
+      />
 
       <Heading
         width={[1]}
