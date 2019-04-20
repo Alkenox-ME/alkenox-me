@@ -267,7 +267,7 @@ const WebPricing = () => {
       lpb4={null}
       descSize4={brand.font.size.heading.tags}
       descWeight4={null}
-      descColor4={brand.color.offwhite}
+      descColor4={brand.color.lighter}
       dm4={null}
       dmx4={null}
       dmy4={null}
@@ -278,7 +278,7 @@ const WebPricing = () => {
       dpb4={null}
       footer="Contact Us For An Accurate Quote"
       footerSz={[mobileFoot, null, deskFoot, null]}
-      footerColor={brand.color.offwhite}
+      footerColor={brand.color.light}
     />
   );
 };

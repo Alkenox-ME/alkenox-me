@@ -60,14 +60,13 @@ const GraphicPage = () => {
         fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
         color={[brand.color.light]}
       >
-        These types of videos are usually created to add to your website or for
-        posting on social media. These are usually advertising or explainer
-        videos, meant to capture your audience's attention and get them
-        interested in what you have to share with them. Our talented artists
-        will help you focus your story into a working script. Our directors will
-        then take that script and have a storyboard put together for your
-        approval before embarking on the main course of putting the animations
-        together.
+        These types of videos are animated explainer videos, usually created to
+        add to your website or to post on social media. They are meant to
+        capture your audience's attention and get them interested in what you
+        have to share with them. Our talented artists will help you focus your
+        story into a working script. Our directors will then take that script
+        and have a storyboard put together for your approval before embarking on
+        the main course of putting the animations together.
       </Text>
 
       <Box width={[1, null, 3 / 4, null]} my={3} mx="auto">

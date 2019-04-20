@@ -278,7 +278,7 @@ const WebPricing = () => {
       dpb4={null}
       footer="Alkenox Interactive provides ARTIST driven web development with UI/UX in mind."
       footerSz={[mobileFoot, null, deskFoot, null]}
-      footerColor={brand.color.offwhite}
+      footerColor={brand.color.light}
     />
   );
 };
