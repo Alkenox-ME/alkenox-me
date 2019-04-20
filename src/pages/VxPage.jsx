@@ -4,7 +4,26 @@ import { Bounce } from "react-reveal";
 import styled from "styled-components";
 import { Flex, Box, Text, Banner } from "../components/n0x.Bass";
 import { Image, Flex as Row, Heading } from "rebass";
-import { n0x, base, image, data, brand } from "../components/n0x.vars";
+import {
+  n0x,
+  base,
+  image,
+  data,
+  brand,
+  deskH1,
+  deskH2,
+  deskH3,
+  deskH4,
+  mobileH1,
+  mobileH2,
+  mobileH3,
+  deskT1,
+  deskT2,
+  mobileT1,
+  mobileT2,
+  deskFoot,
+  mobileFoot
+} from "../components/n0x.vars";
 import { Layout } from "../components/n0x.elements";
 import VxPricing from "../components/VxPricing";
 
@@ -32,7 +51,7 @@ const VxPage = () => {
         <Heading
           width={1}
           mt={5}
-          fontSize={[brand.font.size.heading.main]}
+          fontSize={[mobileH1, null, deskH1, null]}
           textAlign="center"
           color={[brand.color.dkblue]}
         >
@@ -40,16 +59,17 @@ const VxPage = () => {
         </Heading>
 
         <Text
-          fontSize={brand.font.size.heading.sub1}
+          fontSize={[mobileH2, null, deskH2, null]}
           fontWeight="bold"
           my={4}
+          textAlign="center"
           color={[brand.color.dkblue]}
         >
           Web Video
         </Text>
 
         <Text
-          fontSize={[brand.font.size.text.body]}
+          fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
           textAlign="left"
           mx={5}
           color={[brand.color.dkblue]}
@@ -65,7 +85,7 @@ const VxPage = () => {
 
         <Text
           width={[1]}
-          fontSize={[brand.font.size.text.body]}
+          fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
           mx={5}
           py={4}
           textAlign="left"
@@ -93,16 +113,16 @@ const VxPage = () => {
           mx="auto"
           py={3}
           textAlign="center"
-          fontSize={[brand.font.size.text.body]}
+          fontSize={[brand.font.size.heading.tags]}
           color={[brand.color.dkblue]}
         >
           Movie Trailer for the Indie Feature Film "Mosaic" with all original
-          scoring and 3D Motion Graphics.
+          scoring, sound design, and 3D Motion Graphics.
         </Text>
 
         <Heading
           width={1}
-          fontSize={[brand.font.size.heading.sub1]}
+          fontSize={[mobileH2, null, deskH2, null]}
           textAlign="center"
           mt={5}
           pt={5}
@@ -113,7 +133,7 @@ const VxPage = () => {
 
         <Heading
           width={1}
-          fontSize={[brand.font.size.heading.sub2]}
+          fontSize={[mobileH3, null, deskH3, null]}
           py={5}
           textAlign="center"
           color={[brand.color.dkblue]}
@@ -138,7 +158,7 @@ const VxPage = () => {
           width={[1, null, 1 / 2, null]}
           my="auto"
           pt={4}
-          fontSize={[brand.font.size.text.body]}
+          fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
           color={[brand.color.dkblue]}
         >
           <Bounce right>
@@ -155,7 +175,7 @@ const VxPage = () => {
           width={1}
           mx="auto"
           py={5}
-          fontSize={[brand.font.size.heading.sub2]}
+          fontSize={[mobileH3, null, deskH3, null]}
           textAlign="center"
           color={[brand.color.dkblue]}
         >
@@ -166,7 +186,7 @@ const VxPage = () => {
           width={[1, null, 1 / 2, null]}
           my="auto"
           p={5}
-          fontSize={[brand.font.size.text.body]}
+          fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
           color={[brand.color.dkblue]}
         >
           <Bounce>
@@ -196,7 +216,7 @@ const VxPage = () => {
           width={1}
           mx="auto"
           my={5}
-          fontSize={[brand.font.size.heading.sub2]}
+          fontSize={[mobileH3, null, deskH3, null]}
           textAlign="center"
           color={[brand.color.dkblue]}
         >
@@ -222,7 +242,7 @@ const VxPage = () => {
           my="auto"
           px={2}
           pt={4}
-          fontSize={[brand.font.size.text.body]}
+          fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
           color={[brand.color.dkblue]}
         >
           <Bounce right>
@@ -244,7 +264,7 @@ const VxPage = () => {
           mx="auto"
           mt={5}
           py={5}
-          fontSize={[brand.font.size.heading.sub2]}
+          fontSize={[mobileH3, null, deskH3, null]}
           color={[brand.color.dkblue]}
         >
           Types of Videos

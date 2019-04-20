@@ -19,7 +19,7 @@ const brand = {
           n0x.fontSize * 3.5,
           n0x.fontSize * 2.5
         ],
-        mobile: [n0x.fontSize * 3.5, n0x.fontSize * 2.5],
+        mobile: [n0x.fontSize * 3.5, n0x.fontSize * 2.5, n0x.fontSize * 2],
         tags: n0x.fontSize * 1.5
       },
       text: {
@@ -44,6 +44,7 @@ const deskH3 = brand.font.size.heading.desktop[2];
 const deskH4 = brand.font.size.heading.desktop[3];
 const mobileH1 = brand.font.size.heading.mobile[0];
 const mobileH2 = brand.font.size.heading.mobile[1];
+const mobileH3 = brand.font.size.heading.mobile[2];
 const deskT1 = brand.font.size.text.desktop[0];
 const deskT2 = brand.font.size.text.desktop[1];
 const mobileT1 = brand.font.size.text.mobile[0];
@@ -59,6 +60,7 @@ export {
   deskH4,
   mobileH1,
   mobileH2,
+  mobileH3,
   deskT1,
   deskT2,
   mobileT1,

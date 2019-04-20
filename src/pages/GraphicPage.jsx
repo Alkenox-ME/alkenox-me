@@ -24,7 +24,7 @@ import { Layout } from "../components/n0x.elements";
 const GraphicPage = () => {
   return (
     <Layout
-      pgTitle="alkenox-me: Graphic Design"
+      pgTitle="alkenox-me: Graphic Art & Animation"
       image={`${image.bg.logo}`}
       copyYear={`${data.footer.year}`}
       copyCompany={`${data.footer.company}`}
@@ -38,7 +38,7 @@ const GraphicPage = () => {
         fontSize={[mobileH1, null, deskH1, null]}
         color={[brand.color.dkblue]}
       >
-        2D & 3D Graphic Design
+        Graphic Art & Animation
       </Heading>
 
       <Heading
