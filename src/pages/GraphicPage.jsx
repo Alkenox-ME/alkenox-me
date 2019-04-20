@@ -163,7 +163,18 @@ const GraphicPage = () => {
         textAlign="left"
         fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
         color={[brand.color.dkblue]}
-      />
+      >
+        If you are just starting your business or giving it a make-over, your
+        logo is the first thing people see. We want to help you with your new
+        look. Whether you are looking for luxury, fun, glamor, simplicity, or
+        purely professional, we would love to help! Our artists will come up
+        with several drafts for you to look over after our consultation to get a
+        feel for what you want. You will then let us know your color preferences
+        or ideas for the logo and any changes you would like to see. We will
+        then finish up the design per your specifications and deliver it to you
+        digitally so you have what you need to add it to your website, business
+        cards, and any other marketing materials you may need.
+      </Text>
     </Layout>
   );
 };
