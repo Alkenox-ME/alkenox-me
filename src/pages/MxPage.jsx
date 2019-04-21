@@ -145,11 +145,14 @@ const MxPage = () => {
         pb={5}
         color={[brand.color.dkblue]}
       >
-        Source and background cues require more of a normal singer/songwriter
-        approach making it closer to a regular music production. For those under
-        a tight time constraint, we suggest checking out our in-house library.
-        You will only have to deal with one house for all rights and
-        editing/syncing needs.
+        Source cues refer to music that is literally in the scene, unlike the
+        score. It is like another character or a part of the set as it may be a
+        song the character puts on their radio. Background cues Source and
+        background cues require a more traditional singer/songwriter approach,
+        making this type of production closer to a regular music production. For
+        those under a tight time constraint, we suggest checking out our
+        in-house library. You will only have to deal with one house for all
+        rights, editing, and syncing needs.
       </Text>
     </Layout>
   );
