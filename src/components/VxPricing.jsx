@@ -1,12 +1,12 @@
 import React from "react";
-import { n0x, base, image, data, brand } from "./n0x.vars";
+import { n0x, base, image, data, brand, mobileH2, deskH2 } from "./n0x.vars";
 import { TierPricing } from "./n0x.elements";
 
 const EveryWebPkg = () => {
   return (
     <TierPricing
       title="Video Production Tier Prices"
-      titleSz={brand.font.size.heading.sub1}
+      titleSz={[mobileH2, null, deskH2, null]}
       titleColor={[brand.color.offwhite]}
       bgimage={image.bg.vxProd.pricing}
       tint={n0x.tint.black[1]}

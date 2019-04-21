@@ -69,7 +69,7 @@ const GraphicPage = () => {
         the main course of putting the animations together.
       </Text>
 
-      <Box width={[1, null, 3 / 4, null]} my={3} mx="auto">
+      <Box width={[1, null, 2 / 3, null]} my={3} mx="auto">
         <ReactPlayer
           url="https://github.com/alkenox/alkenox-me-videos/blob/master/whiteboard-enoch.mp4?raw=true"
           width="100%"
@@ -81,6 +81,7 @@ const GraphicPage = () => {
       </Box>
       <Text
         width={1}
+        pb={5}
         textAlign="center"
         fontSize={[brand.font.size.heading.tags]}
       >
@@ -89,39 +90,7 @@ const GraphicPage = () => {
 
       <Heading
         width={1}
-        mt={5}
-        textAlign="center"
-        fontSize={[mobileH2, null, deskH2, null]}
-        color={[brand.color.light]}
-      >
-        Film & Television
-      </Heading>
-
-      <Text
-        width={1}
-        mx={5}
-        my={5}
-        textAlign="left"
-        fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
-        color={[brand.color.dkblue]}
-      >
-        as';ldkf';disable
-      </Text>
-
-      <Box width={[1, null, 3 / 4, null]} my={5} mx="auto">
-        <ReactPlayer
-          url="https://github.com/alkenox/alkenox-me-videos/blob/master/talent-seq-joker.mp4?raw=true"
-          width="100%"
-          height="100%"
-          loop
-          playing
-          volume={0}
-        />
-      </Box>
-
-      <Heading
-        width={1}
-        mt={5}
+        my={3}
         textAlign="center"
         fontSize={[mobileH2, null, deskH2, null]}
         color={[brand.color.dkblue]}
@@ -149,15 +118,15 @@ const GraphicPage = () => {
         approachable.
       </Text>
 
-      <Box mx="auto" px={5} my={3}>
+      <Box width={[1, null, 2 / 3, null]} my={3} mx="auto">
         <Image
           width={1}
           src="https://media.giphy.com/media/MVgLYGeuRP4JynEhNU/source.gif"
           alt="Sissy Promo Gif"
         />
         <Text
-          width={6 / 8}
-          mx="auto"
+          width={1}
+          mx={4}
           py={3}
           textAlign="center"
           fontSize={[brand.font.size.heading.tags]}
@@ -171,7 +140,7 @@ const GraphicPage = () => {
       <Text
         width={1}
         mx={5}
-        my={3}
+        my={5}
         textAlign="left"
         fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
         color={[brand.color.dkblue]}
@@ -189,13 +158,24 @@ const GraphicPage = () => {
 
       <Heading
         width={1}
-        mt={5}
+        my={5}
         textAlign="center"
         fontSize={[mobileH2, null, deskH2, null]}
         color={[brand.color.dkblue]}
       >
         2D & 3D Logo Design & Animated Logos
       </Heading>
+
+      <Box width={[1, null, 2 / 3, null]} my={3} mx="auto">
+        <ReactPlayer
+          url="https://github.com/Alkenox-ME/alkenox-me-videos/blob/master/logo-seq.mp4?raw=true"
+          width="100%"
+          height="100%"
+          loop
+          playing
+          volume={0}
+        />
+      </Box>
 
       <Text
         width={1}

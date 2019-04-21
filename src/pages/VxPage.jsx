@@ -71,7 +71,7 @@ const VxPage = () => {
         <Text
           fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
           textAlign="left"
-          mx={5}
+          mx={[2, null, 5, null]}
           color={[brand.color.dkblue]}
         >
           Whenever you surf the internet, you find yourself faced with at least
@@ -86,7 +86,7 @@ const VxPage = () => {
         <Text
           width={[1]}
           fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
-          mx={5}
+          mx={[2, null, 5, null]}
           py={4}
           textAlign="left"
           color={[brand.color.dkblue]}
@@ -259,7 +259,7 @@ const VxPage = () => {
 
         <Text
           width={[1, 1, 1 / 2, 1 / 2]}
-          mx="auto"
+          mx={[2, null, 5, null]}
           my="auto"
           px={2}
           pt={4}
@@ -291,9 +291,9 @@ const VxPage = () => {
           Types of Videos
         </Heading>
         <Box
-          width={[1 / 2]}
+          width={[1, null, 1 / 2, null]}
           fontSize={[brand.font.size.text.list]}
-          mx={5}
+          mx={[2, null, 5, null]}
           py={3}
           color={[brand.color.dkblue]}
         >
@@ -325,7 +325,6 @@ const VxPage = () => {
               trailer) and drums up buzz and excitement for your movie
             </li>
             <br />
-            <li>Whiteboard</li>
           </ul>
         </Box>
         <VxPricing />
