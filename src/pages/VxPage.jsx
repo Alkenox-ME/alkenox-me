@@ -109,8 +109,8 @@ const VxPage = () => {
         </Box>
 
         <Text
-          width={6 / 8}
-          mx="auto"
+          width={1}
+          mx={4}
           py={3}
           textAlign="center"
           fontSize={[brand.font.size.heading.tags]}
@@ -119,6 +119,27 @@ const VxPage = () => {
           Movie Trailer for the Indie Feature Film "Mosaic" with all original
           scoring, sound design, and 3D Motion Graphics.
         </Text>
+
+        <Box width={[1, null, 2 / 3, null]} my={5} mx="auto">
+          <ReactPlayer
+            url="https://github.com/alkenox/alkenox-me-videos/blob/master/talent-seq-joker.mp4?raw=true"
+            width="100%"
+            height="100%"
+            loop
+            playing
+            volume={0}
+          />
+          <Text
+            width={1}
+            mx={4}
+            py={3}
+            textAlign="center"
+            fontSize={[brand.font.size.heading.tags]}
+            color={[brand.color.dkblue]}
+          >
+            Opening Credits created for a short film "Joker's Wild".
+          </Text>
+        </Box>
 
         <Heading
           width={1}
@@ -304,10 +325,7 @@ const VxPage = () => {
               trailer) and drums up buzz and excitement for your movie
             </li>
             <br />
-            <li>
-              Whiteboard Animation - 3 mins or less used as explainer videos and
-              social media advertisements.
-            </li>
+            <li>Whiteboard</li>
           </ul>
         </Box>
         <VxPricing />

@@ -24,7 +24,7 @@ import { Layout } from "../components/n0x.elements";
 const GraphicPage = () => {
   return (
     <Layout
-      pgTitle="alkenox-me: Graphic Art & Animation"
+      pgTitle="alkenox-me: Graphic Design & Animation"
       image={`${image.bg.logo}`}
       copyYear={`${data.footer.year}`}
       copyCompany={`${data.footer.company}`}
@@ -38,7 +38,7 @@ const GraphicPage = () => {
         fontSize={[mobileH1, null, deskH1, null]}
         color={[brand.color.dkblue]}
       >
-        Graphic Art & Animation
+        Graphic Design & Animation
       </Heading>
 
       <Heading
@@ -84,7 +84,7 @@ const GraphicPage = () => {
         textAlign="center"
         fontSize={[brand.font.size.heading.tags]}
       >
-        Whiteboard Animation produced for Drs. Enoch and Lamei
+        Whiteboard Animation produced for Drs. Enoch and Lamei.
       </Text>
 
       <Heading
@@ -126,7 +126,7 @@ const GraphicPage = () => {
         fontSize={[mobileH2, null, deskH2, null]}
         color={[brand.color.dkblue]}
       >
-        Animated Gifs
+        Animated GIFs
       </Heading>
 
       <Text
@@ -136,15 +136,56 @@ const GraphicPage = () => {
         textAlign="left"
         fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
         color={[brand.color.dkblue]}
-      />
+      >
+        The GIF (Graphical Interchange Format), was invented in 1987 by Steve
+        Wilhite, who was looking for a way to animate images in the smallest
+        file size possible. GIFs can be created from a series of images, or even
+        video (minus the sound), into a continuous loop that plays
+        automatically. Their common uses include keeping your brand from
+        appearing too serious, keeping your audience engaged in your brand's
+        personality, giving your brand a dose of youthfulness in the eyes of
+        your audience, providing visual instructions, building excitement for a
+        future product, and they can help you and/or your brand more
+        approachable.
+      </Text>
 
-      <Box mx="auto">
+      <Box mx="auto" px={5} my={3}>
         <Image
           width={1}
           src="https://media.giphy.com/media/MVgLYGeuRP4JynEhNU/source.gif"
           alt="Sissy Promo Gif"
         />
+        <Text
+          width={6 / 8}
+          mx="auto"
+          py={3}
+          textAlign="center"
+          fontSize={[brand.font.size.heading.tags]}
+          color={[brand.color.dkblue]}
+        >
+          3D animated GIF created to help advertise an indie feature film,
+          "Sissy Carlyle" on social media.
+        </Text>
       </Box>
+
+      <Text
+        width={1}
+        mx={5}
+        my={3}
+        textAlign="left"
+        fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
+        color={[brand.color.dkblue]}
+      >
+        How they can add value to your business: GIFS are easy to share due to
+        their small file size, they help you to show your fun side to your
+        audience, and they can add more context or emotion in a very short
+        amount of time. The average GIF is 2 to 5 seconds in length, which is
+        perfect for posting on social feeds to help convert more people to
+        customers, more quickly. Brands can create a close relationship with
+        their audience with the right GIF, as it can allow your brand to share
+        geniune and engaging content. You can also use them to highlight a key
+        function or feature of your product.
+      </Text>
 
       <Heading
         width={1}

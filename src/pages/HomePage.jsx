@@ -1,35 +1,36 @@
 // Core
-import React from 'react';
+import React from "react";
 
 // Styling
-import { n0x, image, data } from '../components/n0x.vars'
-import { Card } from '../components/n0x.Bass';
-import { Container, Sound, Mx, Photo, Vx, Gx, Web, Rx } from '../components/n0x.Animate'
+import { n0x, image, data } from "../components/n0x.vars";
+import { Card } from "../components/n0x.Bass";
+import {
+  Container,
+  Sound,
+  Mx,
+  Photo,
+  Vx,
+  Gx,
+  Web,
+  Rx
+} from "../components/n0x.Animate";
 
 // Components
-import { Layout, LabelBlock } from '../components/n0x.elements';
+import { Layout, LabelBlock } from "../components/n0x.elements";
 
 // Variables
-const tint = n0x.tint.black[ 0 ];
-const height = '29vh';
+const tint = n0x.tint.black[0];
+const height = "29vh";
 const bradius = 60;
 const bshadow = `.75em .75em 1em ${n0x.tint.black[0]}`;
-const fontSz = [ 5, 6, 6, 6 ];
+const fontSz = [5, 6, 6, 6];
 
 // Actual Page
 const HomePage = () => {
   return (
     <Container>
-      <Layout
-        pgTitle={`Home: ${data.name.company.trendy}`}
-        pgDesc={null}
-      >
-        <Card
-          opacity={0.7}
-          px={2}
-          py={2}
-          width={[1, null, null, 1 / 2]}
-        >
+      <Layout pgTitle={`Home: ${data.name.company.trendy}`} pgDesc={null}>
+        <Card opacity={0.7} px={2} py={2} width={[1, null, null, 1 / 2]}>
           <Sound>
             <LabelBlock
               label="Sound Design"
@@ -44,12 +45,7 @@ const HomePage = () => {
           </Sound>
         </Card>
 
-        <Card
-          opacity={0.7}
-          px={2}
-          py={2}
-          width={[1, null, null, 1 / 2]}
-        >
+        <Card opacity={0.7} px={2} py={2} width={[1, null, null, 1 / 2]}>
           <Mx>
             <LabelBlock
               label="Music Production"
@@ -64,12 +60,7 @@ const HomePage = () => {
           </Mx>
         </Card>
 
-        <Card
-          opacity={0.7}
-          px={2}
-          py={2}
-          width={[1, null, null, 1 / 4]}
-        >
+        <Card opacity={0.7} px={2} py={2} width={[1, null, null, 1 / 4]}>
           <Photo>
             <LabelBlock
               label="Photography"
@@ -84,12 +75,7 @@ const HomePage = () => {
           </Photo>
         </Card>
 
-        <Card
-          opacity={0.7}
-          px={2}
-          py={2}
-          width={[1, null, null, 1 / 2]}
-        >
+        <Card opacity={0.7} px={2} py={2} width={[1, null, null, 1 / 2]}>
           <Vx>
             <LabelBlock
               label="Video Production"
@@ -104,15 +90,10 @@ const HomePage = () => {
           </Vx>
         </Card>
 
-        <Card
-          opacity={0.7}
-          px={2}
-          py={2}
-          width={[1, null, null, 1 / 4]}
-        >
+        <Card opacity={0.7} px={2} py={2} width={[1, null, null, 1 / 4]}>
           <Gx>
             <LabelBlock
-              label="Graphic Design"
+              label="Graphic Design & Animation"
               bgimg={image.bg.graphic}
               link="/graphic-design"
               tint={tint}
@@ -124,12 +105,7 @@ const HomePage = () => {
           </Gx>
         </Card>
 
-        <Card
-          opacity={0.7}
-          px={2}
-          py={2}
-          width={[1, null, null, 1 / 2]}
-        >
+        <Card opacity={0.7} px={2} py={2} width={[1, null, null, 1 / 2]}>
           <Web>
             <LabelBlock
               label="Full Stack Web Development"
@@ -144,28 +120,23 @@ const HomePage = () => {
           </Web>
         </Card>
 
-        <Card
-          opacity={0.7}
-          px={2}
-          py={2}
-          width={[1, null, null, 1 / 2]}
-        >
+        <Card opacity={0.7} px={2} py={2} width={[1, null, null, 1 / 2]}>
           <Rx>
             <LabelBlock
-             label="Digital Media Rx"
-             bgimg={image.bg.rx}
-             link="/digital-media-repair"
-             tint={tint}
-             height={height}
-             bradius={bradius}
-             bshadow={bshadow}
-             fontSz={fontSz}
-           />
-         </Rx>
-       </Card>
-     </Layout>
-   </Container>
-  )
-}
+              label="Digital Media Rx"
+              bgimg={image.bg.rx}
+              link="/digital-media-repair"
+              tint={tint}
+              height={height}
+              bradius={bradius}
+              bshadow={bshadow}
+              fontSz={fontSz}
+            />
+          </Rx>
+        </Card>
+      </Layout>
+    </Container>
+  );
+};
 
 export default HomePage;
