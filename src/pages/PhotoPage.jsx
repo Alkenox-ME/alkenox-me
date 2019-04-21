@@ -29,7 +29,7 @@ import { Layout } from "../components/n0x.elements";
 const PhotoPage = () => {
   return (
     <Layout
-      pgTitle="alkenox-me: Video"
+      pgTitle="alkenox-me: Photography"
       image={`${image.bg.logo}`}
       copyYear={`${data.footer.year}`}
       copyCompany={`${data.footer.company}`}

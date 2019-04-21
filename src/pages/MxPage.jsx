@@ -67,7 +67,7 @@ const MxPage = () => {
         textAlign="center"
         color={[brand.color.dkblue]}
       >
-        Film & Television Scoring
+        Original Music Score
       </Heading>
       <Text
         width={[1]}
@@ -146,13 +146,11 @@ const MxPage = () => {
         color={[brand.color.dkblue]}
       >
         Source cues refer to music that is literally in the scene, unlike the
-        score. It is like another character or a part of the set as it may be a
-        song the character puts on their radio. Background cues Source and
-        background cues require a more traditional singer/songwriter approach,
-        making this type of production closer to a regular music production. For
-        those under a tight time constraint, we suggest checking out our
-        in-house library. You will only have to deal with one house for all
-        rights, editing, and syncing needs.
+        score. Background cues Source and background cues require a more
+        traditional singer/songwriter approach, making this type of production
+        closer to a regular music production. For those under a tight time
+        constraint, we suggest checking out our in-house library. You will only
+        have to deal with one house for all rights, editing, and syncing needs.
       </Text>
     </Layout>
   );
