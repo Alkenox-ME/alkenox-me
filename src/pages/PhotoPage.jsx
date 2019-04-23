@@ -1,12 +1,11 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import { Bounce } from "react-reveal";
-import styled from "styled-components";
+
 import { Flex, Box, Text, Banner } from "../components/n0x.Bass";
-import { Image, Flex as Row, Heading } from "rebass";
+import { Image, Heading } from "rebass";
 import {
   n0x,
-  base,
   image,
   data,
   brand,

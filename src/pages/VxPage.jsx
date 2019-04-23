@@ -1,36 +1,27 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import { Bounce } from "react-reveal";
-import styled from "styled-components";
+
 import { Flex, Box, Text, Banner } from "../components/n0x.Bass";
-import { Image, Flex as Row, Heading } from "rebass";
+import { Heading } from "rebass";
 import {
   n0x,
-  base,
   image,
   data,
   brand,
   deskH1,
   deskH2,
   deskH3,
-  deskH4,
   mobileH1,
   mobileH2,
   mobileH3,
-  deskT1,
   deskT2,
   mobileT1,
-  mobileT2,
-  deskFoot,
-  mobileFoot
+  mobileT2
 } from "../components/n0x.vars";
 import { Layout } from "../components/n0x.elements";
 import VxPricing from "../components/VxPricing";
 
-const VideoPrices =
-  "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/BasicVideoProdPkgs.png?raw=true";
-const LiveCamera =
-  "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/blur-camera-camera-equipment-639090.jpg?raw=true";
 const Teamwork =
   "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/achievement-agreement-arms-1068523.jpg?raw=true";
 const Editing =
@@ -312,7 +303,7 @@ const VxPage = () => {
             <br />
             <li>
               Explainer Video - 2 minutes or less and designed to explain your
-              company, product, service, or subject. (whiteboard animation, )
+              company, product, service, or subject. (whiteboard animation)
             </li>
             <br />
             <li>

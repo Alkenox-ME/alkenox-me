@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Box, Text, Heading } from "../components/n0x.Bass";
+import { Flex, Heading } from "../components/n0x.Bass";
 
 const WebPkgs = () => {
   return (

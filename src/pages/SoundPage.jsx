@@ -1,12 +1,11 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import { Bounce } from "react-reveal";
-import styled from "styled-components";
-import { Flex, Box, Text, Banner } from "../components/n0x.Bass";
-import { Image, Flex as Row, Heading } from "rebass";
+
+import { Box, Text, Banner } from "../components/n0x.Bass";
+import { Image, Heading } from "rebass";
 import {
   n0x,
-  base,
   image,
   data,
   brand,
@@ -53,15 +52,34 @@ const SoundPage = () => {
         pb={5}
         color={[brand.color.dkblue]}
       >
-        Sound is what connects your audience to your product. Whether it is
-        designing the dings and whistles on your app, getting the right sounds
-        for your game-scape, sound is what brings your audience into your
-        creation and connects them to it. Whatever your needs, we can help! Hard
-        effect, soft effect, foley and soundscaping for Film, Television, and
-        Games. Branded Sound Icons for a project or company. Interactive
-        projects ranging from audio navigation for the blind to the aesthetics
-        of your user interface are welcome.
+        The recording, manipulation, and generation of sounds is utilized in
+        Whether you need us to create unique dings and whistles for your app,
+        video game, or or ensuring the space your actors are in sounds real
+        on-screen; sound is what brings your audience into your creation and
+        connects them to it.
       </Text>
+
+      <Box
+        width={[1, null, 1 / 2, null]}
+        fontSize={[brand.font.size.text.list]}
+        mx={[2, null, 5, null]}
+        py={3}
+        color={[brand.color.dkblue]}
+      >
+        <ul>
+          <li>
+            Hard effects, soft effects, foley and soundscaping for film, video,
+            games, and apps.
+          </li>
+          <br />
+          <li>Branded Sound Icons for a project or company.</li>
+          <br />
+          <li>
+            Interactive projects ranging from audio navigation for the blind to
+            the aesthetics of your user interface are welcome.
+          </li>
+        </ul>
+      </Box>
 
       <Heading
         width={[1]}
@@ -82,7 +100,7 @@ const SoundPage = () => {
         pb={5}
         color={[brand.color.dkblue]}
       >
-        We enjoy making imerssive soundscapes that glue to each other and to the
+        We enjoy making immersive soundscapes that glue to each other and to the
         picture on screen.
       </Text>
 

@@ -1,24 +1,20 @@
 import React from "react";
 import ReactPlayer from "react-player";
-import { Flex, Box, Text, Banner, Heading } from "../components/n0x.Bass";
+import { Box, Text, Heading } from "../components/n0x.Bass";
 import {
   n0x,
-  base,
   image,
   data,
   brand,
   deskH1,
   deskH2,
-  deskH3,
-  deskH4,
   mobileH1,
   mobileH2,
-  deskT1,
   deskT2,
   mobileT1,
   mobileT2
 } from "../components/n0x.vars";
-import { Image, Flex as Row, Box as Col } from "rebass";
+import { Image } from "rebass";
 import { Layout } from "../components/n0x.elements";
 
 const GraphicPage = () => {

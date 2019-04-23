@@ -1,21 +1,16 @@
 import React from "react";
-import { Link } from "@reach/router";
-import styled from "styled-components";
-import { Flex, Text, Banner, Box } from "../components/n0x.Bass";
+
+import { Text, Banner, Box } from "../components/n0x.Bass";
 import { Image, Heading } from "rebass";
 import {
   n0x,
-  base,
   image,
   data,
   brand,
   deskH1,
   deskH2,
-  deskH3,
-  deskH4,
   mobileH1,
   mobileH2,
-  deskT1,
   deskT2,
   mobileT1,
   mobileT2
@@ -27,14 +22,8 @@ import EveryWebPkg from "../components/EveryWebPkg";
 const ArchImage =
   "https://github.com/alkenox/alkenox-me-images/blob/master/architect-architecture-black-and-white-1537008.jpg?raw=true";
 
-const ProtoImage =
-  "https://github.com/alkenox/alkenox-me-images/blob/master/black-black-and-white-close-up-1496139.jpg?raw=true";
-
 const CodeImage =
   "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/ai-artificial-intelligence-code-34676.jpg?raw=true";
-
-const MngImage =
-  "https://github.com/alkenox/alkenox-me-images/blob/master/adult-business-data-1181316.jpg?raw=true";
 
 const UxImage =
   "https://github.com/alkenox/alkenox-me-images/blob/master/business-camera-coffee-1509428.jpg?raw=true";

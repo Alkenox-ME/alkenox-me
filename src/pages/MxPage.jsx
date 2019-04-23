@@ -1,12 +1,10 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import { Bounce } from "react-reveal";
-import styled from "styled-components";
 import { Flex, Box, Text, Banner } from "../components/n0x.Bass";
-import { Image, Flex as Row, Heading } from "rebass";
+import { Image, Heading } from "rebass";
 import {
   n0x,
-  base,
   image,
   data,
   brand,
@@ -29,7 +27,7 @@ import { Layout } from "../components/n0x.elements";
 const MxPage = () => {
   return (
     <Layout
-      pgTitle="alkenox-me: Music"
+      pgTitle="alkenox-me: Music Production"
       image={`${image.bg.logo}`}
       copyYear={`${data.footer.year}`}
       copyCompany={`${data.footer.company}`}
