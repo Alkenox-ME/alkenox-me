@@ -76,8 +76,7 @@ const WebPage = () => {
         wisely. The only way to do that is by arming yourself with information
         and focusing on what your website needs to function for your success.
         How it looks is always going to be less important than its
-        functionality. But a good balance is always our goal. If it's built
-        right, it should only have to be built once.
+        functionality. But a good balance is always our goal.
       </Text>
       <Text
         width={[1]}
@@ -88,9 +87,24 @@ const WebPage = () => {
       >
         The real question here isn't about the cost. It is "How much do you want
         to make?" DIY investment = $0. But you also get $0 return on that
-        investment. If you want to make $300,000, then your investment would be
-        3-4% of that, which is $9,000 to $12,000 with another $6,000 or 2% being
-        spent on analytics, upgrades and promotions.
+        investment. The younger generation is internet savvy and therefore
+        heavily reliant on it to give them their impression of your business.
+        These days if you do not have an internet presence or if your site is
+        not well-made, you can lose out on customer conversion. Essentially,
+        your site is the equivalent to you putting your best face forward. First
+        impressions are everything, especially on the world wide web.
+      </Text>
+
+      <Text
+        width={[1]}
+        px={[4]}
+        my={[5]}
+        fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
+        color={[brand.color.dkblue]}
+      >
+        If you want to make $300,000, then your investment would be 3-4% of
+        that, which is $9,000 to $12,000 with another $6,000 or 2% being spent
+        on analytics, upgrades and promotions.
       </Text>
       <Text
         width={[1]}
