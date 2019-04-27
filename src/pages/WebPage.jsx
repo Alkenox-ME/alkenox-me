@@ -61,17 +61,15 @@ const WebPage = () => {
         color={[brand.color.dkblue]}
       >
         Why should you have your website built by a professional instead of
-        building it yourself at a DIY site, like Wix? There is nothing saying
-        that you can't. You have to decide for yourself if your business is
-        worth the investment and if it needs more than a DYI site can provide.
-        Can it give you everything you want and need for your business? For
-        example, if your business is expected to grow, you need a site that is
-        easily scalable. Of course, you also want your site to stand out, and
-        DIY sites tend to be limited in what you can choose from in styling your
-        website. Your brand is specific and you want people to recognize it
-        right away. But your brand is not just your logo. It has a personality,
-        a mission, and it wants to reach out and interact with your potential
-        clients.
+        building it yourself at a DIY site, like Wix? You have to decide for
+        yourself if your business needs more than a DYI site can provide. Can it
+        give you everything you want and need for your business? For example, if
+        your business is expected to grow, you need a site that is easily
+        scalable. Of course, you also want your site to stand out, and DIY sites
+        tend to be limited in what you can choose from in styling your website.
+        Your brand is specific and you want people to recognize it right away.
+        But your brand is not just your logo. It has a personality, a mission,
+        and it wants to reach out and interact with your potential clients.
       </Text>
 
       <Text
