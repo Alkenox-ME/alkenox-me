@@ -63,6 +63,7 @@ const WebPage = () => {
         textAlign="center"
       >
         Why should you have your website built by a professional instead of
+        building it yourself at a DIY site, like Wix?
       </Text>
       <Text
         width={[1]}
