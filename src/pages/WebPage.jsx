@@ -61,6 +61,7 @@ const WebPage = () => {
         fontSize={[mobileT2, mobileT1, deskT1, deskT1]}
         color={[brand.color.dkblue]}
         textAlign="center"
+        fontWeight="bold"
       >
         Why should you have your website built by a professional instead of
         building it yourself at a DIY site, like Wix?
@@ -88,24 +89,60 @@ const WebPage = () => {
         The real question here isn't about the cost. It is "How much do you want
         to make?" DIY investment = $0. But you also get $0 return on that
         investment. The younger generation is internet savvy and therefore
-        heavily reliant on it to give them their impression of your business.
-        These days if you do not have an internet presence or if your site is
-        not well-made, you can lose out on customer conversion. Essentially,
-        your site is the equivalent to you putting your best face forward. First
-        impressions are everything, especially on the world wide web.
+        heavily reliant on it to give them their impression of your business. If
+        you do not have an internet presence, or if your site is not well-made,
+        you can lose out on many customer conversions because it is harder to
+        trust a business that does not have a strong internet presence and
+        personality. Essentially, your site is the equivalent to putting your
+        best face forward. First impressions are everything, especially on the
+        world wide web.
       </Text>
 
       <Text
         width={[1]}
         px={[4]}
-        my={[5]}
+        my={[3]}
         fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
         color={[brand.color.dkblue]}
+        textAlign="center"
+        fontWeight="bold"
       >
-        If you want to make $300,000, then your investment would be 3-4% of
-        that, which is $9,000 to $12,000 with another $6,000 or 2% being spent
-        on analytics, upgrades and promotions.
+        All websites have their limitations due to the platforms on which they
+        were built. These limitations include, but are not limited to:
       </Text>
+
+      <Box
+        width={[1, null, 1 / 2, null]}
+        fontSize={[brand.font.size.text.list]}
+        mx="auto"
+        color={[brand.color.dkblue]}
+      >
+        <ul>
+          <li>
+            Limitations on plugin choices available to improve the functionality
+            of the website.
+          </li>
+          <br />
+          <li>Plugins are limited in how much they can be customized.</li>
+          <br />
+          <li>
+            Templates are limited in design flexibility because at some point,
+            it becomes a complete reprogramming, to give it the design elements
+            that you actually want.
+          </li>
+          <br />
+          <li>
+            If the template you chose and the platform it was built upon are not
+            scalable with your business, you will need to pay more money for a
+            complete re-design on a completely different platform.
+          </li>
+          <br />
+          <li>
+            DIY sites tend to be even more limited in design and functionality
+            options than other platforms.
+          </li>
+        </ul>
+      </Box>
       <Text
         width={[1]}
         px={4}
@@ -113,35 +150,16 @@ const WebPage = () => {
         fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
         color={[brand.color.dkblue]}
       >
-        Creating a website without coding are your DIY sites like Wix, which are
-        template driven like WordPress and Joomla. You have to put in the time
-        the learn the system, and you are limited to whatever plugins or
-        built-in options for functionality that they give you. Design options
-        are also limited to whatever the templates will allow. A simple site
-        that sticks to the basic design and functionality of the template you
-        choose will typically cost you between $1,000 and $3,000 for a
-        freelancer to build. If you get quoted $1,000, it is probable that the
-        template will have minimal alterations from the original design. It will
-        not be a fully custom website even if they say it is custom. It is only
-        custom in that they geared it towards your company's logo and colors.
-        However, these websites are also usually locked into the plugins that
-        are available for those templates. So there are limitations for both
-        styling and functionality that you have to consider. If you decide to
-        have your site re-designed later, you may be forced to continue with the
-        same platform you had chosen initially to keep your existing
-        functionality; or you would have to go for a complete re-design in a
-        completely different platform so that you can incorporate new design
-        elements and functionality for modernization. A complete re-design would
-        be a larger investment because it would be a brand new site. Especially
-        if you are moving away from template based website builds to create a
-        completely original one with a programmer. Can it give you everything
-        you want and need for your business? For example, if your business is
-        expected to grow, you need a site that is easily scalable. Of course,
-        you also want your site to stand out, and DIY sites tend to be limited
-        in what you can choose from in styling your website. Your brand is
-        specific and you want people to recognize it right away. But your brand
-        is not just your logo. It has a personality, a mission, and it wants to
-        reach out and interact with your potential clients.
+        If you get quoted $1,000, it is probable that the template will have
+        minimal alterations from the original design. It will not be a fully
+        custom website even if the claim is there. In most cases, it is only
+        custom in that they replaced the logo, colors, added your images, and
+        your choice of plugins to the existing template. So there are
+        limitations for both styling and functionality that you have to
+        consider. In the end, your brand is specific and you want people to
+        recognize it right away. But your brand is not just your logo. It has a
+        personality, a mission, and it wants to reach out and interact with your
+        potential clients.
       </Text>
 
       <Text
