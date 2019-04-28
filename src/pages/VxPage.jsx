@@ -249,11 +249,9 @@ const VxPage = () => {
         </Box>
 
         <Text
-          width={[1, 1, 1 / 2, 1 / 2]}
-          mx={[2, null, 5, null]}
+          width={[1, null, 1 / 2, null]}
           my="auto"
-          px={2}
-          pt={4}
+          p={5}
           fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
           color={[brand.color.dkblue]}
         >
