@@ -30,7 +30,7 @@ const UxImage =
   "https://github.com/alkenox/alkenox-me-images/blob/master/business-camera-coffee-1509428.jpg?raw=true";
 
 const UiImage =
-  "https://github.com/alkenox/alkenox-me-images/blob/master/laptop-iphone-smartphone-mobile-screen-apple-753019-pxhere.com.jpg?raw=true";
+  "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/dark-future-futuristic-1840139.jpg?raw=true";
 
 const WebPage = () => {
   return (
@@ -146,20 +146,19 @@ const WebPage = () => {
       <Text
         width={[1]}
         px={4}
-        my={5}
+        my={3}
         fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
         color={[brand.color.dkblue]}
       >
-        If you get quoted $1,000, it is probable that the template will have
-        minimal alterations from the original design. It will not be a fully
+        If you receive a quote of roughly $1,000 to build or re-design your
+        site, it is probable that it is an existing template and there will be
+        minimal alterations made to the original design. It will not be a fully
         custom website even if the claim is there. In most cases, it is only
         custom in that they replaced the logo, colors, added your images, and
-        your choice of plugins to the existing template. So there are
-        limitations for both styling and functionality that you have to
-        consider. In the end, your brand is specific and you want people to
-        recognize it right away. But your brand is not just your logo. It has a
-        personality, a mission, and it wants to reach out and interact with your
-        potential clients.
+        your choice of plugins to the existing template. In the end, your brand
+        is specific and you want people to recognize it right away. But your
+        brand is not just your logo. It has a personality, a mission, and it
+        wants to reach out and interact with your potential clients.
       </Text>
 
       <Text
@@ -169,9 +168,8 @@ const WebPage = () => {
         fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
         color={[brand.color.dkblue]}
       >
-        We build your website from the ground up based on your company's needs.
-        Therefore, getting to know your business is a must in order to get a
-        good understanding of your brand and how it should be portrayed. As full
+        Getting to know your business is a must in order to have a good
+        understanding of your brand and how it should be portrayed. As full
         stack developers we are familiar with every part of the process, we work
         in smaller, well-rounded teams, and the need for lesser manpower means
         we can put your money to better use in other important areas.
