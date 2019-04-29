@@ -5,7 +5,7 @@ import React from "react";
 import { n0x, base, data, image } from "../components/n0x.vars";
 
 // Components
-import { PageLayout, T, T1, T2, Image } from "../components/n0x.library";
+import { PageLayout, T, T1, T2, T6, Image } from "../components/n0x.library";
 
 const AboutPage = () => {
   return (
@@ -27,7 +27,7 @@ const AboutPage = () => {
         various projects in video production, animation, and web development
         over a five year span, Alkenox-ME was the next logical step.
       </T>
-      <T>Now, down to business...</T>
+      <T6>Now, down to business...</T6>
       <T>
         Our work is tailored to provide our clients with custom, high-quality,
         professional digital media services. To allow for this freedom, all of

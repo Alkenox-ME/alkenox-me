@@ -22,6 +22,7 @@ import {
   T5,
   T6,
   PT,
+  TP,
   BTN,
   Divider,
   SoundBlock,
@@ -54,11 +55,11 @@ const VxPage = () => {
       pgDesc={null}
       color={props => props.theme.colors.whitetint[3]}
     >
-      <T1>Video Production</T1>
+      <T1 mb={[3]}>Video Production</T1>
 
-      <T>Web Video</T>
+      <T2>Web Video</T2>
 
-      <T>
+      <T mb={[3]}>
         Whenever you surf the internet, you find yourself faced with at least
         one web video on almost every site you visit, that were created to
         explain products, services, and tell stories to anyone willing to stick
@@ -73,7 +74,7 @@ const VxPage = () => {
         story to tell, or have video and images that you need turned into
         something with purpose; we are here to help.
       </T>
-      <Box lp={1.5} p={5}>
+      <Box lp={1.35} pt={5} pb={2}>
         <ReactPlayer
           url="https://github.com/alkenox/alkenox-me-videos/blob/master/trailer-mosaic.mp4?raw=true"
           width="100%"
@@ -84,36 +85,42 @@ const VxPage = () => {
           volume={0}
         />
       </Box>
-      <T>
+      <T pb={5} talignCenter>
         Movie Trailer for the Indie Feature Film "Mosaic" with all original
         scoring, sound design, and 3D Motion Graphics.
       </T>
 
-      <ReactPlayer
-        url="https://github.com/alkenox/alkenox-me-videos/blob/master/talent-seq-joker.mp4?raw=true"
-        width="100%"
-        height="100%"
-        loop
-        playing
-        volume={0}
-      />
+      <Box lp={1.35} pb={2}>
+        <ReactPlayer
+          url="https://github.com/alkenox/alkenox-me-videos/blob/master/talent-seq-joker.mp4?raw=true"
+          width="100%"
+          height="100%"
+          loop
+          playing
+          volume={0}
+        />
+      </Box>
 
-      <T>Opening Credits created for a short film "Joker's Wild".</T>
+      <T talignCenter>
+        Opening Credits created for a short film "Joker's Wild".
+      </T>
 
       <T2>Our Process</T2>
 
       <T3>Pre-Production</T3>
 
-      <Image height={40} src={Teamwork} alt="Teamwork" />
+      <Image lp={2} height={50} src={Teamwork} alt="Teamwork" />
 
-      <T>
-        We come together and figure out what it is you need, get you a quote on
-        how much it will cost to effectively produce your project, and sort out
-        the shooting schedule with the script that you will either provide us
-        with or that we will help you write. This is the most important part of
-        any production process. Without good planning, the entire project can
-        lose its focus and fall apart very quickly.
-      </T>
+      <Box lp={2} px={3}>
+        <TP talignLeft>
+          We come together and figure out what it is you need, get you a quote
+          on how much it will cost to effectively produce your project, and sort
+          out the shooting schedule with the script that you will either provide
+          us with or that we will help you write. This is the most important
+          part of any production process. Without good planning, the entire
+          project can lose its focus and fall apart very quickly.
+        </TP>
+      </Box>
 
       <T3>Production</T3>
 

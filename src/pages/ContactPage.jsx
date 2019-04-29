@@ -14,8 +14,7 @@ const ContactPage = () => {
     <PageLayout
       pgTitle={`Contact Us: ${data.name.company.trendy}`}
       pgDesc={null}
-      color={props => props.theme.colors.black}
-      opacity={[0.9]}
+      color={props => props.theme.colors.whitetint[3]}
     >
       <T1>Contact Us</T1>
       <ContactForm />

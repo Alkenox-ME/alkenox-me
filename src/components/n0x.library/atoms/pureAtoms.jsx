@@ -129,6 +129,11 @@ const Block = styled.section`
 `;
 
 const Box = styled.div`
+align-self: ${getRule("self", "center")};
+align-content: ${getRule("content", "center")};
+align-items: ${getRule("items", "center")};
+justify-content: ${getRule("justify", "center")};
+vertical-align: ${getRule("valign", "center")};
   ${utility}
   ${position}
   ${size}
@@ -197,6 +202,18 @@ const PT = styled.p`
   @media (min-width: ${props => props.theme.breakpoints.lp}px) {
     font-size: 1.25em;
   }
+`;
+
+const TP = styled.p`
+  text-align: ${getRule("talign", "center")};
+  padding: ${props => props.pad || "0 auto"};
+  display: flex;
+  ${shape}
+  ${text}
+  ${border}
+
+  ${shadow}
+  ${backgroundColor}
 `;
 
 const BGcolor = styled.div`
@@ -445,6 +462,7 @@ export {
   T5,
   T6,
   PT,
+  TP,
   BTN,
   Divider,
   SoundBlock,
