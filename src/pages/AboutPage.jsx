@@ -5,7 +5,7 @@ import React from "react";
 import { n0x, base, data, image } from "../components/n0x.vars";
 
 // Components
-import { PageLayout, T, T1, T2, Img } from "../components/n0x.library";
+import { PageLayout, T, T1, T2, Image } from "../components/n0x.library";
 
 const AboutPage = () => {
   return (
@@ -17,7 +17,7 @@ const AboutPage = () => {
     >
       <T1>About Us</T1>
 
-      <Img src={image.fg.yinYang} />
+      <Image src={image.fg.yinYang} />
 
       <T>
         Alkenox Media & Entertainment is an independent media production

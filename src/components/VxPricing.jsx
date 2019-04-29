@@ -2,11 +2,11 @@ import React from "react";
 import { n0x, base, image, data, brand } from "./n0x.vars";
 import { TierPricing } from "./n0x.library";
 
-const EveryWebPkg = () => {
+const EveryWebPkg = mtFontSz => {
   return (
     <TierPricing
       title="Video Production Tier Prices"
-      titleSz={[mobileH2, null, deskH2, null]}
+      titleSz={[]}
       titleColor={[brand.color.offwhite]}
       bgimage={image.bg.vxProd.pricing}
       tint={n0x.tint.black[1]}

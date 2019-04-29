@@ -1,12 +1,12 @@
 import React from "react";
-import { Flex, Text, Banner, Box } from "../components/n0x.Bass";
 import { n0x, brand, data } from "../components/n0x.vars";
 import {
   PageLayout,
+  Banner,
   T,
   T1,
   T2,
-  Img,
+  Image,
   List,
   ListItem
 } from "../components/n0x.library";
@@ -68,31 +68,33 @@ const WebPage = () => {
         were built. These limitations include, but are not limited to:
       </T>
 
-      <ul>
-        <li>
+      <List>
+        <ListItem>
           Limitations on plugin choices available to improve the functionality
           of the website.
-        </li>
+        </ListItem>
         <br />
-        <li>Plugins are limited in how much they can be customized.</li>
+        <ListItem>
+          Plugins are limited in how much they can be customized.
+        </ListItem>
         <br />
-        <li>
+        <ListItem>
           Templates are limited in design flexibility because at some point, it
           becomes a complete reprogramming, to give it the design elements that
           you actually want.
-        </li>
+        </ListItem>
         <br />
-        <li>
+        <ListItem>
           If the template you chose and the platform it was built upon are not
           scalable with your business, you will need to pay more money for a
           complete re-design on a completely different platform.
-        </li>
+        </ListItem>
         <br />
-        <li>
+        <ListItem>
           DIY sites tend to be even more limited in design and functionality
           options than other platforms.
-        </li>
-      </ul>
+        </ListItem>
+      </List>
 
       <T>
         If you receive a quote of roughly $1,000 to build or re-design your
@@ -148,10 +150,9 @@ const WebPage = () => {
         build that for you.
       </T>
 
-      <Img
+      <Image
         src={UiImage}
         alt="Ui Image"
-        width={[1, 1, 3 / 4, 1 / 2]}
         py="auto"
         mx="auto"
         mb={5}
@@ -187,7 +188,6 @@ const WebPage = () => {
       <Banner
         alt="image3"
         src={CodeImage}
-        width={[1, 1, 3 / 4, 1 / 2]}
         crop="60vh"
         px={2}
         py={5}

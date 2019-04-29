@@ -1,5 +1,5 @@
-export * from './SeoGlobal'
-export * from './SeoPage'
+export * from "./SeoGlobal";
+export * from "./SeoPage";
 export * from "./Buttons";
 export * from "./Nav";
 export * from "./Footer";
