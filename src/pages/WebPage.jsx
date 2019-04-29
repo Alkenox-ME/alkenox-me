@@ -30,8 +30,7 @@ const WebPage = () => {
     <PageLayout
       pgTitle={`Home: ${data.name.company.trendy}`}
       pgDesc={null}
-      color={props => props.theme.colors.black}
-      opacity={[0.9]}
+      color={props => props.theme.colors.whitetint[3]}
     >
       <T1>Full Stack Web Development</T1>
 
