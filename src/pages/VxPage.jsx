@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { Flex, Box, Text, Banner } from "../components/n0x.Bass";
 import { Image, Flex as Row, Heading } from "rebass";
 import { n0x, base, image, data, brand } from "../components/n0x.vars";
-import { Layout } from "../components/n0x.elements";
+import { PageLayout } from "../components/n0x.library";
 import VxPricing from "../components/VxPricing";
 
 const VideoPrices =
@@ -21,12 +21,11 @@ const Production =
 
 const VxPage = () => {
   return (
-    <Layout
-      pgTitle="alkenox-me: Video"
-      image={`${image.bg.logo}`}
-      copyYear={`${data.footer.year}`}
-      copyCompany={`${data.footer.company}`}
-      tint={n0x.tint.white}
+    <PageLayout
+      pgTitle={`Home: ${data.name.company.trendy}`}
+      pgDesc={null}
+      color={props => props.theme.colors.black}
+      opacity={[.9]}
     >
       <Flex>
         <Heading
@@ -292,7 +291,7 @@ const VxPage = () => {
         </Box>
         <VxPricing />
       </Flex>
-    </Layout>
+    </PageLayout>
   );
 };
 

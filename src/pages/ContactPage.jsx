@@ -3,24 +3,25 @@ import React from 'react';
 
 // Styling
 import { n0x, image, data } from '../components/n0x.vars'
-import { Heading } from '../components/n0x.Bass';
 
 // Components
-import { Layout } from '../components/n0x.elements';
+import { PageLayout, T1 } from '../components/n0x.library';
 import ContactForm from '../components/ContactForm';
 
 // Page
 const ContactPage = () => {
   return (
-    <Layout
-      pgTitle='alkenox-me: contact us'
-      tint={n0x.tint.white}
+    <PageLayout
+      pgTitle={`Contact Us: ${data.name.company.trendy}`}
+      pgDesc={null}
+      color={props => props.theme.colors.black}
+      opacity={[.9]}
     >
-      <Heading mt={4} p={5} width={1} fontSize={[5, 5, 5, 6]} textAlign="center">
+      <T1>
         Contact Us
-      </Heading>
+      </T1>
       <ContactForm />
-    </Layout>
+    </PageLayout>
   );
 };
 

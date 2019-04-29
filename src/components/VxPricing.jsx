@@ -1,6 +1,6 @@
 import React from "react";
 import { n0x, base, image, data, brand } from "./n0x.vars";
-import { TierPricing } from "./n0x.elements";
+import { TierPricing } from "./n0x.library";
 
 const EveryWebPkg = () => {
   return (

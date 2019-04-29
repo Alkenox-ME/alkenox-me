@@ -3,20 +3,20 @@ import React from 'react';
 import { Link as Href } from '@reach/router';
 
 // Styling
-import styled from 'styled-components';
-import { Image, Card, Heading } from '../n0x.Bass';
+import styled from 'styled-components/macro';
+import { T2, Img, Box } from '../atoms'
 
 const LabelBlock = ({ link, label, bshadow, bradius, bgimg, fontSz, width, height }) => {
 
     const Link = styled(Href)`
-      font-family: ${props => props.theme.font.family.sans};
-      color: ${props => props.theme.link.color.base};
+      font-family: ${props => props.theme.fonts.normal};
+      color: ${props => props.theme.colors.link[0]};
         :hover {
-        color: ${props => props.theme.link.color.hover};
+        color: ${props => props.theme.colors.link[1]};
     }
     `;
 
-    const LabelText = styled(Heading)`
+    const LabelText = styled(T2)`
       position: absolute;
       display: flex;
       align-items: center;
@@ -28,7 +28,7 @@ const LabelBlock = ({ link, label, bshadow, bradius, bgimg, fontSz, width, heigh
       opacity: 0.2;
     `;
 
-    const LabelImage = styled(Image)`
+    const LabelImage = styled(Img)`
       object-fit: cover;
       object-position: center;
       z-index: 0;
@@ -36,8 +36,7 @@ const LabelBlock = ({ link, label, bshadow, bradius, bgimg, fontSz, width, heigh
       opacity: 1;
     `;
 
-    const LabelBase = styled(Card)`
-      position: relative;
+    const LabelBase = styled.div`
       &:hover ${LabelImage} {
         transition: 0.5s ease-in-out;
         opacity: 0.2;
@@ -49,14 +48,13 @@ const LabelBlock = ({ link, label, bshadow, bradius, bgimg, fontSz, width, heigh
     `;
 
     return (
-        <Link exact="true" to={link} title={label} aria-label={label}>
-          <LabelBase boxShadow={bshadow} borderRadius={bradius} src={bgimg}>
-            <LabelText fontSize={fontSz} width={1} color="inherit" textAlign="center">
-              {label}
-            </LabelText>
-            <LabelImage borderRadius={bradius} src={bgimg} width={1} height={height} />
-          </LabelBase>
-        </Link>
+      <Link exact="true" to={link} title={label} aria-label={label}>
+        <LabelBase>
+          <LabelText fontSize={fontSz} width={1} color="inherit" textAlign="center">
+            {label}
+          </LabelText>
+        </LabelBase>
+      </Link>
     );
   }
 

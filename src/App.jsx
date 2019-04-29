@@ -5,9 +5,9 @@ import loadable from "@loadable/component";
 // Styling
 
 // Components
-import { MainLayout } from "./components/n0x.elements";
+// import { MainLayout } from "./components/n0x.elements";
 import { n0x, data, image } from './components/n0x.vars'
-import { PosedRouter } from './components/n0x.Animate'
+import { PosedRouter, GlobalLayout, Footer, Nav } from './components/n0x.library'
 
 // Pages
 import HomePage from "./pages/HomePage";
@@ -28,14 +28,12 @@ const WebPkgs = loadable(() => import("./pages/WebPkgs"));
 // The Core App
 const App = () => {
     return (
-      <MainLayout
+      <GlobalLayout
         defTitle={data.name.company.full}
         siteDesc={data.meta.desc.site}
         image={image.bg.logo}
-        tint={n0x.tint.black[0]}
-        copyYear={data.footer.year}
-        copyCompany={data.name.company.full}
       >
+        <Nav />
         <PosedRouter>
           <HomePage exact path={"/"} key={'home'} />
           <AboutPage path={"about-us"} key={'about'} />
@@ -49,7 +47,11 @@ const App = () => {
           <PhotoPage path={"photography"} key={'photo'} />
           <RxPage path={"digital-media-repair"} key={'repair'} />
         </PosedRouter>
-      </MainLayout>
+        <Footer
+          copyYear={data.footer.year}
+          copyCompany={data.name.company.full}
+        />
+      </GlobalLayout>
     );
   };
 

@@ -1,8 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
-import { ReactComponent as Home } from '../../static/home.svg'
-import { ReactComponent as About } from '../../static/about.svg'
-import { ReactComponent as Contact } from '../../static/contact.svg'
+import styled from 'styled-components/macro';
+import { Home } from '../../../static/home.svg'
+import { About } from '../../../static/about.svg'
+import { Contact } from '../../../static/contact.svg'
 
 const BtnShape = styled.button`
   z-index: 10000;

@@ -40,6 +40,7 @@
     "express": "latest",
     "hbs": "latest",
     "http-proxy-middleware": "^0.19.1",
+    "humps": "^2.0.1",
     "ignore-styles": "^5.0.1",
     "morgan": "latest",
     "prop-types": "^15.7.2",
@@ -69,6 +70,7 @@
     "rebass": "^3.1.0",
     "styled-components": "^4.2.0",
     "styled-system": "^4.1.0",
+    "styled-transition-group": "^2.0.0",
     "yup": "^0.27.0"
   },
   "peerDependencies": {

@@ -2,7 +2,7 @@ const image = {
   bg: {
     logo:
       "https://github.com/alkenox/alkenox-me-images/blob/master/logo.png?raw=true",
-    graphic: "https://media.giphy.com/media/Xth5kFQm3ahg5swyBK/giphy.gif",
+    gx: "https://media.giphy.com/media/Xth5kFQm3ahg5swyBK/giphy.gif",
     photo:
       "https://media.giphy.com/media/1xoqRHHLqXKNc02nM0/giphy-downsized-large.gif",
     mx:
