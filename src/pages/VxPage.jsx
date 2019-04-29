@@ -107,7 +107,7 @@ const VxPage = () => {
 
       <T2>Our Process</T2>
 
-      <T3>Pre-Production</T3>
+      <T3 pb={5}>Pre-Production</T3>
 
       <Image lp={2} height={50} src={Teamwork} alt="Teamwork" />
 
@@ -122,40 +122,43 @@ const VxPage = () => {
         </TP>
       </Box>
 
-      <T3>Production</T3>
+      <T3 py={5}>Production</T3>
 
-      <T>
-        We embark upon what we have planned out for our shooting schedule. We
-        arrive on location, with rehearsed talent, and begin collecting all the
-        shots and audio that we need to create your video. In some cases,
-        certain audio and/or images may be acquired or created in
-        post-production. Any kind of motion graphics, sound effects,
-        v4oice-overs, or visual effects would be completed in Post.
-      </T>
+      <Box lp={2} px={3}>
+        <TP talignLeft>
+          We embark upon what we have planned out for our shooting schedule. We
+          arrive on location, with rehearsed talent, and begin collecting all
+          the shots and audio that we need to create your video. In some cases,
+          certain audio and/or images may be acquired or created in
+          post-production. Any kind of motion graphics, sound effects,
+          voice-overs, or visual effects would be completed in Post.
+        </TP>
+      </Box>
 
-      <Image height={40} src={Production} alt="Production" />
+      <Image lp={2} height={50} src={Production} alt="Production" />
 
-      <T3>Post-Production</T3>
+      <T3 py={5}>Post-Production</T3>
 
-      <Banner crop={"40vh"} src={Editing} alt="Editing" />
+      <Image lp={2} height={60} src={Editing} alt="Editing" />
 
-      <T>
-        Here is where we log all the footage and photographs if there are any
-        before we begin editing. The time it takes to log everything depends on
-        how much footage we have gathered. Basic video editing can take from 30
-        minutes to an hour for each minute of finished video. Basic video
-        editing is finding the best shots, cutting them together, and adding in
-        some basic transitions. More advanced editing can take much longer
-        because now we are talking about adding in animations, visual effects,
-        and compositing. Essentially, the more complex a video is, the more time
-        and money it will require.
-      </T>
+      <Box lp={2} px={3}>
+        <TP talignLeft>
+          Here is where we log all the footage and photographs if there are any
+          before we begin editing. The time it takes to log everything depends
+          on how much footage we have gathered. Basic video editing can take
+          from 30 minutes to an hour for each minute of finished video. Basic
+          video editing is finding the best shots, cutting them together, and
+          adding in some basic transitions. More advanced editing can take much
+          longer because now we are talking about adding in animations, visual
+          effects, and compositing. Essentially, the more complex a video is,
+          the more time and money it will require.
+        </TP>
+      </Box>
 
       <T4>Types of Videos</T4>
 
       <List>
         <ListItem>
-          {" "}
           Branded Video - Under 60 seconds and Builds Awareness
         </ListItem>
         <br />
