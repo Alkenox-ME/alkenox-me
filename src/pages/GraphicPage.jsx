@@ -1,61 +1,21 @@
 import React from "react";
 import ReactPlayer from "react-player";
-import { Box, Text, Heading } from "../components/n0x.Bass";
-import {
-  n0x,
-  image,
-  data,
-  brand,
-  deskH1,
-  deskH2,
-  mobileH1,
-  mobileH2,
-  deskT2,
-  mobileT1,
-  mobileT2
-} from "../components/n0x.vars";
-import { Image } from "rebass";
-import { Layout } from "../components/n0x.elements";
+import { n0x, base, image, data } from "../components/n0x.vars";
+import { PageLayout, T, T1, T2, Img } from "../components/n0x.library";
 
 const GraphicPage = () => {
   return (
-    <Layout
-      pgTitle="alkenox-me: Graphic Design & Animation"
-      image={`${image.bg.logo}`}
-      copyYear={`${data.footer.year}`}
-      copyCompany={`${data.footer.company}`}
-      tint={n0x.tint.white}
+    <PageLayout
+      pgTitle={`Home: ${data.name.company.trendy}`}
+      pgDesc={null}
+      color={props => props.theme.colors.black}
+      opacity={[0.9]}
     >
-      <Heading
-        width={1}
-        mx={2}
-        mt={5}
-        textAlign="center"
-        fontSize={[mobileH1, null, deskH1, null]}
-        color={[brand.color.dkblue]}
-      >
-        Graphic Design & Animation
-      </Heading>
+      <T1>2D & 3D Graphic Design</T1>
 
-      <Heading
-        width={1}
-        mt={5}
-        mx={2}
-        textAlign="center"
-        fontSize={[mobileH2, null, deskH2, null]}
-        color={[brand.color.light]}
-      >
-        Whiteboard / Glassboard Animation Videos
-      </Heading>
+      <T2>Whiteboard / Glassboard Animation Videos</T2>
 
-      <Text
-        width={1}
-        px={4}
-        my={5}
-        textAlign="left"
-        fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
-        color={[brand.color.light]}
-      >
+      <T>
         These types of videos are animated explainer videos, usually created to
         add to your website or to post on social media. They are meant to
         capture your audience's attention and get them interested in what you
@@ -63,45 +23,22 @@ const GraphicPage = () => {
         story into a working script. Our directors will then take that script
         and have a storyboard put together for your approval before embarking on
         the main course of putting the animations together.
-      </Text>
+      </T>
 
-      <Box width={[1, null, 2 / 3, null]} my={3} mx="auto">
-        <ReactPlayer
-          url="https://github.com/alkenox/alkenox-me-videos/blob/master/whiteboard-enoch.mp4?raw=true"
-          width="100%"
-          height="100%"
-          loop
-          playing
-          volume={0}
-        />
-      </Box>
-      <Text
-        width={1}
-        pb={5}
-        textAlign="center"
-        fontSize={[brand.font.size.heading.tags]}
-      >
-        Whiteboard Animation produced for Drs. Enoch and Lamei.
-      </Text>
+      <ReactPlayer
+        url="https://github.com/alkenox/alkenox-me-videos/blob/master/whiteboard-enoch.mp4?raw=true"
+        width="100%"
+        height="100%"
+        loop
+        playing
+        volume={0}
+      />
 
-      <Heading
-        width={1}
-        my={3}
-        textAlign="center"
-        fontSize={[mobileH2, null, deskH2, null]}
-        color={[brand.color.dkblue]}
-      >
-        Animated GIFs
-      </Heading>
+      <T>Whiteboard Animation produced for Drs. Enoch and Lamei</T>
 
-      <Text
-        width={1}
-        mx={5}
-        my={5}
-        textAlign="left"
-        fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
-        color={[brand.color.dkblue]}
-      >
+      <T2>Animated GIFs</T2>
+
+      <T>
         The GIF (Graphical Interchange Format), was invented in 1987 by Steve
         Wilhite, who was looking for a way to animate images in the smallest
         file size possible. GIFs can be created from a series of images, or even
@@ -112,35 +49,23 @@ const GraphicPage = () => {
         your audience, providing visual instructions, building excitement for a
         future product, and they can help you and/or your brand more
         approachable.
-      </Text>
+      </T>
 
-      <Box width={[1, null, 2 / 3, null]} my={3} mx="auto">
-        <Image
-          width={1}
-          src="https://media.giphy.com/media/MVgLYGeuRP4JynEhNU/source.gif"
-          alt="Sissy Promo Gif"
-        />
-        <Text
-          width={1}
-          mx={4}
-          py={3}
-          textAlign="center"
-          fontSize={[brand.font.size.heading.tags]}
-          color={[brand.color.dkblue]}
-        >
-          3D animated GIF created to help advertise an indie feature film,
-          "Sissy Carlyle" on social media.
-        </Text>
-      </Box>
+      <ReactPlayer
+        url="https://media.giphy.com/media/MVgLYGeuRP4JynEhNU/source.gif"
+        width="100%"
+        height="100%"
+        loop
+        playing
+        volume={0}
+      />
 
-      <Text
-        width={1}
-        mx={5}
-        my={5}
-        textAlign="left"
-        fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
-        color={[brand.color.dkblue]}
-      >
+      <T>
+        3D animated GIF created to help advertise an indie feature film, "Sissy
+        Carlyle" on social media.
+      </T>
+
+      <T>
         How they can add value to your business: GIFS are easy to share due to
         their small file size, they help you to show your fun side to your
         audience, and they can add more context or emotion in a very short
@@ -150,49 +75,10 @@ const GraphicPage = () => {
         their audience with the right GIF, as it can allow your brand to share
         geniune and engaging content. You can also use them to highlight a key
         function or feature of your product.
-      </Text>
+      </T>
 
-      <Heading
-        width={1}
-        my={5}
-        textAlign="center"
-        fontSize={[mobileH2, null, deskH2, null]}
-        color={[brand.color.dkblue]}
-      >
-        2D & 3D Logo Design & Animated Logos
-      </Heading>
-
-      <Box width={[1, null, 2 / 3, null]} my={3} mx="auto">
-        <ReactPlayer
-          url="https://github.com/Alkenox-ME/alkenox-me-videos/blob/master/logo-seq.mp4?raw=true"
-          width="100%"
-          height="100%"
-          loop
-          playing
-          volume={0}
-        />
-      </Box>
-
-      <Text
-        width={1}
-        mx={5}
-        my={5}
-        textAlign="left"
-        fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
-        color={[brand.color.dkblue]}
-      >
-        If you are just starting your business or giving it a make-over, your
-        logo is the first thing people see. We want to help you with your new
-        look. Whether you are looking for luxury, fun, glamor, simplicity, or
-        purely professional, we would love to help! Our artists will come up
-        with several drafts for you to look over after our consultation to get a
-        feel for what you want. You will then let us know your color preferences
-        or ideas for the logo and any changes you would like to see. We will
-        then finish up the design per your specifications and deliver it to you
-        digitally so you have what you need to add it to your website, business
-        cards, and any other marketing materials you may need.
-      </Text>
-    </Layout>
+      <T2>2D & 3D Logo Design & Animated Logos</T2>
+    </PageLayout>
   );
 };
 

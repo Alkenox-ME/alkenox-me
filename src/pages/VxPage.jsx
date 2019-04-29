@@ -3,23 +3,9 @@ import ReactPlayer from "react-player";
 import { Bounce } from "react-reveal";
 
 import { Flex, Box, Text, Banner } from "../components/n0x.Bass";
-import { Heading } from "rebass";
-import {
-  n0x,
-  image,
-  data,
-  brand,
-  deskH1,
-  deskH2,
-  deskH3,
-  mobileH1,
-  mobileH2,
-  mobileH3,
-  deskT2,
-  mobileT1,
-  mobileT2
-} from "../components/n0x.vars";
-import { Layout } from "../components/n0x.elements";
+import { Image, Flex as Row, Heading } from "rebass";
+import { n0x, base, image, data, brand } from "../components/n0x.vars";
+import { PageLayout } from "../components/n0x.library";
 import VxPricing from "../components/VxPricing";
 
 const Teamwork =
@@ -31,12 +17,11 @@ const Production =
 
 const VxPage = () => {
   return (
-    <Layout
-      pgTitle="alkenox-me: Video"
-      image={`${image.bg.logo}`}
-      copyYear={`${data.footer.year}`}
-      copyCompany={`${data.footer.company}`}
-      tint={n0x.tint.white}
+    <PageLayout
+      pgTitle={`Home: ${data.name.company.trendy}`}
+      pgDesc={null}
+      color={props => props.theme.colors.black}
+      opacity={[0.9]}
     >
       <Flex>
         <Heading
@@ -318,7 +303,7 @@ const VxPage = () => {
         </Box>
         <VxPricing />
       </Flex>
-    </Layout>
+    </PageLayout>
   );
 };
 

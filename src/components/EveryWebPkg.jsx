@@ -18,7 +18,7 @@ import {
   deskFoot,
   mobileFoot
 } from "./n0x.vars";
-import { TierPricing } from "./n0x.elements";
+import { TierPricing } from "./n0x.library";
 
 const WebPricing = () => {
   return (

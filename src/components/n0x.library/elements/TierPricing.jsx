@@ -1,8 +1,8 @@
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import { Tier } from "./Tier";
-import { Flex, Text, Heading } from "../n0x.Bass";
+import { Block, T, T1, T2 } from "../atoms";
 
 const TierPricing = class extends PureComponent {
   render() {
@@ -277,10 +277,10 @@ const TierPricing = class extends PureComponent {
     return (
       <Bg>
         <Tint>
-          <Flex>
-            <Heading width={1} fontSize={titleSz} p={4}>
+          <Block>
+            <T1>
               {title}
-            </Heading>
+            </T1>
             <Tier
               title={ title1 }
               price={ price1 }
@@ -537,16 +537,10 @@ const TierPricing = class extends PureComponent {
               descPadT={ dpt4 }
               descPadB={ dpb4 }
             />
-            <Text
-              width={1}
-              textAlign="center"
-              fontSize={footerSz}
-              p={5}
-              color={footerColor}
-            >
+            <T>
               {footer}
-            </Text>
-          </Flex>
+            </T>
+          </Block>
         </Tint>
       </Bg>
     );

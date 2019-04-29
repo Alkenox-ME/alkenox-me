@@ -1,10 +1,6 @@
 import React from "react";
 import { Link } from "@reach/router";
 import styled from "styled-components";
-import { HomeBtn, AboutBtn, ContactBtn } from './Buttons';
-import { Footer } from './Footer'
-import { SeoGlobal } from './SeoGlobal'
-import N0xTheme from "../../styles/n0x.theme";
 
 const MainLayout = ({ image, tint, children, copyYear, copyCompany, ...props }) => {
 
