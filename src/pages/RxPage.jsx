@@ -1,66 +1,56 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import { Bounce } from "react-reveal";
-import { Flex, Box, Text, Banner } from "../components/n0x.Bass";
-import { Image, Heading } from "rebass";
 import {
-  n0x,
-  image,
-  data,
-  brand,
-  deskH1,
-  deskH2,
-  deskH3,
-  deskH4,
-  mobileH1,
-  mobileH2,
-  mobileH3,
-  deskT1,
-  deskT2,
-  mobileT1,
-  mobileT2,
-  deskFoot,
-  mobileFoot
-} from "../components/n0x.vars";
-import { Layout } from "../components/n0x.elements";
+  Block,
+  Box,
+  HMenu,
+  MenuItem,
+  UTitle,
+  UText,
+  UFX,
+  List,
+  ListItem,
+  Image,
+  Href,
+  T,
+  T1,
+  T2,
+  T3,
+  T4,
+  T5,
+  T6,
+  PT,
+  TP,
+  BTN,
+  Divider,
+  SoundBlock,
+  MxBlock,
+  PhotoBlock,
+  VxBlock,
+  GxBlock,
+  WebBlock,
+  RxBlock,
+  BGimg,
+  BGcolor,
+  FT,
+  Banner
+} from "../components/n0x.library";
+import { n0x, base, image, data } from "../components/n0x.vars";
+import { PageLayout } from "../components/n0x.library";
 
 const RxPage = () => {
   return (
-    <Layout
-      pgTitle="alkenox-me: Audio & Visual Rx"
-      image={`${image.bg.logo}`}
-      copyYear={`${data.footer.year}`}
-      copyCompany={`${data.footer.company}`}
-      tint={n0x.tint.white}
+    <PageLayout
+      pgTitle={`Home: ${data.name.company.trendy}`}
+      pgDesc={null}
+      color={props => props.theme.colors.whitetint[3]}
     >
-      <Heading
-        width={1}
-        my={5}
-        fontSize={[mobileH1, null, deskH1, null]}
-        textAlign="center"
-        color={[brand.color.dkblue]}
-      >
-        Audio & Visual Rx
-      </Heading>
+      <T1>Audio & Visual Rx</T1>
 
-      <Heading
-        width={[1]}
-        fontSize={[mobileH2, null, deskH2, null]}
-        fontWeight="bold"
-        my={4}
-        textAlign="center"
-        color={[brand.color.dkblue]}
-      >
-        Video Rx
-      </Heading>
+      <T2>Video Rx</T2>
 
-      <Text
-        fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
-        textAlign="left"
-        mx={[2, null, 5, null]}
-        pb={5}
-        color={[brand.color.dkblue]}
-      >
+      <T>
         Although we try to plan everything perfectly and catch all the things
         that need to be removed from a shot before we hit the record button and
         call "Action!", it doesn't always run smoothly. We have limited time on
@@ -71,26 +61,11 @@ const RxPage = () => {
         with footage that needs something removed, or maybe even added, into a
         shot, we may be able to help. As the saying goes, not everything can be
         fixed in Post. But we can sure try!
-      </Text>
+      </T>
 
-      <Heading
-        width={[1]}
-        fontSize={[mobileH2, null, deskH2, null]}
-        fontWeight="bold"
-        my={4}
-        textAlign="center"
-        color={[brand.color.dkblue]}
-      >
-        Audio Repair
-      </Heading>
+      <T2>Audio Repair</T2>
 
-      <Text
-        fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
-        textAlign="left"
-        mx={[2, null, 5, null]}
-        pb={5}
-        color={[brand.color.dkblue]}
-      >
+      <T>
         Capturing great audio is always a feat that requires intense planning.
         But it's even harder to control unless you're recording in a sound
         studio. If shooting outdoors, it is the worst case scenario. If shooting
@@ -99,45 +74,25 @@ const RxPage = () => {
         it does not mean that it cannot be improved upon even just the
         slightest. That little bit of fixing just might make it usable audio
         again.
-      </Text>
+      </T>
 
-      <Heading
-        width={[1]}
-        fontSize={[mobileH2, null, deskH2, null]}
-        fontWeight="bold"
-        my={4}
-        textAlign="center"
-        color={[brand.color.dkblue]}
-      >
-        Photo Repair
-      </Heading>
+      <T2>Photo Repair</T2>
 
-      <Text
-        fontSize={[mobileT2, mobileT1, deskT2, deskT2]}
-        textAlign="left"
-        mx={[2, null, 5, null]}
-        pb={5}
-        color={[brand.color.dkblue]}
-      >
+      <Image lp={5} height={40} src={image.fg.yinYang} />
+
+      <T>
         Old pictures become damaged over time. Scratches, tears, wrinkles, water
         damage, etc. can all make the image that much harder to look at. If
         parts of your image are missing, we can do what we can to try and
         restore it from what is still there. Scratches, specs, wrinkles, and
         certain discolorations can be improved upon. If you need help restoring
         your memories, we may be able to help.
-      </Text>
+      </T>
 
-      <Text
-        fontSize={[mobileT2, mobileT1, deskT1, deskT1]}
-        textAlign="center"
-        fontWeight="bold"
-        mx={[2, null, 5, null]}
-        py={5}
-        color={[brand.color.dkblue]}
-      >
+      <T>
         For any of our Rx Services, please contact us for a free consultation.
-      </Text>
-    </Layout>
+      </T>
+    </PageLayout>
   );
 };
 

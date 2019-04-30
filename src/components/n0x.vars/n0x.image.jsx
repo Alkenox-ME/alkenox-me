@@ -9,6 +9,9 @@ const image = {
       "https://media.giphy.com/media/229roNqcyGIZNfWCfj/giphy-downsized-large.gif",
     rx:
       "https://media.giphy.com/media/MVgLYGeuRP4JynEhNU/giphy-downsized-large.gif",
+    photofix1A:
+
+
     sound:
       "https://media.giphy.com/media/8JQ9uF8Oe1Ktmmdd8o/giphy-downsized-large.gif",
     vx:
