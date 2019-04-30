@@ -1,15 +1,49 @@
 import React from "react";
 import ReactPlayer from "react-player";
+import {
+  Block,
+  Box,
+  HMenu,
+  MenuItem,
+  UTitle,
+  UText,
+  UFX,
+  List,
+  ListItem,
+  Image,
+  Href,
+  T,
+  T1,
+  T2,
+  T3,
+  T4,
+  T5,
+  T6,
+  PT,
+  TP,
+  BTN,
+  Divider,
+  SoundBlock,
+  MxBlock,
+  PhotoBlock,
+  VxBlock,
+  GxBlock,
+  WebBlock,
+  RxBlock,
+  BGimg,
+  BGcolor,
+  FT,
+  Banner
+} from "../components/n0x.library";
 import { n0x, base, image, data } from "../components/n0x.vars";
-import { PageLayout, T, T1, T2, Img } from "../components/n0x.library";
+import { PageLayout } from "../components/n0x.library";
 
 const GraphicPage = () => {
   return (
     <PageLayout
       pgTitle={`Home: ${data.name.company.trendy}`}
       pgDesc={null}
-      color={props => props.theme.colors.black}
-      opacity={[0.9]}
+      color={props => props.theme.colors.whitetint[3]}
     >
       <T1>2D & 3D Graphic Design</T1>
 
@@ -25,14 +59,16 @@ const GraphicPage = () => {
         the main course of putting the animations together.
       </T>
 
-      <ReactPlayer
-        url="https://github.com/alkenox/alkenox-me-videos/blob/master/whiteboard-enoch.mp4?raw=true"
-        width="100%"
-        height="100%"
-        loop
-        playing
-        volume={0}
-      />
+      <Box lp={2} pt={5} pb={2} px={2}>
+        <ReactPlayer
+          url="https://github.com/alkenox/alkenox-me-videos/blob/master/whiteboard-enoch.mp4?raw=true"
+          width="100%"
+          height="100%"
+          loop
+          playing
+          volume={0}
+        />
+      </Box>
 
       <T>Whiteboard Animation produced for Drs. Enoch and Lamei</T>
 

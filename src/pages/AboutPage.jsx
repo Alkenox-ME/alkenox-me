@@ -10,14 +10,13 @@ import { PageLayout, T, T1, T2, T6, Image } from "../components/n0x.library";
 const AboutPage = () => {
   return (
     <PageLayout
-      pgTitle={`About Us: ${data.name.company.trendy}`}
+      pgTitle={`Home: ${data.name.company.trendy}`}
       pgDesc={null}
-      color={props => props.theme.colors.black}
-      opacity={[0.9]}
+      color={props => props.theme.colors.whitetint[3]}
     >
       <T1>About Us</T1>
 
-      <Image src={image.fg.yinYang} />
+      <Image lp={5} height={40} src={image.fg.yinYang} />
 
       <T>
         Alkenox Media & Entertainment is an independent media production
