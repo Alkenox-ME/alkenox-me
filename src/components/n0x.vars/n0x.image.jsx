@@ -9,8 +9,6 @@ const image = {
       "https://media.giphy.com/media/229roNqcyGIZNfWCfj/giphy-downsized-large.gif",
     rx:
       "https://media.giphy.com/media/MVgLYGeuRP4JynEhNU/giphy-downsized-large.gif",
-    photofix1A:
-
 
     sound:
       "https://media.giphy.com/media/8JQ9uF8Oe1Ktmmdd8o/giphy-downsized-large.gif",
@@ -32,7 +30,19 @@ const image = {
   },
   fg: {
     yinYang:
-      "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/768px-Yin_yang.png?raw=true"
+      "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/768px-Yin_yang.png?raw=true",
+
+    photoFix1a:
+      "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/Original_Aged_Photo01.jpg?raw=true",
+
+    photoFix1b:
+      "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/Healed_Aged_Photo01.jpg?raw=true",
+
+    photoFix2a:
+      "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/Aged_Photo_Damaged_02.jpg?raw=true",
+
+    photoFix2b:
+      "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/Aged_Photo_Healed_02.jpg?raw=true"
   }
 };
 

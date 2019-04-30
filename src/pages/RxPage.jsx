@@ -78,7 +78,25 @@ const RxPage = () => {
 
       <T2>Photo Repair</T2>
 
-      <Image lp={5} height={40} src={image.fg.yinYang} />
+      <Box lp={4} px={2}>
+        <Image height={80} src={image.fg.photoFix1a} />
+        <TP talignCenter>Before</TP>
+      </Box>
+
+      <Box lp={4} px={2}>
+        <Image height={80} src={image.fg.photoFix1b} />
+        <TP talignCenter>After</TP>
+      </Box>
+
+      <Box lp={4} px={2}>
+        <Image height={80} src={image.fg.photoFix2a} />
+        <TP talignCenter>Before</TP>
+      </Box>
+
+      <Box lp={4} px={2}>
+        <Image height={80} src={image.fg.photoFix2b} />
+        <TP talignCenter>After</TP>
+      </Box>
 
       <T>
         Old pictures become damaged over time. Scratches, tears, wrinkles, water
