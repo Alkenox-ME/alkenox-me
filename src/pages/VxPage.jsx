@@ -74,7 +74,7 @@ const VxPage = () => {
         story to tell, or have video and images that you need turned into
         something with purpose; we are here to help.
       </T>
-      <Box lp={1.35} pt={5} pb={2}>
+      <Box lp={2} pt={5} pb={2} px={2}>
         <ReactPlayer
           url="https://github.com/alkenox/alkenox-me-videos/blob/master/trailer-mosaic.mp4?raw=true"
           width="100%"
@@ -84,13 +84,13 @@ const VxPage = () => {
           loop
           volume={0}
         />
+        <TP talignCenter fontSize={0.75}>
+          Movie Trailer for the Indie Feature Film "Mosaic" with all original
+          scoring, sound design, and 3D Motion Graphics.
+        </TP>
       </Box>
-      <T pb={5} talignCenter>
-        Movie Trailer for the Indie Feature Film "Mosaic" with all original
-        scoring, sound design, and 3D Motion Graphics.
-      </T>
 
-      <Box lp={1.35} pb={2}>
+      <Box lp={2} pt={4} pb={2} px={2}>
         <ReactPlayer
           url="https://github.com/alkenox/alkenox-me-videos/blob/master/talent-seq-joker.mp4?raw=true"
           width="100%"
@@ -99,11 +99,10 @@ const VxPage = () => {
           playing
           volume={0}
         />
+        <TP talignCenter fontSize={0.75}>
+          Opening Credits created for a short film "Joker's Wild".
+        </TP>
       </Box>
-
-      <T talignCenter>
-        Opening Credits created for a short film "Joker's Wild".
-      </T>
 
       <T2>Our Process</T2>
 
