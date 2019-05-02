@@ -33,10 +33,10 @@ const image = {
       "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/768px-Yin_yang.png?raw=true",
 
     photoFix1a:
-      "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/Original_Aged_Photo01.jpg?raw=true",
+      "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/Aged_Photo_Damaged_03.jpg?raw=true",
 
     photoFix1b:
-      "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/Healed_Aged_Photo01.jpg?raw=true",
+      "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/Aged_Photo_Healed_03.jpg?raw=true",
 
     photoFix2a:
       "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/Aged_Photo_Damaged_02.jpg?raw=true",

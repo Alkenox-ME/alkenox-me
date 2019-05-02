@@ -1,5 +1,5 @@
 import React from "react";
-import { n0x, brand, data } from "../components/n0x.vars";
+import { brand, data } from "../components/n0x.vars";
 import {
   PageLayout,
   Banner,
