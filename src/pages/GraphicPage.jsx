@@ -68,9 +68,9 @@ const GraphicPage = () => {
           playing
           volume={0}
         />
-        <TP talignCenter>
+        <T pt={2} talignCenter>
           Whiteboard Animation produced for Drs. Enoch and Lamei
-        </TP>
+        </T>
       </Box>
 
       <T2>Animated GIFs</T2>
@@ -88,21 +88,23 @@ const GraphicPage = () => {
         approachable.
       </T>
 
-      <ReactPlayer
-        url="https://media.giphy.com/media/MVgLYGeuRP4JynEhNU/source.gif"
-        width="100%"
-        height="100%"
-        loop
-        playing
-        volume={0}
-      />
+      <Box lp={2}>
+        <ReactPlayer
+          url="https://media.giphy.com/media/MVgLYGeuRP4JynEhNU/source.gif"
+          width="100%"
+          height="100%"
+          loop
+          playing
+          volume={0}
+        />
 
-      <T>
-        3D animated GIF created to help advertise an indie feature film, "Sissy
-        Carlyle" on social media.
-      </T>
+        <T py={2} talignCenter>
+          3D animated GIF created to help advertise an indie feature film,
+          "Sissy Carlyle" on social media.
+        </T>
+      </Box>
 
-      <T>
+      <T py={5}>
         How they can add value to your business: GIFS are easy to share due to
         their small file size, they help you to show your fun side to your
         audience, and they can add more context or emotion in a very short
@@ -115,6 +117,36 @@ const GraphicPage = () => {
       </T>
 
       <T2>2D & 3D Logo Design & Animated Logos</T2>
+
+      <Box lp={2} pt={5} pb={2} px={2}>
+        <ReactPlayer
+          url="https://github.com/alkenox/alkenox-me-videos/blob/master/whiteboard-enoch.mp4?raw=true"
+          width="100%"
+          height="100%"
+          loop
+          playing
+          volume={0}
+        />
+        <T pt={2} talignCenter>
+          Whiteboard Animation produced for Drs. Enoch and Lamei
+        </T>
+      </Box>
+
+      <Box lp={2} pt={5} pb={2} px={2}>
+        <ReactPlayer
+          url="https://github.com/alkenox/alkenox-me-videos/blob/master/whiteboard-enoch.mp4?raw=true"
+          width="100%"
+          height="100%"
+          loop
+          playing
+          volume={0}
+        />
+        <T pt={2} talignCenter>
+          Whiteboard Animation produced for Drs. Enoch and Lamei
+        </T>
+      </Box>
+
+      <T py={5}>a;lskdjf;oiaewsmn;lkajsdlifj</T>
     </PageLayout>
   );
 };
