@@ -1,7 +1,6 @@
 import React from "react";
 import { brand, data } from "../components/n0x.vars";
 import {
-  PageLayout,
   Banner,
   T,
   T1,
@@ -10,6 +9,8 @@ import {
   List,
   ListItem
 } from "../components/n0x.library";
+
+import { PageLayout } from "../components/n0x.library";
 import WebPricing from "../components/WebPricing";
 import EveryWebPkg from "../components/EveryWebPkg";
 

@@ -59,7 +59,7 @@ const GraphicPage = () => {
         the main course of putting the animations together.
       </T>
 
-      <Box lp={2} pt={5} pb={2} px={2}>
+      <Box lp={1.5} pt={5} pb={2} px={2}>
         <ReactPlayer
           url="https://github.com/alkenox/alkenox-me-videos/blob/master/whiteboard-enoch.mp4?raw=true"
           width="100%"
@@ -68,9 +68,10 @@ const GraphicPage = () => {
           playing
           volume={0}
         />
+        <TP talignCenter>
+          Whiteboard Animation produced for Drs. Enoch and Lamei
+        </TP>
       </Box>
-
-      <T>Whiteboard Animation produced for Drs. Enoch and Lamei</T>
 
       <T2>Animated GIFs</T2>
 
