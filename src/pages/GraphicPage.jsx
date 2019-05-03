@@ -68,9 +68,9 @@ const GraphicPage = () => {
           playing
           volume={0}
         />
-        <T pt={2} talignCenter>
+        <T5 talignCenter>
           Whiteboard Animation produced for Drs. Enoch and Lamei
-        </T>
+        </T5>
       </Box>
 
       <T2>Animated GIFs</T2>
@@ -88,29 +88,28 @@ const GraphicPage = () => {
         approachable.
       </T>
 
-      <Box lp={2} px={2} pt={3}>
+      <Box lp={2} px={2} pt={4}>
         <Image
           src="https://media.giphy.com/media/MVgLYGeuRP4JynEhNU/source.gif"
           alt="Sissy GIF"
         />
 
-        <T6 talignCenter>
+        <T5 talignCenter>
           3D animated GIF created by one of our artists to help advertise an
           indie feature film, "Sissy Carlyle" on social media.
-        </T6>
+        </T5>
       </Box>
 
-      <Box lp={2.25} px={2} pt={4}>
+      <Box lp={2} px={2} pt={3}>
         <Image
-          src="https://media.giphy.com/media/STkz8Z3d09xyNPmvj5/giphy.gif"
-          alt="Kicking Squirrel GIF"
+          src="https://media.giphy.com/media/8lNgT2uFKdFDh7b2l2/giphy.gif"
+          alt="'The 12 Lives of Sissy Carlyle' info GIF"
         />
 
-        <T6 talignCenter>
-          2D Animated GIF created for Drs. Enoch & Lamei's Orthodontic Practice.
-          "Earl The Squirrel" was hand-drawn and then animated by a couple of
-          our artists.
-        </T6>
+        <T5 talignCenter>
+          2D Animated Info GIF created for "The 12 Lives of Sissy Carlyle" indie
+          feature.
+        </T5>
       </Box>
 
       <T pt={2} pb={5}>
