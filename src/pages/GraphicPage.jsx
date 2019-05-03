@@ -88,23 +88,32 @@ const GraphicPage = () => {
         approachable.
       </T>
 
-      <Box lp={2}>
-        <ReactPlayer
-          url="https://media.giphy.com/media/MVgLYGeuRP4JynEhNU/source.gif"
-          width="100%"
-          height="100%"
-          loop
-          playing
-          volume={0}
+      <Box lp={2} px={2} pt={3}>
+        <Image
+          src="https://media.giphy.com/media/MVgLYGeuRP4JynEhNU/source.gif"
+          alt="Sissy GIF"
         />
 
-        <T py={2} talignCenter>
-          3D animated GIF created to help advertise an indie feature film,
-          "Sissy Carlyle" on social media.
-        </T>
+        <T6 talignCenter>
+          3D animated GIF created by one of our artists to help advertise an
+          indie feature film, "Sissy Carlyle" on social media.
+        </T6>
       </Box>
 
-      <T py={5}>
+      <Box lp={2.25} px={2} pt={4}>
+        <Image
+          src="https://media.giphy.com/media/STkz8Z3d09xyNPmvj5/giphy.gif"
+          alt="Kicking Squirrel GIF"
+        />
+
+        <T6 talignCenter>
+          2D Animated GIF created for Drs. Enoch & Lamei's Orthodontic Practice.
+          "Earl The Squirrel" was hand-drawn and then animated by a couple of
+          our artists.
+        </T6>
+      </Box>
+
+      <T pt={2} pb={5}>
         How they can add value to your business: GIFS are easy to share due to
         their small file size, they help you to show your fun side to your
         audience, and they can add more context or emotion in a very short

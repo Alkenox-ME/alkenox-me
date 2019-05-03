@@ -3,7 +3,7 @@ import { image } from "../../n0x.vars";
 export const GlobalStyle = createGlobalStyle`
 
   html {
-      font-size: calc( 16px + ( 21 - 16 ) * ( 100vw - 400px ) / ( 800 - 400 ) );
+      font-size: calc( 18px + ( 21 - 18 ) * ( 100vw - 400px ) / ( 800 - 400 ) );
   }
   html, body {
     color: ${props => props.theme.colors.bodyText};
