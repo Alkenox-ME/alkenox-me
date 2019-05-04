@@ -42,9 +42,7 @@ const image = {
       "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/Aged_Photo_Damaged_02.jpg?raw=true",
 
     photoFix2b:
-      "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/Aged_Photo_Healed_02.jpg?raw=true",
-
-    SissyGIF: "https://media.giphy.com/media/MVgLYGeuRP4JynEhNU/source.gif"
+      "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/Aged_Photo_Healed_02.jpg?raw=true"
   }
 };
 
