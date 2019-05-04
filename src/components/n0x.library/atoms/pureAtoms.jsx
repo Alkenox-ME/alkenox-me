@@ -204,14 +204,25 @@ const PT = styled.p`
   }
 `;
 
-const TP = styled.p`
-  text-align: ${getRule("talign", "center")};
+const TP1 = styled.p`
+  text-align: ${getRule("talign", "left")};
+  vertical-align: center;
   padding: ${props => props.pad || "0 auto"};
-  display: flex;
   ${shape}
   ${text}
   ${border}
+  ${shadow}
+  ${backgroundColor}
+`;
 
+const TP = styled.p`
+  text-align: ${getRule("talign", "center")};
+  padding: ${props => props.pad || "0 auto"};
+  font-size: .85em;
+  font-weight: bold;
+  ${shape}
+  ${text}
+  ${border}
   ${shadow}
   ${backgroundColor}
 `;
@@ -439,7 +450,7 @@ const Banner = styled(Image)`
   ${border}
   height: ${props => props.crop || "auto"}vh;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
 `;
 
 export {
@@ -463,6 +474,7 @@ export {
   T6,
   PT,
   TP,
+  TP1,
   BTN,
   Divider,
   SoundBlock,

@@ -68,9 +68,7 @@ const GraphicPage = () => {
           playing
           volume={0}
         />
-        <T5 talignCenter>
-          Whiteboard Animation produced for Drs. Enoch and Lamei
-        </T5>
+        <TP>Whiteboard Animation produced for Drs. Enoch and Lamei</TP>
       </Box>
 
       <T2>Animated GIFs</T2>
@@ -94,22 +92,22 @@ const GraphicPage = () => {
           alt="Sissy GIF"
         />
 
-        <T5 talignCenter>
+        <TP>
           3D animated GIF created by one of our artists to help advertise an
           indie feature film, "Sissy Carlyle" on social media.
-        </T5>
+        </TP>
       </Box>
 
-      <Box lp={2} px={2} pt={3}>
+      <Box lp={2} px={2} pt={4}>
         <Image
           src="https://media.giphy.com/media/8lNgT2uFKdFDh7b2l2/giphy.gif"
           alt="'The 12 Lives of Sissy Carlyle' info GIF"
         />
 
-        <T5 talignCenter>
+        <TP>
           2D Animated Info GIF created for "The 12 Lives of Sissy Carlyle" indie
           feature.
-        </T5>
+        </TP>
       </Box>
 
       <T pt={2} pb={5}>
@@ -135,9 +133,7 @@ const GraphicPage = () => {
           playing
           volume={0}
         />
-        <T pt={2} talignCenter>
-          Whiteboard Animation produced for Drs. Enoch and Lamei
-        </T>
+        <TP>Whiteboard Animation produced for Drs. Enoch and Lamei</TP>
       </Box>
 
       <Box lp={2} pt={5} pb={2} px={2}>
@@ -149,9 +145,7 @@ const GraphicPage = () => {
           playing
           volume={0}
         />
-        <T pt={2} talignCenter>
-          Whiteboard Animation produced for Drs. Enoch and Lamei
-        </T>
+        <TP>Whiteboard Animation produced for Drs. Enoch and Lamei</TP>
       </Box>
 
       <T py={5}>a;lskdjf;oiaewsmn;lkajsdlifj</T>

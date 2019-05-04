@@ -2,6 +2,9 @@ import React from "react";
 import { brand, data } from "../components/n0x.vars";
 import {
   Banner,
+  Box,
+  TP,
+  TP1,
   T,
   T1,
   T2,
@@ -35,14 +38,14 @@ const WebPage = () => {
     >
       <T1>Full Stack Web Development</T1>
 
-      <Banner src={ArchImage} width={[1]} position="top" crop="70vh" />
+      <Image src={ArchImage} alt="ArchImage" height={60} />
 
-      <T>
+      <T pt={4}>
         Why should you have your website built by a professional instead of
         building it yourself at a DIY site, like Wix?
       </T>
 
-      <T>
+      <T pt={4}>
         No matter what, the decision is yours. It is about making your decision
         wisely. The only way to do that is by arming yourself with information
         and focusing on what your website needs to function for your success.
@@ -50,7 +53,7 @@ const WebPage = () => {
         functionality. But a good balance is always our goal.
       </T>
 
-      <T>
+      <T pt={4}>
         The real question here isn't about the cost. It is "How much do you want
         to make?" DIY investment = $0. But you also get $0 return on that
         investment. The younger generation is internet savvy and therefore
@@ -63,40 +66,42 @@ const WebPage = () => {
         world wide web.
       </T>
 
-      <T>
+      <T pt={4}>
         All websites have their limitations due to the platforms on which they
         were built. These limitations include, but are not limited to:
       </T>
 
-      <List>
-        <ListItem>
-          Limitations on plugin choices available to improve the functionality
-          of the website.
-        </ListItem>
-        <br />
-        <ListItem>
-          Plugins are limited in how much they can be customized.
-        </ListItem>
-        <br />
-        <ListItem>
-          Templates are limited in design flexibility because at some point, it
-          becomes a complete reprogramming, to give it the design elements that
-          you actually want.
-        </ListItem>
-        <br />
-        <ListItem>
-          If the template you chose and the platform it was built upon are not
-          scalable with your business, you will need to pay more money for a
-          complete re-design on a completely different platform.
-        </ListItem>
-        <br />
-        <ListItem>
-          DIY sites tend to be even more limited in design and functionality
-          options than other platforms.
-        </ListItem>
-      </List>
+      <Box lp={1} px={20}>
+        <List lstyleDisc>
+          <ListItem>
+            Limitations on plugin choices available to improve the functionality
+            of the website.
+          </ListItem>
+          <br />
+          <ListItem>
+            Plugins are limited in how much they can be customized.
+          </ListItem>
+          <br />
+          <ListItem>
+            Templates are limited in design flexibility because at some point,
+            it becomes a complete reprogramming, to give it the design elements
+            that you actually want.
+          </ListItem>
+          <br />
+          <ListItem>
+            If the template you chose and the platform it was built upon are not
+            scalable with your business, you will need to pay more money for a
+            complete re-design on a completely different platform.
+          </ListItem>
+          <br />
+          <ListItem>
+            DIY sites tend to be even more limited in design and functionality
+            options than other platforms.
+          </ListItem>
+        </List>
+      </Box>
 
-      <T>
+      <T pt={4}>
         If you receive a quote of roughly $1,000 to build or re-design your
         site, it is probable that it is an existing template and there will be
         minimal alterations made to the original design. It will not be a fully
@@ -107,13 +112,13 @@ const WebPage = () => {
         brand is not just your logo. It has a personality, a mission, and it
         wants to reach out and interact with your potential clients.
       </T>
-      <T>
+      <T pt={4}>
         Getting to know your business is a must in order to have a good
         understanding of your brand and how it should be portrayed. As full
         stack developers, we are familiar with every part of the web development
         process and work in smaller, well-rounded teams.
       </T>
-      <T>
+      <T pt={4}>
         We build your website from the ground up based on your company's needs.
         Therefore, getting to know your business is a must in order to get a
         good understanding of your brand and how it should be portrayed. As full
@@ -139,7 +144,7 @@ const WebPage = () => {
 
       <T2>Crafting Your User Interface</T2>
 
-      <T>
+      <TP1 lp={2.25} mx={2}>
         Your user interface is the key to your user's heart. It is your brands
         first impression and a unique design can help your brand stand out from
         the crowd. What we strive to do for you here, is put the art back into
@@ -148,18 +153,13 @@ const WebPage = () => {
         You want your site to be eye-catching, interactive, and entertaining so
         that your visitors will want to come back again and again. We want to
         build that for you.
-      </T>
+      </TP1>
 
-      <Image
-        src={UiImage}
-        alt="Ui Image"
-        py="auto"
-        mx="auto"
-        mb={5}
-        color={[brand.color.dkblue]}
-      />
+      <Box lp={2}>
+        <Image src={UiImage} alt="Ui Image" mb={5} height={50} />
+      </Box>
 
-      <T2>Programming</T2>
+      <T2 pt={5}>Programming</T2>
 
       <T>
         The reasons we moved away from traditional website building frameworks
@@ -167,23 +167,25 @@ const WebPage = () => {
         include:
       </T>
 
-      <List>
-        <ListItem>Full Control over the design.</ListItem>
-        <br />
-        <ListItem>
-          Easily scalable with your business, right out of the box.
-        </ListItem>
-        <br />
-        <ListItem>
-          JavaScript is, by nature, interactive and we wanted to give sites a
-          modern and fun look and feel to their user-interface.
-        </ListItem>
-        <br />
-        <ListItem>
-          These frameworks make the online forms/data input areas on your
-          website more secure.
-        </ListItem>
-      </List>
+      <Box lp={1} px={30} pt={3}>
+        <List lstyleDisc>
+          <ListItem>Full Control over the design.</ListItem>
+          <br />
+          <ListItem>
+            Easily scalable with your business, right out of the box.
+          </ListItem>
+          <br />
+          <ListItem>
+            JavaScript is, by nature, interactive and we wanted to give sites a
+            modern and fun look and feel to their user-interface.
+          </ListItem>
+          <br />
+          <ListItem>
+            These frameworks make the online forms/data input areas on your
+            website more secure.
+          </ListItem>
+        </List>
+      </Box>
 
       <Banner
         alt="image3"
@@ -208,16 +210,7 @@ const WebPage = () => {
 
       <T2>Defining Your Users' Experience</T2>
 
-      <Banner
-        alt="image5"
-        src={UxImage}
-        width={[1, null, 1 / 2, null]}
-        crop="50vh"
-        px={5}
-        py={5}
-        mx="auto"
-        color={[brand.color.dkblue]}
-      />
+      <Image src={UxImage} alt="image5" />
 
       <T>
         We collect data about your target user base, and their preferences,
@@ -242,7 +235,7 @@ const WebPage = () => {
         is the whole reason why a website is born.
       </T>
 
-      <T>
+      <TP py={4}>
         After your design is up and running, we will manage your site for a
         minimum of six (6) months. This includes, at minimum, all of your site's
         basic needs by running common maintenance protocols, such as regular
@@ -251,7 +244,7 @@ const WebPage = () => {
         loading speed, and traffic numbers. After the initial six month term,
         you may take your site and data to your own hosting service or in-house
         management team, if you prefer.
-      </T>
+      </TP>
 
       <EveryWebPkg />
       <WebPricing />

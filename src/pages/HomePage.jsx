@@ -66,7 +66,7 @@ const HomePage = () => {
 
       <PhotoBlock lp={4} tv={4} p={pad}>
         <Button2>
-          <Link to="/web-design">
+          <Link to="/photography">
             <BGimg bgImage={image.bg.photo} bRadius={radius}>
               <BGcolor height={ht} bgColor={tint} bRadius={radius}>
                 <PT color={clr}>Photography</PT>
@@ -102,7 +102,7 @@ const HomePage = () => {
 
       <WebBlock lp={2} tv={2} p={pad}>
         <Button2>
-          <Link to="/photography">
+          <Link to="/web-design">
             <BGimg bgImage={image.bg.web} bRadius={radius}>
               <BGcolor height={ht} bgColor={tint} bRadius={radius}>
                 <PT color={clr}>Fullstack Web Development</PT>
