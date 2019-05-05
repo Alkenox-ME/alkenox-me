@@ -1,7 +1,6 @@
 import React from "react";
 import { brand, data } from "../components/n0x.vars";
 import {
-  Banner,
   Box,
   TP,
   TP1,
@@ -71,7 +70,7 @@ const WebPage = () => {
         were built. These limitations include, but are not limited to:
       </T>
 
-      <Box lp={1} px={20}>
+      <Box lp={1} px={20} pt={2}>
         <List lstyleDisc>
           <ListItem>
             Limitations on plugin choices available to improve the functionality
@@ -127,7 +126,7 @@ const WebPage = () => {
         we can put your money to better use in other important areas.
       </T>
 
-      <T2>Building The Prototype</T2>
+      <T2 pt={5}>Building The Prototype</T2>
 
       <T>
         The first step, when beginning any project, is discussing your wants and
@@ -142,7 +141,7 @@ const WebPage = () => {
         overall look, style, and functionality of your site.
       </T>
 
-      <T2>Crafting Your User Interface</T2>
+      <T2 pt={5}>Crafting Your User Interface</T2>
 
       <Box lp={2} px={3}>
         <TP1>
@@ -157,7 +156,7 @@ const WebPage = () => {
         </TP1>
       </Box>
 
-      <Image lp={2} src={UiImage} alt="Ui Image" mb={5} height={50} />
+      <Image lp={2} src={UiImage} alt="Ui Image" my={5} height={50} />
 
       <T2 pt={5}>Programming</T2>
 
@@ -187,30 +186,32 @@ const WebPage = () => {
         </List>
       </Box>
 
-      <Banner
+      <Image
+        lp={2}
         alt="image3"
         src={CodeImage}
-        crop="60vh"
+        height={60}
         px={2}
         py={5}
-        alignSelf="center"
-        pb={5}
-        color={[brand.color.dkblue]}
+        pb={2}
       />
 
-      <T>
-        Here at Alkenox, we prefer to program your site from the ground up. This
-        way we have total control and lot of freedom to get as creative as we
-        want. Actual programming may take longer, but the over-all quality will
-        be much better than what you will get from the traditional web building
-        frameworks. Even if you move the management of your site to someone
-        else, so long as they are familiar with the frameworks we used to build
-        your site, they will have no problem with making changes.
-      </T>
+      <Box lp={2} px={3}>
+        <TP1>
+          Here at Alkenox, we prefer to program your site from the ground up.
+          This way we have total control a and lot more freedom to get as
+          creative as we want. Actual programming may take longer, but the
+          over-all quality will be much better than what you will get from the
+          traditional web building frameworks. Even if you move the management
+          of your site to someone else, so long as they are familiar with the
+          frameworks we used to build your site, they will have no problem with
+          making changes.
+        </TP1>
+      </Box>
 
-      <T2>Defining Your Users' Experience</T2>
+      <T2 pt={5}>Defining Your Users' Experience</T2>
 
-      <Image src={UxImage} alt="image5" />
+      <Image lp={1} height={70} px={10} pb={2} src={UxImage} alt="image5" />
 
       <T>
         We collect data about your target user base, and their preferences,
@@ -218,7 +219,7 @@ const WebPage = () => {
         user interface that will allow for a more intriguing overall experience.
       </T>
 
-      <T2>SEO & Website Management</T2>
+      <T2 pt={5}>SEO & Website Management</T2>
 
       <T>
         The main reason you build a website for your brand or business is, in
@@ -235,7 +236,7 @@ const WebPage = () => {
         is the whole reason why a website is born.
       </T>
 
-      <TP py={4}>
+      <T py={4}>
         After your design is up and running, we will manage your site for a
         minimum of six (6) months. This includes, at minimum, all of your site's
         basic needs by running common maintenance protocols, such as regular
@@ -244,9 +245,10 @@ const WebPage = () => {
         loading speed, and traffic numbers. After the initial six month term,
         you may take your site and data to your own hosting service or in-house
         management team, if you prefer.
-      </TP>
+      </T>
 
       <EveryWebPkg />
+      <br />
       <WebPricing />
     </PageLayout>
   );

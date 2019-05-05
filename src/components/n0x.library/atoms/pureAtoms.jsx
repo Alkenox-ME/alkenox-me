@@ -206,7 +206,6 @@ const PT = styled.p`
 
 const TP1 = styled.p`
   text-align: ${getRule("talign", "left")};
-  vertical-align: center;
   padding: ${props => props.pad || "0 auto"};
   ${shape}
   ${text}
@@ -446,13 +445,6 @@ const Divider = styled.hr`
   ${space}
 `;
 
-const Banner = styled(Image)`
-  ${border}
-  height: ${props => props.crop || "auto"}vh;
-  object-fit: cover;
-  object-position: top;
-`;
-
 export {
   Block,
   Box,
@@ -486,6 +478,5 @@ export {
   RxBlock,
   BGimg,
   BGcolor,
-  FT,
-  Banner
+  FT
 };
