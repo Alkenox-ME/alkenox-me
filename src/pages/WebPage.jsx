@@ -144,20 +144,20 @@ const WebPage = () => {
 
       <T2>Crafting Your User Interface</T2>
 
-      <TP1 lp={2.25} mx={2}>
-        Your user interface is the key to your user's heart. It is your brands
-        first impression and a unique design can help your brand stand out from
-        the crowd. What we strive to do for you here, is put the art back into
-        website design so we can break the cycle of "clinical feeling websites",
-        while still helping you to convey your brand's personality and mission.
-        You want your site to be eye-catching, interactive, and entertaining so
-        that your visitors will want to come back again and again. We want to
-        build that for you.
-      </TP1>
-
-      <Box lp={2}>
-        <Image src={UiImage} alt="Ui Image" mb={5} height={50} />
+      <Box lp={2} px={3}>
+        <TP1>
+          Your user interface is the key to your user's heart. It is your brands
+          first impression and a unique design can help your brand stand out
+          from the crowd. What we strive to do for you here, is put the art back
+          into website design so we can break the cycle of "clinical feeling
+          websites", while still helping you to convey your brand's personality
+          and mission. You want your site to be eye-catching, interactive, and
+          entertaining so that your visitors will want to come back again and
+          again. We want to build that for you.
+        </TP1>
       </Box>
+
+      <Image lp={2} src={UiImage} alt="Ui Image" mb={5} height={50} />
 
       <T2 pt={5}>Programming</T2>
 

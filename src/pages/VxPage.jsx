@@ -23,6 +23,7 @@ import {
   T6,
   PT,
   TP,
+  TP1,
   BTN,
   Divider,
   SoundBlock,
@@ -111,27 +112,27 @@ const VxPage = () => {
       <Image lp={2} height={50} src={Teamwork} alt="Teamwork" />
 
       <Box lp={2} px={3}>
-        <TP talignLeft>
+        <TP1 talignLeft>
           We come together and figure out what it is you need, get you a quote
           on how much it will cost to effectively produce your project, and sort
           out the shooting schedule with the script that you will either provide
           us with or that we will help you write. This is the most important
           part of any production process. Without good planning, the entire
           project can lose its focus and fall apart very quickly.
-        </TP>
+        </TP1>
       </Box>
 
       <T3 py={5}>Production</T3>
 
       <Box lp={2} px={3}>
-        <TP talignLeft>
+        <TP1 talignLeft>
           We embark upon what we have planned out for our shooting schedule. We
           arrive on location, with rehearsed talent, and begin collecting all
           the shots and audio that we need to create your video. In some cases,
           certain audio and/or images may be acquired or created in
           post-production. Any kind of motion graphics, sound effects,
           voice-overs, or visual effects would be completed in Post.
-        </TP>
+        </TP1>
       </Box>
 
       <Image lp={2} height={50} src={Production} alt="Production" />
@@ -141,7 +142,7 @@ const VxPage = () => {
       <Image lp={2} height={60} src={Editing} alt="Editing" />
 
       <Box lp={2} px={3}>
-        <TP talignLeft>
+        <TP1 talignLeft>
           Here is where we log all the footage and photographs if there are any
           before we begin editing. The time it takes to log everything depends
           on how much footage we have gathered. Basic video editing can take
@@ -151,42 +152,44 @@ const VxPage = () => {
           longer because now we are talking about adding in animations, visual
           effects, and compositing. Essentially, the more complex a video is,
           the more time and money it will require.
-        </TP>
+        </TP1>
       </Box>
 
-      <T4>Types of Videos</T4>
+      <T4 pt={5}>Types of Videos</T4>
 
-      <List>
-        <ListItem>
-          Branded Video - Under 60 seconds and Builds Awareness
-        </ListItem>
-        <br />
-        <ListItem>
-          Commercial Video - 30 seconds or less and generates
-          awareness/excitement
-        </ListItem>
-        <br />
-        <ListItem>
-          Company Story Video - 3 minutes or less and used in the "About Us" or
-          "Our Team" section of your website
-        </ListItem>
-        <br />
-        <ListItem>
-          Explainer Video - 2 minutes or less and designed to explain your
-          company, product, service, or subject. (whiteboard animation)
-        </ListItem>
-        <br />
-        <ListItem>
-          Customer Testimonial Video - 3 minutes or less and are authentic
-          accounts of how your products or services helped your customer
-        </ListItem>
-        <br />
-        <ListItem>
-          Movie Trailer - 2 minutes 30 seconds or less (average full length
-          trailer) and drums up buzz and excitement for your movie
-        </ListItem>
-        <br />
-      </List>
+      <Box lp={1} px={20}>
+        <List>
+          <ListItem>
+            Branded Video - Under 60 seconds and Builds Awareness
+          </ListItem>
+          <br />
+          <ListItem>
+            Commercial Video - 30 seconds or less and generates
+            awareness/excitement
+          </ListItem>
+          <br />
+          <ListItem>
+            Company Story Video - 3 minutes or less and used in the "About Us"
+            or "Our Team" section of your website
+          </ListItem>
+          <br />
+          <ListItem>
+            Explainer Video - 2 minutes or less and designed to explain your
+            company, product, service, or subject. (whiteboard animation)
+          </ListItem>
+          <br />
+          <ListItem>
+            Customer Testimonial Video - 3 minutes or less and are authentic
+            accounts of how your products or services helped your customer
+          </ListItem>
+          <br />
+          <ListItem>
+            Movie Trailer - 2 minutes 30 seconds or less (average full length
+            trailer) and drums up buzz and excitement for your movie
+          </ListItem>
+          <br />
+        </List>
+      </Box>
 
       <VxPricing />
     </PageLayout>
