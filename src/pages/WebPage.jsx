@@ -1,8 +1,7 @@
 import React from "react";
-import { brand, data } from "../components/n0x.vars";
+import { data } from "../components/n0x.vars";
 import {
   Box,
-  TP,
   TP1,
   T,
   T1,
