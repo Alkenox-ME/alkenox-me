@@ -148,7 +148,10 @@ const GraphicPage = () => {
         <TP>Whiteboard Animation produced for Drs. Enoch and Lamei</TP>
       </Box>
 
-      <T py={5}>a;lskdjf;oiaewsmn;lkajsdlifj</T>
+      <T py={5}>
+        Animated logo clips are commonly used for film and TV, at the start of a
+        movie o
+      </T>
     </PageLayout>
   );
 };
