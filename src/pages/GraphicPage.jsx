@@ -140,7 +140,12 @@ const GraphicPage = () => {
         <TP>Whiteboard Animation produced for Drs. Enoch and Lamei</TP>
       </Box>
 
-      <T py={5}>A custom logo animation</T>
+      <T py={5}>
+        We can also design 2d or 3D custom logo animations for your company's
+        brand. Having an animated logo seems to have become the norm for a solid
+        brand to have as a part of how they convey their brand personality.
+        They've been used for commercials and...
+      </T>
     </PageLayout>
   );
 };
