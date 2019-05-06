@@ -125,19 +125,19 @@ const GraphicPage = () => {
           playing
           volume={0}
         />
-        <TP>Whiteboard Animation produced for Drs. Enoch and Lamei</TP>
+        <TP>Animated Logo</TP>
       </Box>
 
       <Box lp={2} pt={5} pb={2} px={2}>
         <ReactPlayer
-          url="https://github.com/Alkenox-ME/alkenox-me-videos/blob/master/The%20Smile%20Solution%20Whitboard.ipad.mp4?raw=true"
+          url="https://github.com/Alkenox-ME/alkenox-me-videos/blob/master/logo-seq.mp4?raw=true"
           width="100%"
           height="100%"
           loop
           playing
           volume={0}
         />
-        <TP>Whiteboard Animation produced for Drs. Enoch and Lamei</TP>
+        <TP>Animated Logo</TP>
       </Box>
 
       <T py={5}>
