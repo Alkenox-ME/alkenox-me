@@ -23,17 +23,9 @@ import {
   TP,
   BTN,
   Divider,
-  SoundBlock,
-  MxBlock,
-  PhotoBlock,
-  VxBlock,
-  GxBlock,
-  WebBlock,
-  RxBlock,
   BGimg,
   BGcolor,
-  FT,
-  Banner
+  FT
 } from "../components/n0x.library";
 import { n0x, base, image, data } from "../components/n0x.vars";
 import { PageLayout } from "../components/n0x.library";
