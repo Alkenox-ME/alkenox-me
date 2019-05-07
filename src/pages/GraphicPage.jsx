@@ -53,7 +53,7 @@ const GraphicPage = () => {
 
       <Box lp={1.5} pt={5} pb={2} px={2}>
         <ReactPlayer
-          url="https://github.com/Alkenox-ME/alkenox-me-videos/blob/master/The%20Smile%20Solution%20Whitboard.ipad.mp4?raw=true"
+          url="https://github.com/Alkenox-ME/alkenox-me-videos/blob/master/The_Smile_Solution_Whitboard.mp4?raw=true"
           width="100%"
           height="100%"
           loop
@@ -118,7 +118,7 @@ const GraphicPage = () => {
 
       <Box lp={2} pt={5} pb={2} px={2}>
         <ReactPlayer
-          url="https://github.com/Alkenox-ME/alkenox-me-videos/blob/master/The%20Smile%20Solution%20Whitboard.ipad.mp4?raw=true"
+          url="https://github.com/Alkenox-ME/alkenox-me-videos/blob/master/The_Smile_Solution_Whitboard.mp4?raw=true"
           width="100%"
           height="100%"
           loop
