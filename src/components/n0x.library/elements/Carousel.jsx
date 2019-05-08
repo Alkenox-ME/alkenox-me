@@ -6,9 +6,11 @@ import styled, { css } from "styled-components";
 // Adding directional arrows to help navigate carousel:
 
 const width = "100%";
-const height = "600px";
+const height = "550px";
 const Container = styled.div`
-  border: 1px solid black;
+  box-shadow: 0.5em 0.5em 0.5em 0.5em #24292e, -0.5em 0.5em 0.5em 0.5em #6c6c6c,
+    0.5em -0.5em 0.5em 0.5em #6c6c6c, -0.5em -0.5em 0.5em 0.5em #6c6c6c;
+
   position: relative;
   overflow: hidden;
   width: ${width};
@@ -22,7 +24,7 @@ const Arrow = styled.div`
   position: absolute;
   top: 0;
   width: 10%;
-  font-size: 3em;
+  font-size: 2em;
   cursor: pointer;
   user-select: none;
   ${props =>
