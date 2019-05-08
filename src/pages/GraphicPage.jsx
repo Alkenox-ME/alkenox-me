@@ -1,17 +1,8 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import {
-  Block,
   Box,
-  HMenu,
-  MenuItem,
-  UTitle,
-  UText,
-  UFX,
-  List,
-  ListItem,
   Image,
-  Href,
   T,
   T1,
   T2,
@@ -21,7 +12,6 @@ import {
   T6,
   PT,
   TP,
-  BTN,
   Divider,
   BGimg,
   BGcolor,
@@ -125,7 +115,7 @@ const GraphicPage = () => {
           playing
           volume={0}
         />
-        <TP>Animated Logo</TP>
+        <TP>3D Animated Logo</TP>
       </Box>
 
       <Box lp={2} pt={5} pb={2} px={2}>
@@ -137,7 +127,7 @@ const GraphicPage = () => {
           playing
           volume={0}
         />
-        <TP>Animated Logo</TP>
+        <TP>3D Animated Logo</TP>
       </Box>
 
       <T py={5}>
