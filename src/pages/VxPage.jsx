@@ -179,25 +179,61 @@ const VxPage = () => {
         px={10}
         bgImage="https://github.com/Alkenox-ME/alkenox-me-images/blob/master/audience-band-blur-1870438.jpg?raw=true"
       >
-        <Boxish bgColor="radial-gradient(rgba(255,0,0,0), rgba(137, 145, 249, 0.79))">
+        <Boxish bgColor="radial-gradient(rgba(255,0,0,0), rgba(6, 17, 162, 0.7))">
           <Carousel>
             <Slide right>
-              <div>
-                <h1>Slide 1</h1>
-                <p>Slide Description</p>
-              </div>
+              <Box>
+                <T3 textShadow>The Teaser</T3>
+                <T4 color="white" textShadow>
+                  Starting @ $1,200.00
+                </T4>
+                <T4 color="white" textShadow>
+                  (Up To 15 Seconds)
+                </T4>
+                <T talignCenter color="white" textShadow>
+                  A Short and Informative Teasers or Previews for Facebook or
+                  Instagram
+                </T>
+              </Box>
             </Slide>
             <Slide right>
-              <div>
-                <h1>Slide 2</h1>
-                <p>Slide Description</p>
-              </div>
+              <Box>
+                <T3 color="white" textShadow={5}>
+                  The Teaser
+                </T3>
+                <T4 color="white">Starting @ $1,200.00</T4>
+                <T4 color="white">(Up To 15 Seconds)</T4>
+                <T talignCenter color="white">
+                  Short and Informative Teasers or Previews for Facebook or
+                  Instagram
+                </T>
+              </Box>
             </Slide>
             <Slide right>
-              <div>
-                <h1>Slide 3</h1>
-                <p>Slide Description</p>
-              </div>
+              <Box>
+                <T3 color="white" textShadow={1}>
+                  Social Media
+                </T3>
+                <T3 color="white">Starting @ $3,500.00</T3>
+                <T3 color="white">(Up To 90 Seconds)</T3>
+                <T talignCenter color="white">
+                  Short and Informative Teasers or Previews for Facebook or
+                  Instagram
+                </T>
+              </Box>
+            </Slide>
+            <Slide right>
+              <Box>
+                <T3 color="white" textShadow={1}>
+                  The Teaser
+                </T3>
+                <T3>Starting @ $1,200.00</T3>
+                <T3>(Up To 15 Seconds)</T3>
+                <T talignCenter textColor="white">
+                  Short and Informative Teasers or Previews for Facebook or
+                  Instagram
+                </T>
+              </Box>
             </Slide>
           </Carousel>
         </Boxish>

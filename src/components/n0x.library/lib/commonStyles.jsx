@@ -1,31 +1,25 @@
-import { css } from 'styled-components/macro'
-import { breakpoint } from './breaks'
+import { css } from "styled-components/macro";
+import { breakpoint } from "./breaks";
 
 export const textShadow = css`
-    text-shadow:
-    ${props => props.theme.textShadows.size[1]}em ${props => props.theme.textShadows.size[1]}em ${props => props.theme.colors.body},
-    ${props => props.theme.textShadows.size[1]}em -${props => props.theme.textShadows.size[1]}em ${props => props.theme.colors.body},
-    -${props => props.theme.textShadows.size[1]}em ${props => props.theme.textShadows.size[1]}em ${props => props.theme.colors.body},
-    -${props => props.theme.textShadows.size[1]}em -${props => props.theme.textShadows.size[1]}em ${props => props.theme.colors.body};
-`
+  text-shadow: ${props => props.theme.textShadow || null};
+`;
 
 export const textUnderline = css`
-  background-size: .01em 1em;
-  box-shadow:
-    inset 0 -0.12em ${props => props.theme.colors.body},
+  background-size: 0.01em 1em;
+  box-shadow: inset 0 -0.12em ${props => props.theme.colors.body},
     inset 0 -0.15em ${props => props.theme.colors.bodytext};
   display: inline;
-`
+`;
 
 export const shadowUnderlineDbl = css`
   background-size: 1px 1em;
   display: inline;
-  box-shadow:
-    inset 0 -0.075em ${props => props.theme.colors.body},
+  box-shadow: inset 0 -0.075em ${props => props.theme.colors.body},
     inset 0 -0.1em ${props => props.theme.colors.red},
     inset 0 -0.15em ${props => props.theme.colors.body},
     inset 0 -0.175em ${props => props.theme.colors.red};
-`
+`;
 
 export const text = css`
   font-size: ${props => props.fontSize || null}em;
@@ -35,11 +29,11 @@ export const text = css`
   letter-spacing: ${props => props.letterSpace || null};
   line-height: ${props => props.lineHeight || null};
   font-family: ${props => props.fontFamily || null};
-  color: ${props => props.color ? props.color : props.theme.colors.blue};
+  color: ${props => (props.color ? props.color : props.theme.colors.blue)};
   word-break: ${props => props.wordBreak || null};
   word-spacing: ${props => props.wordSpacing || null};
   word-wrap: ${props => props.wordWrap || null};
-`
+`;
 
 export const space = css`
   padding: ${props => props.p || null}%;
@@ -52,19 +46,19 @@ export const space = css`
   margin-right: ${props => props.mr || props.mx || null}%;
   margin-bottom: ${props => props.mb || props.my || null}%;
   margin-left: ${props => props.ml || props.mx || null}%;
-`
+`;
 
 export const backgroundColor = css`
   background: ${props => props.bgColor || null};
-`
+`;
 
 export const backgroundImage = css`
   background-image: url(${props => props.bgImage || null});
-  background-size: ${props => props.bgSize || 'cover'};
-  background-position: ${props => props.bgPosition || 'center'};
+  background-size: ${props => props.bgSize || "cover"};
+  background-position: ${props => props.bgPosition || "center"};
   background-attachment: ${props => props.bgAttachment || null};
   background-origin: ${props => props.bgOrigin || null};
-`
+`;
 
 export const border = css`
   border: ${props => props.border || null};
@@ -74,21 +68,21 @@ export const border = css`
   border-image: ${props => props.bImage || null};
   border-spacing: ${props => props.bSpacing || null};
   border-style: ${props => props.bStyle || null};
-`
+`;
 
 export const shadow = css`
-  opacity: ${props => props.opacity || 'none'};
-  box-shadow: ${props => props.boxShadow || 'none'};
-  text-shadow: ${props => props.textShadow || 'none'};
-`
+  opacity: ${props => props.opacity || "none"};
+  box-shadow: ${props => props.boxShadow || "none"};
+  text-shadow: ${props => props.textShadow || "none"};
+`;
 
 export const utility = css`
-  outline: ${props => props.outline || 'none'};
+  outline: ${props => props.outline || "none"};
   cursor: ${props => props.cursor || null};
-  content: ${props => props.content || ''};
+  content: ${props => props.content || ""};
   overflow-x: ${props => props.overflowX || null};
   overflow-y: ${props => props.overflowY || null};
-`
+`;
 
 export const position = css`
   display: ${props => props.display || null};
@@ -98,28 +92,28 @@ export const position = css`
   bottom: ${props => props.bottom || null};
   left: ${props => props.left || null};
   z-index: ${props => props.zIndex || null};
-`
+`;
 
 export const list = css`
   list-style: ${props => props.listStyle || null};
   list-style-image: ${props => props.listStyleImage || null};
   list-style-position: ${props => props.listStylePosition || null};
   list-style-type: ${props => props.listStyleType || null};
-`
+`;
 
 export const shape = css`
-  width: ${(props) => (props.width ? props.width : null)}vw;
-  height: ${(props) => (props.height ? props.height : null)}vh;
-`
+  width: ${props => (props.width ? props.width : null)}vw;
+  height: ${props => (props.height ? props.height : null)}vh;
+`;
 
 export const size = css`
   width: 100%;
 
-    @media (min-width: ${breakpoint[1]}em){
-      width: ${(props) => (props.lp ? 100 / props.lp : null)}%;
-    }
+  @media (min-width: ${breakpoint[1]}em) {
+    width: ${props => (props.lp ? 100 / props.lp : null)}%;
+  }
 
-    @media (min-width: ${breakpoint[2]}em){
-      width: ${(props) => (props.tv ? 100 / props.tv : null)}%;
-    }
-`
+  @media (min-width: ${breakpoint[2]}em) {
+    width: ${props => (props.tv ? 100 / props.tv : null)}%;
+  }
+`;
