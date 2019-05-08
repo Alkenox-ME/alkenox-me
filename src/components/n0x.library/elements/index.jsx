@@ -6,3 +6,4 @@ export * from "./Footer";
 export * from "./LabelBlock";
 export * from "./Tier";
 export * from "./TierPricing";
+export * from "./VxSlider";

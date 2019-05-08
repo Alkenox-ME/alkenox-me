@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
-import { Bounce } from "react-reveal";
+import { Bounce, Slide } from "react-reveal";
 
 import {
   Box,
@@ -22,7 +22,7 @@ import {
   FT
 } from "../components/n0x.library";
 import { data } from "../components/n0x.vars";
-import { PageLayout } from "../components/n0x.library";
+import { PageLayout, Carousel } from "../components/n0x.library";
 import VxPricing from "../components/VxPricing";
 
 const Teamwork =
@@ -175,6 +175,29 @@ const VxPage = () => {
       </Box>
 
       <VxPricing />
+
+      <Box pt={5} alignSelf="center">
+        <Carousel>
+          <Slide right>
+            <div>
+              <h1>Slide 1</h1>
+              <p>Slide Description</p>
+            </div>
+          </Slide>
+          <Slide right>
+            <div>
+              <h1>Slide 2</h1>
+              <p>Slide Description</p>
+            </div>
+          </Slide>
+          <Slide right>
+            <div>
+              <h1>Slide 3</h1>
+              <p>Slide Description</p>
+            </div>
+          </Slide>
+        </Carousel>
+      </Box>
     </PageLayout>
   );
 };
