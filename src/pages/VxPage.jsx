@@ -4,6 +4,7 @@ import { Bounce, Slide } from "react-reveal";
 
 import {
   Box,
+  Boxish,
   List,
   ListItem,
   Image,
@@ -23,7 +24,6 @@ import {
 } from "../components/n0x.library";
 import { data } from "../components/n0x.vars";
 import { PageLayout, Carousel } from "../components/n0x.library";
-import VxPricing from "../components/VxPricing";
 
 const Teamwork =
   "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/achievement-agreement-arms-1068523.jpg?raw=true";
@@ -174,29 +174,33 @@ const VxPage = () => {
         </List>
       </Box>
 
-      <VxPricing />
-
-      <Box pt={5} alignSelf="center">
-        <Carousel>
-          <Slide right>
-            <div>
-              <h1>Slide 1</h1>
-              <p>Slide Description</p>
-            </div>
-          </Slide>
-          <Slide right>
-            <div>
-              <h1>Slide 2</h1>
-              <p>Slide Description</p>
-            </div>
-          </Slide>
-          <Slide right>
-            <div>
-              <h1>Slide 3</h1>
-              <p>Slide Description</p>
-            </div>
-          </Slide>
-        </Carousel>
+      <Box
+        mt={5}
+        px={10}
+        bgImage="https://github.com/Alkenox-ME/alkenox-me-images/blob/master/audience-band-blur-1870438.jpg?raw=true"
+      >
+        <Boxish bgColor="radial-gradient(rgba(255,0,0,0), rgba(137, 145, 249, 0.79))">
+          <Carousel>
+            <Slide right>
+              <div>
+                <h1>Slide 1</h1>
+                <p>Slide Description</p>
+              </div>
+            </Slide>
+            <Slide right>
+              <div>
+                <h1>Slide 2</h1>
+                <p>Slide Description</p>
+              </div>
+            </Slide>
+            <Slide right>
+              <div>
+                <h1>Slide 3</h1>
+                <p>Slide Description</p>
+              </div>
+            </Slide>
+          </Carousel>
+        </Boxish>
       </Box>
     </PageLayout>
   );

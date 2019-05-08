@@ -17,7 +17,7 @@ import {
   shadow,
   shape,
   breaks
-} from "../config";
+} from "../lib";
 import {
   MenuFx1,
   underlineCenter,
@@ -138,6 +138,21 @@ vertical-align: ${getRule("valign", "center")};
   ${position}
   ${size}
   ${space}
+  ${backgroundImage}
+`;
+
+const Boxish = styled.div`
+align-self: ${getRule("self", "center")};
+align-content: ${getRule("content", "center")};
+align-items: ${getRule("items", "center")};
+justify-content: ${getRule("justify", "center")};
+vertical-align: ${getRule("valign", "center")};
+  height: 100%;
+  width: 100%;
+  ${utility}
+  ${position}
+  ${space}
+  ${backgroundColor}
 `;
 
 const UTitle = styled.span`
@@ -448,6 +463,7 @@ const Divider = styled.hr`
 export {
   Block,
   Box,
+  Boxish,
   HMenu,
   MenuItem,
   UTitle,

@@ -6,9 +6,9 @@ import styled, { css } from "styled-components";
 // Adding directional arrows to help navigate carousel:
 
 const width = "100%";
-const height = "100%";
+const height = "600px";
 const Container = styled.div`
-  border: 1px solid red;
+  border: 1px solid black;
   position: relative;
   overflow: hidden;
   width: ${width};
