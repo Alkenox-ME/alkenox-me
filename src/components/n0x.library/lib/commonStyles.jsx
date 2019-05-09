@@ -61,8 +61,7 @@ export const backgroundImage = css`
 `;
 
 export const border = css`
-  border: ${props => props.border || null};
-  border-radius: ${props => props.bRadius || null}em;
+  border-radius: ${props => props.bRadius || null};
   border-color: ${props => props.bColor || null};
   border-width: ${props => props.bWidth || null}em;
   border-image: ${props => props.bImage || null};

@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
-import { Bounce, Slide } from "react-reveal";
+import { Bounce, Slide, Fade } from "react-reveal";
 import {
   CarouSlide,
   Block,
@@ -94,7 +94,18 @@ const VxPage = () => {
 
       <T3 pb={"5%"}>Pre-Production</T3>
 
-      <Image lp={2} height={50} src={Teamwork} alt="Teamwork" />
+      <Image
+        bRadius={".75em"}
+        boxShadow="
+        0.01em  0.01em  0.25em   0.25em   #444d56,
+        -0.01em   0.01em        .10em  0.05em   #444d56,
+        0.01em    -0.01em        .1em  0.01em   #444d56,
+        -0.01em   -0.01em  0.10em   0.01em   #444d56"
+        lp={2}
+        height={50}
+        src={Teamwork}
+        alt="Teamwork"
+      />
 
       <Box lp={2} px={"3%"}>
         <TP1 talignLeft>
@@ -120,11 +131,33 @@ const VxPage = () => {
         </TP1>
       </Box>
 
-      <Image lp={2} height={50} src={Production} alt="Production" />
+      <Image
+        bRadius={".75em"}
+        boxShadow="
+        0.01em  0.01em  0.25em   0.25em   #444d56,
+        -0.01em   0.01em        .25em  0.05em   #444d56,
+        0.01em    -0.01em        1em  0.5em   #444d56,
+        -0.01em   -0.01em  0.10em   0.01em   #444d56"
+        lp={2}
+        height={50}
+        src={Production}
+        alt="Production"
+      />
 
       <T3 py={"5%"}>Post-Production</T3>
 
-      <Image lp={2} height={60} src={Editing} alt="Editing" />
+      <Image
+        bRadius={".75em"}
+        boxShadow="
+        0.01em  0.01em  0.25em   0.25em   #444d56,
+        -0.01em   0.01em        .25em  0.05em   #444d56,
+        0.01em    -0.01em        1em  0.5em   #444d56,
+        -0.01em   -0.01em  0.10em   0.01em   #444d56"
+        lp={2}
+        height={50}
+        src={Editing}
+        alt="Editing"
+      />
 
       <Box lp={2} px={"3%"}>
         <TP1 talignLeft>
@@ -176,14 +209,14 @@ const VxPage = () => {
         </List>
       </Box>
 
-      <T1 color="#f6f8fa" textShadow="4px 4px 12px #000000" pt={5}>
+      <T1 color="#f6f8fa" textShadow="4px 4px 12px #000000" pt="5%" pb="2%">
         Video Production Pricing
       </T1>
 
       <Box px={"5%"}>
         <Carousel url={image.bg.vx} filter={"blur(.5em)"} bRadius={".75em"}>
-          <Slide right>
-            <Box>
+          <Fade>
+            <Box lp={2}>
               <T3
                 color={props => props.theme.colors.white}
                 textShadow="2px 2px 6px #000000"
@@ -200,7 +233,7 @@ const VxPage = () => {
                 color={props => props.theme.colors.white}
                 textShadow="2px 2px 6px #000000"
               >
-                (Up To 15 Seconds)
+                (Finished Product: Up To 15 Seconds)
               </T4>
               <T5
                 talignCenter
@@ -210,16 +243,10 @@ const VxPage = () => {
                 A Short and Informative Teasers or Previews for Facebook or
                 Instagram
               </T5>
-              <T4
-                color={props => props.theme.colors.white}
-                textShadow="2px 2px 6px #000000"
-              >
-                Contact Us For An Accurate Quote
-              </T4>
             </Box>
-          </Slide>
-          <Slide right>
-            <Box>
+          </Fade>
+          <Fade>
+            <Box lp={2}>
               <T3
                 color={props => props.theme.colors.white}
                 textShadow="4px 4px 12px #000000"
@@ -236,7 +263,7 @@ const VxPage = () => {
                 color={props => props.theme.colors.white}
                 textShadow="4px 4px 12px #000000"
               >
-                (Up To 90 Seconds)
+                (Finished Product: Up To 90 Seconds)
               </T4>
               <T5
                 talignCenter
@@ -247,9 +274,9 @@ const VxPage = () => {
                 Platforms. (Note: Instagram limits to 60 seconds)
               </T5>
             </Box>
-          </Slide>
-          <Slide right>
-            <Box>
+          </Fade>
+          <Fade>
+            <Box lp={2}>
               <T3
                 color={props => props.theme.colors.white}
                 textShadow="4px 4px 12px #000000"
@@ -266,7 +293,7 @@ const VxPage = () => {
                 color={props => props.theme.colors.white}
                 textShadow="4px 4px 12px #000000"
               >
-                (Up To 2.5 Minutes)
+                (Finished Product: Up To 2.5 Minutes)
               </T4>
               <T5
                 talignCenter
@@ -277,9 +304,9 @@ const VxPage = () => {
                 for Information.
               </T5>
             </Box>
-          </Slide>
-          <Slide right>
-            <Box>
+          </Fade>
+          <Fade>
+            <Box lp={2}>
               <T3
                 color={props => props.theme.colors.white}
                 textShadow="4px 4px 12px #000000"
@@ -296,7 +323,7 @@ const VxPage = () => {
                 color={props => props.theme.colors.white}
                 textShadow="4px 4px 12px #000000"
               >
-                (2.5 to 5 Minutes)
+                (Finished Product: 2.5 to 5 Minutes)
               </T4>
               <T5
                 talignCenter
@@ -307,7 +334,7 @@ const VxPage = () => {
                 or Established Audience.
               </T5>
             </Box>
-          </Slide>
+          </Fade>
         </Carousel>
       </Box>
     </PageLayout>
