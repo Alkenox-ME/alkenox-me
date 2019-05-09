@@ -32,16 +32,16 @@ const image = {
     yinYang:
       "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/768px-Yin_yang.png?raw=true",
 
-    photoFix1a:
+    photoRx1before:
       "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/Aged_Photo_Damaged_03.jpg?raw=true",
 
-    photoFix1b:
+    photoRx1after:
       "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/Aged_Photo_Healed_03.jpg?raw=true",
 
-    photoFix2a:
+    photoRx2before:
       "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/Aged_Photo_Damaged_02.jpg?raw=true",
 
-    photoFix2b:
+    photoRx2after:
       "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/Aged_Photo_Healed_02.jpg?raw=true",
 
     SissyGIF: "https://media.giphy.com/media/MVgLYGeuRP4JynEhNU/source.gif"

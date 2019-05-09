@@ -78,23 +78,23 @@ const RxPage = () => {
 
       <T2>Photo Repair</T2>
 
-      <Box lp={4} px={2}>
-        <Image height={80} src={image.fg.photoFix1a} />
+      <Box lp={4} px={'2%'}>
+        <Image height={80} src={image.fg.photoRx1before} />
         <TP talignCenter>Before</TP>
       </Box>
 
-      <Box lp={4} px={2}>
-        <Image height={80} src={image.fg.photoFix1b} />
+      <Box lp={4} px={'2%'}>
+        <Image height={80} src={image.fg.photoRx1after} />
         <TP talignCenter>After</TP>
       </Box>
 
-      <Box lp={4} px={2}>
-        <Image height={80} src={image.fg.photoFix2a} />
+      <Box lp={4} px={'2%'}>
+        <Image height={80} src={image.fg.photoRx2before} />
         <TP talignCenter>Before</TP>
       </Box>
 
-      <Box lp={4} px={2}>
-        <Image height={80} src={image.fg.photoFix2b} />
+      <Box lp={4} px={'2%'}>
+        <Image height={80} src={image.fg.photoRx2after} />
         <TP talignCenter>After</TP>
       </Box>
 

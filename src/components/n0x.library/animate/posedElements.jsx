@@ -71,6 +71,12 @@ export const TextBlockConfig = posed.textarea({
   }
 });
 
+// Other
+export const CarouSlide = posed.div({
+  enter: { x: 0, opacity: 1 },
+  exit: { x: -1000, opacity: 0 }
+})
+
 // HomePage Poses
 export const Sound = posed.div( {
   enter: { x: 0, opacity: 1 },

@@ -2,6 +2,7 @@
 export * from './PosedRouter'
 export * from './Modal'
 export * from './ImgZoom'
+export * from './PosedCarousel'
 
 // Animation
 export * from './posedElements'

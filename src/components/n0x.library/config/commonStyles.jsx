@@ -108,20 +108,18 @@ export const list = css`
 `
 
 export const shape = css`
-  height: ${(props) => props.height || null}vh;
+  width: ${(props) => (props.width ? props.width : null)}vw;
+  height: ${(props) => (props.height ? props.height : null)}vh;
 `
 
 export const size = css`
   width: 100%;
-    height: ${(props) => props.msHt || null};
 
     @media (min-width: ${breakpoint[1]}em){
       width: ${(props) => (props.lp ? 100 / props.lp : null)}%;
-        height: ${(props) => props.lpHt || null};
     }
 
     @media (min-width: ${breakpoint[2]}em){
       width: ${(props) => (props.tv ? 100 / props.tv : null)}%;
-        height: ${(props) => props.tvHt || null};
     }
 `

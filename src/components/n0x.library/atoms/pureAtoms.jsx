@@ -221,7 +221,7 @@ const PT = styled.p`
   ${fx}
   ${backgroundColor}
   @media (min-width: ${props => props.theme.breakpoints.lp}px) {
-    font-size: 1.25em;
+    font-size: 1.1em;
   }
 `;
 
