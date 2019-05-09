@@ -17,7 +17,7 @@ import {
   BGcolor,
   FT
 } from "../components/n0x.library";
-import { n0x, base, image, data } from "../components/n0x.vars";
+import { data } from "../components/n0x.vars";
 import { PageLayout } from "../components/n0x.library";
 
 const GraphicPage = () => {
@@ -41,7 +41,7 @@ const GraphicPage = () => {
         the main course of putting the animations together.
       </T>
 
-      <Box lp={1.5} pt={5} pb={2} px={2}>
+      <Box lp={1.5} pt="50px" pb={2} px={2}>
         <ReactPlayer
           url="https://github.com/Alkenox-ME/alkenox-me-videos/blob/master/The_Smile_Solution_Whitboard.mp4?raw=true"
           width="100%"
@@ -68,8 +68,11 @@ const GraphicPage = () => {
         approachable.
       </T>
 
-      <Box lp={2} px={2} pt={4}>
+      <Box lp={2} px="20px" py="46px">
         <Image
+          boxShadow="0.01em 0.01em 0.08em .20em #ffffff,
+          -0.01em 0.01em .08em 0.1em #24292e, 0.01em -0.01em .04em 0.1em #6c6c6c,
+          -0.01em -0.01em 0.08em 0.50em #6c6c6c"
           src="https://media.giphy.com/media/MVgLYGeuRP4JynEhNU/source.gif"
           alt="Sissy GIF"
         />
@@ -80,8 +83,11 @@ const GraphicPage = () => {
         </TP>
       </Box>
 
-      <Box lp={2} px={2} pt={4}>
+      <Box lp={2} px="20px" py="40px">
         <Image
+          boxShadow="0.02em 0.02em 0.15em .35em #24292e,
+          -0.02em 0.02em .15em 0.35em #24292e, 0.2em -0.2em .15em 0.35em #6c6c6c,
+          -0.1em -0.1em 0.15em 0.25em #6c6c6c"
           src="https://media.giphy.com/media/8lNgT2uFKdFDh7b2l2/giphy.gif"
           alt="'The 12 Lives of Sissy Carlyle' info GIF"
         />

@@ -134,7 +134,7 @@ align-content: ${getRule("content", "center")};
 align-items: ${getRule("items", "center")};
 justify-content: ${getRule("justify", "center")};
 vertical-align: ${getRule("valign", "center")};
-box-shadow: 10px 10px 8px #F00000;
+box-shadow: 10px 10px 8px #000000;
 
   ${utility}
   ${position}
@@ -191,6 +191,7 @@ const Image = styled.img`
     ${shape}
     ${space}
     ${border}
+    ${fx}
     object-fit: ${props => props.objFit || "cover"};
     object-position: ${props => props.objPosition || "center"};
   `;
