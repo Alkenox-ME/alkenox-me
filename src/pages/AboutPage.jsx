@@ -3,9 +3,13 @@ import React from "react";
 
 // Styling
 import { n0x, base, data, image } from "../components/n0x.vars";
+// we'll need the Slide component for sliding animations
+// but you can use any other effect
+import Slide from 'react-reveal/Slide';
 
 // Components
-import { PageLayout, T, T1, T2, Img } from "../components/n0x.library";
+import { PageLayout, T, T1, T2, Img, Box } from "../components/n0x.library";
+import { Carousel } from '../components/Carousel'
 
 const AboutPage = () => {
   return (
@@ -18,6 +22,29 @@ const AboutPage = () => {
       <T1>
         About Us
       </T1>
+
+      <Box msHt={'50%'}>
+        <Carousel>
+          <Slide right>
+            <div>
+              <h1>Slide 1</h1>
+              <p>Slide Description</p>
+            </div>
+          </Slide>
+          <Slide right>
+            <div>
+              <h1>Slide 2</h1>
+              <p>Slide Description</p>
+            </div>
+          </Slide>
+          <Slide right>
+            <div>
+              <h1>Slide 3</h1>
+              <p>Slide Description</p>
+            </div>
+          </Slide>
+        </Carousel>
+      </Box>
 
       <Img src={image.fg.yinYang}/>
 

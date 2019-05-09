@@ -97,7 +97,7 @@ const Box = styled.div`
   ${utility}
   ${position}
   ${space}
-  ${shape}
+  ${size}
 `
 
 const UTitle = styled.span`
@@ -159,7 +159,7 @@ const PT = styled.p`
   ${shadow}
   ${backgroundColor}
   @media (min-width: ${props => props.theme.breakpoints.lp}px) {
-    font-size: 1.25em;
+    font-size: 1.1em;
   }
 `
 
