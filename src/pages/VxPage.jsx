@@ -208,27 +208,6 @@ const VxPage = () => {
             <Slide right>
               <Box>
                 <T3 color="white" textShadow="4px 4px 12px #000000">
-                  The Teaser
-                </T3>
-                <T4 color="white" textShadow="4px 4px 12px #000000">
-                  Starting @ $1,200.00
-                </T4>
-                <T4 color="white" textShadow="4px 4px 12px #000000">
-                  (Up To 15 Seconds)
-                </T4>
-                <T5
-                  talignCenter
-                  color="white"
-                  textShadow="4px 4px 12px #000000"
-                >
-                  Short and Informative Teasers or Previews for Facebook or
-                  Instagram
-                </T5>
-              </Box>
-            </Slide>
-            <Slide right>
-              <Box>
-                <T3 color="white" textShadow="4px 4px 12px #000000">
                   Social Media
                 </T3>
                 <T4 color="white" textShadow="4px 4px 12px #000000">
@@ -242,29 +221,50 @@ const VxPage = () => {
                   color="white"
                   textShadow="4px 4px 12px #000000"
                 >
-                  Short and Informative Teasers or Previews for Facebook or
-                  Instagram
+                  Entertaining or Informative Videos for all Social Media
+                  Platforms. (Note: Instagram limits to 60 seconds)
                 </T5>
               </Box>
             </Slide>
             <Slide right>
               <Box>
                 <T3 color="white" textShadow="4px 4px 12px #000000">
-                  The Teaser
+                  Full-Length
                 </T3>
                 <T4 color="white" textShadow="4px 4px 12px #000000">
-                  Starting @ $1,200.00
+                  Starting @ $5,500.00
                 </T4>
                 <T4 color="white" textShadow="4px 4px 12px #000000">
-                  (Up To 15 Seconds)
+                  (Up To 2.5 Minutes)
                 </T4>
                 <T5
                   talignCenter
                   color="white"
                   textShadow="4px 4px 12px #000000"
                 >
-                  Short and Informative Teasers or Previews for Facebook or
-                  Instagram
+                  For Use On A Website Where Your Visitors Are Actively Looking
+                  for Information.
+                </T5>
+              </Box>
+            </Slide>
+            <Slide right>
+              <Box>
+                <T3 color="white" textShadow="4px 4px 12px #000000">
+                  Proven Interest Videos
+                </T3>
+                <T4 color="white" textShadow="4px 4px 12px #000000">
+                  Starting @ $8,000.00
+                </T4>
+                <T4 color="white" textShadow="4px 4px 12px #000000">
+                  (2.5 to 5 Minutes)
+                </T4>
+                <T5
+                  talignCenter
+                  color="white"
+                  textShadow="4px 4px 12px #000000"
+                >
+                  Ex: Mini-Documentaries, Interviews, Presentations for a
+                  Targeted or Established Audience.
                 </T5>
               </Box>
             </Slide>
