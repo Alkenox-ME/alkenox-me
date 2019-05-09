@@ -2,6 +2,7 @@ import React from "react";
 import ReactPlayer from "react-player";
 import { Bounce, Slide } from "react-reveal";
 import {
+  CarouSlide,
   Block,
   Box,
   Boxish,
@@ -22,8 +23,9 @@ import {
   BGcolor,
   FT
 } from "../components/n0x.library";
-import { data } from "../components/n0x.vars";
+import { data, image } from "../components/n0x.vars";
 import { PageLayout, Carousel } from "../components/n0x.library";
+import transition from "styled-transition-group";
 
 const Teamwork =
   "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/achievement-agreement-arms-1068523.jpg?raw=true";
@@ -178,131 +180,131 @@ const VxPage = () => {
         Video Production Pricing
       </T1>
 
-      <Box>
-        <Boxish bgColor="radial-gradient(rgba(255,0,0,0), rgba(0, 32, 147))">
-          <Carousel>
-            <Slide right>
-              <Box>
-                <T3
-                  color={props => props.theme.colors.white}
-                  textShadow="2px 2px 6px #000000"
-                >
-                  The Teaser
-                </T3>
-                <T4
-                  color={props => props.theme.colors.white}
-                  textShadow="2px 2px 6px #000000"
-                >
-                  Starting @ $1,200.00
-                </T4>
-                <T4
-                  color={props => props.theme.colors.white}
-                  textShadow="2px 2px 6px #000000"
-                >
-                  (Up To 15 Seconds)
-                </T4>
-                <T5
-                  talignCenter
-                  color={props => props.theme.colors.white}
-                  textShadow="4px 4px 12px #000000"
-                >
-                  A Short and Informative Teasers or Previews for Facebook or
-                  Instagram
-                </T5>
-              </Box>
-            </Slide>
-            <Slide right>
-              <Box>
-                <T3
-                  color={props => props.theme.colors.white}
-                  textShadow="4px 4px 12px #000000"
-                >
-                  Social Media
-                </T3>
-                <T4
-                  color={props => props.theme.colors.white}
-                  textShadow="4px 4px 12px #000000"
-                >
-                  Starting @ $3,500.00
-                </T4>
-                <T4
-                  color={props => props.theme.colors.white}
-                  textShadow="4px 4px 12px #000000"
-                >
-                  (Up To 90 Seconds)
-                </T4>
-                <T5
-                  talignCenter
-                  color={props => props.theme.colors.white}
-                  textShadow="4px 4px 12px #000000"
-                >
-                  Entertaining or Informative Videos for all Social Media
-                  Platforms. (Note: Instagram limits to 60 seconds)
-                </T5>
-              </Box>
-            </Slide>
-            <Slide right>
-              <Box>
-                <T3
-                  color={props => props.theme.colors.white}
-                  textShadow="4px 4px 12px #000000"
-                >
-                  Full-Length
-                </T3>
-                <T4
-                  color={props => props.theme.colors.white}
-                  textShadow="4px 4px 12px #000000"
-                >
-                  Starting @ $5,500.00
-                </T4>
-                <T4
-                  color={props => props.theme.colors.white}
-                  textShadow="4px 4px 12px #000000"
-                >
-                  (Up To 2.5 Minutes)
-                </T4>
-                <T5
-                  talignCenter
-                  color={props => props.theme.colors.white}
-                  textShadow="4px 4px 12px #000000"
-                >
-                  For Use On A Website Where Your Visitors Are Actively Looking
-                  for Information.
-                </T5>
-              </Box>
-            </Slide>
-            <Slide right>
-              <Box>
-                <T3
-                  color={props => props.theme.colors.white}
-                  textShadow="4px 4px 12px #000000"
-                >
-                  Proven Interest Videos
-                </T3>
-                <T4
-                  color={props => props.theme.colors.white}
-                  textShadow="4px 4px 12px #000000"
-                >
-                  Starting @ $8,000.00
-                </T4>
-                <T4
-                  color={props => props.theme.colors.white}
-                  textShadow="4px 4px 12px #000000"
-                >
-                  (2.5 to 5 Minutes)
-                </T4>
-                <T5
-                  talignCenter
-                  color={props => props.theme.colors.white}
-                  textShadow="4px 4px 12px #000000"
-                >
-                  Ex: Mini-Documentaries, Interviews, Presentations for a
-                  Targeted or Established Audience.
-                </T5>
-              </Box>
-            </Slide>
-          </Carousel>
-        </Boxish>
+      <Box px={"5%"}>
+
+        <Carousel url={image.bg.vx} filter={'blur(.5em)'} bRadius={'.75em'}>
+          <CarouSlide>
+            <Box>
+              <T3
+                color={props => props.theme.colors.white}
+                textShadow="2px 2px 6px #000000"
+              >
+                The Teaser
+              </T3>
+              <T4
+                color={props => props.theme.colors.white}
+                textShadow="2px 2px 6px #000000"
+              >
+                Starting @ $1,200.00
+              </T4>
+              <T4
+                color={props => props.theme.colors.white}
+                textShadow="2px 2px 6px #000000"
+              >
+                (Up To 15 Seconds)
+              </T4>
+              <T5
+                talignCenter
+                color={props => props.theme.colors.white}
+                textShadow="4px 4px 12px #000000"
+              >
+                A Short and Informative Teasers or Previews for Facebook or
+                Instagram
+              </T5>
+            </Box>
+          </CarouSlide>
+          <CarouSlide>
+            <Box>
+              <T3
+                color={props => props.theme.colors.white}
+                textShadow="4px 4px 12px #000000"
+              >
+                Social Media
+              </T3>
+              <T4
+                color={props => props.theme.colors.white}
+                textShadow="4px 4px 12px #000000"
+              >
+                Starting @ $3,500.00
+              </T4>
+              <T4
+                color={props => props.theme.colors.white}
+                textShadow="4px 4px 12px #000000"
+              >
+                (Up To 90 Seconds)
+              </T4>
+              <T5
+                talignCenter
+                color={props => props.theme.colors.white}
+                textShadow="4px 4px 12px #000000"
+              >
+                Entertaining or Informative Videos for all Social Media
+                Platforms. (Note: Instagram limits to 60 seconds)
+              </T5>
+            </Box>
+          </CarouSlide>
+          <CarouSlide>
+            <Box>
+              <T3
+                color={props => props.theme.colors.white}
+                textShadow="4px 4px 12px #000000"
+              >
+                Full-Length
+              </T3>
+              <T4
+                color={props => props.theme.colors.white}
+                textShadow="4px 4px 12px #000000"
+              >
+                Starting @ $5,500.00
+              </T4>
+              <T4
+                color={props => props.theme.colors.white}
+                textShadow="4px 4px 12px #000000"
+              >
+                (Up To 2.5 Minutes)
+              </T4>
+              <T5
+                talignCenter
+                color={props => props.theme.colors.white}
+                textShadow="4px 4px 12px #000000"
+              >
+                For Use On A Website Where Your Visitors Are Actively Looking
+                for Information.
+              </T5>
+            </Box>
+          </CarouSlide>
+          <CarouSlide>
+            <Box>
+              <T3
+                color={props => props.theme.colors.white}
+                textShadow="4px 4px 12px #000000"
+              >
+                Proven Interest Videos
+              </T3>
+              <T4
+                color={props => props.theme.colors.white}
+                textShadow="4px 4px 12px #000000"
+              >
+                Starting @ $8,000.00
+              </T4>
+              <T4
+                color={props => props.theme.colors.white}
+                textShadow="4px 4px 12px #000000"
+              >
+                (2.5 to 5 Minutes)
+              </T4>
+              <T5
+                talignCenter
+                color={props => props.theme.colors.white}
+                textShadow="4px 4px 12px #000000"
+              >
+                Ex: Mini-Documentaries, Interviews, Presentations for a
+                Targeted or Established Audience.
+              </T5>
+            </Box>
+          </CarouSlide>
+        </Carousel>
+
       </Box>
     </PageLayout>
   );
