@@ -181,9 +181,8 @@ const VxPage = () => {
       </T1>
 
       <Box px={"5%"}>
-
-        <Carousel url={image.bg.vx} filter={'blur(.5em)'} bRadius={'.75em'}>
-          <CarouSlide>
+        <Carousel url={image.bg.vx} filter={"blur(.5em)"} bRadius={".75em"}>
+          <Slide right>
             <Box>
               <T3
                 color={props => props.theme.colors.white}
@@ -211,9 +210,15 @@ const VxPage = () => {
                 A Short and Informative Teasers or Previews for Facebook or
                 Instagram
               </T5>
+              <T4
+                color={props => props.theme.colors.white}
+                textShadow="2px 2px 6px #000000"
+              >
+                Contact Us For An Accurate Quote
+              </T4>
             </Box>
-          </CarouSlide>
-          <CarouSlide>
+          </Slide>
+          <Slide right>
             <Box>
               <T3
                 color={props => props.theme.colors.white}
@@ -242,8 +247,8 @@ const VxPage = () => {
                 Platforms. (Note: Instagram limits to 60 seconds)
               </T5>
             </Box>
-          </CarouSlide>
-          <CarouSlide>
+          </Slide>
+          <Slide right>
             <Box>
               <T3
                 color={props => props.theme.colors.white}
@@ -272,8 +277,8 @@ const VxPage = () => {
                 for Information.
               </T5>
             </Box>
-          </CarouSlide>
-          <CarouSlide>
+          </Slide>
+          <Slide right>
             <Box>
               <T3
                 color={props => props.theme.colors.white}
@@ -298,13 +303,12 @@ const VxPage = () => {
                 color={props => props.theme.colors.white}
                 textShadow="4px 4px 12px #000000"
               >
-                Ex: Mini-Documentaries, Interviews, Presentations for a
-                Targeted or Established Audience.
+                Ex: Mini-Documentaries, Interviews, Presentations for a Targeted
+                or Established Audience.
               </T5>
             </Box>
-          </CarouSlide>
+          </Slide>
         </Carousel>
-
       </Box>
     </PageLayout>
   );
