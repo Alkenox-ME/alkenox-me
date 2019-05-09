@@ -36,16 +36,16 @@ export const text = css`
 `;
 
 export const space = css`
-  padding: ${props => props.p || null}%;
-  padding-top: ${props => props.pt || props.py || null}%;
-  padding-right: ${props => props.pr || props.px || null}%;
-  padding-bottom: ${props => props.pb || props.py || null}%;
-  padding-left: ${props => props.pl || props.px || null}%;
-  margin: ${props => props.m || null}%;
-  margin-top: ${props => props.mt || props.my || null}%;
-  margin-right: ${props => props.mr || props.mx || null}%;
-  margin-bottom: ${props => props.mb || props.my || null}%;
-  margin-left: ${props => props.ml || props.mx || null}%;
+  padding: ${props => props.p || null};
+  padding-top: ${props => props.pt || props.py || null};
+  padding-right: ${props => props.pr || props.px || null};
+  padding-bottom: ${props => props.pb || props.py || null};
+  padding-left: ${props => props.pl || props.px || null};
+  margin: ${props => props.m || null};
+  margin-top: ${props => props.mt || props.my || null};
+  margin-right: ${props => props.mr || props.mx || "auto"};
+  margin-bottom: ${props => props.mb || props.my || null};
+  margin-left: ${props => props.ml || props.mx || "auto"};
 `;
 
 export const backgroundColor = css`
@@ -70,10 +70,11 @@ export const border = css`
   border-style: ${props => props.bStyle || null};
 `;
 
-export const shadow = css`
+export const fx = css`
   opacity: ${props => props.opacity || "none"};
   box-shadow: ${props => props.boxShadow || "none"};
   text-shadow: ${props => props.textShadow || "none"};
+  filter: ${props => props.filter || "none"};
 `;
 
 export const utility = css`

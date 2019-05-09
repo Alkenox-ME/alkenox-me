@@ -7,9 +7,26 @@ import styled, { css } from "styled-components";
 
 const width = "100%";
 const height = "550px";
+const Wrapper = styled.div`
+  position: relative;
+`;
+
+const Background = styled.div`
+  background-image: url("https://github.com/Alkenox-ME/alkenox-me-images/blob/master/audience-band-blur-1870438.jpg?raw=true");
+  background-size: ${props => props.bgSize || "cover"};
+  background-position: ${props => props.bgPosition || "center"};
+  background-attachment: ${props => props.bgAttachment || null};
+  background-origin: ${props => props.bgOrigin || null};
+  filter: blur(8px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+`;
+
 const Container = styled.div`
-  box-shadow: 0.5em 0.5em 0.5em 0.5em #24292e, -0.5em 0.5em 0.5em 0.5em #6c6c6c,
-    0.5em -0.5em 0.5em 0.5em #6c6c6c, -0.5em -0.5em 0.5em 0.5em #6c6c6c;
+  box-shadow: 0.15em 0.15em 0.75em 0.5em #24292e,
+    -0.15em 0.15em 1em 0.5em #24292e, 0.1em -0.1em 1em 0.5em #6c6c6c,
+    -0.1em -0.1em 0.75em 0.5em #6c6c6c;
 
   position: relative;
   overflow: hidden;
@@ -38,6 +55,7 @@ const Arrow = styled.div`
 `;
 const CarouselUI = ({ position, handleClick, children }) => (
   <Container>
+    <Background />
     {children}
     <Arrow onClick={handleClick} data-position={position - 1}>
       {"<"}

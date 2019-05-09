@@ -38,12 +38,12 @@ const WebPage = () => {
 
       <Image src={ArchImage} alt="ArchImage" height={60} />
 
-      <T pt={4}>
+      <T pt={"4%"}>
         Why should you have your website built by a professional instead of
         building it yourself at a DIY site, like Wix?
       </T>
 
-      <T pt={4}>
+      <T pt={"4%"}>
         No matter what, the decision is yours. It is about making your decision
         wisely. The only way to do that is by arming yourself with information
         and focusing on what your website needs to function for your success.
@@ -51,7 +51,7 @@ const WebPage = () => {
         functionality. But a good balance is always our goal.
       </T>
 
-      <T pt={4}>
+      <T pt={"4%"}>
         The real question here isn't about the cost. It is "How much do you want
         to make?" DIY investment = $0. But you also get $0 return on that
         investment. The younger generation is internet savvy and therefore
@@ -64,12 +64,12 @@ const WebPage = () => {
         world wide web.
       </T>
 
-      <T pt={4}>
+      <T pt={"4%"}>
         All websites have their limitations due to the platforms on which they
         were built. These limitations include, but are not limited to:
       </T>
 
-      <Box lp={1} px={20} pt={2}>
+      <Box lp={1} px={"20%"} pt={"2%"}>
         <List lstyleDisc>
           <ListItem>
             Limitations on plugin choices available to improve the functionality
@@ -99,7 +99,7 @@ const WebPage = () => {
         </List>
       </Box>
 
-      <T pt={4}>
+      <T pt={"4%"}>
         If you receive a quote of roughly $1,000 to build or re-design your
         site, it is probable that it is an existing template and there will be
         minimal alterations made to the original design. It will not be a fully
@@ -110,13 +110,13 @@ const WebPage = () => {
         brand is not just your logo. It has a personality, a mission, and it
         wants to reach out and interact with your potential clients.
       </T>
-      <T pt={4}>
+      <T pt={"4%"}>
         Getting to know your business is a must in order to have a good
         understanding of your brand and how it should be portrayed. As full
         stack developers, we are familiar with every part of the web development
         process and work in smaller, well-rounded teams.
       </T>
-      <T pt={4}>
+      <T pt={"4%"}>
         We build your website from the ground up based on your company's needs.
         Therefore, getting to know your business is a must in order to get a
         good understanding of your brand and how it should be portrayed. As full
@@ -125,7 +125,7 @@ const WebPage = () => {
         we can put your money to better use in other important areas.
       </T>
 
-      <T2 pt={5}>Building The Prototype</T2>
+      <T2 pt={"5%"}>Building The Prototype</T2>
 
       <T>
         The first step, when beginning any project, is discussing your wants and
@@ -140,9 +140,9 @@ const WebPage = () => {
         overall look, style, and functionality of your site.
       </T>
 
-      <T2 pt={5}>Crafting Your User Interface</T2>
+      <T2 pt={"5%"}>Crafting Your User Interface</T2>
 
-      <Box lp={2} px={3}>
+      <Box lp={2} px={"3%"}>
         <TP1>
           Your user interface is the key to your user's heart. It is your brands
           first impression and a unique design can help your brand stand out
@@ -155,9 +155,9 @@ const WebPage = () => {
         </TP1>
       </Box>
 
-      <Image lp={2} src={UiImage} alt="Ui Image" my={5} height={50} />
+      <Image lp={2} src={UiImage} alt="Ui Image" my={"5%"} height={50} />
 
-      <T2 pt={5}>Programming</T2>
+      <T2 pt={"5%"}>Programming</T2>
 
       <T>
         The reasons we moved away from traditional website building frameworks
@@ -165,7 +165,7 @@ const WebPage = () => {
         include:
       </T>
 
-      <Box lp={1} px={30} pt={3}>
+      <Box lp={1} px={"30%"} pt={"3%"}>
         <List lstyleDisc>
           <ListItem>Full Control over the design.</ListItem>
           <br />
@@ -190,12 +190,12 @@ const WebPage = () => {
         alt="image3"
         src={CodeImage}
         height={60}
-        px={2}
-        py={5}
-        pb={2}
+        px={"2%"}
+        py={"5%"}
+        pb={"2%"}
       />
 
-      <Box lp={2} px={3}>
+      <Box lp={2} px={"3%"}>
         <TP1>
           Here at Alkenox, we prefer to program your site from the ground up.
           This way we have total control a and lot more freedom to get as
@@ -208,9 +208,16 @@ const WebPage = () => {
         </TP1>
       </Box>
 
-      <T2 pt={5}>Defining Your Users' Experience</T2>
+      <T2 pt={"5%"}>Defining Your Users' Experience</T2>
 
-      <Image lp={1} height={70} px={10} pb={2} src={UxImage} alt="image5" />
+      <Image
+        lp={1}
+        height={70}
+        px={"10%"}
+        pb={"2%"}
+        src={UxImage}
+        alt="image5"
+      />
 
       <T>
         We collect data about your target user base, and their preferences,
@@ -218,7 +225,7 @@ const WebPage = () => {
         user interface that will allow for a more intriguing overall experience.
       </T>
 
-      <T2 pt={5}>SEO & Website Management</T2>
+      <T2 pt={"5%"}>SEO & Website Management</T2>
 
       <T>
         The main reason you build a website for your brand or business is, in
@@ -235,7 +242,7 @@ const WebPage = () => {
         is the whole reason why a website is born.
       </T>
 
-      <T py={4}>
+      <T py={"4%"}>
         After your design is up and running, we will manage your site for a
         minimum of six (6) months. This includes, at minimum, all of your site's
         basic needs by running common maintenance protocols, such as regular

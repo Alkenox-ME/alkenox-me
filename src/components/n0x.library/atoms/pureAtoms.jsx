@@ -14,7 +14,7 @@ import {
   utility,
   textUnderline,
   textShadow,
-  shadow,
+  fx,
   shape,
   breaks
 } from "../lib";
@@ -135,12 +135,13 @@ align-items: ${getRule("items", "center")};
 justify-content: ${getRule("justify", "center")};
 vertical-align: ${getRule("valign", "center")};
 box-shadow: 10px 10px 8px #F00000;
+
   ${utility}
   ${position}
   ${size}
   ${space}
   ${backgroundImage}
-  ${shadow}
+  ${fx}
 `;
 
 const Boxish = styled.div`
@@ -151,10 +152,12 @@ justify-content: ${getRule("justify", "center")};
 vertical-align: ${getRule("valign", "center")};
   height: 100%;
   width: 100%;
+
   ${utility}
   ${position}
   ${space}
   ${backgroundColor}
+  ${fx}
 `;
 
 const UTitle = styled.span`
@@ -214,7 +217,7 @@ const PT = styled.p`
   ${text}
   ${border}
   ${space}
-  ${shadow}
+  ${fx}
   ${backgroundColor}
   @media (min-width: ${props => props.theme.breakpoints.lp}px) {
     font-size: 1.25em;
@@ -227,7 +230,7 @@ const TP1 = styled.p`
   ${shape}
   ${text}
   ${border}
-  ${shadow}
+  ${fx}
   ${backgroundColor}
 `;
 
@@ -239,7 +242,7 @@ const TP = styled.p`
   ${shape}
   ${text}
   ${border}
-  ${shadow}
+  ${fx}
   ${backgroundColor}
 `;
 
@@ -271,7 +274,7 @@ const BTN = styled(Button1)`
   ${text}
   ${shape}
   ${space}
-  ${shadow}
+  ${fx}
   ${border}
 `;
 
@@ -285,42 +288,42 @@ const MxBlock = styled(Mx)`
   ${text}
   ${size}
   ${space}
-  ${shadow}
+  ${fx}
 `;
 
 const PhotoBlock = styled(Photo)`
   ${text}
   ${size}
   ${space}
-  ${shadow}
+  ${fx}
 `;
 
 const VxBlock = styled(Vx)`
   ${text}
   ${size}
   ${space}
-  ${shadow}
+  ${fx}
 `;
 
 const GxBlock = styled(Gx)`
   ${text}
   ${size}
   ${space}
-  ${shadow}
+  ${fx}
 `;
 
 const WebBlock = styled(Web)`
   ${text}
   ${size}
   ${space}
-  ${shadow}
+  ${fx}
 `;
 
 const RxBlock = styled(Rx)`
   ${text}
   ${size}
   ${space}
-  ${shadow}
+  ${fx}
 `;
 
 const FT = styled.div`
@@ -344,7 +347,7 @@ const T = styled.p`
   ${text}
   ${space}
   ${size}
-  ${shadow}
+  ${fx}
 `;
 
 const T1 = styled.h1`
@@ -353,7 +356,7 @@ const T1 = styled.h1`
   ${text}
   ${space}
   ${size}
-  ${shadow}
+  ${fx}
 `;
 
 const T2 = styled.h2`
@@ -362,7 +365,7 @@ const T2 = styled.h2`
   ${text}
   ${space}
   ${size}
-  ${shadow}
+  ${fx}
 `;
 
 const T3 = styled.h3`
@@ -371,7 +374,7 @@ const T3 = styled.h3`
   ${text}
   ${space}
   ${size}
-  ${shadow}
+  ${fx}
 `;
 
 const T4 = styled.h4`
@@ -380,7 +383,7 @@ const T4 = styled.h4`
   ${text}
   ${space}
   ${size}
-  ${shadow}
+  ${fx}
 `;
 
 const T5 = styled.h5`
@@ -389,7 +392,7 @@ const T5 = styled.h5`
   ${text}
   ${space}
   ${size}
-  ${shadow}
+  ${fx}
 `;
 
 const T6 = styled.h6`
@@ -398,7 +401,7 @@ const T6 = styled.h6`
   ${text}
   ${space}
   ${size}
-  ${shadow}
+  ${fx}
 `;
 
 const List = styled.ul`
@@ -409,7 +412,7 @@ const List = styled.ul`
   ${text}
   ${space}
   ${size}
-  ${shadow}
+  ${fx}
 `;
 
 const ListItem = styled.li`
@@ -417,7 +420,7 @@ const ListItem = styled.li`
   ${list}
   ${text}
   ${space}
-  ${shadow}
+  ${fx}
 `;
 
 const Href = styled.a`
@@ -425,7 +428,7 @@ const Href = styled.a`
   cursor: pointer;
   ${text}
   ${space}
-  ${shadow}
+  ${fx}
 `;
 
 const HMenu = styled.ul`
@@ -452,7 +455,7 @@ const MenuItem = styled.li`
   text-align: ${getRule("talign", "inherit")};
   cursor: pointer;
   ${space}
-  ${shadow}
+  ${fx}
 `;
 
 const Divider = styled.hr`

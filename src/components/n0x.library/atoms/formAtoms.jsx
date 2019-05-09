@@ -13,7 +13,7 @@ import {
   utility,
   textUnderline,
   textShadow,
-  shadow,
+  fx,
   shape,
   ExpandingTextarea,
   radio
@@ -54,7 +54,7 @@ export const Input = styled(TextInput)`
   ${text}
   ${space}
   ${size}
-  ${shadow}
+  ${fx}
 `;
 
 export const Radio = styled.div`
@@ -67,7 +67,7 @@ export const TextArea = styled(ExpandingTextarea)`
   ${text}
   ${space}
   ${size}
-  ${shadow}
+  ${fx}
 `;
 
 export const Selection = styled.select`
@@ -76,7 +76,7 @@ export const Selection = styled.select`
   ${text}
   ${size}
   ${space}
-  ${shadow}
+  ${fx}
 `;
 
 export const Select = styled.option`
@@ -84,7 +84,7 @@ export const Select = styled.option`
   max-width: 80vw;
   ${text}
   ${space}
-  ${shadow}
+  ${fx}
 `;
 
 export const InputLabel = styled.label`
@@ -93,7 +93,7 @@ export const InputLabel = styled.label`
   ${text}
   ${space}
   ${size}
-  ${shadow}
+  ${fx}
 `;
 
 export const Caption = styled.legend`
@@ -102,7 +102,7 @@ export const Caption = styled.legend`
   ${text}
   ${space}
   ${size}
-  ${shadow}
+  ${fx}
 `;
 
 export const Submit = styled(Button1)`
@@ -111,7 +111,7 @@ export const Submit = styled(Button1)`
   ${text}
   ${shape}
   ${space}
-  ${shadow}
+  ${fx}
   ${border}
   ${backgroundColor}
 `;

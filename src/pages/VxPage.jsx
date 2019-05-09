@@ -1,8 +1,8 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import { Bounce, Slide } from "react-reveal";
-
 import {
+  Block,
   Box,
   Boxish,
   List,
@@ -39,11 +39,11 @@ const VxPage = () => {
       pgDesc={null}
       color={props => props.theme.colors.whitetint[3]}
     >
-      <T1 mb={[3]}>Video Production</T1>
+      <T1 mb={["3%"]}>Video Production</T1>
 
       <T2>Web Video</T2>
 
-      <T mb={[3]}>
+      <T mb={["3%"]}>
         Whenever you surf the internet, you find yourself faced with at least
         one web video on almost every site you visit, that were created to
         explain products, services, and tell stories to anyone willing to stick
@@ -58,7 +58,7 @@ const VxPage = () => {
         story to tell, or have video and images that you need turned into
         something with purpose; we are here to help.
       </T>
-      <Box lp={2} pt={5} pb={2} px={2}>
+      <Box lp={2} pt={"5%"} pb={"2%"} px={"2%"}>
         <ReactPlayer
           url="https://github.com/Alkenox-ME/alkenox-me-videos/blob/master/trailer-mosaic.mp4?raw=true"
           width="100%"
@@ -74,7 +74,7 @@ const VxPage = () => {
         </TP>
       </Box>
 
-      <Box lp={2} pt={4} pb={2} px={2}>
+      <Box lp={2} pt={"4%"} pb={"2%"} px={"2%"}>
         <ReactPlayer
           url="https://github.com/alkenox/alkenox-me-videos/blob/master/talent-seq-joker.mp4?raw=true"
           width="100%"
@@ -90,11 +90,11 @@ const VxPage = () => {
 
       <T2>Our Process</T2>
 
-      <T3 pb={5}>Pre-Production</T3>
+      <T3 pb={"5%"}>Pre-Production</T3>
 
       <Image lp={2} height={50} src={Teamwork} alt="Teamwork" />
 
-      <Box lp={2} px={3}>
+      <Box lp={2} px={"3%"}>
         <TP1 talignLeft>
           We come together and figure out what it is you need, get you a quote
           on how much it will cost to effectively produce your project, and sort
@@ -105,9 +105,9 @@ const VxPage = () => {
         </TP1>
       </Box>
 
-      <T3 py={5}>Production</T3>
+      <T3 py={"5%"}>Production</T3>
 
-      <Box lp={2} px={3}>
+      <Box lp={2} px={"3%"}>
         <TP1 talignLeft>
           We embark upon what we have planned out for our shooting schedule. We
           arrive on location, with rehearsed talent, and begin collecting all
@@ -120,11 +120,11 @@ const VxPage = () => {
 
       <Image lp={2} height={50} src={Production} alt="Production" />
 
-      <T3 py={5}>Post-Production</T3>
+      <T3 py={"5%"}>Post-Production</T3>
 
       <Image lp={2} height={60} src={Editing} alt="Editing" />
 
-      <Box lp={2} px={3}>
+      <Box lp={2} px={"3%"}>
         <TP1 talignLeft>
           Here is where we log all the footage and photographs if there are any
           before we begin editing. The time it takes to log everything depends
@@ -138,9 +138,9 @@ const VxPage = () => {
         </TP1>
       </Box>
 
-      <T4 pt={5}>Types of Videos</T4>
+      <T4 pt={"5%"}>Types of Videos</T4>
 
-      <Box lp={1} px={20}>
+      <Box lp={1} px={"20%"}>
         <List>
           <ListItem>
             Branded Video - Under 60 seconds and Builds Awareness
@@ -178,26 +178,32 @@ const VxPage = () => {
         Video Production Pricing
       </T1>
 
-      <Box
-        mx={10}
-        bgImage="https://github.com/Alkenox-ME/alkenox-me-images/blob/master/audience-band-blur-1870438.jpg?raw=true"
-      >
+      <Box>
         <Boxish bgColor="radial-gradient(rgba(255,0,0,0), rgba(0, 32, 147))">
           <Carousel>
             <Slide right>
               <Box>
-                <T3 color="white" textShadow="4px 4px 12px #000000">
+                <T3
+                  color={props => props.theme.colors.white}
+                  textShadow="2px 2px 6px #000000"
+                >
                   The Teaser
                 </T3>
-                <T4 color="white" textShadow="4px 4px 12px #000000">
+                <T4
+                  color={props => props.theme.colors.white}
+                  textShadow="2px 2px 6px #000000"
+                >
                   Starting @ $1,200.00
                 </T4>
-                <T4 color="white" textShadow="4px 4px 12px #000000">
+                <T4
+                  color={props => props.theme.colors.white}
+                  textShadow="2px 2px 6px #000000"
+                >
                   (Up To 15 Seconds)
                 </T4>
                 <T5
                   talignCenter
-                  color="white"
+                  color={props => props.theme.colors.white}
                   textShadow="4px 4px 12px #000000"
                 >
                   A Short and Informative Teasers or Previews for Facebook or
@@ -207,18 +213,27 @@ const VxPage = () => {
             </Slide>
             <Slide right>
               <Box>
-                <T3 color="white" textShadow="4px 4px 12px #000000">
+                <T3
+                  color={props => props.theme.colors.white}
+                  textShadow="4px 4px 12px #000000"
+                >
                   Social Media
                 </T3>
-                <T4 color="white" textShadow="4px 4px 12px #000000">
+                <T4
+                  color={props => props.theme.colors.white}
+                  textShadow="4px 4px 12px #000000"
+                >
                   Starting @ $3,500.00
                 </T4>
-                <T4 color="white" textShadow="4px 4px 12px #000000">
+                <T4
+                  color={props => props.theme.colors.white}
+                  textShadow="4px 4px 12px #000000"
+                >
                   (Up To 90 Seconds)
                 </T4>
                 <T5
                   talignCenter
-                  color="white"
+                  color={props => props.theme.colors.white}
                   textShadow="4px 4px 12px #000000"
                 >
                   Entertaining or Informative Videos for all Social Media
@@ -228,18 +243,27 @@ const VxPage = () => {
             </Slide>
             <Slide right>
               <Box>
-                <T3 color="white" textShadow="4px 4px 12px #000000">
+                <T3
+                  color={props => props.theme.colors.white}
+                  textShadow="4px 4px 12px #000000"
+                >
                   Full-Length
                 </T3>
-                <T4 color="white" textShadow="4px 4px 12px #000000">
+                <T4
+                  color={props => props.theme.colors.white}
+                  textShadow="4px 4px 12px #000000"
+                >
                   Starting @ $5,500.00
                 </T4>
-                <T4 color="white" textShadow="4px 4px 12px #000000">
+                <T4
+                  color={props => props.theme.colors.white}
+                  textShadow="4px 4px 12px #000000"
+                >
                   (Up To 2.5 Minutes)
                 </T4>
                 <T5
                   talignCenter
-                  color="white"
+                  color={props => props.theme.colors.white}
                   textShadow="4px 4px 12px #000000"
                 >
                   For Use On A Website Where Your Visitors Are Actively Looking
@@ -249,18 +273,27 @@ const VxPage = () => {
             </Slide>
             <Slide right>
               <Box>
-                <T3 color="white" textShadow="4px 4px 12px #000000">
+                <T3
+                  color={props => props.theme.colors.white}
+                  textShadow="4px 4px 12px #000000"
+                >
                   Proven Interest Videos
                 </T3>
-                <T4 color="white" textShadow="4px 4px 12px #000000">
+                <T4
+                  color={props => props.theme.colors.white}
+                  textShadow="4px 4px 12px #000000"
+                >
                   Starting @ $8,000.00
                 </T4>
-                <T4 color="white" textShadow="4px 4px 12px #000000">
+                <T4
+                  color={props => props.theme.colors.white}
+                  textShadow="4px 4px 12px #000000"
+                >
                   (2.5 to 5 Minutes)
                 </T4>
                 <T5
                   talignCenter
-                  color="white"
+                  color={props => props.theme.colors.white}
                   textShadow="4px 4px 12px #000000"
                 >
                   Ex: Mini-Documentaries, Interviews, Presentations for a
