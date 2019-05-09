@@ -1,9 +1,9 @@
-import { createGlobalStyle } from 'styled-components/macro'
-import { image } from '../../n0x.vars'
+import { createGlobalStyle } from "styled-components/macro";
+import { image } from "../../n0x.vars";
 export const GlobalStyle = createGlobalStyle`
 
   html {
-      font-size: calc( 16px + ( 24 - 16 ) * ( 100vw - 400px ) / ( 800 - 400 ) );
+      font-size: calc( 18px + ( 21 - 18 ) * ( 100vw - 400px ) / ( 800 - 400 ) );
   }
   html, body {
     color: ${props => props.theme.colors.bodyText};
@@ -372,4 +372,4 @@ export const GlobalStyle = createGlobalStyle`
       display: inherit;
       clip: rect(0, 0, 0, 0);
   }
-`
+`;

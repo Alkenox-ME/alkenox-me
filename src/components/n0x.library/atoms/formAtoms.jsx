@@ -1,26 +1,42 @@
-import React from 'react'
-import { decamelize } from 'humps';
+import React from "react";
+import { decamelize } from "humps";
 import styled, { css } from "styled-components/macro";
-import { text, space, size, backgroundImage, backgroundColor, border, list, position, utility, textUnderline, textShadow, shadow, shape, ExpandingTextarea, radio } from '../config'
-import { Button1, Button2, TextInput } from '../animate'
+import {
+  text,
+  space,
+  size,
+  backgroundImage,
+  backgroundColor,
+  border,
+  list,
+  position,
+  utility,
+  textUnderline,
+  textShadow,
+  fx,
+  shape,
+  ExpandingTextarea,
+  radio
+} from "../lib";
+import { Button1, Button2, TextInput } from "../animate";
 
-const getRule = (ruleName, defaultRule) => (props) => {
+const getRule = (ruleName, defaultRule) => props => {
   const foundRule = Object.keys(props).find(key => key.startsWith(ruleName));
   if (!foundRule || !props[foundRule]) {
     return defaultRule;
   }
 
-  const [, ...rule] = decamelize(foundRule, { separator: '-' }).split('-');
-  return rule.join('-');
+  const [, ...rule] = decamelize(foundRule, { separator: "-" }).split("-");
+  return rule.join("-");
 };
 
 export const FormBlock = styled.form`
-  display: ${props => (props.inline ? 'inline-flex' : 'flex')};
-  flex-direction: ${getRule('direction', 'row')};
-  flex-wrap: ${getRule('wrap', 'wrap')};
-  justify-content: ${getRule('justify', 'center')};
-  align-items: ${getRule('items', 'stretch')};
-  align-content: ${getRule('content', 'stretch')};
+  display: ${props => (props.inline ? "inline-flex" : "flex")};
+  flex-direction: ${getRule("direction", "row")};
+  flex-wrap: ${getRule("wrap", "wrap")};
+  justify-content: ${getRule("justify", "center")};
+  align-items: ${getRule("items", "stretch")};
+  align-content: ${getRule("content", "stretch")};
   ${space}
   ${border}
 `;
@@ -30,72 +46,72 @@ export const FormGroup = styled.fieldset`
   ${position}
   ${space}
   ${shape}
-`
+`;
 
 export const Input = styled(TextInput)`
-  text-align: ${getRule('talign', 'left')};
+  text-align: ${getRule("talign", "left")};
   max-width: 80vw;
   ${text}
   ${space}
   ${size}
-  ${shadow}
-`
+  ${fx}
+`;
 
 export const Radio = styled.div`
   ${radio}
-`
+`;
 
 export const TextArea = styled(ExpandingTextarea)`
-  text-align: ${getRule('talign', 'left')};
+  text-align: ${getRule("talign", "left")};
   max-width: 80vw;
   ${text}
   ${space}
   ${size}
-  ${shadow}
-`
+  ${fx}
+`;
 
 export const Selection = styled.select`
-  text-align: ${getRule('talign', 'left')};
+  text-align: ${getRule("talign", "left")};
   max-width: 80vw;
   ${text}
   ${size}
   ${space}
-  ${shadow}
-`
+  ${fx}
+`;
 
 export const Select = styled.option`
-  text-align: ${getRule('talign', 'left')};
+  text-align: ${getRule("talign", "left")};
   max-width: 80vw;
   ${text}
   ${space}
-  ${shadow}
-`
+  ${fx}
+`;
 
 export const InputLabel = styled.label`
-  text-align: ${getRule('talign', 'left')};
+  text-align: ${getRule("talign", "left")};
   max-width: 80vw;
   ${text}
   ${space}
   ${size}
-  ${shadow}
-`
+  ${fx}
+`;
 
 export const Caption = styled.legend`
-  text-align: ${getRule('talign', 'left')};
+  text-align: ${getRule("talign", "left")};
   max-width: 80vw;
   ${text}
   ${space}
   ${size}
-  ${shadow}
-`
+  ${fx}
+`;
 
 export const Submit = styled(Button1)`
   cursor: pointer;
-  text-align: ${getRule('talign', 'center')};
+  text-align: ${getRule("talign", "center")};
   ${text}
   ${shape}
   ${space}
-  ${shadow}
+  ${fx}
   ${border}
   ${backgroundColor}
-`
+`;

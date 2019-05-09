@@ -1,76 +1,141 @@
 import React from "react";
 import ReactPlayer from "react-player";
+import {
+  Box,
+  Image,
+  T,
+  T1,
+  T2,
+  T3,
+  T4,
+  T5,
+  T6,
+  PT,
+  TP,
+  Divider,
+  BGimg,
+  BGcolor,
+  FT
+} from "../components/n0x.library";
 import { n0x, base, image, data } from "../components/n0x.vars";
-import { PageLayout, T, T1, T2, Img } from "../components/n0x.library";
+import { PageLayout } from "../components/n0x.library";
 
 const GraphicPage = () => {
   return (
     <PageLayout
       pgTitle={`Home: ${data.name.company.trendy}`}
       pgDesc={null}
-      color={props => props.theme.colors.black}
-      opacity={[.9]}
+      color={props => props.theme.colors.whitetint[3]}
     >
-      <T1>
-        2D & 3D Graphic Design
-      </T1>
+      <T1>2D & 3D Graphic Design</T1>
 
-      <T2>
-        Whiteboard / Glassboard Animation Videos
-      </T2>
+      <T2>Whiteboard / Glassboard Animation Videos</T2>
 
       <T>
-        These types of videos are usually created to add to your website or for
-        posting on social media. These are usually advertising or explainer
-        videos, meant to capture your audience's attention and get them
-        interested in what you have to share with them. Our talented artists
-        will help you focus your story into a working script. Our directors will
-        then take that script and have a storyboard put together for your
-        approval before embarking on the main course of putting the animations
-        together.
+        These types of videos are animated explainer videos, usually created to
+        add to your website or to post on social media. They are meant to
+        capture your audience's attention and get them interested in what you
+        have to share with them. Our talented artists will help you focus your
+        story into a working script. Our directors will then take that script
+        and have a storyboard put together for your approval before embarking on
+        the main course of putting the animations together.
       </T>
 
+      <Box lp={1.5} pt={5} pb={2} px={2}>
+        <ReactPlayer
+          url="https://github.com/Alkenox-ME/alkenox-me-videos/blob/master/The_Smile_Solution_Whitboard.mp4?raw=true"
+          width="100%"
+          height="100%"
+          loop
+          playing
+          volume={0}
+        />
+        <TP>Whiteboard Animation produced for Drs. Enoch and Lamei</TP>
+      </Box>
 
-      <ReactPlayer
-        url="https://github.com/alkenox/alkenox-me-videos/blob/master/whiteboard-enoch.mp4?raw=true"
-        width="100%"
-        height="100%"
-        loop
-        playing
-        volume={0}
-      />
+      <T2>Animated GIFs</T2>
 
       <T>
-        Whiteboard Animation produced for Drs. Enoch and Lamei
+        The GIF (Graphical Interchange Format), was invented in 1987 by Steve
+        Wilhite, who was looking for a way to animate images in the smallest
+        file size possible. GIFs can be created from a series of images, or even
+        video (minus the sound), into a continuous loop that plays
+        automatically. Their common uses include keeping your brand from
+        appearing too serious, keeping your audience engaged in your brand's
+        personality, giving your brand a dose of youthfulness in the eyes of
+        your audience, providing visual instructions, building excitement for a
+        future product, and they can help you and/or your brand more
+        approachable.
       </T>
 
-      <T2>
-        Film & Television
-      </T2>
+      <Box lp={2} px={2} pt={4}>
+        <Image
+          src="https://media.giphy.com/media/MVgLYGeuRP4JynEhNU/source.gif"
+          alt="Sissy GIF"
+        />
 
+        <TP>
+          3D animated GIF created by one of our artists to help advertise an
+          indie feature film, "Sissy Carlyle" on social media.
+        </TP>
+      </Box>
 
-      <ReactPlayer
-        url="https://github.com/alkenox/alkenox-me-videos/blob/master/talent-seq-joker.mp4?raw=true"
-        width="100%"
-        height="100%"
-        loop
-        playing
-        volume={0}
-      />
+      <Box lp={2} px={2} pt={4}>
+        <Image
+          src="https://media.giphy.com/media/8lNgT2uFKdFDh7b2l2/giphy.gif"
+          alt="'The 12 Lives of Sissy Carlyle' info GIF"
+        />
 
-      <T2>
-        Animated Gifs
-      </T2>
-      <Img
-        width={1}
-        src="https://media.giphy.com/media/MVgLYGeuRP4JynEhNU/source.gif"
-        alt="Sissy Promo Gif"
-      />
+        <TP>
+          2D Animated Info GIF created for "The 12 Lives of Sissy Carlyle" indie
+          feature.
+        </TP>
+      </Box>
 
-      <T2>
-        2D & 3D Logo Design & Animated Logos
-      </T2>
+      <T pt={2} pb={5}>
+        How they can add value to your business: GIFS are easy to share due to
+        their small file size, they help you to show your fun side to your
+        audience, and they can add more context or emotion in a very short
+        amount of time. The average GIF is 2 to 5 seconds in length, which is
+        perfect for posting on social feeds to help convert more people to
+        customers, more quickly. Brands can create a close relationship with
+        their audience with the right GIF, as it can allow your brand to share
+        geniune and engaging content. You can also use them to highlight a key
+        function or feature of your product.
+      </T>
 
+      <T2>2D & 3D Logo Design & Animated Logos</T2>
+
+      <Box lp={2} pt={5} pb={2} px={2}>
+        <ReactPlayer
+          url="https://github.com/Alkenox-ME/alkenox-me-videos/blob/master/artefaektsLogoSequence.mp4?raw=true"
+          width="100%"
+          height="100%"
+          loop
+          playing
+          volume={0}
+        />
+        <TP>3D Animated Logo</TP>
+      </Box>
+
+      <Box lp={2} pt={5} pb={2} px={2}>
+        <ReactPlayer
+          url="https://github.com/Alkenox-ME/alkenox-me-videos/blob/master/logo-seq.mp4?raw=true"
+          width="100%"
+          height="100%"
+          loop
+          playing
+          volume={0}
+        />
+        <TP>3D Animated Logo</TP>
+      </Box>
+
+      <T py={5}>
+        We can also design 2d or 3D custom logo animations for your company's
+        brand. Having an animated logo seems to have become the norm for a solid
+        brand to have as a part of how they convey their brand personality.
+        They've been used for commercials and...
+      </T>
     </PageLayout>
   );
 };
