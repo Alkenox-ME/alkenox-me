@@ -340,6 +340,19 @@ const FT = styled.div`
   ${props => getFoot(props)}
 `;
 
+const FP = styled.div`
+  text-align: ${getRule("talign", "center")};
+  max-width: 100vw;
+  font-size: .25em;
+  padding: .15em;
+  color: ${props => props.theme.colors.white};
+  font-weight: 100;
+  ${space}
+  ${shape}
+  ${backgroundColor}
+  ${props => getFoot(props)}
+`;
+
 const T = styled.p`
   text-indent: ${props => props.tindent || null}em;
   text-align: ${getRule("talign", "left")};
@@ -422,6 +435,7 @@ const ListItem = styled.li`
   ${text}
   ${space}
   ${fx}
+
 `;
 
 const Href = styled.a`
@@ -489,6 +503,7 @@ export {
   PT,
   TP,
   TP1,
+  FP,
   BTN,
   Divider,
   SoundBlock,

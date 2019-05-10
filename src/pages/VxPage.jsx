@@ -98,8 +98,8 @@ const VxPage = () => {
         bRadius={".75em"}
         boxShadow="
         0.01em  0.01em  0.25em   0.25em   #444d56,
-        -0.01em   0.01em        .10em  0.05em   #444d56,
-        0.01em    -0.01em        .1em  0.01em   #444d56,
+        -0.01em   0.01em        .25em  0.05em   #444d56,
+        0.01em    -0.01em        1em  0.5em   #444d56,
         -0.01em   -0.01em  0.10em   0.01em   #444d56"
         lp={2}
         height={50}

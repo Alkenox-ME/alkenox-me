@@ -1,17 +1,23 @@
 import React from "react";
-import { data } from "../components/n0x.vars";
+import { data, image } from "../components/n0x.vars";
+import { Fade } from "react-reveal";
 import {
   Box,
   TP1,
   T,
   T1,
   T2,
+  T3,
+  T4,
+  T5,
+  T6,
+  FP,
   Image,
   List,
   ListItem
 } from "../components/n0x.library";
 
-import { PageLayout } from "../components/n0x.library";
+import { PageLayout, Carousel } from "../components/n0x.library";
 import WebPricing from "../components/WebPricing";
 import EveryWebPkg from "../components/EveryWebPkg";
 
@@ -155,7 +161,18 @@ const WebPage = () => {
         </TP1>
       </Box>
 
-      <Image lp={2} src={UiImage} alt="Ui Image" my={"5%"} height={50} />
+      <Image
+        boxShadow="
+        0.01em  0.01em  0.25em   0.25em   #444d56,
+        -0.01em   0.01em        .25em  0.05em   #444d56,
+        0.01em    -0.01em        1em  0.5em   #444d56,
+        -0.01em   -0.01em  0.10em   0.01em   #444d56"
+        lp={2}
+        src={UiImage}
+        alt="Ui Image"
+        my={"5%"}
+        height={50}
+      />
 
       <T2 pt={"5%"}>Programming</T2>
 
@@ -189,7 +206,7 @@ const WebPage = () => {
         lp={2}
         alt="image3"
         src={CodeImage}
-        height={60}
+        height={50}
         px={"2%"}
         py={"5%"}
         pb={"2%"}
@@ -253,9 +270,136 @@ const WebPage = () => {
         management team, if you prefer.
       </T>
 
-      <EveryWebPkg />
-      <br />
-      <WebPricing />
+      <T1 color="#f6f8fa" textShadow="4px 4px 12px #000000" pt="5%" pb="2%">
+        Standard Web Packages
+      </T1>
+
+      <Box px={"5%"}>
+        <Carousel url={image.bg.vx} filter={"blur(.5em)"} bRadius={".75em"}>
+          <Fade>
+            <Box lp={2}>
+              <T3
+                color={props => props.theme.colors.white}
+                textShadow="2px 2px 6px #000000"
+              >
+                THE STARTER
+              </T3>
+              <T4
+                color={props => props.theme.colors.white}
+                textShadow="2px 2px 6px #000000"
+              >
+                $7,000 to $9,000
+              </T4>
+
+              <List
+                color={props => props.theme.colors.white}
+                textShadow="2px 2px 6px #000000"
+                lstyle="disc"
+                fontWeight="bold"
+              >
+                <ListItem>
+                  An Original Modern Flat Design Focused on your Unique Brand.
+                </ListItem>
+                <ListItem>4-6 Unique Pages</ListItem>
+                <ListItem>Minimal Design Complexity</ListItem>
+                <ListItem>
+                  Minimal Functionality Beyond Standard Features
+                </ListItem>
+                <ListItem>Minimal Automation</ListItem>
+              </List>
+            </Box>
+          </Fade>
+          <Fade>
+            <Box lp={2}>
+              <T3
+                color={props => props.theme.colors.white}
+                textShadow="4px 4px 12px #000000"
+              >
+                EVOLUTION
+              </T3>
+              <T4
+                color={props => props.theme.colors.white}
+                textShadow="4px 4px 12px #000000"
+              >
+                $9,000 to $14,000
+              </T4>
+              <List
+                color={props => props.theme.colors.white}
+                textShadow="2px 2px 6px #000000"
+                lstyle="disc"
+                fontWeight="bold"
+              >
+                <ListItem>
+                  Interactive Web Designs to Encourage User Interactivity
+                </ListItem>
+                <ListItem>6-10 Unique Pages</ListItem>
+                <ListItem>
+                  Complex Design & Minimal Functionality Beyond Standard
+                  Features OR Minimal Design & Moderately Complex Functionality
+                </ListItem>
+                <ListItem>Basic Automation and Integrations</ListItem>
+              </List>
+            </Box>
+          </Fade>
+          <Fade>
+            <Box lp={2}>
+              <T3
+                color={props => props.theme.colors.white}
+                textShadow="4px 4px 12px #000000"
+              >
+                E-COMMERCE
+              </T3>
+              <T4
+                color={props => props.theme.colors.white}
+                textShadow="4px 4px 12px #000000"
+              >
+                $14,000.00 to $20,000 +
+              </T4>
+              <List
+                color={props => props.theme.colors.white}
+                textShadow="2px 2px 6px #000000"
+                lstyle="disc"
+                fontWeight="bold"
+              >
+                <ListItem>10-15 (or more) Unique Pages</ListItem>
+                <ListItem>Complex Design</ListItem>
+                <ListItem>Complex Functionality</ListItem>
+                <ListItem>Next Level Automation and Integrations</ListItem>
+              </List>
+            </Box>
+          </Fade>
+          <Fade>
+            <Box lp={2}>
+              <T3
+                color={props => props.theme.colors.white}
+                textShadow="4px 4px 12px #000000"
+              >
+                CAUTION: CONSTRUCTION
+              </T3>
+              <T4
+                color={props => props.theme.colors.white}
+                textShadow="4px 4px 12px #000000"
+              >
+                Starting @ $8,000.00
+              </T4>
+              <T4
+                color={props => props.theme.colors.white}
+                textShadow="4px 4px 12px #000000"
+              >
+                (Finished Product: 2.5 to 5 Minutes)
+              </T4>
+              <FP
+                talignCenter
+                color={props => props.theme.colors.white}
+                textShadow="4px 4px 12px #000000"
+              >
+                Ex: Mini-Documentaries, Interviews, Presentations for a Targeted
+                or Established Audience.
+              </FP>
+            </Box>
+          </Fade>
+        </Carousel>
+      </Box>
     </PageLayout>
   );
 };
