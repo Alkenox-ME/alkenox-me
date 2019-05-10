@@ -1,8 +1,9 @@
 import React from "react";
 import ReactPlayer from "react-player";
-import { Bounce, Slide } from "react-reveal";
+// import { Bounce, Slide } from "react-reveal";
 import {
-  CarouSlide,
+  Slide,
+  Slider,
   Block,
   Box,
   Boxish,
@@ -182,8 +183,8 @@ const VxPage = () => {
 
       <Box px={"5%"}>
 
-        <Carousel url={image.bg.vx} filter={'blur(.5em)'} bRadius={'.75em'}>
-          <CarouSlide>
+        <Slider>
+          <Slide>
             <Box>
               <T3
                 color={props => props.theme.colors.white}
@@ -212,8 +213,8 @@ const VxPage = () => {
                 Instagram
               </T5>
             </Box>
-          </CarouSlide>
-          <CarouSlide>
+          </Slide>
+          <Slide>
             <Box>
               <T3
                 color={props => props.theme.colors.white}
@@ -242,8 +243,8 @@ const VxPage = () => {
                 Platforms. (Note: Instagram limits to 60 seconds)
               </T5>
             </Box>
-          </CarouSlide>
-          <CarouSlide>
+          </Slide>
+          <Slide>
             <Box>
               <T3
                 color={props => props.theme.colors.white}
@@ -272,8 +273,8 @@ const VxPage = () => {
                 for Information.
               </T5>
             </Box>
-          </CarouSlide>
-          <CarouSlide>
+          </Slide>
+          <Slide>
             <Box>
               <T3
                 color={props => props.theme.colors.white}
@@ -302,8 +303,8 @@ const VxPage = () => {
                 Targeted or Established Audience.
               </T5>
             </Box>
-          </CarouSlide>
-        </Carousel>
+          </Slide>
+        </Slider>
 
       </Box>
     </PageLayout>

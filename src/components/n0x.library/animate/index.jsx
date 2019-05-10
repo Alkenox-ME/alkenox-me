@@ -2,7 +2,8 @@
 export * from './PosedRouter'
 export * from './Modal'
 export * from './ImgZoom'
-export * from './PosedCarousel'
+export * from './posedSlide'
+export * from './posedSlider'
 
 // Animation
 export * from './posedElements'
