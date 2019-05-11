@@ -374,20 +374,18 @@ const WebPage = () => {
                 color={props => props.theme.colors.white}
                 textShadow="4px 4px 12px #000000"
               >
-                CAUTION: CONSTRUCTION
+                CAUTION:
               </T3>
               <T4
                 color={props => props.theme.colors.white}
                 textShadow="4px 4px 12px #000000"
               >
-                Starting @ $8,000.00
+                CONTACT US FOR A PERSONALIZED QUOTE!
               </T4>
               <T4
                 color={props => props.theme.colors.white}
                 textShadow="4px 4px 12px #000000"
-              >
-                (Finished Product: 2.5 to 5 Minutes)
-              </T4>
+              />
               <FP
                 talignCenter
                 color={props => props.theme.colors.white}
