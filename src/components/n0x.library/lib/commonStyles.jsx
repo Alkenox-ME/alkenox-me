@@ -102,8 +102,8 @@ export const list = css`
 `;
 
 export const shape = css`
-  width: ${props => (props.width ? props.width : null)}vw;
-  height: ${props => (props.height ? props.height : null)}vh;
+  width: ${props => (props.width ? props.width : null)};
+  height: ${props => (props.height ? props.height : null)};
 `;
 
 export const size = css`

@@ -4,7 +4,7 @@ import { HMenu, MenuItem, UFX } from "../atoms";
 
 const Nav = () => {
   return (
-    <HMenu fixed bgColor={props => props.theme.colors.blacktint[4]}>
+    <HMenu fixed bgColor={props => props.theme.colors.tint.black[4]}>
       <MenuItem mx={"8%"}>
         <UFX hover3>
           <Link to="/">Home</Link>

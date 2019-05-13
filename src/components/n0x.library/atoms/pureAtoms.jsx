@@ -1,7 +1,7 @@
 import React from "react";
-import { decamelize } from "humps";
 import styled, { css } from "styled-components/macro";
 import {
+  getRule,
   colors,
   text,
   space,
@@ -13,7 +13,6 @@ import {
   position,
   utility,
   textUnderline,
-  textShadow,
   fx,
   shape,
   breaks
@@ -107,16 +106,6 @@ const getHover5 = ({ hover5 }) => hover5 && `${underlineInOutInverse}`;
 const getHover6 = ({ hover6 }) => hover6 && `${underlineTtB}`;
 const getHover7 = ({ hover7 }) => hover7 && `${underlineBtT}`;
 
-const getRule = (ruleName, defaultRule) => props => {
-  const foundRule = Object.keys(props).find(key => key.startsWith(ruleName));
-  if (!foundRule || !props[foundRule]) {
-    return defaultRule;
-  }
-
-  const [, ...rule] = decamelize(foundRule, { separator: "-" }).split("-");
-  return rule.join("-");
-};
-
 const Block = styled.section`
   display: ${props => (props.inline ? "inline-flex" : "flex")};
   flex-direction: ${getRule("direction", "row")};
@@ -134,14 +123,50 @@ align-content: ${getRule("content", "center")};
 align-items: ${getRule("items", "center")};
 justify-content: ${getRule("justify", "center")};
 vertical-align: ${getRule("valign", "center")};
-box-shadow: 10px 10px 8px #000000;
-
   ${utility}
   ${position}
   ${size}
+  ${shape}
+  ${space}
+  ${backgroundImage}
+  ${backgroundColor}
+  ${fx}
+  ${border}
+`;
+
+export const BoxIt = styled.div`
+align-self: ${getRule("self", "center")};
+align-content: ${getRule("content", "center")};
+align-items: ${getRule("items", "center")};
+justify-content: ${getRule("justify", "center")};
+vertical-align: ${getRule("valign", "center")};
+  ${utility}
+  ${position}
+  ${shape}
   ${space}
   ${backgroundImage}
   ${fx}
+  ${border}
+`;
+
+export const BgBox = styled.div`
+align-self: ${getRule("self", "center")};
+align-content: ${getRule("content", "center")};
+align-items: ${getRule("items", "center")};
+justify-content: ${getRule("justify", "center")};
+vertical-align: ${getRule("valign", "center")};
+object-fit: ${props => props.objFit || "cover"};
+object-position: ${props => props.objPosition || "center"};
+position: absolute;
+left: 0;
+right: 0;
+  ${utility}
+  ${space}
+  ${shape}
+  ${fx}
+  ${border}
+  ${backgroundImage}
+  ${backgroundColor}
 `;
 
 const Boxish = styled.div`
@@ -166,12 +191,10 @@ const UTitle = styled.span`
   border-bottom-style: ${getRule("bstyle", "solid")};
   display: inline-block;
   line-height: 0.85;
-  ${textShadow}
 `;
 
 const UText = styled.span`
   ${textUnderline}
-  ${textShadow}
 `;
 
 const UFX = styled.span`
@@ -203,10 +226,14 @@ const BGimg = styled.div`
   align-items: ${getRule("items", "center")};
   justify-content: ${getRule("justify", "center")};
   vertical-align: ${getRule("valign", "center")};
+  z-index: 0;
+  ${size}
   ${shape}
   ${space}
   ${border}
+  ${position}
   ${backgroundImage}
+  ${fx}
 `;
 
 const PT = styled.p`
