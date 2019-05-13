@@ -1,13 +1,23 @@
 import React from "react";
 import ReactPlayer from "react-player";
-import { Bounce, Slide, Fade } from "react-reveal";
+// import { Bounce, Slide, Fade } from "react-reveal";
+import styled, { css } from 'styled-components/macro'
+import { CaretLeft, CaretRight, Pause, Play } from 'styled-icons/boxicons-regular'
 import {
-  CarouSlide,
+  CardCarousel,
+  Blur,
+  BgBox,
+  Slider,
+  Slide,
+  slideContainer,
+  sliduh,
+  SlideItem,
   Block,
   Box,
-  Boxish,
+  BoxIt,
   List,
   ListItem,
+  BGimg,
   Image,
   T,
   T1,
@@ -15,17 +25,12 @@ import {
   T3,
   T4,
   T5,
-  T6,
-  PT,
   TP,
   TP1,
-  BGimg,
-  BGcolor,
-  FT
+  PageLayout
 } from "../components/n0x.library";
 import { data, image } from "../components/n0x.vars";
-import { PageLayout, Carousel } from "../components/n0x.library";
-import transition from "styled-transition-group";
+import {PouselInfo } from '../components/PouselInfo'
 
 const Teamwork =
   "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/achievement-agreement-arms-1068523.jpg?raw=true";
@@ -35,11 +40,12 @@ const Production =
   "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/action-clapper-film-director-1117132.jpg?raw=true";
 
 const VxPage = () => {
+
   return (
     <PageLayout
       pgTitle={`Home: ${data.name.company.trendy}`}
       pgDesc={null}
-      color={props => props.theme.colors.whitetint[3]}
+      color={props => props.theme.colors.tint.white[3]}
     >
       <T1 mb={["3%"]}>Video Production</T1>
 
@@ -102,7 +108,7 @@ const VxPage = () => {
         0.01em    -0.01em        .1em  0.01em   #444d56,
         -0.01em   -0.01em  0.10em   0.01em   #444d56"
         lp={2}
-        height={50}
+        height={'50vh'}
         src={Teamwork}
         alt="Teamwork"
       />
@@ -139,7 +145,7 @@ const VxPage = () => {
         0.01em    -0.01em        1em  0.5em   #444d56,
         -0.01em   -0.01em  0.10em   0.01em   #444d56"
         lp={2}
-        height={50}
+        height={'50vh'}
         src={Production}
         alt="Production"
       />
@@ -154,7 +160,7 @@ const VxPage = () => {
         0.01em    -0.01em        1em  0.5em   #444d56,
         -0.01em   -0.01em  0.10em   0.01em   #444d56"
         lp={2}
-        height={50}
+        height={'50vh'}
         src={Editing}
         alt="Editing"
       />
@@ -209,134 +215,12 @@ const VxPage = () => {
         </List>
       </Box>
 
-      <T1 color="#f6f8fa" textShadow="4px 4px 12px #000000" pt="5%" pb="2%">
+      <T1 color="#f6f8fa" textShadow="4px 4px 12px #000000" pt=".13em" pb=".13em">
         Video Production Pricing
       </T1>
 
-      <Box px={"5%"}>
-        <Carousel url={image.bg.vx} filter={"blur(.5em)"} bRadius={".75em"}>
-          <Fade>
-            <Box lp={2}>
-              <T3
-                color={props => props.theme.colors.white}
-                textShadow="2px 2px 6px #000000"
-              >
-                The Teaser
-              </T3>
-              <T4
-                color={props => props.theme.colors.white}
-                textShadow="2px 2px 6px #000000"
-              >
-                Starting @ $1,200.00
-              </T4>
-              <T4
-                color={props => props.theme.colors.white}
-                textShadow="2px 2px 6px #000000"
-              >
-                (Finished Product: Up To 15 Seconds)
-              </T4>
-              <T5
-                talignCenter
-                color={props => props.theme.colors.white}
-                textShadow="4px 4px 12px #000000"
-              >
-                A Short and Informative Teasers or Previews for Facebook or
-                Instagram
-              </T5>
-            </Box>
-          </Fade>
-          <Fade>
-            <Box lp={2}>
-              <T3
-                color={props => props.theme.colors.white}
-                textShadow="4px 4px 12px #000000"
-              >
-                Social Media
-              </T3>
-              <T4
-                color={props => props.theme.colors.white}
-                textShadow="4px 4px 12px #000000"
-              >
-                Starting @ $3,500.00
-              </T4>
-              <T4
-                color={props => props.theme.colors.white}
-                textShadow="4px 4px 12px #000000"
-              >
-                (Finished Product: Up To 90 Seconds)
-              </T4>
-              <T5
-                talignCenter
-                color={props => props.theme.colors.white}
-                textShadow="4px 4px 12px #000000"
-              >
-                Entertaining or Informative Videos for all Social Media
-                Platforms. (Note: Instagram limits to 60 seconds)
-              </T5>
-            </Box>
-          </Fade>
-          <Fade>
-            <Box lp={2}>
-              <T3
-                color={props => props.theme.colors.white}
-                textShadow="4px 4px 12px #000000"
-              >
-                Full-Length
-              </T3>
-              <T4
-                color={props => props.theme.colors.white}
-                textShadow="4px 4px 12px #000000"
-              >
-                Starting @ $5,500.00
-              </T4>
-              <T4
-                color={props => props.theme.colors.white}
-                textShadow="4px 4px 12px #000000"
-              >
-                (Finished Product: Up To 2.5 Minutes)
-              </T4>
-              <T5
-                talignCenter
-                color={props => props.theme.colors.white}
-                textShadow="4px 4px 12px #000000"
-              >
-                For Use On A Website Where Your Visitors Are Actively Looking
-                for Information.
-              </T5>
-            </Box>
-          </Fade>
-          <Fade>
-            <Box lp={2}>
-              <T3
-                color={props => props.theme.colors.white}
-                textShadow="4px 4px 12px #000000"
-              >
-                Proven Interest Videos
-              </T3>
-              <T4
-                color={props => props.theme.colors.white}
-                textShadow="4px 4px 12px #000000"
-              >
-                Starting @ $8,000.00
-              </T4>
-              <T4
-                color={props => props.theme.colors.white}
-                textShadow="4px 4px 12px #000000"
-              >
-                (Finished Product: 2.5 to 5 Minutes)
-              </T4>
-              <T5
-                talignCenter
-                color={props => props.theme.colors.white}
-                textShadow="4px 4px 12px #000000"
-              >
-                Ex: Mini-Documentaries, Interviews, Presentations for a Targeted
-                or Established Audience.
-              </T5>
-            </Box>
-          </Fade>
-        </Carousel>
-      </Box>
+      <PouselInfo />
+
     </PageLayout>
   );
 };

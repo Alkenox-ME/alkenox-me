@@ -4,7 +4,7 @@ import { FT } from '../atoms'
 
 const Footer = ({ copyYear, copyCompany }) => {
     return (
-        <FT fixed bgColor={props => props.theme.colors.blacktint[9]}>
+        <FT fixed bgColor={props => props.theme.colors.tint.black[9]}>
           Copyright &copy; {copyYear}&nbsp;{copyCompany} All rights reserved.
         </FT>
     );

@@ -26,11 +26,11 @@ import {
 } from "../components/n0x.library";
 
 // Variables
-const tint = props => props.theme.colors.blacktint[1];
-const ht = 26;
-const radius = 1;
+const tint = props => props.theme.colors.tint.black[1];
+const ht = '26vh';
+const radius = '1em';
 const clr = props => props.theme.colors.link[0];
-const pad = 0.5;
+const pad = '0.5%';
 
 // Actual Page
 const HomePage = () => {
@@ -38,7 +38,7 @@ const HomePage = () => {
     <PageLayout
       pgTitle={`Home: ${data.name.company.trendy}`}
       pgDesc={null}
-      color={props => props.theme.colors.blacktint[3]}
+      color={props => props.theme.colors.tint.black[3]}
     >
       <SoundBlock lp={2} tv={2} p={pad}>
         <Button2>

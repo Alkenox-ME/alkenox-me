@@ -3,7 +3,7 @@ import { Router, Location } from '@reach/router';
 import { RouteContainer } from './posedElements'
 import { PoseGroup } from 'react-pose';
 
-const PosedRouter = ({ enter, exit, children }) => {
+const PosedRouter = ({ children }) => {
 
   return (
   <Location>

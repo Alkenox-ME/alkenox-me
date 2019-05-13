@@ -12,7 +12,7 @@ const AboutPage = () => {
     <PageLayout
       pgTitle={`Home: ${data.name.company.trendy}`}
       pgDesc={null}
-      color={props => props.theme.colors.whitetint[3]}
+      color={props => props.theme.colors.tint.white[3]}
     >
       <T1>About Us</T1>
 

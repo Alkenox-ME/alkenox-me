@@ -15,7 +15,7 @@ function makeCarousel(WrappedComponent, config = {}) {
 
   //const { wait = 5000,  maxTurns = 2, } = config;
 
-  return class extends React.Component {
+  return class extends React.PureComponent {
 
     static get propTypes() {
       return {
