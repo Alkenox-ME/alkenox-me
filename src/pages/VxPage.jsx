@@ -2,16 +2,7 @@ import React from "react";
 import ReactPlayer from "react-player";
 // import { Bounce, Slide, Fade } from "react-reveal";
 import styled, { css } from 'styled-components/macro'
-import { CaretLeft, CaretRight, Pause, Play } from 'styled-icons/boxicons-regular'
 import {
-  CardCarousel,
-  Blur,
-  BgBox,
-  Slider,
-  Slide,
-  slideContainer,
-  sliduh,
-  SlideItem,
   Block,
   Box,
   BoxIt,
