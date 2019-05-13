@@ -1,10 +1,8 @@
 import React from "react";
-import { useState, useEffect, useRef } from "react";
 import posed, { PoseGroup } from "react-pose";
-import styled, { css } from 'styled-components/macro';
+import styled from 'styled-components/macro';
 import { CaretLeft, CaretRight } from 'styled-icons/boxicons-regular'
-import { carouselContainer1, carouselSlide1, carouselSlideItem1, carouselContainer2, carouselSlide2, carouselSlideItem2 } from './posedElements'
-import { border, makeCarousel } from '../lib'
+import { makeCarousel } from '../lib'
 
 const SlideItem = styled(
     posed.li(props => props.anim)
@@ -39,11 +37,11 @@ const Slider = (props) => {
   `;
 
   let Left = styled(CaretLeft)`
-    text-shadow: .01em .01em .01em #000;
+  text-shadow: ${props => props.uiShadow ? props.uiShadow : 'inherit'};
     z-index: 100;
     position: absolute;
     left: 1em;
-    color: ${props => props.theme.colors.white};
+    color: ${props => props.uiColor ? props.uiColor : 'inherit'};
     min-height: ${props => props.height ? props.height : '100%'};
     width: 3em;
     cursor: pointer;
@@ -57,11 +55,11 @@ const Slider = (props) => {
   `
 
   let Right = styled(CaretRight)`
-    text-shadow: .01em .01em .01em #000;
+  text-shadow: ${props => props.uiShadow ? props.uiShadow : 'inherit'};
     z-index: 100;
     position: absolute;
     right: 1em;
-    color: ${props => props.theme.colors.white};
+    color: ${props => props.uiColor ? props.uiColor : 'inherit'};
     min-height: ${props => props.height ? props.height : '100%'};
     width: 3em;
     cursor: pointer;
@@ -75,10 +73,10 @@ const Slider = (props) => {
   `;
 
   const Dot = styled.span`
-    color: ${props => props.theme.colors.white};
+    color: ${props => props.uiColor ? props.uiColor : 'inherit'};
     font-size: 1.5em;
     cursor: pointer;
-    text-shadow: .01em .01em .01em #000;
+    text-shadow: ${props => props.uiShadow ? props.uiShadow : 'inherit'};
     user-select: none;
     opacity: .5;
     transition: all .5s ease;
@@ -99,17 +97,17 @@ const Slider = (props) => {
   `;
 
   const CarouselUI = ({ position, total, handleClick, children }) => (
-  <Container>
+  <Container {...props}>
     <PoseGroup animateOnMount enterPose='enter' exitPose='exit' preEnterPose='exit'>
       <AnimatedDiv key={position}>
         {props.children[position]}
       </AnimatedDiv>
     </PoseGroup>
-    <Left onClick={handleClick} data-position={position - 1} />
-    <Right  onClick={handleClick} data-position={position + 1} />
+    <Left onClick={handleClick} data-position={position - 1} {...props} />
+    <Right  onClick={handleClick} data-position={position + 1} {...props} />
     <Dots>
       {Array(...Array(total)).map( (val, index) =>
-        <Dot key={index} onClick={handleClick} data-position={index}>
+        <Dot key={index} onClick={handleClick} data-position={index} {...props}>
           {index === position ? '● ' : '○ ' }
         </Dot>
       )}

@@ -2,16 +2,7 @@ import React from "react";
 import ReactPlayer from "react-player";
 // import { Bounce, Slide, Fade } from "react-reveal";
 import styled, { css } from 'styled-components/macro'
-import { CaretLeft, CaretRight, Pause, Play } from 'styled-icons/boxicons-regular'
 import {
-  CardCarousel,
-  Blur,
-  BgBox,
-  Slider,
-  Slide,
-  slideContainer,
-  sliduh,
-  SlideItem,
   Block,
   Box,
   BoxIt,
@@ -30,7 +21,7 @@ import {
   PageLayout
 } from "../components/n0x.library";
 import { data, image } from "../components/n0x.vars";
-import {PouselInfo } from '../components/PouselInfo'
+import {SliderVxPrice } from '../components/SliderVxPrice'
 
 const Teamwork =
   "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/achievement-agreement-arms-1068523.jpg?raw=true";
@@ -219,7 +210,7 @@ const VxPage = () => {
         Video Production Pricing
       </T1>
 
-      <PouselInfo />
+      <SliderVxPrice />
 
     </PageLayout>
   );

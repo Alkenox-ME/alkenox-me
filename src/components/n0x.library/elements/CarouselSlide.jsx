@@ -9,12 +9,11 @@ import {
   T5,
   TP,
   TP1
-} from "../atoms/pureAtoms";
+} from "../atoms";
 import {
   Slide,
   SlideItem
-} from "../animate/posedSlider";
-import { PoseGroup } from 'react-pose'
+} from "../animate";
 
 const CarouselSlide = (props) => {
 
