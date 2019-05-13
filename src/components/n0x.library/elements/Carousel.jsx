@@ -68,7 +68,6 @@ const Dots = styled.span`
   text-align: center;
   width: ${width};
   z-index: 100;
-  font-color: ${color};
 `;
 
 const CarouselUI = ({ position, handleClick, children, total, ...props }) => (
