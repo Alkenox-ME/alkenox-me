@@ -8,4 +8,3 @@ export * from "./Tier";
 export * from "./TierPricing";
 export * from "./Carousel";
 export * from "./CarouselSlide";
-export * from "./CarouselInfo";

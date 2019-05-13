@@ -1,65 +1,40 @@
-import React, { PureComponent } from "react";
-import makeCarousel from "react-reveal/makeCarousel";
-import Slide from "react-reveal/Slide";
-import styled, { css } from "styled-components";
+import React from "react";
+import { BgBox, Box } from "../atoms";
+import { Slider } from "../animate";
 
-// Adding directional arrows to help navigate carousel:
+const Carousel = (props) => {
+  return (
+    <Box position={'relative'} mx={"2%"} height={props.height}  bRadius={props.radius}>
 
-const width = "100%";
-const height = "70vh";
+      <BgBox
+        height={'100%'}
+        bgImage={props.bgImage}
+        filter={props.filter}
+        bRadius={props.radius}
+        boxShadow={ props.shadow }
+      >
 
-const Background = styled.div`
-  background-image: url(${props => props.url || null});
-  background-size: ${props => props.bgSize || "cover"};
-  background-position: ${props => props.bgPosition || "center"};
-  background-attachment: ${props => props.bgAttachment || null};
-  background-origin: ${props => props.bgOrigin || null};
-  border-radius: 1em;
-  filter:  ${props => props.filter || null};
-  position: absolute;
-  width: 100%;
-  height: 100%;
-`;
+        <BgBox
+          width={'100%'}
+          height={'100%'}
+          bgColor={props.tint}
+          bRadius={props.radius}
+        />
 
-const Container = styled.div`
-  box-shadow:
-      0.15em  0.15em  0.75em   0.5em   #24292e,
-    -0.15em   0.15em        1em  0.5em   #24292e,
-        0.1em    -0.1em        1em  0.5em   #6c6c6c,
-       -0.1em   -0.1em  0.75em   0.5em   #6c6c6c;
-  border-radius: ${props => props.bRadius || null};
-  position: relative;
-  overflow: hidden;
-  width: ${width};
-  min-height: ${height};
-`;
+      </BgBox>
 
-const Arrow = styled.div`
-  text-shadow: 1px 1px 1px #fff;
-  z-index: 100;
-  line-height: ${height};
-  text-align: center;
-  position: absolute;
-  top: 0;
-  width: 10%;
-  font-size: 2em;
-  cursor: pointer;
-  user-select: none;
-  ${props => props.right ? css`left: 90%;` : css` left: 0%;`}
-`;
+      <Slider
+        anim={props.animate}
+        uiShadow = {props.shadow}
+        uiColor = {props.color}
+      >
 
-const CarouselUI = ({ position, handleClick, children, ...props }) => (
-  <Container {...props}>
-    <Background {...props}/>
-    {children}
-    <Arrow onClick={handleClick} data-position={position - 1}>
-      {"<"}
-    </Arrow>
-    <Arrow right onClick={handleClick} data-position={position + 1}>
-      {">"}
-    </Arrow>
-  </Container>
-);
-const Carousel = makeCarousel(CarouselUI);
+        {props.children}
+
+      </Slider>
+
+    </Box>
+  );
+};
 
 export { Carousel };
