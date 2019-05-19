@@ -16,9 +16,9 @@ const About = () => {
     >
       <H1>About Us</H1>
 
-      <Image lp={5} height={40} src={image.fg.yinYang} />
+      <Image objFit="contain" height="40vh" src={image.fg.yinYang} />
 
-      <P pt={5}>
+      <P pt="5%">
         Alkenox Media & Entertainment is an independent media production
         company, officially founded in 2018, in the greater Atlanta area. At its
         core, we are a brother and sister team that, much like yin and yang,

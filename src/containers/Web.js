@@ -34,7 +34,7 @@ const Web = () => {
     >
       <H1>Full Stack Web Development</H1>
 
-      <Image src={ArchImage} alt="ArchImage" height={60} />
+      <Image src={ArchImage} alt="ArchImage" height="60vh" />
 
       <P pt="4%">
         Why should you have your website built by a professional instead of
