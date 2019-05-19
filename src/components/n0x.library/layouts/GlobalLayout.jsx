@@ -1,9 +1,7 @@
 import React from "react";
-import { Link } from "@reach/router";
 import styled from "styled-components/macro";
-import { n0x, data, image } from '../../n0x.vars'
 import { SeoGlobal } from '../elements'
-import { N0xTheme, Block, Box, HMenu, MenuItem, UFX } from "../atoms";
+import { N0xTheme } from "../atoms";
 
 const GlobalLayout = ({ image, tint, children, ...props }) => {
 

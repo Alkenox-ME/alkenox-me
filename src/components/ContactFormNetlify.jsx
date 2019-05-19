@@ -1,36 +1,23 @@
 import React from 'react';
-import { Flex, Box } from './n0x.Bass';
+import { FormBlock, P, Button2 } from './n0x.library';
 import { Input } from 'antd';
 
 const TextArea = Input;
 
 const ContactFormNetlify = () => {
     return (
-      <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+      <FormBlock name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="contact" />
-        <Flex flexWrap="wrap" justifyContent="center">
-          <Box p={3} width={[1]}>
-            Your Name:
-            <Input type="text" name="name" />
-          </Box>
-
-          <Box p={3} width={[1]}>
-            Your Email:
-            <Input type="email" name="email" />
-          </Box>
-
-          <Box p={3} width={[1]}>
-            Message:
-            <TextArea autosize="true" name="msg" />
-          </Box>
-
-          <Box p={3} width="auto" alignSelf="center">
-            <button type="submit">
-              Send
-            </button>
-          </Box>
-        </Flex>
-      </form>
+        <P>Your Name:</P>
+        <Input type="text" name="name" />
+        <P>Your Email:</P>
+        <Input type="email" name="email" />
+        <P>Message:</P>
+        <TextArea autosize="true" name="msg" />
+        <Button2 type="submit">
+          Send
+        </Button2>
+      </FormBlock>
     );
   }
 export default ContactFormNetlify;

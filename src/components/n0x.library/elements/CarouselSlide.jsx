@@ -1,59 +1,50 @@
 import React from "react";
-// import { Bounce, Slide, Fade } from "react-reveal";
-import {
-  T,
-  T1,
-  T2,
-  T3,
-  T4,
-  T5,
-  TP,
-  TP1
-} from "../atoms";
-import {
-  Slide,
-  SlideItem
-} from "../animate";
+import { TH3, TH4, TH5 } from "../atoms";
+import { Slide, SlideItem } from "../animate";
 
-const CarouselSlide = (props) => {
+const CarouselSlide = ( props ) => {
 
   return (
     <Slide anim={ props.animateSlide || null }>
       <SlideItem key={ 1 } anim={ props.animateTitle || props.animateItem || null }>
-        <T3
+        <TH3
           color={ props.colorTitle || props.color || null }
           textShadow={ props.shadowTitle || props.shadow || null }
+          { ...props.title }
         >
           { props.title || null }
-        </T3>
+        </TH3>
       </SlideItem>
 
       <SlideItem key={ 2 } anim={ props.animatePrice || props.animateItem || null }>
-        <T4
+        <TH3
           color={ props.colorPrice || props.color || null }
           textShadow={ props.shadowPrice || props.shadow || null }
+          { ...props.price }
         >
           Starting @ ${ props.price || null }
-        </T4>
+        </TH3>
       </SlideItem>
 
       <SlideItem key={ 3 } anim={ props.animateNotes || props.animateItem || null }>
-        <T4
+        <TH4
           color={ props.colorNotes || props.color || null }
           textShadow={ props.shadowNotes || props.shadow || null }
+          { ...props.notes }
         >
           { props.notes || null }
-        </T4>
+        </TH4>
       </SlideItem>
 
       <SlideItem key={ 4 } anim={ props.animateDescription || props.animateItem || null }>
-        <T5
+        <TH5
           talignCenter
           color={ props.colorDescription || props.color || null }
           textShadow={ props.shadowDescription || props.shadow || null }
+          { ...props.description }
         >
           { props.description || null }
-        </T5>
+        </TH5>
       </SlideItem>
     </Slide>
   );

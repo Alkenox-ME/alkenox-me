@@ -4,7 +4,7 @@ import { Link as Href } from "@reach/router";
 
 // Styling
 import styled from "styled-components/macro";
-import { T2, Image, Box } from "../atoms";
+import { H2, Image, Box } from "../atoms";
 
 const LabelBlock = ({
   link,
@@ -24,7 +24,7 @@ const LabelBlock = ({
     }
   `;
 
-  const LabelText = styled(T2)`
+  const LabelText = styled(H2)`
     position: absolute;
     display: flex;
     align-items: center;

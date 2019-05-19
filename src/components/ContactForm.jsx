@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Flex, Box } from './n0x.Bass';
+import { FormBlock, P, Button2 } from './n0x.library';
 import { Input } from 'antd';
 
 const TextArea = Input;
@@ -35,30 +35,17 @@ class ContactForm extends Component {
   render() {
     const { name, email, msg } = this.state;
     return (
-      <form name="contact" onSubmit={this.handleSubmit}>
-        <Flex flexWrap="wrap" justifyContent="center">
-          <Box p={3} width={[1]}>
-            Your Name:
-            <Input type="text" name="name" value={name} onChange={this.handleChange} />
-          </Box>
-
-          <Box p={3} width={[1]}>
-            Your Email:
-            <Input type="email" name="email" value={email} onChange={this.handleChange} />
-          </Box>
-
-          <Box p={3} width={[1]}>
-            Message:
-            <TextArea autosize="true" name="msg" value={msg} onChange={this.handleChange} />
-          </Box>
-
-          <Box p={3} width="auto" alignSelf="center">
-            <button type="submit" onClick={this.handleSubmit}>
-              Send
-            </button>
-          </Box>
-        </Flex>
-      </form>
+      <FormBlock name="contact" onSubmit={this.handleSubmit}>
+        <P>Your Name:</P>
+        <Input type="text" name="name" value={name} onChange={this.handleChange} />
+        <P>Your Email:</P>
+        <Input type="email" name="email" value={email} onChange={this.handleChange} />
+        <P>Message:</P>
+        <TextArea autosize="true" name="msg" value={msg} onChange={this.handleChange} />
+        <Button2 type="submit" onClick={this.handleSubmit}>
+          Send
+        </Button2>
+      </FormBlock>
     );
   }
 }

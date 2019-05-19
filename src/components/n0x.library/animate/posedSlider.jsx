@@ -1,7 +1,8 @@
 import React from "react";
 import posed, { PoseGroup } from "react-pose";
 import styled from 'styled-components/macro';
-import { CaretLeft, CaretRight } from 'styled-icons/boxicons-regular'
+import { CaretLeft } from 'styled-icons/boxicons-regular/CaretLeft'
+import { CaretRight } from 'styled-icons/boxicons-regular/CaretRight'
 import { makeCarousel } from '../lib'
 
 const SlideItem = styled(

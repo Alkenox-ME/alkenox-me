@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "@reach/router";
+import { Link } from  '@reach/router';
 import { HMenu, MenuItem, UFX } from "../atoms";
 
 const Nav = () => {

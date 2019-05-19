@@ -13,7 +13,7 @@ const PageLayout = ({ opacity, color, children, ...props }) => {
   `;
 
   return (
-    <Tint>
+    <Tint key={children.id}>
       <Block px={"2%"} py={"6%"}>
         <SeoPage {...props} />
         {children}

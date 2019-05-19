@@ -1,26 +1,26 @@
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
-import { Block, T } from "../atoms";
+import { Block, P } from "../atoms";
 
 const Tier = class extends PureComponent {
   render() {
     const { title, price, length, desc, ...props } = this.props;
     return (
       <Block {...props}>
-        <T {...props}>
+        <P {...props}>
           {title}
-        </T>
+        </P>
 
-        <T {...props}>
+        <P {...props}>
           {price}
-        </T>
-        <T {...props}>
+        </P>
+        <P {...props}>
           {length}
-        </T>
+        </P>
 
-        <T {...props}>
+        <P {...props}>
           {desc}
-        </T>
+        </P>
       </Block>
     );
   }
