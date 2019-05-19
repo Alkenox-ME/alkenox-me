@@ -1,6 +1,17 @@
 import React from "react";
-import { data, n0x } from "../components/n0x.vars";
-import { PageLayout, Box, TP1, P, H1, H2, Image, List, ListItem, colors } from "../components/n0x.library";
+import { data } from "../components/n0x.vars";
+import {
+  PageLayout,
+  Box,
+  TP1,
+  P,
+  H1,
+  H2,
+  Image,
+  List,
+  ListItem,
+  colors
+} from "../components/n0x.library";
 
 const ArchImage =
   "https://github.com/alkenox/alkenox-me-images/blob/master/architect-architecture-black-and-white-1537008.jpg?raw=true";
@@ -194,14 +205,7 @@ const Web = () => {
 
       <H2 pt="5%">Defining Your Users' Experience</H2>
 
-      <Image
-        lp={1}
-        height={70}
-        px="10%"
-        pb="2%"
-        src={UxImage}
-        alt="image5"
-      />
+      <Image lp={1} height={70} px="10%" pb="2%" src={UxImage} alt="image5" />
 
       <P>
         We collect data about your target user base, and their preferences,
@@ -236,7 +240,6 @@ const Web = () => {
         you may take your site and data to your own hosting service or in-house
         management team, if you prefer.
       </P>
-
     </PageLayout>
   );
 };
