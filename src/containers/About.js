@@ -33,7 +33,7 @@ const About = () => {
         our services are offered a-la-cart or via custom bundling, because no
         two projects are ever really the same.
       </P>
-      <P py={3}>
+      <P py="5%">
         Sight and Sound are the backbone of the user experience. Since one or
         both of these are always being stimulated, they are very important parts
         of sensory marketing and branding. Much like the opening sounds and
