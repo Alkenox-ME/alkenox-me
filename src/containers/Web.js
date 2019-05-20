@@ -100,7 +100,7 @@ const Web = () => {
       <P pt="4%">
         If you receive a quote of roughly $1,000 to build or re-design your
         site, it is probable that it is an existing template and there will be
-        minimal alterations made to the original design. It will not be a fully
+        minimal alterations made to its original design. It will not be a fully
         custom website even if the claim is there. In most cases, it is only
         custom in that they replaced the logo, colors, added your images, and
         your choice of plugins to the existing template. In the end, your brand
@@ -153,7 +153,7 @@ const Web = () => {
         </TP1>
       </Box>
 
-      <Image lp={2} src={UiImage} alt="Ui Image" my="5%" height={50} />
+      <Image src={UiImage} width="50%" alt="Ui Image" my="5%" height="50vh" />
 
       <H2 pt="5%">Programming</H2>
 
@@ -163,7 +163,7 @@ const Web = () => {
         include:
       </P>
 
-      <Box lp={1} px="30%" pt="3%">
+      <Box lp={1} px="30%" py="3%">
         <List lstyleDisc>
           <ListItem>Full Control over the design.</ListItem>
           <ListItem>
@@ -181,10 +181,10 @@ const Web = () => {
       </Box>
 
       <Image
-        lp={2}
         alt="image3"
         src={CodeImage}
-        height={60}
+        lp={2}
+        height="60vh"
         px="2%"
         py="5%"
         pb="2%"
@@ -205,7 +205,7 @@ const Web = () => {
 
       <H2 pt="5%">Defining Your Users' Experience</H2>
 
-      <Image lp={1} height={70} px="10%" pb="2%" src={UxImage} alt="image5" />
+      <Image lp={1} height="60vh" px="10%" pb="2%" src={UxImage} alt="image5" />
 
       <P>
         We collect data about your target user base, and their preferences,
