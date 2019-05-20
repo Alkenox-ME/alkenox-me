@@ -119,8 +119,8 @@ const Slider = (props) => {
 const Carousel = makeCarousel(CarouselUI);
 
   return (
-    <Carousel>
-
+    <Carousel { ...props }>
+      
       {props.children}
 
     </Carousel>

@@ -4,19 +4,18 @@ import { SeoPage } from "../elements";
 import { Block } from "../atoms";
 import { Container } from "../animate";
 
-const PageLayout = ({ opacity, color, children, ...props }) => {
+const PageLayout = (props) => {
   const Tint = styled(Container)`
     width: 100vw;
     min-height: 100vh;
-    background-color: ${color};
-    opacity: ${opacity};
+    background-color: ${props.color || 'rgba(0,0,0,0)'};
   `;
 
   return (
-    <Tint key={children.id}>
+    <Tint key={props.children}>
       <Block px={"2%"} py={"6%"}>
         <SeoPage {...props} />
-        {children}
+        {props.children}
       </Block>
     </Tint>
   );

@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components/macro";
-import { image } from "../../n0x.vars";
 export const GlobalStyle = createGlobalStyle`
 
   html {
@@ -12,7 +11,6 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
-    background-image: ${image.bg.logo}
   }
   button {
     outline: none;

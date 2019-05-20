@@ -3,10 +3,10 @@ import styled from "styled-components/macro";
 import { SeoGlobal } from '../elements'
 import { N0xTheme } from "../atoms";
 
-const GlobalLayout = ({ image, tint, children, ...props }) => {
+const GlobalLayout = (props) => {
 
   const BG = styled.div`
-      background-image: url(${image});
+      background-image: url(${props.image || null});
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: center;
@@ -20,7 +20,7 @@ const GlobalLayout = ({ image, tint, children, ...props }) => {
       <SeoGlobal {...props} />
       <BG>
 
-        {children}
+        {props.children}
 
       </BG>
     </N0xTheme>

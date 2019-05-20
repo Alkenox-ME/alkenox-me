@@ -1,10 +1,38 @@
 import { css } from "styled-components/macro";
 import { breakpoint } from "./breaks";
 
-export const textShadow = css`
-  text-shadow: ${props => props.theme.textShadow || null};
+// Text
+export const text = css`
+  font-size: ${props => props.fontSize || null}em;
+  font-weight: ${props => props.fontWeight || null};
+  text-decoration: ${props => props.textDecoration || null};
+  text-justify: ${props => props.textJustify || null};
+  letter-spacing: ${props => props.letterSpace || null};
+  line-height: ${props => props.lineHeight || null};
+  font-family: ${props => props.fontFamily || null};
+  color: ${props => props.color || props.theme.colors.bodytext};
+  word-break: ${props => props.wordBreak || null};
+  word-spacing: ${props => props.wordSpacing || null};
+  word-wrap: ${props => props.wordWrap || null};
 `;
 
+export const link = css`
+  color: ${props => props.linkColor1 ? props.linkColor1 : props.theme.colors.link[0]};
+  cursor: pointer;
+
+  :hover {
+    color: ${props => props.linkColor2 ? props.linkColor2 : props.theme.colors.link[1]};
+  }
+`
+
+export const list = css`
+  list-style: ${props => props.listStyle || null};
+  list-style-image: ${props => props.listStyleImage || null};
+  list-style-position: ${props => props.listStylePosition || null};
+  list-style-type: ${props => props.listStyleType || null};
+`;
+
+// Underlines
 export const textUnderline = css`
   background-size: 0.01em 1em;
   box-shadow: inset 0 -0.12em ${props => props.theme.colors.body},
@@ -21,33 +49,7 @@ export const shadowUnderlineDbl = css`
     inset 0 -0.175em ${props => props.theme.colors.red};
 `;
 
-export const text = css`
-  font-size: ${props => props.fontSize || null}em;
-  font-weight: ${props => props.fontWeight || null};
-  text-decoration: ${props => props.textDecoration || null};
-  text-justify: ${props => props.textJustify || null};
-  letter-spacing: ${props => props.letterSpace || null};
-  line-height: ${props => props.lineHeight || null};
-  font-family: ${props => props.fontFamily || null};
-  color: ${props => (props.color ? props.color : props.theme.colors.blue)};
-  word-break: ${props => props.wordBreak || null};
-  word-spacing: ${props => props.wordSpacing || null};
-  word-wrap: ${props => props.wordWrap || null};
-`;
-
-export const space = css`
-  padding: ${props => props.p || null};
-  padding-top: ${props => props.pt || props.py || null};
-  padding-right: ${props => props.pr || props.px || null};
-  padding-bottom: ${props => props.pb || props.py || null};
-  padding-left: ${props => props.pl || props.px || null};
-  margin: ${props => props.m || null};
-  margin-top: ${props => props.mt || props.my || null};
-  margin-right: ${props => props.mr || props.mx || "auto"};
-  margin-bottom: ${props => props.mb || props.my || null};
-  margin-left: ${props => props.ml || props.mx || "auto"};
-`;
-
+// Backgrounds
 export const backgroundColor = css`
   background: ${props => props.bgColor || null};
 `;
@@ -60,6 +62,15 @@ export const backgroundImage = css`
   background-origin: ${props => props.bgOrigin || null};
 `;
 
+// FX
+export const fx = css`
+  opacity: ${props => props.opacity || "none"};
+  box-shadow: ${props => props.boxShadow || "none"};
+  text-shadow: ${props => props.textShadow || "none"};
+  filter: ${props => props.filter || "none"};
+`;
+
+// Tools
 export const border = css`
   border-radius: ${props => props.bRadius || null};
   border-color: ${props => props.bColor || null};
@@ -69,12 +80,6 @@ export const border = css`
   border-style: ${props => props.bStyle || null};
 `;
 
-export const fx = css`
-  opacity: ${props => props.opacity || "none"};
-  box-shadow: ${props => props.boxShadow || "none"};
-  text-shadow: ${props => props.textShadow || "none"};
-  filter: ${props => props.filter || "none"};
-`;
 
 export const utility = css`
   outline: ${props => props.outline || "none"};
@@ -94,11 +99,18 @@ export const position = css`
   z-index: ${props => props.zIndex || null};
 `;
 
-export const list = css`
-  list-style: ${props => props.listStyle || null};
-  list-style-image: ${props => props.listStyleImage || null};
-  list-style-position: ${props => props.listStylePosition || null};
-  list-style-type: ${props => props.listStyleType || null};
+// Grid
+export const space = css`
+  padding: ${props => props.p || null};
+  padding-top: ${props => props.pt || props.py || null};
+  padding-right: ${props => props.pr || props.px || null};
+  padding-bottom: ${props => props.pb || props.py || null};
+  padding-left: ${props => props.pl || props.px || null};
+  margin: ${props => props.m || null};
+  margin-top: ${props => props.mt || props.my || null};
+  margin-right: ${props => props.mr || props.mx || "auto"};
+  margin-bottom: ${props => props.mb || props.my || null};
+  margin-left: ${props => props.ml || props.mx || "auto"};
 `;
 
 export const shape = css`

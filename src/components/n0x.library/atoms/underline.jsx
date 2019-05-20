@@ -1,6 +1,6 @@
 import styled from 'styled-components/macro'
 import { underlineCenter, underlineLtR, underlineRtL, underlineInOut, underlineInOutInverse, underlineTtB, underlineBtT, MenuFx1 } from "../animate";
-import { getRule, textUnderline } from "../lib";
+import { getRule, textUnderline, colors } from "../lib";
 
 const getMenuFx1 = ({ menuFx1 }) => {
   if (menuFx1) {
@@ -25,24 +25,42 @@ const getHover6 = ({ hover6 }) => hover6 && `${underlineTtB}`;
 const getHover7 = ({ hover7 }) => hover7 && `${underlineBtT}`;
 
 export const UTitle = styled.span`
+  color: ${colors.link[0]};
+  cursor: pointer;
   border-bottom-width: ${getRule("bwidth", ".04")}em;
   border-bottom-color: ${getRule("bcolor", "inherit")};
   border-bottom-style: ${getRule("bstyle", "solid")};
   display: inline-block;
   line-height: 0.85;
+
+  :hover {
+    color: ${colors.link[1]};
+  }
 `;
 
 export const UText = styled.span`
+  color: ${colors.link[0]};
+  cursor: pointer;
   ${textUnderline}
+
+:hover {
+  color: ${colors.link[1]};
+}
 `;
 
 export const UFX = styled.span`
-${props => getHover1(props)}
-${props => getHover2(props)}
-${props => getHover3(props)}
-${props => getHover4(props)}
-${props => getHover5(props)}
-${props => getHover6(props)}
-${props => getHover7(props)}
-${props => getMenuFx1(props)}
+  color: ${colors.link[0]};
+  cursor: pointer;
+  ${props => getHover1(props)}
+  ${props => getHover2(props)}
+  ${props => getHover3(props)}
+  ${props => getHover4(props)}
+  ${props => getHover5(props)}
+  ${props => getHover6(props)}
+  ${props => getHover7(props)}
+  ${props => getMenuFx1(props)}
+
+:hover {
+  color: ${colors.link[1]};
+}
 `;

@@ -1,6 +1,7 @@
 import styled from 'styled-components/macro'
 import { MenuFx1 } from "../animate";
-import { getRule, text, space, backgroundColor, fx, shape } from "../lib";
+import { getRule, text, space, backgroundColor, fx, shape, link, colors } from "../lib";
+import { Link } from '@reach/router'
 
  const getMenuFx1 = ({ menuFx1 }) => {
    if (menuFx1) {
@@ -72,8 +73,9 @@ export const HMenu = styled.ul`
   vertical-align: ${getRule("valign", "center")};
   margin: 0;
   width: 100%;
-  height: 2em;
+  height: 7vh;
   padding: .5em;
+  ${link}
   ${text}
   ${backgroundColor}
   ${props => getMenuFx1(props)}
@@ -86,4 +88,16 @@ export const MenuItem = styled.li`
   cursor: pointer;
   ${space}
   ${fx}
+`;
+
+export const MenuLink = styled(Link)`
+  display: ${getRule("display", "inline")};
+  text-align: ${getRule("talign", "inherit")};
+  color: ${props => props.theme.colors.link[0]};
+  cursor: pointer;
+  ${space}
+  ${fx}
+  :hover, :focus {
+    color: ${props => props.theme.colors.link[1]};
+  }
 `;
