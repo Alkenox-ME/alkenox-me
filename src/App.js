@@ -13,6 +13,7 @@ import Home from "./containers/Home";
 
 // To Do: Red Colored words are links that need to be programmed for before and after click colors. Also, change links to correct addresses when site is finally live.
 
+const Services = loadable(() => import("./containers/Services"));
 const About = loadable(() => import("./containers/About"));
 const Contact = loadable(() => import("./containers/Contact"));
 const Sound = loadable(() => import("./containers/Sound"));
@@ -34,15 +35,17 @@ const App = () => {
         <Nav />
         <PosedRouter>
           <Home exact path={"/"} key={'home'} />
-          <About path={"/about-us"} key={'about'} />
-          <Contact path={"/contact-us"} key={'contact'} />
-          <Sound path={"/sound-design"} key={'sound'} />
-          <Mx path={"/music-production"} key={'music'} />
-          <Web path={"/web-design"} key={'web'} />
-          <Vx path={"/video-production"} key={'video'} />
-          <Graphic path={"/graphic-design"} key={'graphic'} />
-          <Photo path={"/photography"} key={'photo'} />
-          <Rx path={"/digital-media-repair"} key={'repair'} />
+          <Services path={"services"} key={'services'} />
+          <Sound path={"sound-design"} key={'sound'} />
+          <Mx path={"services/music-production"} key={'music'} />
+          <Web path={"services/web-design"} key={'web'} />
+          <Vx path={"services/video-production"} key={'video'} />
+          <Graphic path={"services/graphic-design"} key={'graphic'} />
+          <Photo path={"services/photography"} key={'photo'} />
+          <Rx path={"services/digital-media-repair"} key={'repair'} />
+          <About path={"about-us"} key={'about'} />
+          <Contact path={"contact-us"} key={'contact'} />
+
         </PosedRouter>
         <Footer
           copyYear={data.footer.year}

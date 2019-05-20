@@ -6,3 +6,5 @@ export * from "./LabelBlock";
 export * from "./Tier";
 export * from "./Carousel";
 export * from "./CarouselSlide";
+export { default as Modal } from "./Modal/Modal";
+export { default as ModalTrigger } from "./Modal/ModalLauncher";

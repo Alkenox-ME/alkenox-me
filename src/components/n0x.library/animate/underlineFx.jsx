@@ -6,10 +6,8 @@ export const MenuFx1 = css`
   padding: .75rem 0;
   margin: 0;
   text-decoration: none;
-  color: inherit;
   :hover {
     cursor: pointer;
-    color: blue;
   }
 
   li:first-child:hover ~ hr {
@@ -33,7 +31,7 @@ export const MenuFx1 = css`
     width: 22%;
     margin: 0;
     border-radius: 10em;
-    background: blue;
+    background: rgba(0,128,255,1);
     transition: .3s ease-in-out;
   }
 `
@@ -41,9 +39,7 @@ export const MenuFx1 = css`
 export const underlineCenter = css`
   display: inline-block;
   position: relative;
-  color: inherit;
   :hover {
-    color: blue;
     transition: color .5s ease;
   }
     :after {
@@ -57,15 +53,13 @@ export const underlineCenter = css`
     }
     :hover:after {
       width: 100%;
-      background: blue;
+      background: rgba(0,128,255,1);
     }
 `
 
 export const underlineLtR = css`
   display: inline-block;
-  color: inherit;
   :hover {
-    color: blue;
     transition: color .5s ease;
   }
   :after {
@@ -78,16 +72,14 @@ export const underlineLtR = css`
   }
   :hover:after {
     width: 100%;
-    background: blue;
+    background: rgba(0,128,255,1);
   }
 `
 
 export const underlineRtL = css`
   display: inline-block;
   position: relative;
-  color: inherit;
   :hover {
-    color: blue;
     transition: color .5s ease;
   }
   :after {
@@ -103,15 +95,13 @@ export const underlineRtL = css`
   }
   :hover:after {
     width: 100%;
-    background-color: blue;
+    background-color: rgba(0,128,255,1);
   }
 `
 
 export const underlineTtB = css`
   display: inline-block;
-  color: inherit;
   :hover {
-    color: blue;
     transition: color .5s ease;
   }
   :after {
@@ -124,16 +114,14 @@ export const underlineTtB = css`
   }
   :hover:after {
     height: .05em;
-    background-color: blue;
+    background-color: rgba(0,128,255,1);
   }
 `
 
 export const underlineBtT = css`
   display: inline-block;
   position: relative;
-  color: inherit;
   :hover {
-    color: blue;
     transition: color .5s ease;
   }
   :after {
@@ -148,7 +136,7 @@ export const underlineBtT = css`
   }
   :hover:after {
     height: .05em;
-    background-color: blue;
+    background-color: rgba(0,128,255,1);
   }
 `
 
@@ -156,9 +144,7 @@ export const underlineInOut = css`
   display: inline-block;
   position: relative;
   padding-bottom: .03em;
-  color: inherit;
   :hover {
-    color: blue;
     transition: color .5s ease;
   }
   :before {
@@ -173,7 +159,7 @@ export const underlineInOut = css`
   }
   :hover:before {
     width: 100%;
-    background: blue;
+    background: rgba(0,128,255,1);
     transition: width .5s ease;
   }
   :after {
@@ -184,7 +170,7 @@ export const underlineInOut = css`
     bottom: 0;
     height: .05em;
     width: 0;
-    background: blue;
+    background: rgba(0,128,255,1);
     transition: width .5s ease;
   }
   :hover:after {
@@ -198,9 +184,7 @@ export const underlineInOutInverse = css`
 display: inline-block;
 position: relative;
 padding-bottom: .03em;
-color: inherit;
 :hover {
-  color: blue;
   transition: color .5s ease;
 }
 :before {
@@ -215,7 +199,7 @@ color: inherit;
 }
 :hover:before {
   width: 0%;
-  background: blue;
+  background: rgba(0,128,255,1);
   transition: width .5s ease;
 }
 :after {

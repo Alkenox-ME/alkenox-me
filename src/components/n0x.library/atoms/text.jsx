@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 import SplitText from 'react-pose-text'
-import { T, T1, T2, T3, T4, T5, T6 } from "../animate";
-import { getRule, text, space, size, backgroundColor, border, list, fx, shape } from "../lib";
+import { T, T1, T2, T3, T4, T5, T6, TA } from "../animate";
+import { getRule, text, space, size, backgroundColor, border, list, fx, shape, link } from "../lib";
 
 export const P = (props) => {
   let Txt = styled(T)`
@@ -124,6 +124,17 @@ return (
   </Txt>
 )
 }
+export const A = styled(TA)`
+  text-indent: ${ props => props.tIndent || null }em;
+    text-align: ${getRule("talign", "left")};
+    max-width: 80vw;
+    margin: 0 auto;
+    ${link}
+    ${text}
+    ${space}
+    ${size}
+    ${fx}
+`;
 
 export const PP = styled.p`
   text-indent: ${ props => props.tIndent || null }em;
@@ -204,6 +215,7 @@ export const ListItem = styled.li`
 export const Href = styled.a`
   text-align: ${getRule("talign", "inherit")};
   cursor: pointer;
+  ${link}
   ${text}
   ${space}
   ${fx}
