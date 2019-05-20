@@ -79,6 +79,19 @@ const SliderVxPrice = props => {
           "Ex: Mini-Documentaries, Interviews, Presentations for a Targeted or Established Audience."
         }
       />
+      <CarouselSlide
+        key={5}
+        animateSlide={carouselSlide1}
+        animateItem={carouselSlideItem1}
+        color={color}
+        shadow={textShadow}
+        title={"Proven Interest Videos"}
+        price={"8,000.00"}
+        notes={"(Finished Product: 2.5 to 5 Minutes)"}
+        description={
+          "Ex: Mini-Documentaries, Interviews, Presentations for a Targeted or Established Audience."
+        }
+      />
     </Carousel>
   );
 };
