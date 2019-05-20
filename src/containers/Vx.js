@@ -1,8 +1,22 @@
 import React from "react";
 import ReactPlayer from "react-player";
-import { Box, List, ListItem, Image, P, H1, H2, H3, TP, TP1, PageLayout } from "../components/n0x.library";
+import {
+  Box,
+  List,
+  ListItem,
+  Image,
+  P,
+  H1,
+  H2,
+  H3,
+  TP,
+  TP1,
+  PageLayout
+} from "../components/n0x.library";
 import { data, image } from "../components/n0x.vars";
-import { SliderVxPrice } from '../components/SliderVxPrice'
+import { SliderVxPrice } from "../components/SliderVxPrice";
+
+const padding = "1%";
 
 const Teamwork =
   "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/achievement-agreement-arms-1068523.jpg?raw=true";
@@ -11,8 +25,7 @@ const Editing =
 const Production =
   "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/action-clapper-film-director-1117132.jpg?raw=true";
 
-const Vx = (props) => {
-
+const Vx = props => {
   return (
     <PageLayout
       pgTitle={`Home: ${data.name.company.trendy}`}
@@ -24,7 +37,6 @@ const Vx = (props) => {
       <H2>Web Video</H2>
 
       <P mb={["3%"]}>
-
         Whenever you surf the internet, you find yourself faced with at least
         one web video on almost every site you visit, that were created to
         explain products, services, and tell stories to anyone willing to stick
@@ -32,15 +44,12 @@ const Vx = (props) => {
         video, which is why web videos have become a way to capture your
         visitors' attention and convert them into explorers first, and then
         customers.
-
       </P>
 
       <P>
-
         Whether you need a short internet commercial for your business, have a
         story to tell, or have video and images that you need turned into
         something with purpose; we are here to help.
-
       </P>
       <Box lp={2} pt="5%" pb="2%" px="2%">
         <ReactPlayer
@@ -53,10 +62,8 @@ const Vx = (props) => {
           volume={0}
         />
         <TP talignCenter fontSize={0.75}>
-
           Movie Trailer for the Indie Feature Film "Mosaic" with all original
           scoring, sound design, and 3D Motion Graphics.
-
         </TP>
       </Box>
 
@@ -70,15 +77,11 @@ const Vx = (props) => {
           volume={0}
         />
         <TP talignCenter fontSize={0.75}>
-
           Opening Credits created for a short film "Joker's Wild".
-
         </TP>
       </Box>
 
-      <H2>
-      Our Process
-      </H2>
+      <H2>Our Process</H2>
 
       <H3 pb="5%">Pre-Production</H3>
 
@@ -97,14 +100,12 @@ const Vx = (props) => {
 
       <Box lp={2} px="3%">
         <TP1 talignLeft>
-
           We come together and figure out what it is you need, get you a quote
           on how much it will cost to effectively produce your project, and sort
           out the shooting schedule with the script that you will either provide
           us with or that we will help you write. This is the most important
           part of any production process. Without good planning, the entire
           project can lose its focus and fall apart very quickly.
-
         </TP1>
       </Box>
 
@@ -112,14 +113,12 @@ const Vx = (props) => {
 
       <Box lp={2} px="3%">
         <TP1 talignLeft>
-
           We embark upon what we have planned out for our shooting schedule. We
           arrive on location, with rehearsed talent, and begin collecting all
           the shots and audio that we need to create your video. In some cases,
           certain audio and/or images may be acquired or created in
           post-production. Any kind of motion graphics, sound effects,
           voice-overs, or visual effects would be completed in Post.
-
         </TP1>
       </Box>
 
@@ -136,9 +135,7 @@ const Vx = (props) => {
         alt="Production"
       />
 
-      <H3 py="5%">
-      Post-Production
-      </H3>
+      <H3 py="5%">Post-Production</H3>
 
       <Image
         bRadius=".75em"
@@ -155,7 +152,6 @@ const Vx = (props) => {
 
       <Box lp={2} px="3%">
         <TP1 talignLeft>
-
           Here is where we log all the footage and photographs if there are any
           before we begin editing. The time it takes to log everything depends
           on how much footage we have gathered. Basic video editing can take
@@ -165,46 +161,49 @@ const Vx = (props) => {
           longer because now we are talking about adding in animations, visual
           effects, and compositing. Essentially, the more complex a video is,
           the more time and money it will require.
-
         </TP1>
       </Box>
 
       <H3>Types of Videos</H3>
 
       <Box lp={1} px="20%">
-        <List>
-          <ListItem>
+        <List lstyleDisc>
+          <ListItem py={padding}>
             Branded Video - Under 60 seconds and Builds Awareness
           </ListItem>
-          <ListItem>
+          <ListItem py={padding}>
             Commercial Video - 30 seconds or less and generates
             awareness/excitement
           </ListItem>
-          <ListItem>
+          <ListItem py={padding}>
             Company Story Video - 3 minutes or less and used in the "About Us"
             or "Our Team" section of your website
           </ListItem>
-          <ListItem>
+          <ListItem py={padding}>
             Explainer Video - 2 minutes or less and designed to explain your
             company, product, service, or subject. (whiteboard animation)
           </ListItem>
-          <ListItem>
+          <ListItem py={padding}>
             Customer Testimonial Video - 3 minutes or less and are authentic
             accounts of how your products or services helped your customer
           </ListItem>
-          <ListItem>
+          <ListItem py={padding}>
             Movie Trailer - 2 minutes 30 seconds or less (average full length
             trailer) and drums up buzz and excitement for your movie
           </ListItem>
         </List>
       </Box>
 
-      <H1 color="#f6f8fa" textShadow="4px 4px 12px #000000" pt=".13em" pb=".13em">
+      <H1
+        color="#f6f8fa"
+        textShadow="4px 4px 12px #000000"
+        pt=".13em"
+        pb=".13em"
+      >
         Video Production Pricing
       </H1>
 
       <SliderVxPrice />
-
     </PageLayout>
   );
 };
