@@ -78,7 +78,7 @@ const Mx = () => {
         an end while remaing unannoyingly loopable.
       </P>
 
-      <Box lp={(1, null, 2, null)} px="15vw" py="3vh">
+      <Box px="15vw" py="3vh">
         <ReactPlayer
           url="https://github.com/Alkenox-ME/alkenox-me-videos/blob/master/aeon-soundDesign.mp4?raw=true"
           width="100%"
