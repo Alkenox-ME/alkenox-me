@@ -36,7 +36,7 @@ const App = () => {
         <PosedRouter>
           <Home exact path={"/"} key={'home'} />
           <Services path={"services"} key={'services'} />
-          <Sound path={"sound-design"} key={'sound'} />
+          <Sound path={"services/sound-design"} key={'sound'} />
           <Mx path={"services/music-production"} key={'music'} />
           <Web path={"services/web-design"} key={'web'} />
           <Vx path={"services/video-production"} key={'video'} />

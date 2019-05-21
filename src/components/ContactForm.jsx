@@ -1,10 +1,7 @@
-import React, { Component } from 'react';
-import { FormBlock, P, Button2 } from './n0x.library';
-import { Input } from 'antd';
+import React from 'react';
+import { Box, FormBlock, P, Button2, Input, TextArea, Submit } from './n0x.library';
 
-const TextArea = Input;
-
-class ContactForm extends Component {
+const ContactForm = class extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = { name: '', email: '', msg: '' };
@@ -36,15 +33,23 @@ class ContactForm extends Component {
     const { name, email, msg } = this.state;
     return (
       <FormBlock name="contact" onSubmit={this.handleSubmit}>
-        <P>Your Name:</P>
-        <Input type="text" name="name" value={name} onChange={this.handleChange} />
-        <P>Your Email:</P>
-        <Input type="email" name="email" value={email} onChange={this.handleChange} />
-        <P>Message:</P>
-        <TextArea autosize="true" name="msg" value={msg} onChange={this.handleChange} />
-        <Button2 type="submit" onClick={this.handleSubmit}>
-          Send
-        </Button2>
+        <Box py='1vh'>
+          <P talignCenter pb='1vh'>Your Name:</P>
+          <Input p='1em' type="text" name="name" value={name} onChange={this.handleChange} />
+        </Box>
+        <Box py='1vh'>
+          <P talignCenter pb='1vh'>Your Email:</P>
+          <Input p='1em' type="email" name="email" value={email} onChange={this.handleChange} />
+        </Box>
+        <Box py='1vh'>
+          <P talignCenter pb='1vh'>Message:</P>
+          <TextArea p='1em' autosize="true" name="msg" value={msg} onChange={this.handleChange} />
+        </Box>
+        <Box py='2vh'>
+          <Submit type="submit" onClick={this.handleSubmit}>
+            Send
+          </Submit>
+        </Box>
       </FormBlock>
     );
   }

@@ -1,7 +1,7 @@
 // Style
 export * from "./GlobalStyle";
 export * from "./css";
-export * from "./formStyles";
+export * from "./form";
 
 // Theme
 export * from "./colors";
