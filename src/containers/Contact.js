@@ -16,7 +16,7 @@ const Contact = () => {
       pgDesc={null}
       color={colors.tint.white[3]}
     >
-      <H1>Contact Us</H1>
+      <H1 mb='0'>Contact Us</H1>
       <ContactForm />
     </PageLayout>
   );

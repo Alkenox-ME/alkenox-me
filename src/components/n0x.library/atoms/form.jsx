@@ -1,101 +1,60 @@
 
-import { decamelize } from "humps";
 import styled from "styled-components/macro";
-import { text, space, size, backgroundColor, border, position, utility, fx, shape, ExpandingTextarea, radio } from "../lib";
+import { text, space, size, backgroundColor, border, position, utility, fx, shape, ExpandingTextarea, radio, getRule, form, inputs, textarea } from "../lib";
 import { Button1, TextInput } from "../animate";
 
-const getRule = (ruleName, defaultRule) => props => {
-  const foundRule = Object.keys(props).find(key => key.startsWith(ruleName));
-  if (!foundRule || !props[foundRule]) {
-    return defaultRule;
-  }
-
-  const [, ...rule] = decamelize(foundRule, { separator: "-" }).split("-");
-  return rule.join("-");
-};
-
 export const FormBlock = styled.form`
-  display: ${props => (props.inline ? "inline-flex" : "flex")};
-  flex-direction: ${getRule("direction", "row")};
-  flex-wrap: ${getRule("wrap", "wrap")};
-  justify-content: ${getRule("justify", "center")};
-  align-items: ${getRule("items", "stretch")};
-  align-content: ${getRule("content", "stretch")};
-  ${space}
-  ${border}
+  margin: auto;
+  width: ${ props => props.width || '80vw' };
+  height: ${ props => props.height || '100%' };
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: ${ props => props.borderRadius || '1em' };
+  padding: 1em;
+  border: inset 1px solid #333;
+  box-shadow: ${ props => props.boxShadow || '0px 0px 8px rgba(0, 0, 0, 0.3)' };
 `;
 
-export const FormGroup = styled.fieldset`
-  ${utility}
-  ${position}
+export const Input = styled.input`
+  display: block;
+  width: ${ props => props.width || '100%' };
+  border: ${ props => props.border || '1px solid #999' };
+  height: ${ props => props.height || '5vh' };
+  box-shadow: ${ props => props.boxShadow || '0px 0px 8px rgba(0, 0, 0, 0.3)' };
+  border-radius: ${ props => props.borderRadius || '.5em' };
   ${space}
-  ${shape}
+  :focus {
+    border: ${ props => props.borderFocus || '1px solid #09C' };
+  }
 `;
 
-export const Input = styled(TextInput)`
-  text-align: ${getRule("talign", "left")};
-  max-width: 80vw;
-  ${text}
+export const TextArea = styled.textarea`
+  display: block;
+  width: ${ props => props.width || '100%' };
+  border: ${ props => props.border || '1px solid #999' };
+  height: ${ props => props.height || '25vh' };
+  box-shadow: ${ props => props.boxShadow || '0px 0px 8px rgba(0, 0, 0, 0.3)' };
+  border-radius: ${ props => props.borderRadius || '.5em' };
   ${space}
-  ${size}
-  ${fx}
-`;
-
-export const Radio = styled.div`
-  ${radio}
-`;
-
-export const TextArea = styled(ExpandingTextarea)`
-  text-align: ${getRule("talign", "left")};
-  max-width: 80vw;
-  ${text}
-  ${space}
-  ${size}
-  ${fx}
-`;
-
-export const Selection = styled.select`
-  text-align: ${getRule("talign", "left")};
-  max-width: 80vw;
-  ${text}
-  ${size}
-  ${space}
-  ${fx}
-`;
-
-export const Select = styled.option`
-  text-align: ${getRule("talign", "left")};
-  max-width: 80vw;
-  ${text}
-  ${space}
-  ${fx}
-`;
-
-export const InputLabel = styled.label`
-  text-align: ${getRule("talign", "left")};
-  max-width: 80vw;
-  ${text}
-  ${space}
-  ${size}
-  ${fx}
-`;
-
-export const Caption = styled.legend`
-  text-align: ${getRule("talign", "left")};
-  max-width: 80vw;
-  ${text}
-  ${space}
-  ${size}
-  ${fx}
+  :focus {
+    border: ${ props => props.borderFocus || '1px solid #09C' };
+  }
 `;
 
 export const Submit = styled(Button1)`
   cursor: pointer;
-  text-align: ${getRule("talign", "center")};
-  ${text}
-  ${shape}
+  transition: all 1s ease;
+  width: ${ props => props.width || '100%' };
+  background: ${ props => props.bgColor || '#09C' };
+  color: ${ props => props.color ||  props.theme.colors.white };
+  height: ${ props => props.height || '6vh' };
+  border-radius: ${ props => props.borderRadius || '.5em' };
+  border: ${ props => props.border || '1px solid #999' };
   ${space}
-  ${fx}
-  ${border}
-  ${backgroundColor}
+  :hover {
+    transition: all 1s ease;
+    background: ${ props => props.bgColor2 || props.theme.colors.white };
+    color: ${ props => props.color2 || '#09C' };
+  }
 `;

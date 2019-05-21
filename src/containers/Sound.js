@@ -1,7 +1,7 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import { n0x, image, data, brand } from "../components/n0x.vars";
-import { PageLayout, Box, List, ListItem, P, H2, colors } from "../components/n0x.library";
+import { PageLayout, Box, List, ListItem, P, H1, H2, colors } from "../components/n0x.library";
 
 const Sound = () => {
   return (
@@ -9,51 +9,19 @@ const Sound = () => {
       pgTitle="alkenox-me: Sound Design"
       color={colors.tint.white[3]}
     >
-      <H2>
-        Sound Design
-      </H2>
-
+      <H1>SoundScaping</H1>
       <P>
-        The recording, manipulation, and generation of sounds is utilized in
-        Whether you need us to create unique dings and whistles for your app,
-        video game, or or ensuring the space your actors are in sounds real
-        on-screen; sound is what brings your audience into your creation and
-        connects them to it.
+      Sound Design is crucial when you need to create an immersive experience. The human brain processes sound faster than any of our other senses, is a universal language, and helps to convey a story or description. With the rise of semi-pro audio systems hitting the markets at such cheap prices, our audience is beginning to expect more out of their experience. When they use their beautiful pristine surround sound system, they want their sound to feel so three dimensional that they can almost smell and taste the air when their character goes outside. They want the experience of that building or cliff breaking off behind them and crashing into the ground. If they have a true home theatre system, they want to feel the rumble of that crash. With that in mind, the Art of SoundScaping requires us to sonically paint a picture so vivid that the audience believes it to be a reality.
       </P>
 
-      <Box>
-        <List>
-          <ListItem>
-            Hard effects, soft effects, foley and soundscaping for film, video,
-            games, and apps.
-          </ListItem>
-          <ListItem>Branded Sound Icons for a project or company.</ListItem>
-          <ListItem>
-            Interactive projects ranging from audio navigation for the blind to
-            the aesthetics of your user interface are welcome.
-          </ListItem>
-        </List>
-      </Box>
-
-      <H2>
-        Film, Television, Games, & Apps
-      </H2>
-
+      <H2>Sonic Branding</H2>
       <P>
-        We enjoy making immersive soundscapes that glue to each other and to the
-        picture on screen.
+        Creating a "sonic identity" for your brand is important, especially is you want your brand's "image" conveyed to those who may not be able to see it. It's a tool the biggest brands have been using for years to bring their audience along with them as they evolve. But what works for the big companies can also work for small companies who are just starting out and trying to make their brand a household name.
       </P>
 
-      <H2>
-        Branded Sound Crafting
-      </H2>
-
+      <H2>Interactive Branded SoundScapes</H2>
       <P>
-        As a brand, you want to make sure that you are not only seen but heard.
-        We all know LionsGate from the roar of the lion. We even know when it is
-        that particular lion being played. We know the motif of the Warner
-        Brother's trumpets or the chime of a Mac computer booting up. Why should
-        n0t your brand have the same capability?
+        Games are a great example of when and how this form of SoundScaping would be most useful, but so would the programs on our computers and devices. As well as any means of transportation for that matter. Our world is filled with all sorts of sounds that help us to identify, learn, and remember people, places, or things. They help to alert us when we are in danger or if something is wrong, or even help us safely navigate to a location. A company who brands these sounds make their product more identifiable when used and their brand as a bonus.
       </P>
     </PageLayout>
   );

@@ -9,12 +9,7 @@ const Photo = () => {
       pgTitle="alkenox-me: Photography"
       color={colors.tint.white[3]}
     >
-      <H2
-        width={1}
-        mt={5}
-        textAlign="center"
-        color={[brand.color.dkblue]}
-      >
+      <H2>
         Photography
       </H2>
     </PageLayout>
