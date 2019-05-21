@@ -85,12 +85,10 @@ const SliderVxPrice = props => {
         animateItem={carouselSlideItem1}
         color={color}
         shadow={textShadow}
-        title={"Proven Interest Videos"}
-        price={"8,000.00"}
-        notes={"(Finished Product: 2.5 to 5 Minutes)"}
-        description={
-          "Ex: Mini-Documentaries, Interviews, Presentations for a Targeted or Established Audience."
-        }
+        title={"Movie Trailers"}
+        price={"1,000.00"}
+        notes={"(Finished Product: 2.5 Minutes)"}
+        description={"Additional costs for music licenses begin at $"}
       />
     </Carousel>
   );
