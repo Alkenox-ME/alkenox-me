@@ -18,6 +18,7 @@ const Vx = loadable(() => import("./containers/Vx"));
 const Graphic = loadable(() => import("./containers/Graphic"));
 const Photo = loadable(() => import("./containers/Photo"));
 const Rx = loadable(() => import("./containers/Rx"));
+const NotFound = loadable(() => import("./containers/NotFound"));
 
 // The Core App
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
       >
         <Nav />
         <PosedRouter>
+          <NotFound default key={'notFound'} />
           <Home exact path={"/"} key={'home'} />
           <Services path={"services"} key={'services'} />
           <Sound path={"services/sound-design"} key={'sound'} />
