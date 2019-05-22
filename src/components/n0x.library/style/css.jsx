@@ -5,15 +5,15 @@ import { breakpoint } from "./breaks";
 export const text = css`
   font-size: ${props => props.fontSize || null}em;
   font-weight: ${props => props.fontWeight || null};
-  text-decoration: ${props => props.textDecoration || null};
-  text-justify: ${props => props.textJustify || null};
-  letter-spacing: ${props => props.letterSpace || null};
-  line-height: ${props => props.lineHeight || null};
-  font-family: ${props => props.fontFamily || null};
+  text-decoration: ${props => props.tDecoration || null};
+  text-justify: ${props => props.tJustify || null};
+  letter-spacing: ${props => props.lSpace || null};
+  line-height: ${props => props.lHeight || null};
+  font-family: ${props => props.font || null};
   color: ${props => props.color || props.theme.colors.bodytext};
-  word-break: ${props => props.wordBreak || null};
-  word-spacing: ${props => props.wordSpacing || null};
-  word-wrap: ${props => props.wordWrap || null};
+  word-break: ${props => props.wBreak || null};
+  word-spacing: ${props => props.wSpacing || null};
+  word-wrap: ${props => props.wWrap || null};
 `;
 
 export const link = css`

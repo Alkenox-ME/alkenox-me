@@ -7,7 +7,7 @@ import { getRule } from "../lib";
 
 export const P = styled(T)`
     text-align: ${getRule("talign", "left")};
-    text-indent: ${getRule("tindent", 0)}em;
+    text-indent: ${props => props.tIndent || 2}em;
     max-width: 80vw;
     margin: 0 auto;
     ${text}
