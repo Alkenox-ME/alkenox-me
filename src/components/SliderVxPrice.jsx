@@ -79,7 +79,7 @@ const SliderVxPrice = props => {
           "Ex: Mini-Documentaries, Interviews, Presentations for a Targeted or Established Audience."
         }
       />
-      <CarouselSlide
+      <InfoSlide1
         key={5}
         animateSlide={carouselSlide1}
         animateItem={carouselSlideItem1}
