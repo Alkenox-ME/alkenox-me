@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <PageLayout
       pgTitle={`Home: ${data.name.company.trendy}`}
-      pgDesc={null}
+      pgDesc={'Welcome to Alkenox Media & Entertainment'}
       color={props => props.theme.colors.tint.white[3]}
     >
       <H1 m='0'>Alkenox</H1>
