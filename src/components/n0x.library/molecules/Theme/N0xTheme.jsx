@@ -4,19 +4,10 @@ import PropTypes from "prop-types";
 
 // Styling
 import { ThemeProvider } from "styled-components/macro";
-import {
-  breakpoints,
-  colors,
-  fonts,
-  shadows,
-  fontWeights,
-  fontSizes,
-  lineHeights,
-  textShadows
-} from "../../style";
+import { breakpoints, colors, fonts, shadows, fontWeights, fontSizes, lineHeights, textShadows } from "../../style";
 import { GlobalStyle } from './GlobalStyle'
 
-export const theme = {
+ const theme = {
   breakpoints,
   fonts,
   fontWeights,

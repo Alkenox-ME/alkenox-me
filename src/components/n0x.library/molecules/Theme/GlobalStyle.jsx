@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     color: ${props => props.theme.colors.bodyText};
     background-color: ${props => props.theme.colors.body};
     font-family: ${props => props.theme.fonts.normal};
+    line-height: 1.4em;
     max-width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
@@ -19,17 +20,33 @@ export const GlobalStyle = createGlobalStyle`
   h1 {
     margin-top: 0;
     font-size: 3.052em;
+    line-height: 1em;
   }
 
-  h2 {font-size: 2.441em;}
+  h2 {
+    font-size: 2.441em;
+    line-height: 1em;
+  }
 
-  h3 {font-size: 1.953em;}
+  h3 {
+    font-size: 1.953em;
+    line-height: 1em;
+  }
 
-  h4 {font-size: 1.563em;}
+  h4 {
+    font-size: 1.563em;
+    line-height: 1em;
+  }
 
-  h5 {font-size: 1.25em;}
+  h5 {
+    font-size: 1.25em;
+    line-height: 1em;
+  }
 
-  small, .text_small {font-size: 0.8em;}
+  small, .text_small {
+    font-size: 0.8em;
+    line-height: 1em;
+  }
 
   *,
   ::before,
