@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 // Styling
 import { ThemeProvider } from "styled-components/macro";
 import { breakpoints, colors, fonts, shadows, fontWeights, fontSizes, lineHeights, textShadows } from "../../style";
-import { GlobalStyle } from './GlobalStyle'
+import GlobalStyle from './GlobalStyle'
 
  const theme = {
   breakpoints,
@@ -24,10 +24,10 @@ import { GlobalStyle } from './GlobalStyle'
 const N0xTheme = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
-      <span>
+      <html>
         <GlobalStyle />
         {children}
-      </span>
+      </html>
     </ThemeProvider>
   );
 };

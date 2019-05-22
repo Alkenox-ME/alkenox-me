@@ -5,7 +5,7 @@ import N0xTheme from "../Theme/N0xTheme";
 
 const GlobalLayout = (props) => {
 
-  const BG = styled.div`
+  const Frame = styled.body`
       background-image: url(${props.image || null});
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -18,11 +18,11 @@ const GlobalLayout = (props) => {
   return (
     <N0xTheme>
       <SeoGlobal {...props} />
-      <BG>
+      <Frame>
 
         {props.children}
 
-      </BG>
+      </Frame>
     </N0xTheme>
     );
   }

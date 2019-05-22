@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components/macro";
-export const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
 
   html {
       font-size: calc( 18px + ( 21 - 18 ) * ( 100vw - 400px ) / ( 800 - 400 ) );
@@ -388,3 +388,5 @@ export const GlobalStyle = createGlobalStyle`
       clip: rect(0, 0, 0, 0);
   }
 `;
+
+export default GlobalStyle
