@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import isNil from "lodash/fp/isNil";
 import styled from 'styled-components/macro'
 import { PoseGroup } from 'react-pose';
-import {modalOverlay, modal, closeButton } from "./modalStyles";
+import {modalOverlay, modalStyle, closeButton } from "./modalStyles";
 import { RouteContainer, Container } from '../../animate'
 
 const Modal = class extends PureComponent {
@@ -58,7 +58,7 @@ const Modal = class extends PureComponent {
     `
 
     const Body = styled.div`
-      ${modal}
+      ${modalStyle}
     `
 
     const CloseBtn = styled.button`

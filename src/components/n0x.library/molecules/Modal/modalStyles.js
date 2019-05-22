@@ -34,7 +34,7 @@ import { breakpoint } from "../../style";
   `
 
   // Modal itself
-  export const modal = css`
+  export const modalStyle = css`
     width: 100vw;
     box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.2);
 

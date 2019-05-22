@@ -19,7 +19,7 @@ const pad = '0.5%';
 const Home = () => {
   return (
     <PageLayout
-      pgTitle={`Home: ${data.name.company.trendy}`}
+      pgTitle={`What We Offer: ${data.name.company.trendy}`}
       pgDesc={null}
       color={colors.tint.black[3]}
     >
