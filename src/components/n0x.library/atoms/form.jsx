@@ -1,6 +1,7 @@
 
 import styled from "styled-components/macro";
-import { text, space, size, backgroundColor, border, position, utility, fx, shape, ExpandingTextarea, radio, getRule, form, inputs, textarea } from "../lib";
+import { text, space, size, backgroundColor, border, position, utility, fx, shape, ExpandingTextarea, radio, form, inputs, textarea } from "../style";
+import { getRule } from "../lib";
 import { Button1, TextInput } from "../animate";
 
 export const FormBlock = styled.form`

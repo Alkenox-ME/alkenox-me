@@ -1,5 +1,6 @@
 import styled from 'styled-components/macro'
-import { getRule, space, size, backgroundImage, backgroundColor, border, position, utility, fx, shape } from "../lib";
+import { space, size, backgroundImage, backgroundColor, border, position, utility, fx, shape } from "../style";
+import { getRule } from "../lib";
 
 /*
 const getFlow = ({ row, column }) => {
@@ -91,23 +92,5 @@ vertical-align: ${getRule("valign", "center")};
   ${position}
   ${space}
   ${backgroundColor}
-  ${fx}
-`;
-
-
-export const BGimg = styled.div`
-  text-align: ${getRule("talign", "center")};
-  align-self: ${getRule("self", "center")};
-  align-content: ${getRule("content", "center")};
-  align-items: ${getRule("items", "center")};
-  justify-content: ${getRule("justify", "center")};
-  vertical-align: ${getRule("valign", "center")};
-  z-index: 0;
-  ${size}
-  ${shape}
-  ${space}
-  ${border}
-  ${position}
-  ${backgroundImage}
   ${fx}
 `;

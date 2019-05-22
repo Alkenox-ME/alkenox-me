@@ -2,17 +2,12 @@
 import React from "react";
 import loadable from "@loadable/component";
 
-// Styling
-
 // Components
 import { n0x, data, image } from './components/n0x.vars'
 import { PosedRouter, GlobalLayout, Footer, Nav } from './components/n0x.library'
 
 // Pages
 import Home from "./containers/Home";
-
-// To Do: Red Colored words are links that need to be programmed for before and after click colors. Also, change links to correct addresses when site is finally live.
-
 const Services = loadable(() => import("./containers/Services"));
 const About = loadable(() => import("./containers/About"));
 const Contact = loadable(() => import("./containers/Contact"));
@@ -23,6 +18,7 @@ const Vx = loadable(() => import("./containers/Vx"));
 const Graphic = loadable(() => import("./containers/Graphic"));
 const Photo = loadable(() => import("./containers/Photo"));
 const Rx = loadable(() => import("./containers/Rx"));
+const NotFound = loadable(() => import("./containers/NotFound"));
 
 // The Core App
 const App = () => {
@@ -34,6 +30,7 @@ const App = () => {
       >
         <Nav />
         <PosedRouter>
+          <NotFound default key={'notFound'} />
           <Home exact path={"/"} key={'home'} />
           <Services path={"services"} key={'services'} />
           <Sound path={"services/sound-design"} key={'sound'} />
@@ -45,7 +42,6 @@ const App = () => {
           <Rx path={"services/digital-media-repair"} key={'repair'} />
           <About path={"about-us"} key={'about'} />
           <Contact path={"contact-us"} key={'contact'} />
-
         </PosedRouter>
         <Footer
           copyYear={data.footer.year}

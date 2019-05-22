@@ -1,7 +1,7 @@
 import React from 'react';
 import { Router, Location } from '@reach/router';
 import { PoseGroup } from 'react-pose';
-import { RouteContainer } from './routes'
+import { RouteContainer } from './routeAnimations'
 
 const PosedRouter = ({ children }) => {
 

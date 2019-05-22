@@ -21,4 +21,4 @@ SeoPage.defaultProps = {
     pgDesc: ''
 };
 
-export {SeoPage};
+export default SeoPage;

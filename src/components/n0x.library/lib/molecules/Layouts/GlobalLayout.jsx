@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { SeoGlobal } from '../elements'
-import { N0xTheme } from "../atoms";
+import SeoGlobal from '../Seo/SeoGlobal'
+import N0xTheme from "../Theme/N0xTheme";
 
 const GlobalLayout = (props) => {
 
@@ -27,4 +27,4 @@ const GlobalLayout = (props) => {
     );
   }
 
-export {GlobalLayout};
+export default GlobalLayout;

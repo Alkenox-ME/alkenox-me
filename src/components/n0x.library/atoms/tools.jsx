@@ -1,20 +1,10 @@
 
 import styled from "styled-components/macro";
-import { getRule, text, space, size, border, fx, shape } from "../lib";
+import { text, space, size, border, fx, shape } from "../style";
 import { Button1 } from "../animate";
+import { getRule } from "../lib";
 
-const Image = styled.img`
-    margin: 0 auto;
-    ${size}
-    ${shape}
-    ${space}
-    ${border}
-    ${fx}
-    object-fit: ${props => props.objFit || "cover"};
-    object-position: ${props => props.objPosition || "center"};
-  `;
-
-const BTN = styled(Button1)`
+export const BTN = styled(Button1)`
   cursor: pointer;
   text-align: ${getRule("talign", "center")};
   ${text}
@@ -24,15 +14,9 @@ const BTN = styled(Button1)`
   ${border}
 `;
 
-const Divider = styled.hr`
+export const Divider = styled.hr`
   display: block;
   width: ${props => (props.width ? props.width : "100")}vw;
   height: ${props => (props.height ? props.height : "0")}vh;
   ${space}
 `;
-
-export {
-  Image,
-  BTN,
-  Divider
-};

@@ -1,8 +1,9 @@
-import React from 'react'
-import styled from 'styled-components/macro'
-import SplitText from 'react-pose-text'
+import React from 'react';
+import styled from 'styled-components/macro';
+import SplitText from 'react-pose-text';
 import { T, T1, T2, T3, T4, T5, T6, TA } from "../animate";
-import { getRule, text, space, size, backgroundColor, border, list, fx, shape, link } from "../lib";
+import { text, space, size, backgroundColor, border, list, fx, shape, link } from "../style";
+import { getRule } from "../lib";
 
 export const P = (props) => {
   let Txt = styled(T)`

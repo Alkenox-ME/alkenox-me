@@ -1,7 +1,7 @@
 import React from "react";
 import {
   Carousel,
-  CarouselSlide,
+  InfoSlide1,
   carouselContainer1,
   carouselSlide1,
   carouselSlideItem1
@@ -27,7 +27,7 @@ const SliderVxPrice = props => {
       animate={carouselContainer1}
       color={color}
     >
-      <CarouselSlide
+      <InfoSlide1
         key={1}
         animateSlide={carouselSlide1}
         animateItem={carouselSlideItem1}
@@ -40,7 +40,7 @@ const SliderVxPrice = props => {
           "A Short and Informative Teaser or Preview for Facebook or Instagram"
         }
       />
-      <CarouselSlide
+      <InfoSlide1
         key={2}
         animateSlide={carouselSlide1}
         animateItem={carouselSlideItem1}
@@ -53,7 +53,7 @@ const SliderVxPrice = props => {
           "Entertaining or Informative Videos for all Social Media Platforms. (Note: Instagram limits to 60 seconds)"
         }
       />
-      <CarouselSlide
+      <InfoSlide1
         key={3}
         animateSlide={carouselSlide1}
         animateItem={carouselSlideItem1}
@@ -66,7 +66,7 @@ const SliderVxPrice = props => {
           "For Use On A Website Where Your Visitors Are Actively Looking for Information."
         }
       />
-      <CarouselSlide
+      <InfoSlide1
         key={4}
         animateSlide={carouselSlide1}
         animateItem={carouselSlideItem1}

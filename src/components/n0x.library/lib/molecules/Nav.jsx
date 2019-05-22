@@ -1,8 +1,5 @@
-import React, { useState, setState } from "react";
-import { Link } from  '@reach/router';
+import React from "react";
 import { HMenu, MenuItem, UFX, MenuLink } from "../atoms";
-import { ModalTrigger } from "../elements";
-import Services from '../../Services'
 
 const Nav = () => {
   return (
@@ -32,4 +29,4 @@ const Nav = () => {
   );
 };
 
-export { Nav };
+export default Nav;

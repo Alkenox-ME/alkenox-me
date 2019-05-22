@@ -1,6 +1,7 @@
 import styled from 'styled-components/macro'
-import { underlineCenter, underlineLtR, underlineRtL, underlineInOut, underlineInOutInverse, underlineTtB, underlineBtT, MenuFx1 } from "../animate";
-import { getRule, textUnderline, colors } from "../lib";
+import { underlineCenter, underlineLtR, underlineRtL, underlineInOut, underlineInOutInverse, underlineTtB, underlineBtT, MenuFx1 } from "./underlineFx";
+import { textUnderline, colors } from "../../style";
+import { getRule } from "../../lib";
 
 const getMenuFx1 = ({ menuFx1 }) => {
   if (menuFx1) {
