@@ -3,8 +3,9 @@ import PropTypes from "prop-types";
 import styled from 'styled-components/macro'
 import { PoseGroup } from "react-pose"
 import { RouteContainer } from "../../animate";
-import { text, space, fx, getRule, link } from "../../lib";
-import { modalButton } from "./modalLauncherStyles";
+import { getRule } from "../../lib";
+import { text, space, fx, link } from "../../style";
+import { modalButton } from "./modalStyles";
 import Modal from "./Modal";
 
 const ModalTrigger = class extends PureComponent {

@@ -1,6 +1,7 @@
 import styled from 'styled-components/macro'
-import { MenuFx1 } from "../animate";
-import { getRule, text, space, backgroundColor, fx, shape, link, colors } from "../lib";
+import { MenuFx1 } from "./underline/underlineFx";
+import { text, space, backgroundColor, fx, shape, link } from "../style";
+import { getRule } from "../lib";
 import { Link } from '@reach/router'
 
  const getMenuFx1 = ({ menuFx1 }) => {

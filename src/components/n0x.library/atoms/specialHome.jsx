@@ -1,6 +1,7 @@
-import styled from 'styled-components/macro'
+import styled from 'styled-components/macro';
 import { Sound, Mx, Photo, Vx, Gx, Web, Rx } from "../animate";
-import { getRule, text, space, size, backgroundColor, border, fx, shape } from "../lib";
+import { text, space, size, backgroundColor, border, fx, shape } from "../style";
+import { getRule } from "../lib";
 
 export const PT = styled.p`
   text-align: ${getRule("talign", "center")};

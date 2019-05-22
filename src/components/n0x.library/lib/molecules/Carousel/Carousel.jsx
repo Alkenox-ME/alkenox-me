@@ -1,6 +1,6 @@
 import React from "react";
-import { BgBox, Box } from "../atoms";
-import { Slider } from "../animate";
+import { BgBox, Box } from "../../atoms";
+import { Slider } from "./carouselBase";
 
 const Carousel = props => {
   return (
@@ -36,4 +36,4 @@ const Carousel = props => {
   );
 };
 
-export { Carousel };
+export default Carousel ;

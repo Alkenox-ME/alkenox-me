@@ -3,7 +3,7 @@ import posed, { PoseGroup } from "react-pose";
 import styled from 'styled-components/macro';
 import { CaretLeft } from 'styled-icons/boxicons-regular/CaretLeft'
 import { CaretRight } from 'styled-icons/boxicons-regular/CaretRight'
-import { makeCarousel } from '../lib'
+import { makeCarousel } from '../../lib'
 
 const SlideItem = styled(
     posed.li(props => props.anim)
@@ -120,7 +120,7 @@ const Carousel = makeCarousel(CarouselUI);
 
   return (
     <Carousel { ...props }>
-      
+
       {props.children}
 
     </Carousel>

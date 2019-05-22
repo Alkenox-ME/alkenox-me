@@ -1,16 +1,14 @@
 // Animated Components
-export * from './PosedRouter'
+export * from './Routes/PosedRouter'
 export { default as MenuModal } from './MenuModal'
 export * from './ImgZoom'
-export * from './carouselBase'
 
 // Animation
-export * from './carousel'
 export * from './text'
-export * from './routes'
 export * from './buttons'
 export * from './form'
-export * from './underlineFx'
 
 // Specific
+export * from "./carouselAnimations";
+export * from './Routes/routeAnimations'
 export * from './specialHome'

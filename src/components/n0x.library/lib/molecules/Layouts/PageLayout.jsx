@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { SeoPage } from "../elements";
-import { Block } from "../atoms";
-import { Container } from "../animate";
+import SeoPage from "../Seo/SeoPage";
+import { Block } from "../../atoms";
+import { Container } from "../../animate";
 
 const PageLayout = (props) => {
   const Tint = styled(Container)`
@@ -21,4 +21,4 @@ const PageLayout = (props) => {
   );
 };
 
-export { PageLayout };
+export default PageLayout;

@@ -1,5 +1,5 @@
 import { css, keyframes } from 'styled-components/macro'
-import { breakpoint } from "../../lib/breaks";
+import { breakpoint } from "../../style";
 
   // Fade in open animation
   export const show = keyframes`
@@ -39,6 +39,16 @@ import { breakpoint } from "../../lib/breaks";
     box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.2);
 
 `
+
+  // Modal wrapper
+  export const modalButton = css`
+    border: 0;
+    cursor: pointer;
+
+    &:hover: {
+    }
+  `
+
   // Close button
   export const closeButton = css`
     position: fixed;

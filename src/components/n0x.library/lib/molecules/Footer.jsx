@@ -20,4 +20,4 @@ Footer.defaultProps = {
   company: ''
 };
 
-export {Footer};
+export default Footer;

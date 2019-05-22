@@ -29,4 +29,4 @@ SeoGlobal.defaultProps = {
   siteDesc: ''
 };
 
-export {SeoGlobal};
+export default SeoGlobal;

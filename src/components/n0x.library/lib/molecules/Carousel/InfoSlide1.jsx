@@ -1,8 +1,8 @@
 import React from "react";
-import { TH3, TH4, TH5 } from "../atoms";
-import { Slide, SlideItem } from "../animate";
+import { TH3, TH4, TH5 } from "../../atoms";
+import { Slide, SlideItem } from "./carouselBase";
 
-const CarouselSlide = ( props ) => {
+const InfoSlide1 = ( props ) => {
 
   return (
     <Slide anim={ props.animateSlide || null }>
@@ -50,4 +50,4 @@ const CarouselSlide = ( props ) => {
   );
 };
 
-export { CarouselSlide };
+export default InfoSlide1 ;
