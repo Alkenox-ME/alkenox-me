@@ -9,6 +9,7 @@ import {
   P,
   H1,
   H2,
+  TP,
   colors
 } from "../components/n0x.library";
 
@@ -16,6 +17,22 @@ const Sound = () => {
   return (
     <PageLayout pgTitle="alkenox-me: Sound Design" color={colors.tint.white[3]}>
       <H1>SoundScaping</H1>
+
+      <Box lp={(1, 1, 1.25, 1.25)} pb="2%" px="5%">
+        <ReactPlayer
+          url="https://github.com/Alkenox-ME/alkenox-me-videos/blob/master/aeon-soundDesign.mp4?raw=true"
+          width="100%"
+          height="100%"
+          controls
+          playing
+          loop
+          volume={0}
+        />
+        <TP talignCenter fontSize={0.75}>
+          Aeon Flux Sound Design re-created with all original sounds.
+        </TP>
+      </Box>
+
       <P>
         Sound Design is crucial when you need to create an immersive experience.
         The human brain processes sound faster than any of our other senses.
@@ -32,7 +49,8 @@ const Sound = () => {
         so vivid that the audience believes it to be a reality.
       </P>
 
-      <H2>Sonic Branding</H2>
+      <H2 pt="5%">Sonic Branding</H2>
+
       <P>
         Creating a "sonic identity" for your brand is important, especially is
         you want your brand's "image" conveyed to those who may not be able to
@@ -42,7 +60,7 @@ const Sound = () => {
         starting out and trying to make their brand a household name.
       </P>
 
-      <H2>Interactive Branded SoundScapes</H2>
+      <H2 pt="5%">Interactive Branded SoundScapes</H2>
       <P>
         Great examples of how this form of SoundScaping would be most useful
         include games, cell phone apps, computer programs, and even all the
