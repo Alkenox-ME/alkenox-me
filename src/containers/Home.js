@@ -16,7 +16,7 @@ const Home = () => {
       color={props => props.theme.colors.tint.white[3]}
     >
       <H1 m="0">Alkenox</H1>
-      <H2 m="0">Media & Entertainment</H2>
+      <H2 m="1">Media & Entertainment</H2>
       <P py="2vh">
         Our goal is to help your project, brand, and/or product reach your
         audience while delivering as much of an immersed experience as possible.
