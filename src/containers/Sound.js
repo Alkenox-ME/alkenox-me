@@ -50,8 +50,8 @@ const Sound = () => {
         filled with all sorts of sounds that help us to identify, learn, and
         remember things like people, places, or things. They help to alert us
         when we are in danger, or if something is wrong, or even help us safely
-        navigate to a location. A company who brands these sounds make their
-        product more identifiable when used and their brand as a bonus.
+        navigate to a location. A company who brands these sounds will make
+        their product and their brand more identifiable when used.
       </P>
     </PageLayout>
   );
