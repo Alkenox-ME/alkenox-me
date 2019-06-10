@@ -4,7 +4,7 @@ import { text, space, size, border, fx, shape } from "../style";
 import { Button1 } from "../animate";
 import { getRule } from "../lib";
 
-export const BTN = styled(Button1)`
+export const BTN = styled.button`
   cursor: pointer;
   text-align: ${getRule("talign", "center")};
   ${text}

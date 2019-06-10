@@ -13,7 +13,7 @@ const PageLayout = (props) => {
 
   return (
     <Tint key={props.children}>
-      <Block px={"2%"} py={"6%"}>
+      <Block px={"2%"} py={"4%"}>
         <SeoPage {...props} />
         {props.children}
       </Block>

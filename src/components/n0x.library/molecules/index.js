@@ -3,7 +3,7 @@ export { default as N0xTheme } from './Theme/N0xTheme'
 export * from "./Theme/GlobalStyle";
 export { default as SeoGlobal } from "./Seo/SeoGlobal";
 export { default as SeoPage } from "./Seo/SeoPage";
-export { default as Nav } from "./Nav";
+export { default as NavBar } from "./NavBar/NavBar";
 export { default as Footer } from "./Footer";
 export { default as Tier } from "./Tier";
 export { default as Carousel } from "./Carousel/Carousel";

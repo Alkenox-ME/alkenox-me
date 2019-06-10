@@ -1,6 +1,7 @@
+
 const image = {
   bg: {
-    logo:
+    oldLogo:
       "https://github.com/alkenox/alkenox-me-images/blob/master/logo.png?raw=true",
     gx: "https://media.giphy.com/media/Xth5kFQm3ahg5swyBK/giphy.gif",
     photo:
