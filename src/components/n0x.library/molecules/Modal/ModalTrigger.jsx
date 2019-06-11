@@ -2,7 +2,7 @@ import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 import styled from 'styled-components/macro'
 import { PoseGroup } from "react-pose"
-import { RouteContainer } from "../../animate";
+import { RouteContainer } from "../Router/routeAnimations";
 import { getRule } from "../../lib";
 import { text, space, fx, link } from "../../style";
 import { modalButton } from "./modalStyles";
