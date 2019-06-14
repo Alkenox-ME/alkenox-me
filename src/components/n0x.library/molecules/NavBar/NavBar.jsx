@@ -15,34 +15,37 @@ const NavBar = ({i}) => {
 
     let LogoTxt = (
       <Image
-        style={{cursor: 'pointer'}}
         position={'fixed'}
         objFit={'contain'}
-        width={'8vw'}
+        width={'16vw'}
         src={ Logo }
         alt='logo'
         zIndex={10001}
-        left={'2vw'}
-        top={'2vh'}
-        bRadius={'100%'}
-        onClick={() => setOpen(open === i ? false : i )}
+        left={'10vw'}
+        top={'.5vh'}
       />
                 )
+
+    let icon = {
+      width: ['4em'],
+      left: ['2vw'],
+      top: ['.5vh'],
+    }
 
     let MenuClosed = (
       <Image
         style={{cursor: 'pointer'}}
         position={'fixed'}
         objFit={'contain'}
-        width={'8vw'}
+        width={ icon.width[0] }
         src={ LogoIconA }
         alt='logo'
         zIndex={10001}
-        left={'2vw'}
-        top={'2vh'}
+        left={ icon.left[0] }
+        top={ icon.top[0] }
         bRadius={'100%'}
         onClick={() => setOpen(open === i ? false : i )}
-      />
+              />
                 )
 
     let MenuOpen = (
@@ -50,21 +53,22 @@ const NavBar = ({i}) => {
         style={{cursor: 'pointer'}}
         position={'fixed'}
         objFit={'contain'}
-        width={'8vw'}
+        width={ icon.width[0] }
         src={ LogoIconB }
         alt='logo'
         zIndex={10001}
-        left={'2vw'}
-        top={'2vh'}
+        left={ icon.left[0] }
+        top={ icon.top[0] }
         bRadius={'100%'}
         onClick={() => setOpen(open === i ? false : i )}
       />
-                   )
+         )
 
   return (
     <Fragment>
 
       { open === i ? MenuClosed : MenuOpen }
+
       <HMenu
         fixed
         filter={'drop-shadow(0px 5px 1px 5px)'}
@@ -72,6 +76,9 @@ const NavBar = ({i}) => {
         boxShadow={bShadow}
         pose={open === i ? 'open' : 'closed'}
       >
+        <MenuItem mx={"4%"}>
+          { LogoTxt }
+        </MenuItem>
         <MenuItem mx={"4%"}>
           <UFX hover3>
             <MenuLink
