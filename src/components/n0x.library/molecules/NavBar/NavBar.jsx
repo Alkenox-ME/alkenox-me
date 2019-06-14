@@ -3,8 +3,9 @@ import React, {Fragment, useState, useEffect} from "react";
 import { UFX, Image } from "../../atoms";
 import { HMenu, MenuItem, MenuLink } from "./navStyles";
 
-import LogoA from "../../../../static/philoStone-icon-a.svg"
-import LogoB from "../../../../static/philoStone-icon-b.svg"
+import LogoIconA from "../../../../static/iconB.svg"
+import LogoIconB from "../../../../static/iconBb.svg"
+import Logo from "../../../../static/logo.svg"
 
 const NavBar = ({i}) => {
     let [ open, setOpen ] = useState(false);
@@ -12,13 +13,13 @@ const NavBar = ({i}) => {
     let tShadow = '2px 2px 6px #000000'
     let bShadow = '0px 5px 1px 10px'
 
-    let Logo = (
+    let LogoTxt = (
       <Image
         style={{cursor: 'pointer'}}
         position={'fixed'}
         objFit={'contain'}
         width={'8vw'}
-        src={ LogoA }
+        src={ Logo }
         alt='logo'
         zIndex={10001}
         left={'2vw'}
@@ -28,13 +29,29 @@ const NavBar = ({i}) => {
       />
                 )
 
-    let LogoOpen = (
+    let MenuClosed = (
       <Image
         style={{cursor: 'pointer'}}
         position={'fixed'}
         objFit={'contain'}
         width={'8vw'}
-        src={ LogoB }
+        src={ LogoIconA }
+        alt='logo'
+        zIndex={10001}
+        left={'2vw'}
+        top={'2vh'}
+        bRadius={'100%'}
+        onClick={() => setOpen(open === i ? false : i )}
+      />
+                )
+
+    let MenuOpen = (
+      <Image
+        style={{cursor: 'pointer'}}
+        position={'fixed'}
+        objFit={'contain'}
+        width={'8vw'}
+        src={ LogoIconB }
         alt='logo'
         zIndex={10001}
         left={'2vw'}
@@ -47,8 +64,7 @@ const NavBar = ({i}) => {
   return (
     <Fragment>
 
-      { open === i ? Logo : LogoOpen }
-
+      { open === i ? MenuClosed : MenuOpen }
       <HMenu
         fixed
         filter={'drop-shadow(0px 5px 1px 5px)'}
@@ -56,7 +72,6 @@ const NavBar = ({i}) => {
         boxShadow={bShadow}
         pose={open === i ? 'open' : 'closed'}
       >
-
         <MenuItem mx={"4%"}>
           <UFX hover3>
             <MenuLink
