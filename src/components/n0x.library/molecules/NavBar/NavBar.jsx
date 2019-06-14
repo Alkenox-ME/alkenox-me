@@ -68,7 +68,7 @@ const NavBar = ({i}) => {
     <Fragment>
 
       { open === i ? MenuClosed : MenuOpen }
-      
+
       <HMenu
         fixed
         filter={'drop-shadow(0px 5px 1px 5px)'}
