@@ -1,10 +1,5 @@
 import styled from 'styled-components/macro'
 import posed from 'react-pose'
-import LogoA from "../../../static/philoStone-icon-a.svg"
-import LogoB from "../../../static/philoStone-icon-b.svg"
-
-const logo = `url(${LogoB})`;
-const logoHover = `url(${LogoA})`;
 
 // Buttons
 export const Button1 = {
