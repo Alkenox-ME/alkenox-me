@@ -1,5 +1,6 @@
 const colors = {
-  body: "#fff",
+  alpha: "rgba(0,0,0,0)",
+  body: "#000000",
   bodytext: "#24292e",
   link: ['rgba(255,248,242,1)', 'rgba(0,128,255,1)'],
   black: "#1b1f23",

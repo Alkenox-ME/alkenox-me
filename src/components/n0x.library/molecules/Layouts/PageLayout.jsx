@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components/macro";
 import SeoPage from "../Seo/SeoPage";
 import { Block } from "../../atoms";
-import { Container } from "../../animate";
+import { Container } from "../Router/routeAnimations";
 
 const PageLayout = (props) => {
   const Tint = styled(Container)`
@@ -13,7 +13,7 @@ const PageLayout = (props) => {
 
   return (
     <Tint key={props.children}>
-      <Block px={"2%"} py={"6%"}>
+      <Block px={"2%"} py={"4%"}>
         <SeoPage {...props} />
         {props.children}
       </Block>

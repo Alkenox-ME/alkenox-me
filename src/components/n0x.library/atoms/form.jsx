@@ -43,7 +43,7 @@ export const TextArea = styled.textarea`
   }
 `;
 
-export const Submit = styled(Button1)`
+export const Submit = styled.button`
   cursor: pointer;
   transition: all 1s ease;
   width: ${ props => props.width || '100%' };

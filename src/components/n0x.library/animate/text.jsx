@@ -19,11 +19,11 @@ const paragraph = {
 export const char1 = props => props.animate ? props.animate : heading;
 export const char2 = props => props.animate ? props.animate : paragraph;
 
-export const T1 = posed.h1(props => props.animate ? props.animate : heading);
-export const T2 = posed.h2(props => props.animate ? props.animate : heading);
-export const T3 = posed.h3(props => props.animate ? props.animate : heading);
-export const T4 = posed.h4(props => props.animate ? props.animate : heading);
-export const T5 = posed.h5(props => props.animate ? props.animate : heading);
-export const T6 = posed.h6(props => props.animate ? props.animate : heading);
-export const T = posed.p(props => props.animate ? props.animate : paragraph);
-export const TA = posed.a(props => props.animate ? props.animate : paragraph);
+export const T1 = posed.h1(props => props.animate || '');
+export const T2 = posed.h2(props => props.animate || '');
+export const T3 = posed.h3(props => props.animate || '');
+export const T4 = posed.h4(props => props.animate || '');
+export const T5 = posed.h5(props => props.animate || '');
+export const T6 = posed.h6(props => props.animate || '');
+export const T = posed.p(props => props.animate || '');
+export const TA = posed.a(props => props.animate || '');

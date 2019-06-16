@@ -2,9 +2,10 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import SplitText from 'react-pose-text';
 import { T, T1, T2, T3, T4, T5, T6, TA } from "../animate";
-import { text, space, size, backgroundColor, border, list, fx, shape, link } from "../style";
+import { text, space, size, backgroundColor, border, list, fx, shape, link, utility, position } from "../style";
 import { getRule } from "../lib";
 
+/******************/
 export const P = styled(T)`
     text-align: ${getRule("talign", "left")};
     text-indent: ${props => props.tIndent || 2}em;
@@ -64,6 +65,7 @@ export const H6 = styled(T6)`
   ${fx}
 `;
 
+/******************/
 export const PSplit = (props) => {
   let Txt = styled(T)`
     text-align: ${getRule("talign", "left")};
@@ -197,6 +199,7 @@ export const ASplit = styled(TA)`
     ${fx}
 `;
 
+/******************/
 export const PPure = styled.p`
   text-indent: ${ props => props.tIndent || null }em;
     text-align: ${getRule("talign", "left")};
@@ -256,32 +259,7 @@ export const H6Pure = styled.h6`
   ${fx}
 `;
 
-export const List = styled.ul`
-  text-align: ${getRule("talign", "inherit")};
-  list-style: ${getRule("lstyle", "none")};
-  list-style-position: ${getRule("lposition", "outside")};
-  ${list}
-  ${text}
-  ${space}
-  ${size}
-  ${fx}
-`;
-export const ListItem = styled.li`
-  text-align: ${getRule("talign", "inherit")};
-  ${list}
-  ${text}
-  ${space}
-  ${fx}
-`;
-export const Href = styled.a`
-  text-align: ${getRule("talign", "inherit")};
-  cursor: pointer;
-  ${link}
-  ${text}
-  ${space}
-  ${fx}
-`;
-
+/******************/
 export const TP1 = styled.p`
   text-align: ${getRule("talign", "left")};
   padding: ${props => props.pad || "0 auto"};
@@ -302,4 +280,34 @@ export const TP = styled.p`
   ${border}
   ${fx}
   ${backgroundColor}
+`;
+
+/******************/
+export const List = styled.ul`
+  text-align: ${getRule("talign", "inherit")};
+  list-style: ${getRule("lstyle", "none")};
+  list-style-position: ${getRule("lposition", "outside")};
+  ${list}
+  ${text}
+  ${space}
+  ${size}
+  ${fx}
+`;
+export const ListItem = styled.li`
+  text-align: ${getRule("talign", "inherit")};
+  ${list}
+  ${text}
+  ${space}
+  ${fx}
+  ${utility}
+  ${position}
+`;
+
+export const Href = styled.a`
+  text-align: ${getRule("talign", "inherit")};
+  cursor: pointer;
+  ${link}
+  ${text}
+  ${space}
+  ${fx}
 `;

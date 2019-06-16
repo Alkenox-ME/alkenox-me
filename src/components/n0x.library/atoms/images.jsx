@@ -11,6 +11,7 @@ export const Image = styled.img`
     ${space}
     ${border}
     ${fx}
+    ${position}
     object-fit: ${props => props.objFit || "cover"};
     object-position: ${props => props.objPosition || "center"};
   `;

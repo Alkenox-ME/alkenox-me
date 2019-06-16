@@ -4,7 +4,8 @@ import loadable from "@loadable/component";
 
 // Components
 import { n0x, data, image } from './components/n0x.vars'
-import { PosedRouter, GlobalLayout, Footer, Nav } from './components/n0x.library'
+import { PosedRouter, GlobalLayout, Footer, NavBar } from './components/n0x.library'
+import LogoBG from "./static/philoStone-bg-b.png"
 
 // Pages
 import Home from "./containers/Home";
@@ -26,9 +27,11 @@ const App = () => {
       <GlobalLayout
         defTitle={data.name.company.full}
         siteDesc={data.meta.desc.site}
-        image={image.bg.logo}
+        image={LogoBG}
       >
-        <Nav />
+
+        <NavBar />
+
         <PosedRouter>
           <NotFound default key={'notFound'} />
           <Home exact path={"/"} key={'home'} />
@@ -43,10 +46,12 @@ const App = () => {
           <About path={"about-us"} key={'about'} />
           <Contact path={"contact-us"} key={'contact'} />
         </PosedRouter>
+
         <Footer
           copyYear={data.footer.year}
           copyCompany={data.name.company.full}
         />
+        
       </GlobalLayout>
     );
   };

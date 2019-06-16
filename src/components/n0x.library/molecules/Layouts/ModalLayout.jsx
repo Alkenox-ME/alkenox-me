@@ -1,7 +1,7 @@
 import React, {useState, setState} from "react";
 import styled from "styled-components/macro";
 import { Block } from "../../atoms";
-import { Container } from "../../animate";
+import { Container } from "../Router/routeAnimations";
 
 const ModalLayout = (props) => {
   let Tint = styled(Container)`

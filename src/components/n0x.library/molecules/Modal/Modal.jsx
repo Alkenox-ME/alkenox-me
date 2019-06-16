@@ -4,7 +4,7 @@ import isNil from "lodash/fp/isNil";
 import styled from 'styled-components/macro'
 import { PoseGroup } from 'react-pose';
 import {modalOverlay, modalStyle, closeButton } from "./modalStyles";
-import { RouteContainer, Container } from '../../animate'
+import { Container } from "../Router/routeAnimations";
 
 const Modal = class extends PureComponent {
   constructor(props) {
