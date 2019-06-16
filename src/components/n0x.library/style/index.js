@@ -7,6 +7,3 @@ export * from "./colors";
 export * from "./fonts";
 export * from "./shadows";
 export * from "./breaks";
-
-//Component
-export * from "./textarea";

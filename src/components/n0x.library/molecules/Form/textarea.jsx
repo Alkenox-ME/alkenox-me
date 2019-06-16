@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useRef } from 'react'
-import { TextBlockConfig } from '../animate'
+import PropTypes from 'prop-types'
+import { TextBlockConfig } from '../../animate'
 
 // getHeight :: (Integer, Element) -> Integer
 export const getHeight = (rows, el) => {
@@ -34,7 +35,7 @@ export const resize = (rows, el) => {
 }
 
 // ExpandingTextarea :: Props -> <textarea />
-const ExpandingTextarea = props => {
+const ExpandingTextarea = ({props}) => {
 
   const TextBlock = TextBlockConfig;
 
@@ -53,7 +54,7 @@ const ExpandingTextarea = props => {
       props.onInput(e)
       resize(props.rows, ref.current)
     },
-    [ props.rows, props.onChange, props.onInput ]
+    [props]
   )
 
   return (

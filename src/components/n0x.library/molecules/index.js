@@ -18,3 +18,4 @@ export { default as PageLayout } from "./Layouts/PageLayout";
 export { default as ModalLayout } from "./Layouts/ModalLayout";
 export { default as MenuModal } from './MenuModal'
 export * from './ImgZoom'
+export * from "./Form/textarea";
