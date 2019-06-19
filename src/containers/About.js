@@ -15,6 +15,9 @@ const About = () => {
       color={props => props.theme.colors.tint.white[3]}
     >
       <H1>About Us</H1>
+
+      <Image width="30%" height="10%" src={image.fg.yinYang} />
+
       <P py="2vh">
         Our goal is to help your project, brand, and/or product reach your end
         user/audience while delivering as much of an immersed experience as
@@ -40,7 +43,6 @@ const About = () => {
         Our mission is to make your vision as close to a reality as possible
         through standard or other exploratory means.
       </P>
-      <Image lp={5} height={40} src={image.fg.yinYang} />
 
       <P pt="5%">
         Alkenox Media & Entertainment is an independent media production
