@@ -1,5 +1,5 @@
 
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import { text, space, size, border, fx, shape, position, backgroundImage } from "../style";
 import { Button1 } from "../animate";
 import { getRule } from "../lib";

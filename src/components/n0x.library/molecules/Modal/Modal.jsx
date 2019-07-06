@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 import isNil from "lodash/fp/isNil";
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 import { PoseGroup } from 'react-pose';
 import {modalOverlay, modalStyle, closeButton } from "./modalStyles";
 import { Container } from "../Router/routeAnimations";

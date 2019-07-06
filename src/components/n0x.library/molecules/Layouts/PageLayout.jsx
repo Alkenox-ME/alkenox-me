@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import SeoPage from "../Seo/SeoPage";
 import { Block } from "../../atoms";
 import { Container } from "../Router/routeAnimations";

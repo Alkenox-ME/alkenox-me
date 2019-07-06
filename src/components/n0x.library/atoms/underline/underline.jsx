@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 import { underlineCenter, underlineLtR, underlineRtL, underlineInOut, underlineInOutInverse, underlineTtB, underlineBtT, MenuFx1 } from "./underlineFx";
 import { textUnderline, colors } from "../../style";
 import { getRule } from "../../lib";

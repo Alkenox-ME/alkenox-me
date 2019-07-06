@@ -3,7 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 // Styling
-import { ThemeProvider } from "styled-components/macro";
+import { ThemeProvider } from "styled-components";
 import { breakpoints, colors, fonts, shadows, fontWeights, fontSizes, lineHeights, textShadows } from "../../style";
 import GlobalStyle from './GlobalStyle'
 

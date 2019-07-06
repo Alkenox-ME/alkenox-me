@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 import { space, size, backgroundImage, backgroundColor, border, position, utility, fx, shape } from "../style";
 import { getRule } from "../lib";
 

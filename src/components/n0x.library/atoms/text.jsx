@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components/macro';
+import styled from 'styled-components';
 import SplitText from 'react-pose-text';
 import { T, T1, T2, T3, T4, T5, T6, TA } from "../animate";
 import { text, space, size, backgroundColor, border, list, fx, shape, link, utility, position } from "../style";

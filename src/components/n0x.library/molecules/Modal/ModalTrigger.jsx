@@ -1,6 +1,6 @@
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 import { PoseGroup } from "react-pose"
 import { RouteContainer } from "../Router/routeAnimations";
 import { getRule } from "../../lib";

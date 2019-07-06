@@ -67,14 +67,14 @@ const NavBar = ({i}) => {
   return (
     <Fragment>
 
-      { open === i ? MenuClosed : MenuOpen }
+      { open === i ? MenuOpen : MenuClosed }
 
       <HMenu
         fixed
         filter={'drop-shadow(0px 5px 1px 5px)'}
         bgColor={props => props.theme.colors.tint.black[4]}
         boxShadow={bShadow}
-        pose={open === i ? 'open' : 'closed'}
+        pose={open === i ? 'closed' : 'open' }
       >
         <MenuItem mx={"4%"}>
           { LogoTxt }
@@ -84,7 +84,6 @@ const NavBar = ({i}) => {
             <MenuLink
               to="/"
               textShadow={tShadow}
-              onClick={() => setOpen(open === i ? false : i )}
             >
               Home
             </MenuLink>
@@ -96,7 +95,6 @@ const NavBar = ({i}) => {
             <MenuLink
               to="services"
               textShadow={tShadow}
-              onClick={() => setOpen(open === i ? false : i )}
             >
               Services
             </MenuLink>
@@ -108,7 +106,6 @@ const NavBar = ({i}) => {
             <MenuLink
               to="about-us"
               textShadow={tShadow}
-              onClick={() => setOpen(open === i ? false : i )}
             >
               About
             </MenuLink>
@@ -120,7 +117,6 @@ const NavBar = ({i}) => {
             <MenuLink
               to="contact-us"
               textShadow={tShadow}
-              onClick={() => setOpen(open === i ? false : i )}
             >
               Contact
             </MenuLink>

@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import SeoGlobal from '../Seo/SeoGlobal'
 import N0xTheme from "../Theme/N0xTheme";
 

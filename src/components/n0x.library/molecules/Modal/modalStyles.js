@@ -1,4 +1,4 @@
-import { css, keyframes } from 'styled-components/macro'
+import { css, keyframes } from 'styled-components'
 import { breakpoint } from "../../style";
 
   // Fade in open animation

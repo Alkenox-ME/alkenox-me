@@ -1,6 +1,6 @@
 import React from "react";
 import posed, { PoseGroup } from "react-pose";
-import styled from 'styled-components/macro';
+import styled from 'styled-components';
 import { CaretLeft } from 'styled-icons/boxicons-regular/CaretLeft'
 import { CaretRight } from 'styled-icons/boxicons-regular/CaretRight'
 import { makeCarousel } from '../../lib'

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 import { text, space, backgroundColor, fx, shape, link } from "../style";
 import { getRule } from "../lib";
 

@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 import { MenuFx1 } from "../../atoms/underline/underlineFx";
 import { text, space, backgroundColor, fx, shape, link, breakpoint } from "../../style";
 import { Sidebar, Item } from './navPose';

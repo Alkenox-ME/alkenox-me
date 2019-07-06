@@ -1,5 +1,5 @@
 
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import { text, space, size, backgroundColor, border, position, utility, fx, shape, ExpandingTextarea, radio, form, inputs, textarea } from "../style";
 import { getRule } from "../lib";
 import { Button1, TextInput } from "../animate";
