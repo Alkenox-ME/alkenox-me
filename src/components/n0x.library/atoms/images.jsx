@@ -12,6 +12,7 @@ export const Image = styled.img`
     ${border}
     ${fx}
     ${position}
+    clip-path: ${props => props.clipPath || null};
     object-fit: ${props => props.objFit || "cover"};
     object-position: ${props => props.objPosition || "center"};
   `;
