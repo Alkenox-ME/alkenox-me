@@ -19,52 +19,77 @@ const author = 'https://github.com/Alkenox-ME/alkenox-me-images/blob/master/audi
 const Home: React.FC<{}> = () => {
     return (
         <PageLayout title={'Home'}>
-            <DeskFrame1 bg={`url(${bg}) center fixed`}>
+            <DeskFrame1 bg={`url(${bg})  fixed center`}>
                 <img src={logo} alt="" width={'100%'} height={'100%'} />
             </DeskFrame1>
 
-            <DeskFrame1 bg={`url(${bg}) center fixed`}>
+            <DeskFrame1 bg={`url(${bg})  fixed center`}>
                 <Box>
                     <Box p={0} size={'1em'}>
-                        <H1>Alkenox</H1>
+                        <H1 lineheight={'.5em'}>Alkenox</H1>
                     </Box>
                     <Box p={0} size={'0.5em'}>
-                        <H1>Media & Entertainment, LLC.</H1>
+                        <H1 lineheight={'.5em'}>Media & Entertainment, LLC.</H1>
                     </Box>
                     <P>
                         As content creators, we offer a variety of services that play a part in the big picture of your
                         project.
                     </P>
+
                     <Slider ms={5000}>
-                        <Box p={'0em'} m={'0em'} width={'50vw'} height={'50vh'} bg={`url(${vfx}) center scroll`}>
-                            <Box lineheight={'2em'} bg={'rgba(0,0,0,0.5)'}>
+                        <Box
+                            p={'0em'}
+                            m={'0em'}
+                            width={'60vw'}
+                            height={'50vh'}
+                            bg={`url(${vfx})  scroll`}
+                            bgposition={'center center'}
+                        >
+                            <Box bg={'rgba(0,0,0,0.5)'}>
                                 <H4>From Photography, VFX Editing & Motion Graphics </H4>
                             </Box>
                         </Box>
-                        <Box p={'0em'} m={'0em'} width={'50vw'} height={'50vh'} bg={`url(${vidpro}) center scroll`}>
-                            <Box lineheight={'2em'} bg={'rgba(0,0,0,0.5)'}>
+
+                        <Box
+                            p={'0em'}
+                            m={'0em'}
+                            width={'60vw'}
+                            height={'50vh'}
+                            bg={`url(${vidpro})  scroll`}
+                            bgposition={'center center'}
+                        >
+                            <Box bg={'rgba(0,0,0,0.5)'}>
                                 <H4>To Video Production short and long - both scripted and unscripted </H4>
                             </Box>
                         </Box>
-                        <Box p={'0em'} m={'0em'} width={'50vw'} height={'50vh'} bg={`url(${graphics}) center scroll`}>
-                            <Box lineheight={'2em'} bg={'rgba(0,0,0,0.5)'}>
+
+                        <Box
+                            p={'0em'}
+                            m={'0em'}
+                            width={'60vw'}
+                            height={'50vh'}
+                            bg={`url(${graphics})  scroll`}
+                            bgposition={'center center'}
+                        >
+                            <Box bg={'rgba(0,0,0,0.5)'}>
                                 <H4>To Graphic Design and even 2D & 3D Animation</H4>
                             </Box>
                         </Box>
                     </Slider>
+
                     <P> Our team will help you make your project a reality. </P>
                 </Box>
             </DeskFrame1>
 
-            <DeskFrame1 bg={`url(${bg}) center fixed`}>
+            <DeskFrame1 bg={`url(${bg})  fixed center`}>
                 <P> No matter who you are.  </P>
                 <Slider ms={5000}>
-                    <Box p={'0em'} m={'0em'} width={'50vw'} height={'50vh'} bg={`url(${artist}) center scroll`}>
+                    <Box p={'0em'} m={'0em'} width={'50vw'} height={'50vh'} bg={`url(${artist})  scroll center`}>
                         <Box lineheight={'2em'} bg={'rgba(0,0,0,0.5)'}>
                             <H4>An artist in need of a website or music video to help promote your work </H4>
                         </Box>
                     </Box>
-                    <Box p={'0em'} m={'0em'} width={'50vw'} height={'50vh'} bg={`url(${author}) center scroll`}>
+                    <Box p={'0em'} m={'0em'} width={'50vw'} height={'50vh'} bg={`url(${author})  scroll center`}>
                         <Box lineheight={'2em'} bg={'rgba(0,0,0,0.5)'}>
                             <H4>
                                 An author who needs an audiobook that will bring your story to life through cinematic
@@ -72,7 +97,7 @@ const Home: React.FC<{}> = () => {
                             </H4>
                         </Box>
                     </Box>
-                    <Box p={'0em'} m={'0em'} width={'50vw'} height={'50vh'} bg={`url(${product}) center scroll`}>
+                    <Box p={'0em'} m={'0em'} width={'50vw'} height={'50vh'} bg={`url(${product})  scroll center`}>
                         <Box lineheight={'2em'} bg={'rgba(0,0,0,0.5)'}>
                             <H4>
                                 A business with a physical product that needs to capture the hearts and minds of your
