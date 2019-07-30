@@ -40,8 +40,8 @@ const Home: React.FC<{}> = () => {
                         <Box
                             p={'0em'}
                             m={'0em'}
-                            width={'60vw'}
-                            height={'50vh'}
+                            width={'80vw'}
+                            height={'60vh'}
                             bg={`url(${vfx})  scroll`}
                             bgposition={'center center'}
                         >
@@ -53,8 +53,8 @@ const Home: React.FC<{}> = () => {
                         <Box
                             p={'0em'}
                             m={'0em'}
-                            width={'60vw'}
-                            height={'50vh'}
+                            width={'80vw'}
+                            height={'60vh'}
                             bg={`url(${vidpro})  scroll`}
                             bgposition={'center center'}
                         >
@@ -66,8 +66,8 @@ const Home: React.FC<{}> = () => {
                         <Box
                             p={'0em'}
                             m={'0em'}
-                            width={'60vw'}
-                            height={'50vh'}
+                            width={'80vw'}
+                            height={'60vh'}
                             bg={`url(${graphics})  scroll`}
                             bgposition={'center center'}
                         >
@@ -85,13 +85,27 @@ const Home: React.FC<{}> = () => {
                 <P> No matter who you are.  </P>
 
                 <Slider ms={5000}>
-                    <Box p={'0em'} m={'0em'} width={'50vw'} height={'50vh'} bg={`url(${artist})  scroll center`}>
+                    <Box
+                        p={'0em'}
+                        m={'0em'}
+                        width={'80vw'}
+                        height={'60vh'}
+                        bg={`url(${artist})  scroll`}
+                        bgposition={'center center'}
+                    >
                         <Box lineheight={'2em'} bg={'rgba(0,0,0,0.5)'}>
                             <H4>An artist in need of a website or music video to help promote your work </H4>
                         </Box>
                     </Box>
 
-                    <Box p={'0em'} m={'0em'} width={'50vw'} height={'50vh'} bg={`url(${author})  scroll center`}>
+                    <Box
+                        p={'0em'}
+                        m={'0em'}
+                        width={'80vw'}
+                        height={'60vh'}
+                        bg={`url(${author})  scroll`}
+                        bgposition={'center center'}
+                    >
                         <Box lineheight={'2em'} bg={'rgba(0,0,0,0.5)'}>
                             <H4>
                                 An author who needs an audiobook that will bring your story to life through cinematic
@@ -100,7 +114,14 @@ const Home: React.FC<{}> = () => {
                         </Box>
                     </Box>
 
-                    <Box p={'0em'} m={'0em'} width={'50vw'} height={'50vh'} bg={`url(${product})  scroll center`}>
+                    <Box
+                        p={'0em'}
+                        m={'0em'}
+                        width={'80vw'}
+                        height={'60vh'}
+                        bg={`url(${product})  scroll`}
+                        bgposition={'center center'}
+                    >
                         <Box lineheight={'2em'} bg={'rgba(0,0,0,0.5)'}>
                             <H4>
                                 A business with a physical product that needs to capture the hearts and minds of your
