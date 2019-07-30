@@ -38,7 +38,7 @@ const Branding: React.FC<{}> = () => {
                     bgposition={'right bottom'}
                 />
             </Screen>
-            <Screen bg={`url(${bg}) center fixed`}>
+            <Screen position={'relative'} bg={`url(${bg}) center fixed`}>
                 <Box lp={2} position={'absolute'} left={'0'}>
                     <H2 zindex={10}>Video Production</H2>
                     <P>
@@ -86,7 +86,7 @@ const Branding: React.FC<{}> = () => {
                     bgposition={'left bottom'}
                 />
             </Screen>
-            <Screen bg={`url(${bg}) center fixed`}>
+            <Screen position={'relative'} bg={`url(${bg}) center fixed`}>
                 <Box lp={2} position={'absolute'} right={'0'}>
                     <H2 zindex={10}>Logo Design</H2>
                     <P>
@@ -115,7 +115,7 @@ const Branding: React.FC<{}> = () => {
                     bgposition={'left top'}
                 />
             </Screen>
-            <Screen bg={`url(${bg}) center fixed`}>
+            <Screen position={'relative'} bg={`url(${bg}) center fixed`}>
                 <Box lp={2} position={'absolute'} left={'0'}>
                     <H2 zindex={10}>Business Materials</H2>
                     <P>We also develop your basic business & marketing materials such as:</P>
