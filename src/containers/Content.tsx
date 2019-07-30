@@ -4,7 +4,7 @@ import DeskFrame1 from '../components/molecules/DeskFrame1';
 import { Screen, Box } from '../components/atoms/grid';
 import { List, Item, P, H1, H2, H3, H4 } from '../components/atoms/text';
 import Slider from '../components/Slider';
-import bg from '../static/images/bg-2.png';
+import bg from '../static/images/bg-1.png';
 import c1l from '../static/images/content-1-l.png';
 import c1r from '../static/images/content-1-r.png';
 import c2 from '../static/images/content-2.png';

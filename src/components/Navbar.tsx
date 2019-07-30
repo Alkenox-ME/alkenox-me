@@ -4,7 +4,7 @@ import { Link } from '@reach/router';
 import { nox } from './theme/NoxTheme';
 import { List, Item, P } from './atoms/text';
 import { Box } from './atoms/grid';
-import navbg from '../static/images/bg-nav.png';
+import navbg from '../static/images/bg-nav2.png';
 import mark from '../static/images/logo-mark-icon.svg';
 
 type LayoutProps = {
