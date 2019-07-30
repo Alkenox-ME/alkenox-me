@@ -6,7 +6,7 @@ import footerbg from '../static/images/bg-footer.png';
 
 const Footer: React.FC = () => {
     return (
-        <Box size={'.7rem'} bg={'rgba(5, 5, 5, 1)'} height={'2.5rem'}>
+        <Box size={'.7rem'} bg={'rgba(68, 26, 136, 1)'} height={'2.5rem'}>
             <P>
                 Copyright &copy; {meta.copyright.year}&nbsp;{meta.copyright.company} All rights reserved.
             </P>
