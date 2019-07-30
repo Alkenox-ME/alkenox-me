@@ -83,12 +83,14 @@ const Home: React.FC<{}> = () => {
 
             <DeskFrame1 bg={`url(${bg})  fixed center`}>
                 <P> No matter who you are.  </P>
+
                 <Slider ms={5000}>
                     <Box p={'0em'} m={'0em'} width={'50vw'} height={'50vh'} bg={`url(${artist})  scroll center`}>
                         <Box lineheight={'2em'} bg={'rgba(0,0,0,0.5)'}>
                             <H4>An artist in need of a website or music video to help promote your work </H4>
                         </Box>
                     </Box>
+
                     <Box p={'0em'} m={'0em'} width={'50vw'} height={'50vh'} bg={`url(${author})  scroll center`}>
                         <Box lineheight={'2em'} bg={'rgba(0,0,0,0.5)'}>
                             <H4>
@@ -97,6 +99,7 @@ const Home: React.FC<{}> = () => {
                             </H4>
                         </Box>
                     </Box>
+
                     <Box p={'0em'} m={'0em'} width={'50vw'} height={'50vh'} bg={`url(${product})  scroll center`}>
                         <Box lineheight={'2em'} bg={'rgba(0,0,0,0.5)'}>
                             <H4>
@@ -106,6 +109,7 @@ const Home: React.FC<{}> = () => {
                         </Box>
                     </Box>
                 </Slider>
+
                 <P>We are here to help!</P>
             </DeskFrame1>
         </PageLayout>
