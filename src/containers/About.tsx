@@ -36,9 +36,15 @@ const About: React.FC<{}> = () => {
                         Because we create content, we offer a variety of services that play a part in the big picture of
                         your project.
                     </P>
+
                     <List>
                         <Item>• From Photography to VFX Editing & Motion Graphics</Item>
+                        <Item>• Video projects short and long both scripted and unscripted</Item>
+                        <Item>• Graphic Design and even 2D & 3D Animation</Item>
                     </List>
+
+                    <P>Our team will help you make your project a reality.</P>
+                    <P>No matter who you are.</P>
                 </Box>
             </DeskFrame1>
         </PageLayout>
