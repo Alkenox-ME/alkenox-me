@@ -2,7 +2,7 @@ import React from 'react';
 import { meta } from '../lib';
 import { P } from './atoms/text';
 import { Box } from './atoms/grid';
-import footerbg from '../static/images/bg-footer.png';
+import footerbg from '../static/images/bg-footer2.png';
 
 const Footer: React.FC = () => {
     return (
