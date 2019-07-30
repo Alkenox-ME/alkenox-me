@@ -25,6 +25,7 @@ const About: React.FC<{}> = () => {
                         The main goal of content is to inform/educate, to entertain, give some form of emotional
                         satisfaction, or to become socially valuable while keeping your audience’s attention and
                         motivating their interaction with your brand. We add a cinematic quality to our work whenever
+                        possible because it helps to maintain the interest of audiences. By indirectly advertising your
                         business through branded stories that people want to see because they are entertaining, fun, and
                         out of the box, you are essentially giving them an emotional memory, inciting a stronger
                         response / desire to share and interact with your brand.
