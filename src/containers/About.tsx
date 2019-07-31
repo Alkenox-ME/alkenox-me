@@ -45,6 +45,20 @@ const About: React.FC<{}> = () => {
 
                     <P>Our team will help you make your project a reality.</P>
                     <P>No matter who you are.</P>
+
+                    <List>
+                        <Item>• An artist in need of a website or music video to help promote your work</Item>
+                        <Item>
+                            • An author who needs an audiobook that will bring your story to life through cinematic
+                            soundscaping and voice actors
+                        </Item>
+                        <Item>
+                            • A business with a physical product that needs to capture the hearts and minds of your
+                            audience
+                        </Item>
+                    </List>
+
+                    <P>We are here to help!</P>
                 </Box>
             </DeskFrame1>
         </PageLayout>
