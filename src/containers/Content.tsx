@@ -30,6 +30,13 @@ const Content: React.FC<{}> = () => {
                     bgposition={'left bottom'}
                 />
                 <H1 zindex={10}>Content Creation</H1>
+                <P>
+                    Marketing builds awareness. But the content is what builds it to last. Your content (and
+                    product/service quality) is what transforms your brand into a household name; rather than a passing
+                    thought. To help aid you in this mission, we feel entertainment value with a cinematic polish raises
+                    your content’s value. Your content becomes something more shareable and memorable to your audience,
+                    thereby increasing the value of your brand.
+                </P>
                 <Box
                     p={'0'}
                     zindex={0}
@@ -45,16 +52,20 @@ const Content: React.FC<{}> = () => {
                 <Box lp={2} position={'absolute'} right={'0'}>
                     <H2 zindex={10}>Video Production</H2>
                     <P>
-                        Pre-Production, Production, and Post Production are the three main parts of the video production
-                        process. Our hand-picked team covers your project from beginning to end. We help you plan,
-                        staff, and problem-solve through it all to get your product to the finish line.
+                        There are many great uses for videos, including the ability to quickly and effectively walk a
+                        consumer through an overview of your product or service, and how it works.
                     </P>
-                    <List>
-                        <Item>Product / Service </Item>
-                        <Item>Explanatory / Informative </Item>
-                        <Item>Branded Story </Item>
-                        <Item>Commercial</Item>
-                    </List>
+                    <P>
+                        A branded story that indirectly advertises your product or service, is a great way to entertain
+                        your audience, while advertising to your consumers. Making the story something that is
+                        entertaining and stimulating creates a memorable experience that naturally has your brand
+                        attached.
+                    </P>
+                    <P>
+                        We use cinematic techniques in production and cinematic polishing in post-production for a
+                        sleek, professional result. We use story-telling and/or motion graphics to raise the
+                        entertainment value of your video, which will yield memorable and socially shareable results.
+                    </P>
                 </Box>
                 <Box
                     p={'0'}

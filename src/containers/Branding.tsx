@@ -46,12 +46,6 @@ const Branding: React.FC<{}> = () => {
                         easily. Entertainment value equates to your video becoming more memorable and shareable, which
                         also makes your brand more popular and brings you that much closer to becoming a household name.
                     </P>
-                    <P>
-                        There are many other great uses for videos. For instance, you can't deny the fact that some of
-                        your customers or clients understand more from visual aids than reading or hearing a
-                        description. A video can quickly and effectively walk your audience through an overview of your
-                        product or service and how it works.
-                    </P>
                 </Box>
                 <Box
                     zindex={0}
@@ -119,28 +113,6 @@ const Branding: React.FC<{}> = () => {
                     bgsize={'contain'}
                     bg={`url(${b4}) no-repeat local`}
                     bgposition={'left top'}
-                />
-            </Screen>
-            <Screen position={'relative'} bg={`url(${bg}) center fixed`}>
-                <Box lp={2} position={'absolute'} left={'0'}>
-                    <H2 zindex={10}>Business Materials</H2>
-                    <P>We also develop your basic business & marketing materials such as:</P>
-                    <List>
-                        <Item>Business Card</Item>
-                        <Item>Brochure</Item>
-                        <Item>Letterhead</Item>
-                        <Item>Product Packaging</Item>
-                    </List>
-                </Box>
-                <Box
-                    zindex={0}
-                    right={'0'}
-                    width={'100%'}
-                    height={'100%'}
-                    position={'absolute'}
-                    bgsize={'contain'}
-                    bg={`url(${b5}) no-repeat local`}
-                    bgposition={'right top'}
                 />
             </Screen>
         </PageLayout>
