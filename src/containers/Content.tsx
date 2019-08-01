@@ -31,19 +31,13 @@ const Content: React.FC<{}> = () => {
                 />
                 <H1 zindex={10}>Content Creation</H1>
                 <P zindex={10}>
-                    This is our reason for being. 65% of your audience are visual learners and content creation takes on
-                    many forms. But not just any content will deliver returns in the form of brand loyalty, building a
-                    reputation, generating leads and brand awareness. You need actionable information that has a long
-                    shelf life and reinforces your brand.
+                    Marketing builds awareness. But the content is what builds it to last. Your content (and
+                    product/service quality) is what transforms your brand into a household name; rather than a passing
+                    thought. To help aid you in this mission, we feel entertainment value with a cinematic polish raises
+                    your content’s value. Your content becomes something more shareable and memorable to your audience,
+                    thereby increasing the value of your brand.
                 </P>
-                <List zindex={10}>
-                    <Item>Imagery (drawn or photographed)</Item>
-                    <Item>Blogs, Vlogs & Podcasts</Item>
-                    <Item>Videos (from Branded Stories to Commercials)</Item>
-                    <Item>Animated Videos (2D & 3D) </Item>
-                    <Item>Promotional Websites</Item>
-                    <Item>Interactive Web Apps</Item>
-                </List>
+
                 <Box
                     p={'0'}
                     zindex={0}
@@ -59,16 +53,19 @@ const Content: React.FC<{}> = () => {
                 <Box lp={2} position={'absolute'} right={'0'}>
                     <H2 zindex={10}>Video Production</H2>
                     <P>
-                        Pre-Production, Production, and Post Production are the three main parts of the video production
-                        process. Our hand-picked team covers your project from beginning to end. We help you plan,
-                        staff, and problem-solve through it all to get your product to the finish line.
+                        There are many great uses for videos, including the ability to quickly and effectively walk a
+                        consumer through an overview of your product or service, and how it works.
                     </P>
-                    <List>
-                        <Item>Product / Service </Item>
-                        <Item>Explanatory / Informative </Item>
-                        <Item>Branded Story </Item>
-                        <Item>Commercial</Item>
-                    </List>
+                    <P>
+                        A branded story that indirectly advertises your product or service, is a great way to entertain
+                        your audience, while advertising to your consumers. Making the story something that is
+                        entertaining and stimulating creates a memorable experience that naturally has your brand
+                        attached.
+                    </P>
+                    <P>
+                        We use cinematic techniques in production and cinematic polishing in post-production for a
+                        sleek, professional, memorable and socially shareable results.
+                    </P>
                 </Box>
                 <Box
                     p={'0'}
@@ -86,10 +83,10 @@ const Content: React.FC<{}> = () => {
                 <Box lp={2} position={'absolute'} left={'0'}>
                     <H2 zindex={10}>Cinematic Audio Book Production</H2>
                     <P>
-                        While standard audio books are great, they are usually done utilizing the bare minimum needed to
-                        tell the story. We would like to take your novel to the next level using cinematic audio
-                        techniques to tell your story. With these techniques, everyone, including the vision impaired,
-                        would be able to be encompassed by your story, giving it a 3D audio feel.
+                        Some books don't require much to convey their stories, messages or lessons. But then there are
+                        those novels that require a more cinematic approach. We offer all the bells and whistles for an
+                        audio novel. Including true voice actors, a cinematic music bed, and full soundscaping. Let us
+                        bring your novel to life.
                     </P>
                 </Box>
                 <Box
