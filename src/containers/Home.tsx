@@ -17,6 +17,8 @@ const product =
 const author = 'https://github.com/Alkenox-ME/alkenox-me-images/blob/master/audiobook-3106986.jpg?raw=true';
 
 const Home: React.FC<{}> = () => {
+    let shadow =
+        '0.1em 0.1em 0.5em rgba(0,0,0,1), -0.1em 0.1em 0.5em rgba(0,0,0,1), 0.1em -0.1em 0.5em rgba(0,0,0,1), -0.1em -0.1em 0.5em rgba(0,0,0,1)';
     return (
         <PageLayout title={'Home'}>
             <DeskFrame1 bg={`url(${bg})  fixed center`}>
@@ -25,13 +27,15 @@ const Home: React.FC<{}> = () => {
 
             <DeskFrame1 bg={`url(${bg})  fixed center`}>
                 <Box>
-                    <Box p={0} size={'1em'}>
-                        <H1 lineheight={'.5em'}>Alkenox</H1>
+                    <Box p={'0'} m={'0'} size={'1em'}>
+                        <H1 p={'0'} m={'0'} lineheight={'1em'}>
+                            Alkenox
+                        </H1>
+                        <H1 p={'0'} m={'0'} size={'1em'} lineheight={'1em'}>
+                            Media & Entertainment, LLC.
+                        </H1>
                     </Box>
-                    <Box p={0} size={'0.5em'}>
-                        <H1 lineheight={'.5em'}>Media & Entertainment, LLC.</H1>
-                    </Box>
-                    <P>
+                    <P p={'1em 0'} m={'0'} lineheight={'1.4em'}>
                         As content creators, we offer a variety of services that play a part in the big picture of your
                         project.
                     </P>
@@ -41,12 +45,14 @@ const Home: React.FC<{}> = () => {
                             p={'0em'}
                             m={'0em'}
                             width={'80vw'}
-                            height={'60vh'}
+                            height={'40vh'}
                             bg={`url(${vfx})  scroll`}
                             bgposition={'center center'}
                         >
-                            <Box bg={'rgba(0,0,0,0.5)'}>
-                                <H4>From Photography, VFX Editing & Motion Graphics </H4>
+                            <Box m={'30vh 0 0 0'}>
+                                <P p={'0'} m={'0'} tshadow={shadow}>
+                                    From Photography, VFX Editing & Motion Graphics 
+                                </P>
                             </Box>
                         </Box>
 
@@ -54,12 +60,14 @@ const Home: React.FC<{}> = () => {
                             p={'0em'}
                             m={'0em'}
                             width={'80vw'}
-                            height={'60vh'}
+                            height={'40vh'}
                             bg={`url(${vidpro})  scroll`}
                             bgposition={'center center'}
                         >
-                            <Box bg={'rgba(0,0,0,0.5)'}>
-                                <H4>To Video Production short and long - both scripted and unscripted </H4>
+                            <Box m={'30vh 0 0 0'}>
+                                <P p={'0'} m={'0'} tshadow={shadow}>
+                                    To Video Production short and long - both scripted and unscripted 
+                                </P>
                             </Box>
                         </Box>
 
@@ -67,17 +75,22 @@ const Home: React.FC<{}> = () => {
                             p={'0em'}
                             m={'0em'}
                             width={'80vw'}
-                            height={'60vh'}
+                            height={'40vh'}
                             bg={`url(${graphics})  scroll`}
                             bgposition={'center center'}
                         >
-                            <Box bg={'rgba(0,0,0,0.5)'}>
-                                <H4>To Graphic Design and even 2D & 3D Animation</H4>
+                            <Box m={'30vh 0 0 0'}>
+                                <P p={'0'} m={'0'} tshadow={shadow}>
+                                    To Graphic Design and even 2D & 3D Animation
+                                </P>
                             </Box>
                         </Box>
                     </Slider>
 
-                    <P> Our team will help you make your project a reality. </P>
+                    <P p={'0'} m={'0'}>
+                        {' '}
+                        Our team will help you make your project a reality.{' '}
+                    </P>
                 </Box>
             </DeskFrame1>
 
@@ -89,12 +102,14 @@ const Home: React.FC<{}> = () => {
                         p={'0em'}
                         m={'0em'}
                         width={'80vw'}
-                        height={'60vh'}
+                        height={'40vh'}
                         bg={`url(${artist})  scroll`}
                         bgposition={'center center'}
                     >
-                        <Box lineheight={'2em'} bg={'rgba(0,0,0,0.5)'}>
-                            <H4>An artist in need of a website or music video to help promote your work </H4>
+                        <Box m={'30vh 0 0 0'}>
+                            <P p={'0'} m={'0'} tshadow={shadow}>
+                                An artist in need of a website or music video to help promote your work 
+                            </P>
                         </Box>
                     </Box>
 
@@ -102,15 +117,15 @@ const Home: React.FC<{}> = () => {
                         p={'0em'}
                         m={'0em'}
                         width={'80vw'}
-                        height={'60vh'}
+                        height={'40vh'}
                         bg={`url(${author})  scroll`}
                         bgposition={'center center'}
                     >
-                        <Box lineheight={'2em'} bg={'rgba(0,0,0,0.5)'}>
-                            <H4>
+                        <Box m={'30vh 0 0 0'}>
+                            <P p={'0'} m={'0'} tshadow={shadow}>
                                 An author who needs an audiobook that will bring your story to life through cinematic
                                 soundscaping and voice actors 
-                            </H4>
+                            </P>
                         </Box>
                     </Box>
 
@@ -118,15 +133,15 @@ const Home: React.FC<{}> = () => {
                         p={'0em'}
                         m={'0em'}
                         width={'80vw'}
-                        height={'60vh'}
+                        height={'40vh'}
                         bg={`url(${product})  scroll`}
                         bgposition={'center center'}
                     >
-                        <Box lineheight={'2em'} bg={'rgba(0,0,0,0.5)'}>
-                            <H4>
+                        <Box m={'30vh 0 0 0'}>
+                            <P p={'0'} m={'0'} tshadow={shadow}>
                                 A business with a physical product that needs to capture the hearts and minds of your
                                 audience
-                            </H4>
+                            </P>
                         </Box>
                     </Box>
                 </Slider>

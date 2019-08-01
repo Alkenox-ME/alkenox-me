@@ -27,6 +27,11 @@ const Branding: React.FC<{}> = () => {
                     bgposition={'left top'}
                 />
                 <H1 zindex={10}>Our Branding Service</H1>
+                <P zindex={10}>
+                    Your brand is not only your identity but also the feelings that consumers develop towards your
+                    company and products. Together, we will develop a branding strategy to achieve targeted results and
+                    create the content you need to implement your strategy.
+                </P>
                 <Box
                     zindex={0}
                     right={'0'}
@@ -48,10 +53,10 @@ const Branding: React.FC<{}> = () => {
                         that much closer to becoming a household name.
                     </P>
                     <P>
-                        There are many other great uses for videos. For instance, you can't deny the fact that some of
-                        your customers or clients understand more from visual aids than reading or hearing a
-                        description. A video can quickly and effectively walk your audience through an overview of your
-                        product or service and how it works.
+                        There are many other great uses for videos. For instance, you can't deny the fact that some
+                        consumers understand more through visual aids rather than reading or hearing a description. A
+                        video can quickly and effectively walk your audience through an overview of your product or
+                        service and how it works.
                     </P>
                 </Box>
                 <Box
@@ -69,10 +74,10 @@ const Branding: React.FC<{}> = () => {
                 <Box lp={2} position={'absolute'} right={'0'}>
                     <H2 zindex={10}>Website Design & Development</H2>
                     <P>
-                        Your website will likely be the first handshake between you and a potential customer, client, or
-                        viewer. Therefore, the design and functionality of your user-interface is extremely important to
-                        convert new comers to repeat visitors or even better, to entice them to become more involved in
-                        your brand.
+                        Your website will likely be the first handshake between you and a consumer. Therefore, the
+                        design and functionality of your user-interface is extremely important to entice new visitors to
+                        become repeat visitors and more involved in your brand. It can even be used to yield a
+                        measurable result of your marketing/advertising campaign.
                     </P>
                 </Box>
                 <Box
@@ -94,15 +99,6 @@ const Branding: React.FC<{}> = () => {
                         product. We help you create your logo from scratch or build it using a previously created
                         concept.
                     </P>
-                    <P>Our logo design packages include:</P>
-                    <List>
-                        <Item>Simple - A logo with a well-defined company name and mark.</Item>
-                        <Item>Intermediate - A logo design with intricate patterns and fonts.</Item>
-                        <Item>
-                            Complex - A more illustrative, complex logo with custom artwork and the right look and feel
-                            for your business.
-                        </Item>
-                    </List>
                 </Box>
                 <Box
                     zindex={0}
@@ -113,28 +109,6 @@ const Branding: React.FC<{}> = () => {
                     bgsize={'contain'}
                     bg={`url(${b4}) no-repeat local`}
                     bgposition={'left top'}
-                />
-            </Screen>
-            <Screen position={'relative'} bg={`url(${bg}) center fixed`}>
-                <Box lp={2} position={'absolute'} left={'0'}>
-                    <H2 zindex={10}>Business Materials</H2>
-                    <P>We also develop your basic business & marketing materials such as:</P>
-                    <List>
-                        <Item>Business Card</Item>
-                        <Item>Brochure</Item>
-                        <Item>Letterhead</Item>
-                        <Item>Product Packaging</Item>
-                    </List>
-                </Box>
-                <Box
-                    zindex={0}
-                    right={'0'}
-                    width={'100%'}
-                    height={'100%'}
-                    position={'absolute'}
-                    bgsize={'contain'}
-                    bg={`url(${b5}) no-repeat local`}
-                    bgposition={'right top'}
                 />
             </Screen>
         </PageLayout>

@@ -30,6 +30,20 @@ const Content: React.FC<{}> = () => {
                     bgposition={'left bottom'}
                 />
                 <H1 zindex={10}>Content Creation</H1>
+                <P zindex={10}>
+                    This is our reason for being. 65% of your audience are visual learners and content creation takes on
+                    many forms. But not just any content will deliver returns in the form of brand loyalty, building a
+                    reputation, generating leads and brand awareness. You need actionable information that has a long
+                    shelf life and reinforces your brand.
+                </P>
+                <List zindex={10}>
+                    <Item>Imagery (drawn or photographed)</Item>
+                    <Item>Blogs, Vlogs & Podcasts</Item>
+                    <Item>Videos (from Branded Stories to Commercials)</Item>
+                    <Item>Animated Videos (2D & 3D) </Item>
+                    <Item>Promotional Websites</Item>
+                    <Item>Interactive Web Apps</Item>
+                </List>
                 <Box
                     p={'0'}
                     zindex={0}
@@ -114,39 +128,14 @@ const Content: React.FC<{}> = () => {
                     bgposition={'right top'}
                 />
             </Screen>
-            <Screen position={'relative'} bg={`url(${bg}) center fixed`}>
-                <Box lp={2} position={'absolute'} right={'0'}>
-                    <H2 zindex={10}>Game Audio</H2>
-                    <P>
-                        We are capable of handling all interactive audio needs; from soundscaping to music production.
-                        Our goal is to give your game it's own signature sounds that will enhance your brand and give
-                        your audience the best gaming experience possible. They will know your game when they hear it.
-                    </P>
-                    <List>
-                        <Item>Interactive Sound-Scaping</Item>
-                        <Item>Voice-Actors</Item>
-                        <Item>Interactive Music Beds</Item>
-                    </List>
-                </Box>
-                <Box
-                    p={'0'}
-                    left={'0'}
-                    zindex={0}
-                    width={'100%'}
-                    height={'100%'}
-                    position={'absolute'}
-                    bgsize={'contain'}
-                    bg={`url(${c5}) no-repeat local`}
-                    bgposition={'left bottom'}
-                />
-            </Screen>
+
             <Screen position={'relative'} bg={`url(${bg}) center fixed`}>
                 <Box lp={2} position={'absolute'} right={'0'}>
                     <H2 zindex={10}>Website Design & Development</H2>
                     <P>
                         We will design and develop your website using scalable javascript frameworks that add to your
-                        site's security; as well as visually engaging aesthetics that will help to keep your audience's
-                        attention.{' '}
+                        site's security; as well as visually engaging aesthetics that will entertain your audience,
+                        while disseminating important information.
                     </P>
                 </Box>
                 <Box
@@ -165,9 +154,11 @@ const Content: React.FC<{}> = () => {
                 <Box lp={2} position={'absolute'} left={'0'}>
                     <H2 zindex={10}>Graphic Design</H2>
                     <P>
-                        Graphic Design & Animation tailored to your brand and its message. We specialize in Logo Design,
-                        2D & 3D Modeling, Motion Graphics and Animation. Graphic Design applies to several forms of
-                        communication:
+                        Communicating messages visually by utilizing images and typography seems like it should be easy.
+                        But there are many design elements that you can use in varying combinations to get your message
+                        across. So many options and choices can make settling on a final design difficult. Allow us to
+                        help you create a visually stimulating and enticing presentation to help motivate your audience
+                        to interact with your brand.
                     </P>
                     <List>
                         <Item>Visual Brand Identity </Item>
@@ -189,26 +180,6 @@ const Content: React.FC<{}> = () => {
                     bgsize={'contain'}
                     bg={`url(${c7}) no-repeat local`}
                     bgposition={'right bottom'}
-                />
-            </Screen>
-            <Screen position={'relative'} p={'0'} bg={`url(${bg}) center fixed`}>
-                <Box lp={2} position={'absolute'} left={'0'}>
-                    <H2 zindex={10}>Other Content</H2>
-                    <P>
-                        There are endless types of content and unique ideas to create. Talk to us about yours and we can
-                        work together to create a plan.
-                    </P>
-                </Box>
-                <Box
-                    p={'0'}
-                    right={'0'}
-                    zindex={0}
-                    width={'100%'}
-                    height={'100%'}
-                    position={'absolute'}
-                    bgsize={'contain'}
-                    bg={`url(${c8}) no-repeat local`}
-                    bgposition={'right top'}
                 />
             </Screen>
         </PageLayout>

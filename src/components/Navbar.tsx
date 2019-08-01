@@ -23,7 +23,7 @@ const Navbar: React.FC<LayoutProps> = () => {
     `;
 
     return (
-        <Box zindex={1000} bg={`url(${navbg}) no-repeat top scroll`} height={'8vh'}>
+        <Box zindex={1000} bg={'rgba(0,0,0,1)'} height={'8vh'} position={'fixed'} top={'0'}>
             <List p={'0'} m={'0'} style={{ listStyle: 'none', display: 'flex' }}>
                 <img src={mark} alt={'alkenox-me'} width={'4%'} height={'4%'} />
                 <P p={'0'} m={'0 12vw 0 0'}>

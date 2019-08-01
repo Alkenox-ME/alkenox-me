@@ -7,6 +7,7 @@ export const Box = styled.div<GridProps>`
     display: ${props => (props.inline ? 'inline-flex' : 'flex')};
     flex-direction: ${getRule('direction', 'row')};
     flex-wrap: ${getRule('wrap', 'wrap')};
+    align-self: ${getRule('self', 'center')};
     justify-content: ${getRule('justify', 'center')};
     align-items: ${getRule('items', 'stretch')};
     align-content: ${getRule('content', 'stretch')};
