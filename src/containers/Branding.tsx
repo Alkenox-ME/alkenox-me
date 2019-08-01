@@ -28,10 +28,30 @@ const Branding: React.FC<{}> = () => {
                 />
                 <H1 zindex={10}>Our Branding Service</H1>
                 <P zindex={10}>
-                    Your brand is not only your identity but also the feelings that consumers develop towards your
-                    company and products. Together, we will develop a branding strategy to achieve targeted results and
-                    create the content you need to implement your strategy.
+                    Branding, marketing and advertising are all tools that work together to help promote your business.
+                    Branding is what your company believes in, it's reason for being, and how customers feel about your
+                    business and products. Marketing embraces strategies to build awareness of your company's products
+                    and services, while promoting and protecting the brand. Advertising is focused mostly on acquiring
+                    customers and driving sales.
                 </P>
+                <P zindex={10}>
+                    Building a strong brand takes time. For all of these to work together seamlessly, you need a brand
+                    strategy in place to help promote long-term success. Make sure your company has a strong message and
+                    focus that will resonate with customers. Once you are clear on your company's reason for being,
+                    everything else will fall into place starting with:
+                </P>
+                <List zindex={10}>
+                    <Item>• A strong visual image (your logo) </Item>
+                    <Item>• Your company's voice and personality (guided by its purpose)</Item>
+                    <Item>
+                        • Create brand standards for marketing materials (gives your brand consistency in the eyes of
+                        your customers)
+                    </Item>
+                    <Item>
+                        • Publish and promote a style guide to make sure all employees, contractors, and advertising and
+                        marketing agencies you work with follow the brand's visual identity.
+                    </Item>
+                </List>
                 <Box
                     zindex={0}
                     right={'0'}
@@ -45,13 +65,8 @@ const Branding: React.FC<{}> = () => {
             </Screen>
             <Screen position={'relative'} bg={`url(${bg}) center fixed`}>
                 <Box lp={2} position={'absolute'} left={'0'}>
-                    <H2 zindex={10}>Video Production</H2>
-                    <P>
-                        Video production is a great way to impart your brand's purpose and culture to your audience
-                        quickly and easily. Adding entertainment value for your audience helps in making your video more
-                        memorable and shareable. Which, as a by-product, makes your brand more popular and brings you
-                        that much closer to becoming a household name.
-                    </P>
+                    <H2 zindex={10}>Logo Design</H2>
+                    <P>We help you design your logo from scratch or we can build it off of a pre-made concept.</P>
                     <P>
                         There are many other great uses for videos. For instance, you can't deny the fact that some
                         consumers understand more through visual aids rather than reading or hearing a description. A
