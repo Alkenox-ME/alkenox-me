@@ -96,7 +96,9 @@ const Branding: React.FC<{}> = () => {
             </Screen>
             <Screen position={'relative'} bg={`url(${bg}) center fixed`}>
                 <Box lp={2} position={'absolute'} right={'0'}>
-                    <H2 zindex={10}>Website Design & Development</H2>
+                    <H2 p={'0'} m={'0'} zindex={10}>
+                        Website Design & Development
+                    </H2>
                     <P>
                         We will design a unique website that best reflects and expresses your brand's personality. It
                         will aid in connecting your brand with your audience in a way that stands out from the crowd. It
@@ -118,7 +120,9 @@ const Branding: React.FC<{}> = () => {
             </Screen>
             <Screen position={'relative'} bg={`url(${bg}) center fixed`}>
                 <Box lp={2} position={'absolute'} right={'0'}>
-                    <H2 zindex={10}>Video Production</H2>
+                    <H2 p={'0'} m={'0'} zindex={10}>
+                        Video Production
+                    </H2>
                     <P>
                         Videos are a great way to impart your brand's purpose and culture to your audience, quickly and
                         easily. Entertainment value equates to your video becoming more memorable and shareable, which
