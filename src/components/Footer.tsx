@@ -7,7 +7,7 @@ import footerbg from '../static/images/bg-footer2.png';
 const Footer: React.FC = () => {
     return (
         <Box size={'.7rem'} bg={'rgba(0,0,0,1)'} height={'2.5em'} position={'fixed'} bottom={'0'}>
-            <P p={'0'} m={'0'}>
+            <P talign={'center'}>
                 Copyright &copy; {meta.copyright.year}&nbsp;{meta.copyright.company} All rights reserved.
             </P>
         </Box>

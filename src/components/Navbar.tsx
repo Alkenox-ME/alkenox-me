@@ -24,26 +24,26 @@ const Navbar: React.FC<LayoutProps> = () => {
 
     return (
         <Box zindex={1000} bg={'rgba(0,0,0,1)'} height={'8vh'} position={'fixed'} top={'0'}>
-            <List p={'0'} m={'0'} style={{ listStyle: 'none', display: 'flex' }}>
+            <List p={'0'} m={'0'} display={'flex'}>
                 <img src={mark} alt={'alkenox-me'} width={'4%'} height={'4%'} />
                 <P p={'0'} m={'0 12vw 0 0'}>
                     alkenox-me
                 </P>
-                <Item p={'0'} m={'0'}>
+                <Item p={'0'} m={'0'} lstyle={'none'}>
                     <P p={'0'} m={'0'}>
                         <NavLink to={'/'}>Home</NavLink>
                     </P>
                 </Item>
-                <Item p={'0'} m={'0'} title={'Our Branding Service'}>
+                <Item p={'0'} m={'0'} lstyle={'none'} title={'Our Branding Service'}>
                     <NavLink to={'/branding-service'}>Branding</NavLink>
                 </Item>
-                <Item p={'0'} m={'0'} title={'Content Creation'}>
+                <Item p={'0'} m={'0'} lstyle={'none'} title={'Content Creation'}>
                     <NavLink to={'/content-creation'}>Content</NavLink>
                 </Item>
-                <Item p={'0'} m={'0'}>
+                <Item p={'0'} m={'0'} lstyle={'none'}>
                     <NavLink to={'/about-us'}>About</NavLink>
                 </Item>
-                <Item p={'0'} m={'0'}>
+                <Item p={'0'} m={'0'} lstyle={'none'}>
                     <NavLink to={'/contact-us'}>Contact</NavLink>
                 </Item>
             </List>

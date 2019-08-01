@@ -29,9 +29,8 @@ export const text = css<TextProps>`
     word-break: ${props => props.wordbreak || null};
     line-break: ${props => props.linebreak || null};
     word-wrap: ${props => props.twrap || null};
-    text-align: ${props => props.talign || 'center'};
-    padding: ${props => props.p || null};
-    margin: ${props => props.m || null};
+    padding: ${props => (props.p ? props.p : '0.25em 0')};
+    margin: ${props => (props.m ? props.m : '0')};
     background: ${props => props.bg || null};
     border: ${props => props.border || null};
     opacity: ${props => props.opacity || null};
@@ -74,10 +73,10 @@ export const list = css<ListProps>`
     word-break: ${props => props.wordbreak || null};
     line-break: ${props => props.linebreak || null};
     word-wrap: ${props => props.twrap || null};
-    list-style: ${props => props.lstyle || 'none inside'};
-    text-align: ${props => props.talign || 'center'};
-    padding: ${props => props.p || null};
-    margin: ${props => props.m || null};
+    list-style: ${props => props.lstyle || ' inside'};
+    text-align: ${props => props.talign || 'left'};
+    padding: ${props => (props.p ? props.p : '0.25em 0')};
+    margin: ${props => (props.m ? props.m : '0')};
     background: ${props => props.bg || null};
     border: ${props => props.border || null};
     opacity: ${props => props.opacity || null};
@@ -96,33 +95,42 @@ export const list = css<ListProps>`
     }
 `;
 
-export const P = styled.p`
+export const P = styled.p<TextProps>`
     ${text}
+    text-align: ${props => props.talign || 'inherit'};
 `;
-export const H1 = styled.h1`
+export const H1 = styled.h1<TextProps>`
     ${text}
+    text-align: ${props => props.talign || 'center'};
 `;
-export const H2 = styled.h2`
+export const H2 = styled.h2<TextProps>`
     ${text}
+    text-align: ${props => props.talign || 'center'};
 `;
-export const H3 = styled.h3`
+export const H3 = styled.h3<TextProps>`
     ${text}
+    text-align: ${props => props.talign || 'center'};
 `;
-export const H4 = styled.h4`
+export const H4 = styled.h4<TextProps>`
     ${text}
+    text-align: ${props => props.talign || 'center'};
 `;
-export const H5 = styled.h5`
+export const H5 = styled.h5<TextProps>`
     ${text}
+    text-align: ${props => props.talign || 'center'};
 `;
-export const H6 = styled.h6`
+export const H6 = styled.h6<TextProps>`
     ${text}
+    text-align: ${props => props.talign || 'center'};
 `;
 
 /******************/
-export const List = styled.ul`
+export const List = styled.ul<TextProps>`
     ${list}
+    text-align: ${props => props.talign || 'inherit'};
 `;
 
-export const Item = styled.li`
+export const Item = styled.li<TextProps>`
     ${list}
+    text-align: ${props => props.talign || 'inherit'};
 `;
