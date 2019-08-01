@@ -52,18 +52,10 @@ const Content: React.FC<{}> = () => {
                         Website Design & Development
                     </H2>
                     <P>
-                        Brands come in many shapes and forms. It can be a conglomerate such as Walmart, a small business
-                        that needs a unique online presence, or athlete looking to engage with fans and sponsors
-                        world-wide. Either way, you need a website that extends your brand’s personality to your target
-                        audience as well as establish a way to connect with them and keep them involved. There are many
-                        great uses for videos, including the ability to quickly and effectively walk a consumer through
-                        an overview of your product or service, and how it works.
-                    </P>
-                    <P>
-                        A branded story that indirectly advertises your product or service, is a great way to entertain
-                        your audience, while advertising to your consumers. Making the story something that is
-                        entertaining and stimulating creates a memorable experience that naturally has your brand
-                        attached.
+                        Brands come in many forms, from the big conglomerate everyone knows, to the small business just
+                        getting started, and the athlete or artist looking to engage with fans and sponsors worldwide.
+                        Either way, you need a website that extends your brand’s personality to your target audience as
+                        well as establish a way to connect with them and keep them involved.
                     </P>
                     <P>
                         We use cinematic techniques in production and cinematic polishing in post-production for a
