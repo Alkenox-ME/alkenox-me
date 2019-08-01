@@ -157,7 +157,7 @@ const Content: React.FC<{}> = () => {
                     <P>
                         We will design and develop your website using scalable javascript frameworks that add to your
                         site's security; as well as visually engaging aesthetics that will help to keep your audience's
-                        attention.{' '}
+                        attention.
                     </P>
                 </Box>
                 <Box
