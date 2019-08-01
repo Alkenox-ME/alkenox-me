@@ -43,7 +43,7 @@ const Branding: React.FC<{}> = () => {
                     <H2 zindex={10}>Video Production</H2>
                     <P>
                         Video production is a great way to impart your brand's purpose and culture to your audience
-                        quickly and easily. Adding entertainment value for your audience helps in making your video more
+                        quickly and easily. Adding entertainment value for your audience helps to make your video more
                         memorable and shareable. Which, as a by-product, makes your brand more popular and brings you
                         that much closer to becoming a household name.
                     </P>
@@ -90,9 +90,10 @@ const Branding: React.FC<{}> = () => {
                 <Box lp={2} position={'absolute'} right={'0'}>
                     <H2 zindex={10}>Logo Design</H2>
                     <P>
-                        Wether you are a new company or an old company looking to spruce up your brand or you have a new
-                        product. We help you create your logo from scratch or build it using a previously created
-                        concept.
+                        We will design a unique website that best reflects and extends your brand's personality. It will
+                        aid in connecting with your audience in a way that helps you to stand out from the crowd. It
+                        will act as a portal for important information, as well as giving you a way to engage your
+                        audience to interact with your brand, giving you a way to measure the results of your campaign.
                     </P>
                     <P>Our logo design packages include:</P>
                     <List>

@@ -15,20 +15,17 @@ const About: React.FC<{}> = () => {
 
                     <P>
                         Alkenox Media & Entertainment is a branding and content creation agency. We create tailored,
-                        edgy, and untraditionally entertaining content for businesses large or small for the promotion
-                        of your brand, product or service. Branding is who you are. Marketing is how you build
-                        awareness. We can help with both! Your success is important to us.
+                        edgy, and untraditionally entertaining content for businesses large and small for the promotion
+                        of their brand, product or service.
                     </P>
 
                     <H2>Our Values</H2>
                     <P>
-                        The main goal of content is to inform/educate, to entertain, give some form of emotional
-                        satisfaction, or to become socially valuable while keeping your audience’s attention and
-                        motivating their interaction with your brand. We add a cinematic quality to our work whenever
-                        possible because it helps to maintain the interest of audiences. By indirectly advertising your
-                        business through branded stories that people want to see because they are entertaining, fun, and
-                        out of the box, you are essentially giving them an emotional memory, inciting a stronger
-                        response / desire to share and interact with your brand.
+                        The main goal of content is to educate, to entertain, or to become socially valuable to your
+                        audience while motivating their interaction with your brand. We like to accomplish this by
+                        indirectly advertising a business through branded stories that are entertaining, fun, and out of
+                        the box. This way, you are essentially giving them an emotional memory that can incite a
+                        stronger desire to share and interact with your brand.
                     </P>
 
                     <H2>What We Do</H2>
