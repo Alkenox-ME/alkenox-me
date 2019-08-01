@@ -67,7 +67,7 @@ const Branding: React.FC<{}> = () => {
                         will aid in connecting your brand with your audience in a way that stands out from the crowd. It
                         will also act, not only as a portal for information, but as a way to engage your audience to
                         interact with your brand. In this way, your website will also give you a way to measure the
-                        results of your campaign.
+                        results of your campaigns.
                     </P>
                 </Box>
                 <Box
