@@ -42,10 +42,9 @@ const Branding: React.FC<{}> = () => {
                 <Box lp={2} position={'absolute'} left={'0'}>
                     <H2 zindex={10}>Video Production</H2>
                     <P>
-                        Video production is a great way to impart your brand's purpose and culture to your audience
-                        quickly and easily. Adding entertainment value for your audience helps to make your video more
-                        memorable and shareable. Which, as a by-product, makes your brand more popular and brings you
-                        that much closer to becoming a household name.
+                        Videos are a great way to impart your brand's purpose and culture to your audience, quickly and
+                        easily. Entertainment value equates to your video becoming more memorable and shareable, which
+                        also makes your brand more popular and brings you that much closer to becoming a household name.
                     </P>
                     <P>
                         There are many other great uses for videos. For instance, you can't deny the fact that some of
@@ -68,11 +67,13 @@ const Branding: React.FC<{}> = () => {
             <Screen position={'relative'} bg={`url(${bg}) center fixed`}>
                 <Box lp={2} position={'absolute'} right={'0'}>
                     <H2 zindex={10}>Website Design & Development</H2>
+
                     <P>
-                        Your website will likely be the first handshake between you and a potential customer, client, or
-                        viewer. Therefore, the design and functionality of your user-interface is extremely important to
-                        convert new comers to repeat visitors or even better, to entice them to become more involved in
-                        your brand.
+                        We will design a unique website that best reflects and expresses your brand's personality. It
+                        will aid in connecting your brand with your audience in a way that stands out from the crowd. It
+                        will also act, not only as a portal for information, but as a way to engage your audience to
+                        interact with your brand. In this way, your website will also give you a way to measure the
+                        results of your campaign.
                     </P>
                 </Box>
                 <Box
@@ -90,19 +91,23 @@ const Branding: React.FC<{}> = () => {
                 <Box lp={2} position={'absolute'} right={'0'}>
                     <H2 zindex={10}>Logo Design</H2>
                     <P>
-                        We will design a unique website that best reflects and extends your brand's personality. It will
-                        aid in connecting with your audience in a way that helps you to stand out from the crowd. It
-                        will act as a portal for important information, as well as giving you a way to engage your
-                        audience to interact with your brand, giving you a way to measure the results of your campaign.
+                        We will help you design your logo from scratch, or we can use a pre-existing concept as the base
+                        for your design.
                     </P>
-                    <P>Our logo design packages include:</P>
+                    <P>Once the design has your final approval, we provide you with the basic amenities, such as:</P>
                     <List>
-                        <Item>Simple - A logo with a well-defined company name and mark.</Item>
-                        <Item>Intermediate - A logo design with intricate patterns and fonts.</Item>
-                        <Item>
-                            Complex - A more illustrative, complex logo with custom artwork and the right look and feel
-                            for your business.
-                        </Item>
+                        <Item>Business Card Design</Item>
+                        <Item>Brochure Design</Item>
+                        <Item>Letterheads</Item>
+                        <Item>Envelopes</Item>
+                        <Item>Labels</Item>
+                    </List>
+                    <P>We can also provide other amenities, such as:</P>
+                    <List>
+                        <Item>Novelty Items</Item>
+                        <Item>Memorabilia</Item>
+                        <Item>Product Packaging</Item>
+                        <Item>and More...</Item>
                     </List>
                 </Box>
                 <Box
