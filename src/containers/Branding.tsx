@@ -66,8 +66,13 @@ const Branding: React.FC<{}> = () => {
             <Screen position={'relative'} bg={`url(${bg}) center fixed`}>
                 <Box lp={2} position={'absolute'} left={'0'}>
                     <H2 zindex={10}>Logo Design</H2>
-                    <P>We help you design your logo from scratch or we can build it off of a pre-made concept.</P>
-                    <P>Once the design has your final approval, we provide you with the basic amenities, such as:</P>
+                    <P>
+                        We help you design your logo from scratch, or we can use a pre-existing concept as the base for
+                        your design.
+                    </P>
+                    <P>
+                        Once the design has your final approval, we will provide you with the basic amenities, such as:
+                    </P>
                     <List>
                         <Item>Business Card Design</Item>
                         <Item>Brochure Design</Item>

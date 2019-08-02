@@ -23,7 +23,7 @@ const About: React.FC<{}> = () => {
                         experience because they are entertaining, fun, and out of the box. This way, you are essentially
                         giving them a memory they want to keep and something they can talk or laugh about with others.
                         In the end, it incites a stronger desire to share and interact with your brand voluntarily. No
-                        force feeding or screaming necessary.
+                        force feeding necessary.
                     </P>
                 </Box>
             </DeskFrame1>

@@ -50,9 +50,9 @@ const Home: React.FC<{}> = () => {
                             bgposition={'center center'}
                         >
                             <Box m={'30vh 0 0 0'}>
-                                <P p={'0'} m={'0'} tshadow={shadow}>
-                                    From Photography, VFX Editing & Motion Graphics 
-                                </P>
+                                <H4 p={'0'} m={'0'} tshadow={shadow}>
+                                    Photography to Motion Graphics 
+                                </H4>
                             </Box>
                         </Box>
 
@@ -65,9 +65,9 @@ const Home: React.FC<{}> = () => {
                             bgposition={'center center'}
                         >
                             <Box m={'30vh 0 0 0'}>
-                                <P p={'0'} m={'0'} tshadow={shadow}>
-                                    To Video Production short and long - both scripted and unscripted 
-                                </P>
+                                <H4 p={'0'} m={'0'} tshadow={shadow}>
+                                    Video Production to VFX Editing 
+                                </H4>
                             </Box>
                         </Box>
 
@@ -80,16 +80,15 @@ const Home: React.FC<{}> = () => {
                             bgposition={'center center'}
                         >
                             <Box m={'30vh 0 0 0'}>
-                                <P p={'0'} m={'0'} tshadow={shadow}>
-                                    To Graphic Design and even 2D & 3D Animation
-                                </P>
+                                <H4 p={'0'} m={'0'} tshadow={shadow}>
+                                    Graphic Design to 3D Animation
+                                </H4>
                             </Box>
                         </Box>
                     </Slider>
 
                     <P p={'0'} m={'0'}>
-                        {' '}
-                        Our team will help you make your project a reality.{' '}
+                        Our team will help you make your project a reality.
                     </P>
                 </Box>
             </DeskFrame1>
@@ -102,14 +101,14 @@ const Home: React.FC<{}> = () => {
                         p={'0em'}
                         m={'0em'}
                         width={'80vw'}
-                        height={'40vh'}
+                        height={'50vh'}
                         bg={`url(${artist})  scroll`}
                         bgposition={'center center'}
                     >
                         <Box m={'30vh 0 0 0'}>
-                            <P p={'0'} m={'0'} tshadow={shadow}>
-                                An artist in need of a website or music video to help promote your work 
-                            </P>
+                            <H4 p={'0'} m={'0'} tshadow={shadow}>
+                                An Artist  or Company Who Needs An Electronic Press Kit
+                            </H4>
                         </Box>
                     </Box>
 
@@ -122,10 +121,9 @@ const Home: React.FC<{}> = () => {
                         bgposition={'center center'}
                     >
                         <Box m={'30vh 0 0 0'}>
-                            <P p={'0'} m={'0'} tshadow={shadow}>
-                                An author who needs an audiobook that will bring your story to life through cinematic
-                                soundscaping and voice actors 
-                            </P>
+                            <H4 p={'0'} m={'0'} tshadow={shadow}>
+                                An Author Who Needs An Audiobook or Promo Site
+                            </H4>
                         </Box>
                     </Box>
 
@@ -138,10 +136,9 @@ const Home: React.FC<{}> = () => {
                         bgposition={'center center'}
                     >
                         <Box m={'30vh 0 0 0'}>
-                            <P p={'0'} m={'0'} tshadow={shadow}>
-                                A business with a physical product that needs to capture the hearts and minds of your
-                                audience
-                            </P>
+                            <H4 p={'0'} m={'0'} tshadow={shadow}>
+                                A Business Who Needs Shareable Content
+                            </H4>
                         </Box>
                     </Box>
                 </Slider>
