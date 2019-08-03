@@ -36,8 +36,10 @@ const Home: React.FC<{}> = () => {
                         </H1>
                     </Box>
                     <P p={'1em 0'} m={'0'} lineheight={'1.4em'}>
-                        As content creators, we offer a variety of services that play a part in the big picture of your
-                        project.
+                        The main goal of content is to educate, to entertain, or to become socially valuable to your
+                        audience while motivating their interaction with your brand. We are your out of the box branding
+                        and content creation solution. Our team will help you create or re-design your visual brand and
+                        brand message.
                     </P>
 
                     <Slider ms={5000}>
@@ -51,7 +53,7 @@ const Home: React.FC<{}> = () => {
                         >
                             <Box m={'30vh 0 0 0'}>
                                 <H4 p={'0'} m={'0'} tshadow={shadow}>
-                                    Photography to Motion Graphics 
+                                    Photography & Motion Graphics 
                                 </H4>
                             </Box>
                         </Box>
@@ -66,7 +68,7 @@ const Home: React.FC<{}> = () => {
                         >
                             <Box m={'30vh 0 0 0'}>
                                 <H4 p={'0'} m={'0'} tshadow={shadow}>
-                                    Video Production to VFX Editing 
+                                    Video Production & VFX Editing 
                                 </H4>
                             </Box>
                         </Box>
@@ -81,7 +83,7 @@ const Home: React.FC<{}> = () => {
                         >
                             <Box m={'30vh 0 0 0'}>
                                 <H4 p={'0'} m={'0'} tshadow={shadow}>
-                                    Graphic Design to 3D Animation
+                                    Graphic Design & 3D Animation
                                 </H4>
                             </Box>
                         </Box>
