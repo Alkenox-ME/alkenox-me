@@ -7,14 +7,9 @@ import bg from '../static/images/bg-1.png';
 import logo from '../static/images/logo-landscape.png';
 import Slider from '../components/Slider';
 
-const graphics = 'https://media.giphy.com/media/8JQ9uF8Oe1Ktmmdd8o/source.gif';
+const graphics = 'https://media.giphy.com/media/8lNgT2uFKdFDh7b2l2/source.gif';
 const vfx = 'https://media.giphy.com/media/2w5OEVjSb7f3Y9UQRr/source.gif';
 const vidpro = 'https://media.giphy.com/media/229roNqcyGIZNfWCfj/source.gif';
-const artist =
-    'https://github.com/Alkenox-ME/alkenox-me-images/blob/master/acoustic-guitar-cellphone-close-up-1164763.jpg?raw=true';
-const product =
-    'https://github.com/Alkenox-ME/alkenox-me-images/blob/master/apps-business-cellular-telephone-278998.jpg?raw=true';
-const author = 'https://github.com/Alkenox-ME/alkenox-me-images/blob/master/audiobook-3106986.jpg?raw=true';
 
 const Home: React.FC<{}> = () => {
     let shadow =
@@ -38,9 +33,9 @@ const Home: React.FC<{}> = () => {
                     <P p={'1em 0'} m={'0'} lineheight={'1.4em'}>
                         We use art, story, and technology to enhance and differentiate your brand from the rest.
                         Everywhere you look, people are having digital experiences on computers, laptops, pads, cellular
-                        devices, TVs, and gaming systems. It has become the way of life, to explore the world digitally
-                        before interacting with it in the real world. We design for an emotional connection that
-                        motivates exploration and interaction with your brand.
+                        devices, TVs, and gaming systems. It has become the way of life, to explore the world digitally,
+                        before embarking on a physical interaction. We design for an emotional connection that motivates
+                        exploration and interaction with your brand.
                     </P>
 
                     <Slider ms={5000}>
@@ -48,13 +43,13 @@ const Home: React.FC<{}> = () => {
                             p={'0em'}
                             m={'0em'}
                             width={'80vw'}
-                            height={'40vh'}
+                            height={'50vh'}
                             bg={`url(${vfx})  scroll`}
                             bgposition={'center center'}
                         >
                             <Box m={'30vh 0 0 0'}>
                                 <H4 p={'0'} m={'0'} tshadow={shadow}>
-                                    Photography & Motion Graphics 
+                                    Title Sequences
                                 </H4>
                             </Box>
                         </Box>
@@ -63,13 +58,13 @@ const Home: React.FC<{}> = () => {
                             p={'0em'}
                             m={'0em'}
                             width={'80vw'}
-                            height={'40vh'}
+                            height={'50vh'}
                             bg={`url(${vidpro})  scroll`}
                             bgposition={'center center'}
                         >
                             <Box m={'30vh 0 0 0'}>
                                 <H4 p={'0'} m={'0'} tshadow={shadow}>
-                                    Video Production & VFX Editing 
+                                    sdfasdf
                                 </H4>
                             </Box>
                         </Box>
@@ -78,13 +73,13 @@ const Home: React.FC<{}> = () => {
                             p={'0em'}
                             m={'0em'}
                             width={'80vw'}
-                            height={'40vh'}
+                            height={'50vh'}
                             bg={`url(${graphics})  scroll`}
                             bgposition={'center center'}
                         >
                             <Box m={'30vh 0 0 0'}>
                                 <H4 p={'0'} m={'0'} tshadow={shadow}>
-                                    Graphic Design & 3D Animation
+                                    Animated GIFs
                                 </H4>
                             </Box>
                         </Box>
