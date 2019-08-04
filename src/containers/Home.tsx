@@ -36,10 +36,11 @@ const Home: React.FC<{}> = () => {
                         </H1>
                     </Box>
                     <P p={'1em 0'} m={'0'} lineheight={'1.4em'}>
-                        The main goal of content is to educate, to entertain, or to become socially valuable to your
-                        audience while motivating their interaction with your brand. We are your out of the box branding
-                        and content creation solution. Our team will help you create or re-design your visual brand and
-                        brand message.
+                        We use art, story, and technology to enhance and differentiate your brand from the rest.
+                        Everywhere you look, people are having digital experiences on computers, laptops, pads, cellular
+                        devices, TVs, and gaming systems. It has become the way of life, to explore the world digitally
+                        before interacting with it in the real world. We design for an emotional connection that
+                        motivates exploration and interaction with your brand.
                     </P>
 
                     <Slider ms={5000}>
@@ -90,62 +91,9 @@ const Home: React.FC<{}> = () => {
                     </Slider>
 
                     <P p={'0'} m={'0'}>
-                        Our team will help you make your project a reality.
+                        .
                     </P>
                 </Box>
-            </DeskFrame1>
-
-            <DeskFrame1 bg={`url(${bg})  fixed center`}>
-                <P> No matter who you are.  </P>
-
-                <Slider ms={5000}>
-                    <Box
-                        p={'0em'}
-                        m={'0em'}
-                        width={'80vw'}
-                        height={'50vh'}
-                        bg={`url(${artist})  scroll`}
-                        bgposition={'center center'}
-                    >
-                        <Box m={'30vh 0 0 0'}>
-                            <H4 p={'0'} m={'0'} tshadow={shadow}>
-                                An Artist  or Company Who Needs An Electronic Press Kit
-                            </H4>
-                        </Box>
-                    </Box>
-
-                    <Box
-                        p={'0em'}
-                        m={'0em'}
-                        width={'80vw'}
-                        height={'40vh'}
-                        bg={`url(${author})  scroll`}
-                        bgposition={'center center'}
-                    >
-                        <Box m={'30vh 0 0 0'}>
-                            <H4 p={'0'} m={'0'} tshadow={shadow}>
-                                An Author Who Needs An Audiobook or Promo Site
-                            </H4>
-                        </Box>
-                    </Box>
-
-                    <Box
-                        p={'0em'}
-                        m={'0em'}
-                        width={'80vw'}
-                        height={'40vh'}
-                        bg={`url(${product})  scroll`}
-                        bgposition={'center center'}
-                    >
-                        <Box m={'30vh 0 0 0'}>
-                            <H4 p={'0'} m={'0'} tshadow={shadow}>
-                                A Business Who Needs Shareable Content
-                            </H4>
-                        </Box>
-                    </Box>
-                </Slider>
-
-                <P>We are here to help!</P>
             </DeskFrame1>
         </PageLayout>
     );

@@ -15,7 +15,7 @@ const About: React.FC<{}> = () => {
                     <P>
                         Alkenox Media & Entertainment is an independent branding and content creation company with a
                         focus on the digital experience. We create tailored, edgy, and untraditionally entertaining
-                        content for brands who are looking for out of the box thinking,
+                        content for  brands who are looking for out of the box thinking,
                     </P>
 
                     <H2>Our Values</H2>
