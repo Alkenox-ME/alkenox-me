@@ -45,7 +45,7 @@ const Home: React.FC<{}> = () => {
                             p={'0em'}
                             m={'0em'}
                             width={'80%'}
-                            height={'80%'}
+                            height={'90%'}
                             bg={`url(${vfx})  scroll`}
                             bgposition={'center center'}
                         >
@@ -60,7 +60,7 @@ const Home: React.FC<{}> = () => {
                             p={'0em'}
                             m={'0em'}
                             width={'80%'}
-                            height={'80%'}
+                            height={'90%'}
                             bg={`url(${vidpro})  scroll`}
                             bgposition={'center center'}
                         >
@@ -75,7 +75,7 @@ const Home: React.FC<{}> = () => {
                             p={'0em'}
                             m={'0em'}
                             width={'80%'}
-                            height={'80%'}
+                            height={'90%'}
                             bg={`url(${graphics})  scroll`}
                             bgposition={'center center'}
                         >
