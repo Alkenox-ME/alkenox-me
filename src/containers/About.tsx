@@ -31,7 +31,7 @@ const About: React.FC<{}> = () => {
                     <P>
                         Collaboration & Teamwork are key to giving our clients our best. Integrity, Passion, Quality,
                         Diversity, Trust, Fun, Constant Improvement, Innovation, Teamwork, Commitment to Customers,
-                        Honesty, Mutual Respect, Ownership=Initiative.{' '}
+                        Honesty, Mutual Respect, Ownership=Initiative.
                     </P>
                 </Box>
             </DeskFrame1>
