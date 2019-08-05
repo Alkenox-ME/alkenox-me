@@ -28,10 +28,7 @@ const About: React.FC<{}> = () => {
                     </P>
 
                     <H2>Our Values</H2>
-                    <P>
-                        Our goal is to indirectly advertise your business through branded stories that people want to
-                        see because they are entertaining, fun, and out of the box from what they would normally expect.
-                    </P>
+                    <P>We strive to always improve,</P>
                 </Box>
             </DeskFrame1>
         </PageLayout>
