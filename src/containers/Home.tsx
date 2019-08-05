@@ -145,10 +145,6 @@ const Home: React.FC<{}> = () => {
                             </H4>
                         </Box>
                     </Slider>
-
-                    <P p={'0'} m={'0'}>
-                        .
-                    </P>
                 </Box>
 
                 <Box></Box>
