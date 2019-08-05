@@ -28,7 +28,11 @@ const About: React.FC<{}> = () => {
                     </P>
 
                     <H2>Our Values</H2>
-                    <P>We strive to always improve,</P>
+                    <P>
+                        Collaboration & Teamwork are key to giving our clients our best. Integrity, Passion, Quality,
+                        Diversity, Trust, Fun, Constant Improvement, Innovation, Teamwork, Commitment to Customers,
+                        Honesty, Mutual Respect, Ownership=Initiative.{' '}
+                    </P>
                 </Box>
             </DeskFrame1>
         </PageLayout>
