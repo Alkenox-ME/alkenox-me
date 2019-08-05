@@ -19,12 +19,12 @@ const About: React.FC<{}> = () => {
                     </P>
 
                     <P>
-                        The main goal of content is to inform or educate, to entertain, give some form of emotional
-                        satisfaction, or to become socially valuable (ie. clickable, relatable, and shareable) while
-                        keeping your audience’s attention and motivating their interaction with your brand. By
-                        connecting your brand with your audience through added entertainment value, you give them a
-                        memory with your brand attached, that they want to keep. This incites a stronger response and a
-                        desire to interact with your brand.
+                        The main goal of content is to inform or educate, to entertain, to give some form of emotional
+                        satisfaction, or to become socially valuable (ie. clickable, relatable, and shareable). Meeting
+                        these requirements keeps your audience’s attention and motivates their interaction with your
+                        brand. By connecting your brand with your audience through added entertainment value, you give
+                        them a branded memory they will want to keep. This incites a stronger response, and desire, to
+                        interact with your brand.
                     </P>
 
                     <H2>Our Values</H2>
