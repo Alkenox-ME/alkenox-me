@@ -28,10 +28,21 @@ const About: React.FC<{}> = () => {
                     </P>
 
                     <H2>Our Values</H2>
+                    <P>Collaboration - The best way to make the most of a good idea.</P>
+                    <P>Teamwork - Always ask for help when needed</P>
                     <P>
-                        Collaboration & Teamwork are key to giving our clients our best. Integrity, Passion, Quality,
-                        Diversity, Trust, Fun, Constant Improvement, Innovation, Teamwork, Commitment to Customers,
-                        Honesty, Mutual Respect, Ownership=Initiative.
+                        Accountability - We are all responsible for our part of a project and the deadlines that have
+                        been set.
+                    </P>
+                    <P>Innovation - Out of the Box Thinking is Key so share your ideas.</P>
+                    <P>
+                        Commitment to Clients - We want to steer the client to make smart decisions about what they
+                        need, but in the end, it is their happiness with our service to them that matters most.
+                    </P>
+                    <P>
+                        Integrity, Passion, Quality, Diversity, Trust, Fun, Constant Improvement, Innovation, Teamwork,
+                        Commitment to Customers, Honesty, Mutual Respect, Ownership=Initiative (Independent
+                        Contractors).
                     </P>
                 </Box>
             </DeskFrame1>
