@@ -28,6 +28,8 @@ const About: React.FC<{}> = () => {
                     </P>
 
                     <H2>Our Values</H2>
+                    <P>We </P>
+
                     <P>Collaboration - The best way to make the most of a good idea.</P>
                     <P>Teamwork - Always ask for help when needed</P>
                     <P>
