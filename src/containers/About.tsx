@@ -27,8 +27,7 @@ const About: React.FC<{}> = () => {
                         interact with your brand.
                     </P>
 
-                    <H2>Our Mission and Our Values</H2>
-                    <P>Mission - What we do, for whom and where.</P>
+                    <H2>Our Mission</H2>
 
                     <P>
                         Alkenox Media & Entertainment's mission is to help small companies grow their client base by
@@ -36,19 +35,16 @@ const About: React.FC<{}> = () => {
                         interaction, and connects with their audience on an emotional/relateable level.
                     </P>
 
-                    <P>Core Values - They drive the decisions in how we're going to do it.</P>
+                    <H2>Core Values</H2>
 
                     <List p={'0 0 2em 0'}>
-                        <Item>
-                            At our core, we believe in Teamwork and Collaboration to expand upon and deliver on great
-                            creative ideas.
-                        </Item>
+                        <Item>Teamwork and Collaboration to expand upon and deliver on great creative ideas.</Item>
                         <Item>Innovative Thinking is key to delivering our out of the box promise.</Item>
                         <Item>
                             Having Fun is just as important for creativity as Accountability is for a trustworthy team
                             environment that includes mutual respect.
                         </Item>
-                        <Item>Commitment to Out Clients</Item>
+                        <Item>Commitment to our Clients </Item>
                     </List>
                 </Box>
             </DeskFrame1>
