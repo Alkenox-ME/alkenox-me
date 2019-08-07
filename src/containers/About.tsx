@@ -27,25 +27,29 @@ const About: React.FC<{}> = () => {
                         interact with your brand.
                     </P>
 
-                    <H2>Our Values</H2>
-                    <P>We </P>
+                    <H2>Our Mission and Our Values</H2>
+                    <P>Mission - What we do, for whom and where.</P>
 
-                    <P>Collaboration - The best way to make the most of a good idea.</P>
-                    <P>Teamwork - Always ask for help when needed</P>
                     <P>
-                        Accountability - We are all responsible for our part of a project and the deadlines that have
-                        been set.
+                        Alkenox Media & Entertainment's mission is to help small companies grow their client base by
+                        creating a shareable company image and digital content that is out of the box, motivates brand
+                        interaction, and connects with their audience on an emotional/relateable level.
                     </P>
-                    <P>Innovation - Out of the Box Thinking is Key so share your ideas.</P>
-                    <P>
-                        Commitment to Clients - We want to steer the client to make smart decisions about what they
-                        need, but in the end, it is their happiness with our service to them that matters most.
-                    </P>
-                    <P>
-                        Integrity, Passion, Quality, Diversity, Trust, Fun, Constant Improvement, Innovation, Teamwork,
-                        Commitment to Customers, Honesty, Mutual Respect, Ownership=Initiative (Independent
-                        Contractors).
-                    </P>
+
+                    <P>Core Values - They drive the decisions in how we're going to do it.</P>
+
+                    <List p={'0 0 2em 0'}>
+                        <Item>
+                            At our core, we believe in Teamwork and Collaboration to expand upon and deliver on great
+                            creative ideas.
+                        </Item>
+                        <Item>Innovative Thinking is key to delivering our out of the box promise.</Item>
+                        <Item>
+                            Having Fun is just as important for creativity as Accountability is for a trustworthy team
+                            environment that includes mutual respect.
+                        </Item>
+                        <Item>Commitment to Out Clients</Item>
+                    </List>
                 </Box>
             </DeskFrame1>
         </PageLayout>
