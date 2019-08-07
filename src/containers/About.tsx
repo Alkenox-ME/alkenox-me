@@ -10,7 +10,7 @@ const About: React.FC<{}> = () => {
         <PageLayout title={'About Us'}>
             <DeskFrame1 bg={`url(${bg}) center fixed`}>
                 <Box>
-                    <H1>About Us</H1>
+                    <H1 p={'2em 0 0 0'}>About Us</H1>
                     <H2>Who We Are</H2>
                     <P>
                         Alkenox Media & Entertainment is an independent branding and content creation company with a
