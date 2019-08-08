@@ -41,9 +41,14 @@ const About: React.FC<{}> = () => {
                         <Item>Teamwork and Collaboration to expand upon and deliver on great creative ideas.</Item>
                         <Item>Innovative Thinking is key to delivering our out of the box promise.</Item>
                         <Item>
+                            Mutual Respect for co-workers and clients is a must for a peaceful working relationship.
+                        </Item>
+                        <Item>Passion for the work</Item>
+                        <Item>
                             Having Fun is just as important for creativity as Accountability is for a trustworthy team
                             environment that includes mutual respect.
                         </Item>
+                        <Item></Item>
                         <Item>Commitment to our Clients </Item>
                     </List>
                 </Box>
