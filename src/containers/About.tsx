@@ -43,7 +43,7 @@ const About: React.FC<{}> = () => {
                         <Item>Keep learning and growing in your craft.</Item>
                         <Item>Be professional.</Item>
                         <Item>Collaboration - Always share ideas, no matter how cheesy.</Item>
-                        <Item>Experimentation is expected and allowed.</Item>
+                        <Item>Experimentation is .</Item>
 
                         <Item>Accountabilty - We are all responsible for our part in every project.</Item>
                         <Item>Ownership - As independent contractors, we all must take initiative in our roles.</Item>
