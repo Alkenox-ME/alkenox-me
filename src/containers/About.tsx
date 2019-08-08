@@ -38,15 +38,17 @@ const About: React.FC<{}> = () => {
                     <H2>Core Values</H2>
 
                     <List p={'0 0 2em 0'}>
+                        <Item>Treat all with respect</Item>
+                        <Item>Quality in everything we do</Item>
+                        <Item>Keep learning and growing in your craft.</Item>
+                        <Item>Be professional.</Item>
+                        <Item>Collaboration - Always share ideas, no matter how cheesy.</Item>
+                        <Item>Experimentation is expected and allowed.</Item>
+
                         <Item>Accountabilty - We are all responsible for our part in every project.</Item>
                         <Item>Ownership - As independent contractors, we all must take initiative in our roles.</Item>
                         <Item>Teamwork - There is no "I" in Team.</Item>
-                        <Item>Collaboration - How we expand upon and deliver great creative ideas.</Item>
                         <Item>Innovative Thinking is key to delivering our out of the box promise.</Item>
-                        <Item>
-                            Mutual Respect for co-workers and clients is a must for a peaceful working relationship.
-                        </Item>
-                        <Item>Passion - What fuels us to push through, because we love what we do.</Item>
                         <Item>Have Fun - Extremely important for the cultivation of out of the box creativity.</Item>
                         <Item>Trust - </Item>
                         <Item>Commitment to our Clients - </Item>
