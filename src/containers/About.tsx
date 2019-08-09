@@ -45,11 +45,10 @@ const About: React.FC<{}> = () => {
                         <Item>Share and Listen to all ideas</Item>
                         <Item>Experimentation is encouraged</Item>
                         <Item>We are all responsible</Item>
-                        <Item>Ownership - As independent contractors, we all must take initiative in our roles.</Item>
                         <Item>We work as a Team</Item>
                         <Item>Have fun doing what you love</Item>
                         <Item>Trust is everything</Item>
-                        <Item>Commitment to our Clients - </Item>
+                        <Item>Commitment to our Clients</Item>
                     </List>
                 </Box>
             </DeskFrame1>
