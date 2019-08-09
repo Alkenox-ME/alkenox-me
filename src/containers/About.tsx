@@ -41,7 +41,7 @@ const About: React.FC<{}> = () => {
                         <Item>Commitment to our clients</Item>
                         <Item>Quality in everything we do</Item>
                         <Item>Keep learning, growing and evolving</Item>
-                        <Item>Be professional</Item>
+                        <Item>Be professional, but be real</Item>
                         <Item>Share and Listen to all ideas</Item>
                         <Item>Experimentation is encouraged</Item>
                         <Item>We are all responsible</Item>

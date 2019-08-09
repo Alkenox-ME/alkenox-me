@@ -32,7 +32,9 @@ const Home: React.FC<{}> = () => {
                             Media & Entertainment, LLC.
                         </H1>
                     </Box>
-                    <P p={'1em 0'} m={'0 0 5vh 0'} lineheight={'1.4em'}>
+
+                    <H3>What We Do</H3>
+                    <P p={'1em 0'} m={'0 0 5vh 0'} lineheight={'1.5em'}>
                         We use art, story, and technology to enhance and differentiate your brand from the rest.
                         Everywhere you look, people are having digital experiences on computers, laptops, pads, cellular
                         devices, TVs, and gaming systems. It has become the way of life, to explore the world digitally,
