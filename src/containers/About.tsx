@@ -38,17 +38,17 @@ const About: React.FC<{}> = () => {
                     <H2>Core Values</H2>
 
                     <List p={'0 0 2em 0'}>
-                        <Item>Treat everyone with respect</Item>
+                        <Item>Commitment to our clients</Item>
                         <Item>Quality in everything we do</Item>
                         <Item>Keep learning, growing and evolving</Item>
                         <Item>Be professional</Item>
                         <Item>Share and Listen to all ideas</Item>
                         <Item>Experimentation is encouraged</Item>
                         <Item>We are all responsible</Item>
-                        <Item>We work as a Team</Item>
+                        <Item>Work as a team</Item>
                         <Item>Have fun doing what you love</Item>
                         <Item>Trust is everything</Item>
-                        <Item>Commitment to our Clients</Item>
+                        <Item>Treat everyone with respect</Item>
                     </List>
                 </Box>
             </DeskFrame1>
