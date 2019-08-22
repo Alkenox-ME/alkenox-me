@@ -27,7 +27,7 @@ export type StyleProps = {
     bgAttachment?: string;
     bgOrigin?: string;
     boxShadow?: string;
-    textShadow?: string;
+    tShadow?: string;
     filter?: string;
     bColor?: string;
     bWidth?: string;

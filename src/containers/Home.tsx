@@ -24,22 +24,13 @@ const Home: React.FC<{}> = () => {
 
             <DeskFrame1 bg={`url(${bg})  fixed center`}>
                 <Box>
-                    <Box p={'0'} m={'0'} size={'1em'}>
-                        <H1 p={'0'} m={'0'} lineheight={'1em'}>
-                            Alkenox
-                        </H1>
-                        <H1 p={'0'} m={'0'} size={'1em'} lineheight={'1em'}>
-                            Media & Entertainment, LLC.
-                        </H1>
-                    </Box>
-
-                    <H3>What We Do</H3>
-                    <P p={'1em 0'} m={'0 0 5vh 0'} lineheight={'1.5em'}>
-                        We use art, story, and technology to enhance and differentiate your brand from the rest.
-                        Everywhere you look, people are having digital experiences on computers, laptops, pads, cellular
-                        devices, TVs, and gaming systems. It has become the way of life, to explore the world digitally,
-                        before embarking on a physical interaction. We design for an emotional connection that motivates
-                        exploration and interaction with your brand.
+                    <H3 tshadow={shadow}>What We Do</H3>
+                    <P p={'1em 0'} m={'0 0 5vh 0'} lineheight={'1.5em'} tshadow={shadow}>
+                        At Alkenox Media & Entertainment, we use art, story, and technology to enhance and differentiate
+                        your brand from the rest. Everywhere you look, people are having digital experiences on
+                        computers, laptops, pads, cellular devices, TVs, and gaming systems. It has become the way of
+                        life, to explore the world digitally, before embarking on a physical interaction. We design for
+                        an emotional connection that motivates exploration and interaction with your brand.
                     </P>
 
                     <Slider ms={5000}>

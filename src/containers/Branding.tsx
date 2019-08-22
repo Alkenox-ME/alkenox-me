@@ -13,6 +13,8 @@ import b4 from '../static/images/branding-4.png';
 import b5 from '../static/images/branding-5.png';
 
 const Branding: React.FC<{}> = () => {
+    let shadow =
+        '.2em .2em 0.25em rgba(0,0,0,1), -.2em .2em 0.25em rgba(0,0,0,1), .2em -.2em 0.25em rgba(0,0,0,1), -.2em -.2em 0.25em rgba(0,0,0,1)';
     return (
         <PageLayout title={'Our Branding Service'}>
             <Screen position={'relative'} bg={`url(${bg}) center fixed`}>
@@ -26,32 +28,34 @@ const Branding: React.FC<{}> = () => {
                     bg={`url(${b1l}) no-repeat local`}
                     bgposition={'left top'}
                 />
-                <H1 zindex={10}>Our Branding Service</H1>
-                <P zindex={10}>
-                    Branding, marketing and advertising are all tools that work together to help promote your business.
-                    Branding is what your company believes in, it's reason for being, and how customers feel about your
-                    business and products. Marketing embraces strategies to build awareness of your company's products
-                    and services, while promoting and protecting the brand. Advertising is focused mostly on acquiring
-                    customers and driving sales.
-                </P>
-                <P zindex={10}>
-                    Building a strong brand takes time. For all of these to work together seamlessly, you need a brand
-                    strategy in place to help promote long-term success. Make sure your company has a strong message and
-                    focus that will resonate with customers. Once you are clear on your company's reason for being,
-                    everything else will fall into place starting with:
-                </P>
-                <List zindex={10}>
-                    <Item>• A strong visual image (your logo) </Item>
-                    <Item>• Your company's voice and personality (guided by its purpose)</Item>
-                    <Item>
-                        • Create brand standards for marketing materials (gives your brand consistency in the eyes of
-                        your customers)
-                    </Item>
-                    <Item>
-                        • Publish and promote a style guide to make sure all employees, contractors, and advertising and
-                        marketing agencies you work with follow the brand's visual identity.
-                    </Item>
-                </List>
+                <Box p={'0 20vw'} tshadow={shadow}>
+                    <H1 zindex={10}>Our Branding Service</H1>
+                    <P zindex={10} style={{ textShadow: `${shadow}` }}>
+                        Branding, marketing and advertising are all tools that work together to help promote your
+                        business. Branding is what your company believes in, it's reason for being, and how customers
+                        feel about your business and products. Marketing embraces strategies to build awareness of your
+                        company's products and services, while promoting and protecting the brand. Advertising is
+                        focused mostly on acquiring customers and driving sales.
+                    </P>
+                    <P zindex={10}>
+                        Building a strong brand takes time. For all of these to work together seamlessly, you need a
+                        brand strategy in place to help promote long-term success. Make sure your company has a strong
+                        message and focus that will resonate with customers. Once you are clear on your company's reason
+                        for being, everything else will fall into place starting with:
+                    </P>
+                    <List zindex={10}>
+                        <Item>• A strong visual image (your logo) </Item>
+                        <Item>• Your company's voice and personality (guided by its purpose)</Item>
+                        <Item>
+                            • Create brand standards for marketing materials (gives your brand consistency in the eyes
+                            of your customers)
+                        </Item>
+                        <Item>
+                            • Publish and promote a style guide to make sure all employees, contractors, and advertising
+                            and marketing agencies you work with follow the brand's visual identity.
+                        </Item>
+                    </List>
+                </Box>
                 <Box
                     zindex={0}
                     right={'0'}
@@ -70,23 +74,29 @@ const Branding: React.FC<{}> = () => {
                         We help you design your logo from scratch, or we can use a pre-existing concept as the base for
                         your design.
                     </P>
-                    <P>
-                        Once the design has your final approval, we will provide you with the basic amenities, such as:
-                    </P>
-                    <List>
-                        <Item>Business Card Design</Item>
-                        <Item>Brochure Design</Item>
-                        <Item>Letterheads</Item>
-                        <Item>Envelopes</Item>
-                        <Item>Labels</Item>
-                    </List>
-                    <P>We can also provide other amenities, such as:</P>
-                    <List>
-                        <Item>Novelty Items</Item>
-                        <Item>Memorabilia</Item>
-                        <Item>Product Packaging</Item>
-                        <Item>and More...</Item>
-                    </List>
+                    <Box p={'0'} lp={2}>
+                        <P>
+                            Once the design has your final approval, we will provide you with the basic amenities, such
+                            as:
+                        </P>
+                        <List textalign={'left'}>
+                            <Item>Business Card Design</Item>
+                            <Item>Brochure Design</Item>
+                            <Item>Letterheads</Item>
+                            <Item>Envelopes</Item>
+                            <Item>Labels</Item>
+                        </List>
+                    </Box>
+
+                    <Box p={'0 1em'} lp={2}>
+                        <P>We can also provide other amenities, such as:</P>
+                        <List>
+                            <Item>Novelty Items</Item>
+                            <Item>Memorabilia</Item>
+                            <Item>Product Packaging</Item>
+                            <Item>and More...</Item>
+                        </List>
+                    </Box>
                 </Box>
                 <Box
                     zindex={0}

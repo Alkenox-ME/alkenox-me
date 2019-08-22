@@ -36,7 +36,7 @@ export const text = css<TextProps>`
     border: ${props => props.border || null};
     opacity: ${props => props.opacity || null};
     box-shadow: ${props => props.boxshadow || null};
-    text-shadow: ${props => props.textshadow || null};
+    text-shadow: ${props => props.tshadow || 'inherit'};
     filter: ${props => props.filter || null};
     display: ${props => props.display || null};
     position: ${props => props.position || null};
@@ -63,7 +63,7 @@ export const list = css<ListProps>`
     font-style: ${props => props.tstyle || null};
     font-weight: ${props => props.tweight || null};
     background: ${props => props.bg || null};
-    text-shadow: ${props => props.tshadow || null};
+    text-shadow: ${props => props.tshadow || 'inherit'};
     letter-space: ${props => props.letterspace || null};
     word-space: ${props => props.wordspace || null};
     font-size-adjust: ${props => props.tadjust || null};
@@ -96,6 +96,9 @@ export const list = css<ListProps>`
     }
 `;
 
+export const tP = styled.p`
+    ${text}
+`;
 export const P = styled.p`
     ${text}
 `;
