@@ -1,8 +1,8 @@
 import * as React from 'react';
+import { nox } from './theme/overRide';
+
 import PageLayout from '../components/molecules/PageLayout';
-import DeskFrame1 from '../components/molecules/DeskFrame1';
-import { Box } from '../components/atoms/grid';
-import { List, Item, P, H1, H2, H3, H4 } from '../components/atoms/text';
+
 import { Flex, Box, Text, Image, Link, Heading } from 'rebass';
 import bg from '../static/images/bg-1.png';
 import logo from '../static/images/logo-landscape.png';
@@ -19,9 +19,9 @@ const Home: React.FC<{}> = () => {
         '0.1em 0.1em 0.5em rgba(0,0,0,1), -0.1em 0.1em 0.5em rgba(0,0,0,1), 0.1em -0.1em 0.5em rgba(0,0,0,1), -0.1em -0.1em 0.5em rgba(0,0,0,1)';
     return (
         <PageLayout title={'Home'}>
-            <Image src={logo} alt="" width={'100%'} height={'100%'} />
+            <Image src={logo} alt="logo" width={'100%'} height={'100%'} />
 
-            <Box>
+            <Box p={5} fontSize={5} width={[1, 1, 1 / 2]} color="rgba(222, 222, 222, 1)">
                 <Heading>What We Do</Heading>
 
                 <Text>
