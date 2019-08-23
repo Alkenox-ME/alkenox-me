@@ -1,8 +1,6 @@
 import * as React from 'react';
 import { nox } from './theme/overRide';
-
 import PageLayout from '../components/molecules/PageLayout';
-
 import { Flex, Box, Text, Image, Link, Heading } from 'rebass';
 import bg from '../static/images/bg-1.png';
 import logo from '../static/images/logo-landscape.png';
