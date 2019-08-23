@@ -2,23 +2,18 @@
 import * as React from 'react';
 
 // Styling
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'emotion-theming';
 import GlobalStyle from './GlobalStyle';
-import theme from './DefTheme';
+import nox from './overRide';
 
 interface NoxProps {
     children: any;
 }
 
-const N0xTheme: React.FC<NoxProps> = ({ children }) => {
-    return (
-        <ThemeProvider theme={theme}>
-            <html>
-                <GlobalStyle />
-                {children}
-            </html>
-        </ThemeProvider>
-    );
-};
-
-export default N0xTheme;
+export default class Provider {
+    render() {
+        return(
+        <ThemeProvider theme={nox}>{children}</ThemeProvider>;
+    )
+  }
+}

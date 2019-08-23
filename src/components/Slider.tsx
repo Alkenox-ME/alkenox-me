@@ -1,7 +1,8 @@
 import * as React from 'react';
-import styled, { css } from 'styled-components';
-import { nox } from './theme/NoxTheme';
-import { Box, Shape } from './atoms/grid';
+import styled from '@emotion/styled';
+import { css } from '@emotion/core';
+import { nox } from './theme/overRide';
+import { Box } from 'rebass';
 
 const useInterval = (callback, delay) => {
     const savedCallback = React.useRef();
@@ -53,10 +54,10 @@ const SSliderSlides = styled.div<ISliderProps>`
 `;
 
 const Dot = styled.span`
-    color: ${nox.main.color.fg.link[0]};
+    color: ${nox.font.link.color[0]};
     font-size: 1.5em;
     cursor: pointer;
-    text-shadow: ${nox.main.color.tint.black[1]};
+    text-shadow: ${nox.font.link.color[1]};
     user-select: none;
     opacity: 0.5;
     transition: all 0.5s ease;
@@ -117,11 +118,11 @@ const Slider = ({ children, ms, p }: IProps) => {
     };
 
     return (
-        <Box p={p} onMouseEnter={handleMouseOver} onMouseLeave={handleMouseOut}>
+        <Box onMouseEnter={handleMouseOver} onMouseLeave={handleMouseOut}>
             <SSliderWrapper>
                 <SSliderSlides currentSlide={currentSlide}>{activeSlide}</SSliderSlides>
             </SSliderWrapper>
-            <Box p={'1em'} bottom={'0em'}>
+            <Box>
                 <Dots>
                     {Array(...Array(activeSlide.length)).map((val, index) => (
                         <Dot key={index} onClick={() => setCurrentSlide(index)} data-position={index}>

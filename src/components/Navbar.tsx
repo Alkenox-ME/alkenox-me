@@ -1,9 +1,8 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { Link } from '@reach/router';
-import { nox } from './theme/NoxTheme';
-import { List, Item, P } from './atoms/text';
-import { Box } from './atoms/grid';
+import { nox } from './theme/overRide';
+import { Box, Text, Image } from 'rebass';
 import navbg from '../static/images/bg-nav2.png';
 import mark from '../static/images/logo-mark-icon.svg';
 
@@ -14,39 +13,37 @@ type LayoutProps = {
 
 const Navbar: React.FC<LayoutProps> = () => {
     const NavLink = styled(Link)`
-        color: ${nox.main.color.fg.text};
+        color: ${nox.font.link.color[0]};
         transition: all 1s ease-in-out;
         :hover {
-            color: ${nox.main.color.solid.black};
+            color: ${nox.font.link.color[1]};
             transition: all 0.5s ease-in-out;
         }
     `;
 
     return (
-        <Box zindex={1000} bg={'rgba(0,0,0,1)'} height={'8vh'} position={'fixed'} top={'0'}>
-            <List p={'0'} m={'0'} style={{ listStyle: 'none', display: 'flex' }}>
-                <img src={mark} alt={'alkenox-me'} width={'4%'} height={'4%'} />
-                <P p={'0'} m={'0 12vw 0 0'}>
-                    alkenox-me
-                </P>
-                <Item p={'0'} m={'0'}>
-                    <P p={'0'} m={'0'}>
+        <Box>
+            <ul>
+                <Image src={mark} alt={'alkenox-me'} width={'4%'} height={'4%'} />
+                <Text>alkenox-me</Text>
+                <li>
+                    <Text>
                         <NavLink to={'/'}>Home</NavLink>
-                    </P>
-                </Item>
-                <Item p={'0'} m={'0'} title={'Our Branding Service'}>
+                    </Text>
+                </li>
+                <li title={'Our Branding Service'}>
                     <NavLink to={'/branding-service'}>Branding</NavLink>
-                </Item>
-                <Item p={'0'} m={'0'} title={'Content Creation'}>
+                </li>
+                <li title={'Content Creation'}>
                     <NavLink to={'/content-creation'}>Content</NavLink>
-                </Item>
-                <Item p={'0'} m={'0'}>
+                </li>
+                <li>
                     <NavLink to={'/about-us'}>About</NavLink>
-                </Item>
-                <Item p={'0'} m={'0'}>
+                </li>
+                <li>
                     <NavLink to={'/contact-us'}>Contact</NavLink>
-                </Item>
-            </List>
+                </li>
+            </ul>
         </Box>
     );
 };

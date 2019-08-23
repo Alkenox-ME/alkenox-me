@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import { nox } from '../theme/NoxTheme';
+import { nox } from '../theme/overRide';
 import { UnderlineProps } from '@types/css';
 
 export const MenuFx1 = css<UnderlineProps>`

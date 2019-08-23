@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import { nox } from './NoxTheme';
+import { nox } from './overRide';
 
 const GlobalStyle = createGlobalStyle`
 
@@ -8,9 +8,9 @@ const GlobalStyle = createGlobalStyle`
       font-weight: lighter;
   }
   html, body {
-    color: ${nox.main.color.fg.text};
-    background-color: ${nox.main.color.bg.body};
-    font-family: ${nox.main.font.body};
+    color: ${nox.font.body.color.primary};
+    background-color: ${nox.color.bg};
+    font-family: ${nox.font.body.face[0]};
     line-height: 1.4em;
     width: 100vw;
     min-height: 100vh;
@@ -120,7 +120,7 @@ const GlobalStyle = createGlobalStyle`
   {
       background-color: transparent;
       text-decoration: none;
-      color: ${nox.main.color.fg.link[0]};
+      color: ${nox.font.link.color[0]};
   }
   abbr[title]
   {
@@ -327,9 +327,9 @@ const GlobalStyle = createGlobalStyle`
       margin: auto;
       padding: 1em;
 
-      color: ${nox.main.color.fg.text};
+      color: ${nox.font.body.color.primary};
       border: solid;
-      background-color: ${nox.main.color.bg.body};
+      background-color: ${nox.color.bg};
   }
 
   dialog:not([open])
